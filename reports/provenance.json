@@ -1,0 +1,20 @@
+{
+  "canonical": {
+    "kind": "Codex-generated base asset, not a hand-authored reference solution",
+    "source_sha256": "005cc5fbfd38d9fb3ff99f3f7840b838e1739a1256e8ef9f591f7ab8812adf2e",
+    "glb_sha256": "f1d76a78213b29fffc4a73013ec574f0df457c0102b858fb3af005a610568fa6"
+  },
+  "adapted": {
+    "model_requested": "gpt-6-astra",
+    "reasoning_effort": "low",
+    "wall_seconds": 103.364,
+    "model_calls": 1,
+    "retries": 0,
+    "human_source_edits": false,
+    "source_sha256": "bc1468284d397bd9c5c3e27848ae63d5f14514aad46e89b2f8cbb26bc9a1cd42",
+    "glb_sha256": "10f98fd45e345df5b641c41d5b14a0ec9b1f2ea3c09d4333e9571188d9124e7f",
+    "original_native_session_copied_by_exact_id": true,
+    "native_session_sha256": "101d1cc4969351c86becc61869a2d56c6f434189209b3f3b49ef8ce0b22d7a67"
+  },
+  "raw_records": "Fresh native session, events, response, frozen source and container execution logs retained locally; not automatically public."
+}

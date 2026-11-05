@@ -1,0 +1,11 @@
+config_version=5
+
+[application]
+config/name="Interactive Asset Generation Pilot"
+
+[physics]
+3d/physics_engine="GodotPhysics3D"
+common/physics_ticks_per_second=60
+
+[rendering]
+renderer/rendering_method="gl_compatibility"

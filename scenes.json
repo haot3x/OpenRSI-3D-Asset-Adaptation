@@ -1,0 +1,16 @@
+{
+  "kind": "two public development fixtures, not a formal workload",
+  "units": "metres",
+  "scenes": [
+    {
+      "id": "open_courtyard",
+      "ceiling_height": 3.0,
+      "clearance_margin": 0.02
+    },
+    {
+      "id": "low_archway",
+      "ceiling_height": 2.05,
+      "clearance_margin": 0.02
+    }
+  ]
+}

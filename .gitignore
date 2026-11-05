@@ -1,0 +1,7 @@
+__pycache__/
+.godot/
+.DS_Store
+.tools/
+.venv/
+runs/
+publication/

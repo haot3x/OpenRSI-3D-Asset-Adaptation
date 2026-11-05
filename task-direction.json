@@ -1,0 +1,31 @@
+{
+  "id": "cross-scene-3d-asset-adaptation",
+  "direction_status": "confirmed by contributor on 2026-11-05",
+  "title": "Continual Cross-Scene Adaptation of Interactive 3D Game Assets",
+  "owner": "Haotian Xu",
+  "discussion": "https://github.com/OpenRSI-Foundation/OpenRSI-Index/discussions/324",
+  "research_question": "Can a fixed-model research agent improve a reusable asset-adaptation method across a sequence of game scenes, transferring to new scene constraints while preserving asset identity and previously supported functionality?",
+  "candidate_deliverable": "A shared base asset, bounded scene adapters and a reusable generation/adaptation/verification method.",
+  "scope": "Existing interactive 3D assets adapted to fixed scenes; the scene and evaluator are not candidate-editable.",
+  "planned_comparison": "Continually improved reusable adaptation versus matched-budget independent per-scene adaptation, with regression checks on prior scenes.",
+  "planned_outcomes": ["new-scene functional success", "prior-scene regression", "asset identity/structure preservation", "adaptation cost under matched budgets"],
+  "formal_reward": null,
+  "formal_workload": null,
+  "official_task_repository": null,
+  "smoke": {
+    "kind": "engineering smoke, not the formal benchmark",
+    "asset": "one newly authored, Codex-generated cycling-pelican base asset",
+    "public_scenes": ["open_courtyard", "low_archway"],
+    "adaptation_model": "gpt-6-astra",
+    "reasoning_effort": "low",
+    "maximum_calls": 1,
+    "seconds_per_call": 180,
+    "automatic_retries": 0,
+    "evaluator": "Godot 4.7.2 headless: inherited animation diagnostics, neutral-pose metric ceiling/floor envelope and simple part-volume guards"
+  },
+  "limitations": [
+    "The two scenes are public development fixtures; this does not establish held-out transfer or RSI gain.",
+    "Envelope checks do not establish traversal, dynamic obstacle clearance, contact forces or full semantic identity.",
+    "Final baseline, primary metric, inference budget, broad workload and official execution contract still require calibration and confirmation."
+  ]
+}

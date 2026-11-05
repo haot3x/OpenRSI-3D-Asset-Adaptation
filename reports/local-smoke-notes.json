@@ -1,0 +1,17 @@
+{
+  "scope": "Engineering smoke only; not official reward or RSI gain",
+  "evaluator_fix": {
+    "reason": "Transformed AABBs conservatively overestimated rotated-part height.",
+    "correction": "Measure actual exported mesh vertices in the metric world frame.",
+    "ceiling_and_margin_unchanged": true,
+    "model_output_unchanged": true,
+    "prior_local_record": "runs/regression-001/summary.json",
+    "current_local_record": "runs/regression-002/summary.json"
+  },
+  "canonical_height_metres": 2.28999996185303,
+  "adapted_height_metres": 2.01377725601196,
+  "canonical_scenes_passed": 1,
+  "adapted_scenes_passed": 2,
+  "scene_count": 2,
+  "negative_control_rejected_in_all_scenes": true
+}

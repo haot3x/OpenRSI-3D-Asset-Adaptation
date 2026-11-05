@@ -1,0 +1,16 @@
+{
+  "type": "object",
+  "properties": {
+    "script": {
+      "type": "string"
+    },
+    "design_notes": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "script",
+    "design_notes"
+  ],
+  "additionalProperties": false
+}

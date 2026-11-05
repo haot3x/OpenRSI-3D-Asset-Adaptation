@@ -1,0 +1,17 @@
+{
+  "id": "pelican_dev",
+  "family": "pelican",
+  "triangle_limit": 6000,
+  "cycle_seconds": 2,
+  "wheel_radius": 0.5,
+  "wheelbase": 1.7,
+  "crank_radius": 0.2,
+  "crank_blender": [
+    0,
+    -0.1,
+    0.52
+  ],
+  "hip_blender_z": 1.45,
+  "leg_length": 0.65,
+  "views": "front, side, top, iso"
+}

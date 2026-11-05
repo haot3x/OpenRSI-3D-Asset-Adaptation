@@ -1,0 +1,14 @@
+{
+  "kind": "canonical, adapted and negative-control fixture/source bytes; not benchmark scores",
+  "sha256": {
+    "assets/adapted/asset.glb": "10f98fd45e345df5b641c41d5b14a0ec9b1f2ea3c09d4333e9571188d9124e7f",
+    "assets/adapted/source.py": "bc1468284d397bd9c5c3e27848ae63d5f14514aad46e89b2f8cbb26bc9a1cd42",
+    "assets/canonical/asset.glb": "f1d76a78213b29fffc4a73013ec574f0df457c0102b858fb3af005a610568fa6",
+    "assets/canonical/front.png": "294507b714fe026ddb3cbfc7640c646d8332a1962cf5065989dd39d0ba5c022c",
+    "assets/canonical/iso.png": "0bf9622c79ff2a98cfb592402491edfdf2ff8dd333939051cdc3d97509e5059c",
+    "assets/canonical/side.png": "d5cdb53cf5c2428702057efbc5e29dee55c52f2e7c401d10cc3ff06d7165fef4",
+    "assets/canonical/source.py": "005cc5fbfd38d9fb3ff99f3f7840b838e1739a1256e8ef9f591f7ab8812adf2e",
+    "assets/canonical/top.png": "c6821cacbad59fee7e92ae41830155cfcc4deffb3866486f50a8620fce7481bb",
+    "assets/negative-static.glb": "7d84f791c8ffba5156a9495cd782f07657c8d23bb46c13667f86c5d1a2a732a6"
+  }
+}
