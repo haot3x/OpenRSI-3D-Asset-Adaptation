@@ -27,10 +27,14 @@ jobs:
         run: python tools/verify_assets.py
       - name: Evaluate both scenes and negative control
         run: python tests/smoke.py --godot /tmp/godot/Godot_v4.7.2-stable_linux.x86_64 --out runs/linux-ci --include-negative
+      - name: Reproduce recorded development-study outcomes
+        run: python tools/replay_study.py --godot /tmp/godot/Godot_v4.7.2-stable_linux.x86_64 --out runs/study-v1-ci
       - name: Upload exact evaluation results
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         with:
           name: cross-scene-regression-${{ github.sha }}
-          path: runs/linux-ci
+          path: |
+            runs/linux-ci
+            runs/study-v1-ci
           if-no-files-found: warn

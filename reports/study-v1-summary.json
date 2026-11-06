@@ -1,0 +1,433 @@
+{
+  "kind": "one-method-update exploratory study, not official RSI trajectory",
+  "status": "completed",
+  "wall_seconds": 681.947,
+  "model_calls": 8,
+  "asset_calls": 7,
+  "method_calls": 1,
+  "model": "gpt-6-astra",
+  "reasoning_effort": "low",
+  "seconds_per_call": 180,
+  "native_sessions_verified": 8,
+  "integrity_files_verified": 257,
+  "policy_characters": 2500,
+  "policy_sha256": "31af23941b241425276a945bf86617f06172d55563ccd725a3941869bad30b75",
+  "policy_frozen_before_transfer": true,
+  "matched_first_prompts_except_policy": true,
+  "target_constraints_subsume_retention": true,
+  "development": {
+    "narrow_aisle": {
+      "status": "complete",
+      "maximum_calls": 1,
+      "model_calls": 1,
+      "selected_attempt": 1,
+      "selected": {
+        "target_success": true,
+        "retained_success": 2,
+        "retained_total": 2,
+        "strict_scene_fraction": 1.0,
+        "scenes": [
+          {
+            "scene": "narrow_aisle",
+            "metrics": {
+              "sampled_half_width_metres": 0.272000372409821,
+              "sampled_minimum_height_metres": 0.0,
+              "sampled_peak_height_metres": 2.00000023841858,
+              "scene_id": "narrow_aisle",
+              "scope": "sampled surface-vertex envelope and four docking support rays, not full traversal, continuous collision or full semantic identity",
+              "triangle_count": 4784
+            },
+            "failed_checks": []
+          },
+          {
+            "scene": "open_courtyard",
+            "metrics": {
+              "sampled_half_width_metres": 0.272000372409821,
+              "sampled_minimum_height_metres": 0.0,
+              "sampled_peak_height_metres": 2.00000023841858,
+              "scene_id": "open_courtyard",
+              "scope": "sampled surface-vertex envelope and four docking support rays, not full traversal, continuous collision or full semantic identity",
+              "triangle_count": 4784
+            },
+            "failed_checks": []
+          },
+          {
+            "scene": "low_archway",
+            "metrics": {
+              "sampled_half_width_metres": 0.272000372409821,
+              "sampled_minimum_height_metres": 0.0,
+              "sampled_peak_height_metres": 2.00000023841858,
+              "scene_id": "low_archway",
+              "scope": "sampled surface-vertex envelope and four docking support rays, not full traversal, continuous collision or full semantic identity",
+              "triangle_count": 4784
+            },
+            "failed_checks": []
+          }
+        ]
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "evaluated",
+          "model_seconds": 78.398,
+          "source_sha256": "efd6a05985c398a3ba0eb213fe2a531fb8fa77a4b5d325cd3f3b8ac919db45f6",
+          "target_success": true,
+          "retained_success": 2,
+          "retained_total": 2,
+          "strict_scene_fraction": 1.0
+        }
+      ]
+    },
+    "loading_dock": {
+      "status": "complete",
+      "maximum_calls": 1,
+      "model_calls": 1,
+      "selected_attempt": 1,
+      "selected": {
+        "target_success": true,
+        "retained_success": 2,
+        "retained_total": 2,
+        "strict_scene_fraction": 1.0,
+        "scenes": [
+          {
+            "scene": "loading_dock",
+            "metrics": {
+              "sampled_half_width_metres": 0.304000079631805,
+              "sampled_minimum_height_metres": 0.0,
+              "sampled_peak_height_metres": 2.01000022888184,
+              "scene_id": "loading_dock",
+              "scope": "sampled surface-vertex envelope and four docking support rays, not full traversal, continuous collision or full semantic identity",
+              "triangle_count": 5048
+            },
+            "failed_checks": []
+          },
+          {
+            "scene": "open_courtyard",
+            "metrics": {
+              "sampled_half_width_metres": 0.304000079631805,
+              "sampled_minimum_height_metres": 0.0,
+              "sampled_peak_height_metres": 2.01000022888184,
+              "scene_id": "open_courtyard",
+              "scope": "sampled surface-vertex envelope and four docking support rays, not full traversal, continuous collision or full semantic identity",
+              "triangle_count": 5048
+            },
+            "failed_checks": []
+          },
+          {
+            "scene": "low_archway",
+            "metrics": {
+              "sampled_half_width_metres": 0.304000079631805,
+              "sampled_minimum_height_metres": 0.0,
+              "sampled_peak_height_metres": 2.01000022888184,
+              "scene_id": "low_archway",
+              "scope": "sampled surface-vertex envelope and four docking support rays, not full traversal, continuous collision or full semantic identity",
+              "triangle_count": 5048
+            },
+            "failed_checks": []
+          }
+        ]
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "evaluated",
+          "model_seconds": 78.609,
+          "source_sha256": "9f8ce6d82559413cbaac1e465a8c405e58cb3f3e4cb56d83cc04069d3742d3dd",
+          "target_success": true,
+          "retained_success": 2,
+          "retained_total": 2,
+          "strict_scene_fraction": 1.0
+        }
+      ]
+    },
+    "mobile_budget": {
+      "status": "complete",
+      "maximum_calls": 1,
+      "model_calls": 1,
+      "selected_attempt": 1,
+      "selected": {
+        "target_success": true,
+        "retained_success": 2,
+        "retained_total": 2,
+        "strict_scene_fraction": 1.0,
+        "scenes": [
+          {
+            "scene": "mobile_budget",
+            "metrics": {
+              "sampled_half_width_metres": 0.304000079631805,
+              "sampled_minimum_height_metres": 0.0,
+              "sampled_peak_height_metres": 2.00000023841858,
+              "scene_id": "mobile_budget",
+              "scope": "sampled surface-vertex envelope and four docking support rays, not full traversal, continuous collision or full semantic identity",
+              "triangle_count": 2904
+            },
+            "failed_checks": []
+          },
+          {
+            "scene": "open_courtyard",
+            "metrics": {
+              "sampled_half_width_metres": 0.304000079631805,
+              "sampled_minimum_height_metres": 0.0,
+              "sampled_peak_height_metres": 2.00000023841858,
+              "scene_id": "open_courtyard",
+              "scope": "sampled surface-vertex envelope and four docking support rays, not full traversal, continuous collision or full semantic identity",
+              "triangle_count": 2904
+            },
+            "failed_checks": []
+          },
+          {
+            "scene": "low_archway",
+            "metrics": {
+              "sampled_half_width_metres": 0.304000079631805,
+              "sampled_minimum_height_metres": 0.0,
+              "sampled_peak_height_metres": 2.00000023841858,
+              "scene_id": "low_archway",
+              "scope": "sampled surface-vertex envelope and four docking support rays, not full traversal, continuous collision or full semantic identity",
+              "triangle_count": 2904
+            },
+            "failed_checks": []
+          }
+        ]
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "status": "evaluated",
+          "model_seconds": 79.971,
+          "source_sha256": "904d671d35328af196fa2483d23c17440f44ff4700242a4306604a45b4196b81",
+          "target_success": true,
+          "retained_success": 2,
+          "retained_total": 2,
+          "strict_scene_fraction": 1.0
+        }
+      ]
+    }
+  },
+  "independent": {
+    "status": "complete",
+    "maximum_calls": 2,
+    "model_calls": 2,
+    "selected_attempt": 1,
+    "selected": {
+      "target_success": true,
+      "retained_success": 5,
+      "retained_total": 5,
+      "strict_scene_fraction": 1.0,
+      "scenes": [
+        {
+          "scene": "compact_loading_archway",
+          "metrics": {
+            "sampled_half_width_metres": 0.260000377893448,
+            "sampled_minimum_height_metres": 0.0,
+            "sampled_peak_height_metres": 1.95999991893768,
+            "scene_id": "compact_loading_archway",
+            "scope": "sampled surface-vertex envelope and four docking support rays, not full traversal, continuous collision or full semantic identity",
+            "triangle_count": 2484
+          },
+          "failed_checks": []
+        },
+        {
+          "scene": "open_courtyard",
+          "metrics": {
+            "sampled_half_width_metres": 0.260000377893448,
+            "sampled_minimum_height_metres": 0.0,
+            "sampled_peak_height_metres": 1.95999991893768,
+            "scene_id": "open_courtyard",
+            "scope": "sampled surface-vertex envelope and four docking support rays, not full traversal, continuous collision or full semantic identity",
+            "triangle_count": 2484
+          },
+          "failed_checks": []
+        },
+        {
+          "scene": "low_archway",
+          "metrics": {
+            "sampled_half_width_metres": 0.260000377893448,
+            "sampled_minimum_height_metres": 0.0,
+            "sampled_peak_height_metres": 1.95999991893768,
+            "scene_id": "low_archway",
+            "scope": "sampled surface-vertex envelope and four docking support rays, not full traversal, continuous collision or full semantic identity",
+            "triangle_count": 2484
+          },
+          "failed_checks": []
+        },
+        {
+          "scene": "narrow_aisle",
+          "metrics": {
+            "sampled_half_width_metres": 0.260000377893448,
+            "sampled_minimum_height_metres": 0.0,
+            "sampled_peak_height_metres": 1.95999991893768,
+            "scene_id": "narrow_aisle",
+            "scope": "sampled surface-vertex envelope and four docking support rays, not full traversal, continuous collision or full semantic identity",
+            "triangle_count": 2484
+          },
+          "failed_checks": []
+        },
+        {
+          "scene": "loading_dock",
+          "metrics": {
+            "sampled_half_width_metres": 0.260000377893448,
+            "sampled_minimum_height_metres": 0.0,
+            "sampled_peak_height_metres": 1.95999991893768,
+            "scene_id": "loading_dock",
+            "scope": "sampled surface-vertex envelope and four docking support rays, not full traversal, continuous collision or full semantic identity",
+            "triangle_count": 2484
+          },
+          "failed_checks": []
+        },
+        {
+          "scene": "mobile_budget",
+          "metrics": {
+            "sampled_half_width_metres": 0.260000377893448,
+            "sampled_minimum_height_metres": 0.0,
+            "sampled_peak_height_metres": 1.95999991893768,
+            "scene_id": "mobile_budget",
+            "scope": "sampled surface-vertex envelope and four docking support rays, not full traversal, continuous collision or full semantic identity",
+            "triangle_count": 2484
+          },
+          "failed_checks": []
+        }
+      ]
+    },
+    "attempts": [
+      {
+        "attempt": 1,
+        "status": "evaluated",
+        "model_seconds": 84.591,
+        "source_sha256": "d0d2621f2d5c284a410a8d826365efd5580f3a77c25144f2cc70268838a023f7",
+        "target_success": true,
+        "retained_success": 5,
+        "retained_total": 5,
+        "strict_scene_fraction": 1.0
+      },
+      {
+        "attempt": 2,
+        "status": "evaluated",
+        "model_seconds": 83.974,
+        "source_sha256": "6294615b93d7e37065cf046d5bf76cc02bdfb2f597d901fdbaa77723f3627f0b",
+        "target_success": true,
+        "retained_success": 5,
+        "retained_total": 5,
+        "strict_scene_fraction": 1.0
+      }
+    ]
+  },
+  "policy_assisted": {
+    "status": "complete",
+    "maximum_calls": 2,
+    "model_calls": 2,
+    "selected_attempt": 1,
+    "selected": {
+      "target_success": true,
+      "retained_success": 5,
+      "retained_total": 5,
+      "strict_scene_fraction": 1.0,
+      "scenes": [
+        {
+          "scene": "compact_loading_archway",
+          "metrics": {
+            "sampled_half_width_metres": 0.253189265727997,
+            "sampled_minimum_height_metres": 0.0,
+            "sampled_peak_height_metres": 1.94500005245209,
+            "scene_id": "compact_loading_archway",
+            "scope": "sampled surface-vertex envelope and four docking support rays, not full traversal, continuous collision or full semantic identity",
+            "triangle_count": 2640
+          },
+          "failed_checks": []
+        },
+        {
+          "scene": "open_courtyard",
+          "metrics": {
+            "sampled_half_width_metres": 0.253189265727997,
+            "sampled_minimum_height_metres": 0.0,
+            "sampled_peak_height_metres": 1.94500005245209,
+            "scene_id": "open_courtyard",
+            "scope": "sampled surface-vertex envelope and four docking support rays, not full traversal, continuous collision or full semantic identity",
+            "triangle_count": 2640
+          },
+          "failed_checks": []
+        },
+        {
+          "scene": "low_archway",
+          "metrics": {
+            "sampled_half_width_metres": 0.253189265727997,
+            "sampled_minimum_height_metres": 0.0,
+            "sampled_peak_height_metres": 1.94500005245209,
+            "scene_id": "low_archway",
+            "scope": "sampled surface-vertex envelope and four docking support rays, not full traversal, continuous collision or full semantic identity",
+            "triangle_count": 2640
+          },
+          "failed_checks": []
+        },
+        {
+          "scene": "narrow_aisle",
+          "metrics": {
+            "sampled_half_width_metres": 0.253189265727997,
+            "sampled_minimum_height_metres": 0.0,
+            "sampled_peak_height_metres": 1.94500005245209,
+            "scene_id": "narrow_aisle",
+            "scope": "sampled surface-vertex envelope and four docking support rays, not full traversal, continuous collision or full semantic identity",
+            "triangle_count": 2640
+          },
+          "failed_checks": []
+        },
+        {
+          "scene": "loading_dock",
+          "metrics": {
+            "sampled_half_width_metres": 0.253189265727997,
+            "sampled_minimum_height_metres": 0.0,
+            "sampled_peak_height_metres": 1.94500005245209,
+            "scene_id": "loading_dock",
+            "scope": "sampled surface-vertex envelope and four docking support rays, not full traversal, continuous collision or full semantic identity",
+            "triangle_count": 2640
+          },
+          "failed_checks": []
+        },
+        {
+          "scene": "mobile_budget",
+          "metrics": {
+            "sampled_half_width_metres": 0.253189265727997,
+            "sampled_minimum_height_metres": 0.0,
+            "sampled_peak_height_metres": 1.94500005245209,
+            "scene_id": "mobile_budget",
+            "scope": "sampled surface-vertex envelope and four docking support rays, not full traversal, continuous collision or full semantic identity",
+            "triangle_count": 2640
+          },
+          "failed_checks": []
+        }
+      ]
+    },
+    "attempts": [
+      {
+        "attempt": 1,
+        "status": "evaluated",
+        "model_seconds": 84.713,
+        "source_sha256": "033d5ad9a007c13b3a60078a1ea3aaad60867d5a319a4ffa41506e6567a933d2",
+        "target_success": true,
+        "retained_success": 5,
+        "retained_total": 5,
+        "strict_scene_fraction": 1.0
+      },
+      {
+        "attempt": 2,
+        "status": "evaluated",
+        "model_seconds": 80.647,
+        "source_sha256": "116577f6af8808a454dd68f31cb140a6be3f6e29756e22fbce3252f652679ccb",
+        "target_success": true,
+        "retained_success": 5,
+        "retained_total": 5,
+        "strict_scene_fraction": 1.0
+      }
+    ]
+  },
+  "official_reward": null,
+  "formal_task_ready": false,
+  "limitations": [
+    "One canonical asset and one new compound scene; no unseen asset-family evaluation.",
+    "The compound target subsumes prior fixture constraints; retention here does not demonstrate nontrivial adaptation tradeoffs.",
+    "One method update and one sequential transfer pair; provider/model sampling is uncontrolled.",
+    "Calls and deadlines are matched for transfer; context tokens differ and development cost is separate.",
+    "Retained-scene success is requirement satisfaction; a failure is a regression only if prior support was verified.",
+    "Low reasoning is exploratory; the intended formal configuration still needs calibration.",
+    "Sampled geometry and support rays do not establish continuous traversal or complete semantic identity."
+  ]
+}

@@ -1,0 +1,13 @@
+Adapt through asset edits with fixed model weights. Use only supplied attempts as evidence; do not invent failures when none are recorded or infer guarantees from passing checks.
+
+1. Build a constraint ledger for the current and all retained scenes: units, coordinate conventions, ceiling minus clearance, usable width after side margins, ground contact, triangle limits, required interfaces and animation behavior. Derive a shared feasible envelope and use the strictest applicable budget. Identify conflicting requirements before editing; do not silently discard retained constraints.
+
+2. Inventory protected identity and functions: recognizable body parts, structural connections, wheel and crank pivots, pedal orientation, foot contact, limb reach, animation timing, names and hierarchy used by consumers. Plan localized edits against the components that cause violations. Prefer posture changes, folding protrusions and selective narrowing over global scaling or removing functional parts. Include component thickness and animated extremities in clearance calculations.
+
+3. Preserve motion dependencies when changing geometry. Recompute connected placements and limb poses where needed; check reachability, joint continuity, foot-to-pedal alignment, wheel/crank motion, loop seams and interpolation. Preserve animation tracks and export settings required by the consumer. Bounding dimensions alone do not establish semantic or functional preservation.
+
+4. Allocate triangle costs before adding features. Count triangulated faces across the complete asset, including supports and attachments. Reduce sphere, tyre and rod tessellation selectively while preserving silhouettes, contact surfaces, pivots and connectivity. Reserve room for required additions, then recount the evaluated/exported mesh against supplied limits; do not substitute object or polygon counts.
+
+5. Implement interfaces as real geometry and compatible transforms. For docking, derive socket placement from the requested coordinates through the export axis conversion; provide an aligned support surface with adequate coverage and connected stays. A named empty alone is insufficient. Verify the imported socket and actual supporting surface using the consumer's contact or ray checks.
+
+6. Before submitting, validate world-space surface vertices over the animation cycle, including intermediate times, against every applicable scene constraint. Check ground contact, clearance, triangle totals and protected functions after a

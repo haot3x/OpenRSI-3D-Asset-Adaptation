@@ -1,0 +1,274 @@
+{
+  "kind": "offline reproduction fixtures; developer controls are not model scores",
+  "scenes_sha256": "3e8da93812fca7a6921c9c1b7a5cdc3569448514aab22eb7bf09009e3911fd3a",
+  "candidates": [
+    {
+      "name": "developer-control",
+      "file": "developer-control.glb",
+      "sha256": "dce2ce4d63e21abc1e9de6fd1d6dfff88465caa3735082a9f224aba340159d8a",
+      "outcomes": [
+        {
+          "scene_id": "open_courtyard",
+          "triangle_count": 2458,
+          "failed_checks": []
+        },
+        {
+          "scene_id": "low_archway",
+          "triangle_count": 2458,
+          "failed_checks": []
+        },
+        {
+          "scene_id": "narrow_aisle",
+          "triangle_count": 2458,
+          "failed_checks": []
+        },
+        {
+          "scene_id": "loading_dock",
+          "triangle_count": 2458,
+          "failed_checks": []
+        },
+        {
+          "scene_id": "mobile_budget",
+          "triangle_count": 2458,
+          "failed_checks": []
+        },
+        {
+          "scene_id": "compact_loading_archway",
+          "triangle_count": 2458,
+          "failed_checks": []
+        }
+      ]
+    },
+    {
+      "name": "negative-static",
+      "file": "negative-static.glb",
+      "sha256": "f773124631f55e465055888666854c4a397f8505f22fe137661fdc9e2a485229",
+      "outcomes": [
+        {
+          "scene_id": "compact_loading_archway",
+          "triangle_count": 2458,
+          "failed_checks": [
+            "ride_animation",
+            "root_0_phase_1_pedal_path_Left",
+            "root_0_phase_1_pedal_path_Right",
+            "root_0_phase_1_wheel_rotation_Front",
+            "root_0_phase_1_wheel_rotation_Rear",
+            "root_0_phase_2_pedal_path_Left",
+            "root_0_phase_2_pedal_path_Right",
+            "root_0_phase_2_wheel_rotation_Front",
+            "root_0_phase_2_wheel_rotation_Rear",
+            "root_0_phase_3_pedal_path_Left",
+            "root_0_phase_3_pedal_path_Right",
+            "root_0_phase_3_wheel_rotation_Front",
+            "root_0_phase_3_wheel_rotation_Rear",
+            "root_0_phase_4_pedal_path_Left",
+            "root_0_phase_4_pedal_path_Right",
+            "root_0_phase_5_pedal_path_Left",
+            "root_0_phase_5_pedal_path_Right",
+            "root_0_phase_5_wheel_rotation_Front",
+            "root_0_phase_5_wheel_rotation_Rear",
+            "root_0_phase_6_pedal_path_Left",
+            "root_0_phase_6_pedal_path_Right",
+            "root_0_phase_6_wheel_rotation_Front",
+            "root_0_phase_6_wheel_rotation_Rear",
+            "root_0_phase_7_pedal_path_Left",
+            "root_0_phase_7_pedal_path_Right",
+            "root_0_phase_7_wheel_rotation_Front",
+            "root_0_phase_7_wheel_rotation_Rear",
+            "root_1_phase_1_pedal_path_Left",
+            "root_1_phase_1_pedal_path_Right",
+            "root_1_phase_1_wheel_rotation_Front",
+            "root_1_phase_1_wheel_rotation_Rear",
+            "root_1_phase_2_pedal_path_Left",
+            "root_1_phase_2_pedal_path_Right",
+            "root_1_phase_2_wheel_rotation_Front",
+            "root_1_phase_2_wheel_rotation_Rear",
+            "root_1_phase_3_pedal_path_Left",
+            "root_1_phase_3_pedal_path_Right",
+            "root_1_phase_3_wheel_rotation_Front",
+            "root_1_phase_3_wheel_rotation_Rear",
+            "root_1_phase_4_pedal_path_Left",
+            "root_1_phase_4_pedal_path_Right",
+            "root_1_phase_5_pedal_path_Left",
+            "root_1_phase_5_pedal_path_Right",
+            "root_1_phase_5_wheel_rotation_Front",
+            "root_1_phase_5_wheel_rotation_Rear",
+            "root_1_phase_6_pedal_path_Left",
+            "root_1_phase_6_pedal_path_Right",
+            "root_1_phase_6_wheel_rotation_Front",
+            "root_1_phase_6_wheel_rotation_Rear",
+            "root_1_phase_7_pedal_path_Left",
+            "root_1_phase_7_pedal_path_Right",
+            "root_1_phase_7_wheel_rotation_Front",
+            "root_1_phase_7_wheel_rotation_Rear",
+            "speed_playback_0.5",
+            "speed_playback_1.5",
+            "two_second_cycle"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "negative-missing_dock",
+      "file": "negative-missing_dock.glb",
+      "sha256": "f87e256f9229c700dc9de3ca456d2ea1951934f3729b4cd6c1c8d0cba9997fa2",
+      "outcomes": [
+        {
+          "scene_id": "compact_loading_archway",
+          "triangle_count": 2458,
+          "failed_checks": [
+            "dock_socket"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "independent-1",
+      "file": "independent-1.glb",
+      "sha256": "06279a4115e2bbcd2c59c2d4085b79f5a52e2470fe5c47b6dbbd18ef35642657",
+      "outcomes": [
+        {
+          "scene_id": "compact_loading_archway",
+          "triangle_count": 2484,
+          "failed_checks": []
+        },
+        {
+          "scene_id": "open_courtyard",
+          "triangle_count": 2484,
+          "failed_checks": []
+        },
+        {
+          "scene_id": "low_archway",
+          "triangle_count": 2484,
+          "failed_checks": []
+        },
+        {
+          "scene_id": "narrow_aisle",
+          "triangle_count": 2484,
+          "failed_checks": []
+        },
+        {
+          "scene_id": "loading_dock",
+          "triangle_count": 2484,
+          "failed_checks": []
+        },
+        {
+          "scene_id": "mobile_budget",
+          "triangle_count": 2484,
+          "failed_checks": []
+        }
+      ]
+    },
+    {
+      "name": "independent-2",
+      "file": "independent-2.glb",
+      "sha256": "94e47c92c7d02b0f9cb5a36aa54e59d58914ab939c2003b1fd235ab92368e9ca",
+      "outcomes": [
+        {
+          "scene_id": "compact_loading_archway",
+          "triangle_count": 2484,
+          "failed_checks": []
+        },
+        {
+          "scene_id": "open_courtyard",
+          "triangle_count": 2484,
+          "failed_checks": []
+        },
+        {
+          "scene_id": "low_archway",
+          "triangle_count": 2484,
+          "failed_checks": []
+        },
+        {
+          "scene_id": "narrow_aisle",
+          "triangle_count": 2484,
+          "failed_checks": []
+        },
+        {
+          "scene_id": "loading_dock",
+          "triangle_count": 2484,
+          "failed_checks": []
+        },
+        {
+          "scene_id": "mobile_budget",
+          "triangle_count": 2484,
+          "failed_checks": []
+        }
+      ]
+    },
+    {
+      "name": "policy-assisted-1",
+      "file": "policy-assisted-1.glb",
+      "sha256": "dc058853420cba8da36a44a42f720bfb61d7d8e1d87c482c9978c6f906257d87",
+      "outcomes": [
+        {
+          "scene_id": "compact_loading_archway",
+          "triangle_count": 2640,
+          "failed_checks": []
+        },
+        {
+          "scene_id": "open_courtyard",
+          "triangle_count": 2640,
+          "failed_checks": []
+        },
+        {
+          "scene_id": "low_archway",
+          "triangle_count": 2640,
+          "failed_checks": []
+        },
+        {
+          "scene_id": "narrow_aisle",
+          "triangle_count": 2640,
+          "failed_checks": []
+        },
+        {
+          "scene_id": "loading_dock",
+          "triangle_count": 2640,
+          "failed_checks": []
+        },
+        {
+          "scene_id": "mobile_budget",
+          "triangle_count": 2640,
+          "failed_checks": []
+        }
+      ]
+    },
+    {
+      "name": "policy-assisted-2",
+      "file": "policy-assisted-2.glb",
+      "sha256": "d18fad71341d892b674fb238274c4727cfb37cd4d950009fe17d3d2dde20ddea",
+      "outcomes": [
+        {
+          "scene_id": "compact_loading_archway",
+          "triangle_count": 2640,
+          "failed_checks": []
+        },
+        {
+          "scene_id": "open_courtyard",
+          "triangle_count": 2640,
+          "failed_checks": []
+        },
+        {
+          "scene_id": "low_archway",
+          "triangle_count": 2640,
+          "failed_checks": []
+        },
+        {
+          "scene_id": "narrow_aisle",
+          "triangle_count": 2640,
+          "failed_checks": []
+        },
+        {
+          "scene_id": "loading_dock",
+          "triangle_count": 2640,
+          "failed_checks": []
+        },
+        {
+          "scene_id": "mobile_budget",
+          "triangle_count": 2640,
+          "failed_checks": []
+        }
+      ]
+    }
+  ]
+}

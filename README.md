@@ -10,6 +10,13 @@ while transferring to new constraints and avoiding regressions in prior scenes.
 This repository is a public, runnable **engineering prototype**, not an accepted
 OpenRSI task, a completed RSI trajectory, or evidence of continual-learning gains.
 
+**Latest development study:** independent and policy-assisted adaptation both
+passed all six required fixtures on their first attempts. The workload is
+saturated and showed no success-rate gain. The complete eight-call comparison,
+audited records and next-study limitations are in
+[study-v1/RESULTS.md](study-v1/RESULTS.md). This is a calibration finding; the
+current protocol is not ready for a formal long research run.
+
 ## Research target
 
 The planned candidate contains a shared base asset, bounded scene adapters and
@@ -20,7 +27,7 @@ regressions, asset preservation and adaptation cost are distinct outcomes.
 The final primary metric, workload and resource contract remain to be calibrated
 and confirmed. See [task-direction.json](task-direction.json).
 
-## Current small test
+## Initial pipeline smoke (preserved)
 
 One Codex-generated cycling-pelican asset is tested in two **public development
 fixtures**: an open courtyard (3.0 m ceiling) and a low archway (2.05 m ceiling,
@@ -83,7 +90,7 @@ included. Nearby work: [ElasticFit](https://arxiv.org/abs/2610.07460),
 example-level comparison; fit-aware insertion or articulated generation alone
 is not claimed as new.
 
-## Latest local smoke result
+## Initial local smoke result
 
 One adaptation call completed in 103.364 seconds. The actual exported geometry
 height changed from **2.290 m to 2.014 m**. The original asset passed **1/2** public

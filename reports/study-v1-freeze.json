@@ -1,0 +1,34 @@
+{
+  "started_utc": "2026-11-06T09:52:55.409077+00:00",
+  "source_sha256": {
+    "assets/canonical/asset.glb": "f1d76a78213b29fffc4a73013ec574f0df457c0102b858fb3af005a610568fa6",
+    "assets/canonical/front.png": "294507b714fe026ddb3cbfc7640c646d8332a1962cf5065989dd39d0ba5c022c",
+    "assets/canonical/iso.png": "0bf9622c79ff2a98cfb592402491edfdf2ff8dd333939051cdc3d97509e5059c",
+    "assets/canonical/side.png": "d5cdb53cf5c2428702057efbc5e29dee55c52f2e7c401d10cc3ff06d7165fef4",
+    "assets/canonical/source.py": "005cc5fbfd38d9fb3ff99f3f7840b838e1739a1256e8ef9f591f7ab8812adf2e",
+    "assets/canonical/top.png": "c6821cacbad59fee7e92ae41830155cfcc4deffb3866486f50a8620fce7481bb",
+    "lib/container_runtime.py": "2868a50f25b04bc2e6d3dbd39d2b489f82aa52e1ce89fed8bfdecf6eff442700",
+    "protocol/base-case.json": "f3f7effd7740a4fb0722319f1295b5a3d5e2bc194d1e62a61bf9bf037b9cca3f",
+    "protocol/output.schema.json": "17aaae94200659c947df68bce76d78f74b33aee7583b6f9ee44cf4e88b98b665",
+    "runtime/animation_case.gd": "f434b70922526b2f4f470f2278b658d6e46bf2050b96a4e28e70514f3e0f6c75",
+    "runtime/base_asset.gd": "28fc81ef1d1b156ba264c7f4e195c138231b84783b4e2904d81af0f883ba9f80",
+    "runtime/cross_scene.gd": "5a1a570863e267f2326521dc3371225bc8e859897e0c77c515c5638e93166d89",
+    "runtime/project.godot": "88753ccfe2b9ca920439864f5e04c4ecb17abc2254391a72a8c84ec668243dfe",
+    "runtime/study_v1.gd": "0193f742e96b56c0a3f03dadc8ba66fc24469525113ecbecfbbbee241c692eab",
+    "study-v1/PROTOCOL.md": "7aa4904456287640015be3de5b54309a9d491ffb8e35bed6ba9e59a480bbef0e",
+    "study-v1/check.py": "4df6af1bf002550b566d72d6bf7bd700fa57b668490a332ce96dc6687bfad05d",
+    "study-v1/controls.py": "f66f674764c93257f9da4dc5bbd24724ee4cc96ab9c7ed9550deb7df90b7d7f3",
+    "study-v1/policy.schema.json": "892c9fef78b41f20e52fe3e2a438224a91017efeaacd61c51c180578d8bbd287",
+    "study-v1/run.py": "0d3dcc058e3ed5b7fc52907bce64bf498741b470aa896bf9562facd4655908a4",
+    "study-v1/scenes.json": "3e8da93812fca7a6921c9c1b7a5cdc3569448514aab22eb7bf09009e3911fd3a",
+    "tools/inference.py": "089a1ebc892b3174efebe94814f442c45b01a3e645c7df0dad3b731e10f0640d"
+  },
+  "godot_version": "4.7.2.stable.official.ed1daf0bf",
+  "controls_summary_sha256": "0bc699815007f6e925a87cf2704bf431df0be28abf0a1c9892664e36bcd74513",
+  "settings": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "low",
+    "seconds_per_call": 180,
+    "automatic_retries": 0
+  }
+}
