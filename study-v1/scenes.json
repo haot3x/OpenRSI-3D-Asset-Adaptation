@@ -1,0 +1,15 @@
+{
+  "kind": "prospectively fixed local study v1; not a formal benchmark",
+  "prior": [
+    {"id": "open_courtyard", "ceiling_height": 3.0, "clearance_margin": 0.02, "triangle_limit": 6000},
+    {"id": "low_archway", "ceiling_height": 2.05, "clearance_margin": 0.02, "triangle_limit": 6000}
+  ],
+  "development": [
+    {"id": "narrow_aisle", "ceiling_height": 3.0, "clearance_margin": 0.02, "inner_width": 0.58, "side_margin": 0.015, "triangle_limit": 6000},
+    {"id": "loading_dock", "ceiling_height": 3.0, "clearance_margin": 0.02, "dock": true, "dock_socket": [0.0, 1.12, 1.2], "triangle_limit": 6000},
+    {"id": "mobile_budget", "ceiling_height": 3.0, "clearance_margin": 0.02, "triangle_limit": 3200}
+  ],
+  "transfer": [
+    {"id": "compact_loading_archway", "ceiling_height": 1.99, "clearance_margin": 0.02, "inner_width": 0.56, "side_margin": 0.015, "dock": true, "dock_socket": [0.0, 1.12, 1.2], "triangle_limit": 2800}
+  ]
+}

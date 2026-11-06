@@ -23,15 +23,16 @@ def generate(prompt, images, out, spec):
     for feature in ['shell_tool', 'apps', 'plugins', 'memories', 'multi_agent', 'hooks', 'goals',
                     'browser_use', 'computer_use', 'image_generation']:
         args += ['-c', 'features.' + feature + '=false']
+    schema = Path(spec.get('schema', ROOT / 'protocol/output.schema.json'))
     args += ['--model', spec['model'], '--json', '--color', 'never', '--output-schema',
-             str(ROOT / 'protocol/output.schema.json'), '-C', str(cwd),
+             str(schema), '-C', str(cwd),
              '--output-last-message', str(out / 'response.json')]
     for image in images:
         args += ['--image', str(image)]
     args += ['-']
     invocation = dict(started_utc=now(), command=args, model_requested=spec['model'],
                       reasoning_effort=spec['reasoning_effort'], timeout_seconds=spec['seconds_per_call'],
-                      prompt_sha256=sha(out / 'prompt.txt'), schema_sha256=sha(ROOT / 'protocol/output.schema.json'),
+                      prompt_sha256=sha(out / 'prompt.txt'), schema_sha256=sha(schema),
                       images=[dict(path=str(p), sha256=sha(p)) for p in images], automatic_retries=0,
                       native_session_ephemeral=False)
     save(out / 'invocation.json', invocation)
