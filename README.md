@@ -10,7 +10,13 @@ while transferring to new constraints and avoiding regressions in prior scenes.
 This repository is a public, runnable **engineering prototype**, not an accepted
 OpenRSI task, a completed RSI trajectory, or evidence of continual-learning gains.
 
-**Latest development study:** independent and policy-assisted adaptation both
+**Latest adapter calibration (v2):** the model edited an existing GLB without
+construction source, preserved its meshes and passed three distinct pose scenes
+plus seven switches on its first call. The no-op control passed only the upright
+scene. This confirms the controlled-adapter pipeline, but the one-asset workload
+still saturates. See [study-v2/RESULTS.md](study-v2/RESULTS.md).
+
+**Preserved development study (v1):** independent and policy-assisted adaptation both
 passed all six required fixtures on their first attempts. The workload is
 saturated and showed no success-rate gain. The complete eight-call comparison,
 audited records and next-study limitations are in

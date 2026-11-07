@@ -1,0 +1,145 @@
+{
+  "kind": "offline identity/adapter replay, not model reward",
+  "scenes_sha256": "2ecef9f34368ed8b76d65470f91aa6796732f9b0927840ac34ddc71e1631e9f3",
+  "assets": [
+    {
+      "name": "developer-positive",
+      "file": "developer-positive.glb",
+      "sha256": "e31c718aa0880b195e4fdea0fe93c44b05d6e2622f9c564a0975dc8afff91b13",
+      "expected_status": "evaluated",
+      "scene_pass": {
+        "low_tunnel": true,
+        "side_window": true,
+        "upright_kiosk": true
+      },
+      "visits": [
+        {
+          "scene": "upright_kiosk",
+          "failed_checks": []
+        },
+        {
+          "scene": "low_tunnel",
+          "failed_checks": []
+        },
+        {
+          "scene": "upright_kiosk",
+          "failed_checks": []
+        },
+        {
+          "scene": "side_window",
+          "failed_checks": []
+        },
+        {
+          "scene": "low_tunnel",
+          "failed_checks": []
+        },
+        {
+          "scene": "side_window",
+          "failed_checks": []
+        },
+        {
+          "scene": "upright_kiosk",
+          "failed_checks": []
+        }
+      ]
+    },
+    {
+      "name": "developer-noop",
+      "file": "developer-noop.glb",
+      "sha256": "984b376960ff952ecdb9a591866641a39c3e2d2574fdd26495693e2096da3152",
+      "expected_status": "evaluated",
+      "scene_pass": {
+        "low_tunnel": false,
+        "side_window": false,
+        "upright_kiosk": true
+      },
+      "visits": [
+        {
+          "scene": "upright_kiosk",
+          "failed_checks": []
+        },
+        {
+          "scene": "low_tunnel",
+          "failed_checks": [
+            "scene_ceiling"
+          ]
+        },
+        {
+          "scene": "upright_kiosk",
+          "failed_checks": []
+        },
+        {
+          "scene": "side_window",
+          "failed_checks": [
+            "scene_beak_target"
+          ]
+        },
+        {
+          "scene": "low_tunnel",
+          "failed_checks": [
+            "scene_ceiling"
+          ]
+        },
+        {
+          "scene": "side_window",
+          "failed_checks": [
+            "scene_beak_target"
+          ]
+        },
+        {
+          "scene": "upright_kiosk",
+          "failed_checks": []
+        }
+      ]
+    },
+    {
+      "name": "altered-geometry",
+      "file": "altered-geometry.glb",
+      "sha256": "9d031088fdd557886c351bc4a54fe55ed82c298a8c5af158430a94be5722dd99",
+      "expected_status": "identity_invalid_unscored",
+      "scene_pass": null,
+      "visits": []
+    },
+    {
+      "name": "codex-first",
+      "file": "codex-first.glb",
+      "sha256": "19dac520f272b4857582b88acf669c37ca04a6b6870407c5faa9e606262314c6",
+      "expected_status": "evaluated",
+      "scene_pass": {
+        "low_tunnel": true,
+        "side_window": true,
+        "upright_kiosk": true
+      },
+      "visits": [
+        {
+          "scene": "upright_kiosk",
+          "failed_checks": []
+        },
+        {
+          "scene": "low_tunnel",
+          "failed_checks": []
+        },
+        {
+          "scene": "upright_kiosk",
+          "failed_checks": []
+        },
+        {
+          "scene": "side_window",
+          "failed_checks": []
+        },
+        {
+          "scene": "low_tunnel",
+          "failed_checks": []
+        },
+        {
+          "scene": "side_window",
+          "failed_checks": []
+        },
+        {
+          "scene": "upright_kiosk",
+          "failed_checks": []
+        }
+      ]
+    }
+  ]
+}

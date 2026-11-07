@@ -1,0 +1,51 @@
+{
+  "kind": "v2 adapter short calibration; not RSI improvement or official reward",
+  "status": "saturated_first_attempt",
+  "model": "gpt-6-astra",
+  "reasoning_effort": "low",
+  "cli_version": "codex-cli 0.166.0",
+  "model_calls": 1,
+  "maximum_calls": 2,
+  "first_generation_seconds": 98.981,
+  "predeclared_ceiling_stop_used": true,
+  "human_source_edits": false,
+  "original_native_session_verified": true,
+  "integrity_files_verified": 44,
+  "source_changed": false,
+  "scene_pass": {
+    "low_tunnel": true,
+    "side_window": true,
+    "upright_kiosk": true
+  },
+  "switch_visits_passed": 7,
+  "switch_visits_total": 7,
+  "mesh_identity": {
+    "passed": true,
+    "issues": [],
+    "canonical_sha256": "f1d76a78213b29fffc4a73013ec574f0df457c0102b858fb3af005a610568fa6",
+    "candidate_sha256": "19dac520f272b4857582b88acf669c37ca04a6b6870407c5faa9e606262314c6",
+    "mesh_count": 69,
+    "scope": "mesh-local surface/connectivity and base-color preservation; node transforms and rig may change"
+  },
+  "official_reward": null,
+  "formal_task_ready": false,
+  "controls": {
+    "correct": {
+      "low_tunnel": true,
+      "side_window": true,
+      "upright_kiosk": true
+    },
+    "noop": {
+      "low_tunnel": false,
+      "side_window": false,
+      "upright_kiosk": true
+    },
+    "altered_geometry_rejected": true
+  },
+  "limitations": [
+    "One asset, three declared public scene states, no unseen family or parameter transfer.",
+    "Fixed-geometry and transform checks do not prove complete visual/physical validity.",
+    "No full self-collision or smooth transition-blending evaluation.",
+    "One baseline calibration with low reasoning; no RSI method improvement or formal runner trajectory."
+  ]
+}

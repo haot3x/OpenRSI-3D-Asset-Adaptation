@@ -1,0 +1,49 @@
+{
+  "kind": "study v2 short adapter calibration; not formal task",
+  "scenes": [
+    {
+      "id": "upright_kiosk",
+      "clip": "UprightRide",
+      "ceiling_height": 2.4,
+      "tip_target": [
+        0,
+        2.08,
+        -0.99
+      ],
+      "tip_tolerance": 0.035,
+      "head_target": [
+        0,
+        2.12,
+        -0.045
+      ],
+      "head_tolerance": 0.035
+    },
+    {
+      "id": "low_tunnel",
+      "clip": "DuckRide",
+      "ceiling_height": 2.02,
+      "clearance_margin": 0.02
+    },
+    {
+      "id": "side_window",
+      "clip": "LeftRide",
+      "ceiling_height": 2.4,
+      "tip_target": [
+        -1.109,
+        2.08,
+        -0.214
+      ],
+      "tip_tolerance": 0.045
+    }
+  ],
+  "switch_sequence": [
+    "upright_kiosk",
+    "low_tunnel",
+    "upright_kiosk",
+    "side_window",
+    "low_tunnel",
+    "side_window",
+    "upright_kiosk"
+  ],
+  "numerical_tolerance_metres": 0.0001
+}
