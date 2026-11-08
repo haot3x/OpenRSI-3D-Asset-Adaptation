@@ -1,0 +1,940 @@
+{
+  "kind": "Functional-motion development calibration, not official reward or RSI trajectory",
+  "date": "2026-11-08",
+  "primary_run": "v4-capacity-002",
+  "primary_configuration": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "max",
+    "seconds_per_call": 600,
+    "maximum_attempts": 2,
+    "automatic_retries": 0,
+    "tools": false,
+    "capacity_amendment": true
+  },
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "completed",
+      "seconds": 200.339,
+      "scored": true,
+      "evaluation": {
+        "kind": "Three public development fixtures; sampled kinematic function and clearance, not an official reward or RSI gain",
+        "passed": 3,
+        "total": 3,
+        "fraction": 1.0,
+        "scenes": [
+          {
+            "scene": "stockroom_pickup",
+            "passed": true,
+            "endpoint_passed": true,
+            "events": {
+              "passed": true,
+              "completed": [
+                {
+                  "id": "left_pickup",
+                  "start": 18.12974683544307,
+                  "end": 18.564873417721557
+                },
+                {
+                  "id": "right_pickup",
+                  "start": 44.12974683544309,
+                  "end": 44.564873417721564
+                }
+              ]
+            },
+            "motion_passed": true,
+            "first_failure": null,
+            "sampled_frames": 2825,
+            "collision_verified_prefix_frames": 2825,
+            "actual_duration_seconds": 65.49999999999993,
+            "root_travel_metres": 2.100000000000027,
+            "wall_seconds": 4.2448
+          },
+          {
+            "scene": "corner_delivery",
+            "passed": true,
+            "endpoint_passed": true,
+            "events": {
+              "passed": true,
+              "completed": [
+                {
+                  "id": "deliver_right_drawer",
+                  "start": 28.933266737144564,
+                  "end": 29.33326673714457
+                }
+              ]
+            },
+            "motion_passed": true,
+            "first_failure": null,
+            "sampled_frames": 3057,
+            "collision_verified_prefix_frames": 3057,
+            "actual_duration_seconds": 33.13326673714462,
+            "root_travel_metres": 2.300000000000032,
+            "wall_seconds": 4.554
+          },
+          {
+            "scene": "alcove_service",
+            "passed": true,
+            "endpoint_passed": true,
+            "events": {
+              "passed": true,
+              "completed": [
+                {
+                  "id": "prepare_outside",
+                  "start": 11.629746835443036,
+                  "end": 12.064873417721518
+                },
+                {
+                  "id": "service_inside",
+                  "start": 38.725738396624635,
+                  "end": 39.15000000000016
+                },
+                {
+                  "id": "release_outside",
+                  "start": 65.05063291139227,
+                  "end": 65.48575949367074
+                }
+              ]
+            },
+            "motion_passed": true,
+            "first_failure": null,
+            "sampled_frames": 3299,
+            "collision_verified_prefix_frames": 3299,
+            "actual_duration_seconds": 79.4999999999995,
+            "root_travel_metres": 2.1000000000000334,
+            "wall_seconds": 4.3003
+          }
+        ]
+      },
+      "native_sha256": "8d6da7bde30d29ea21e3f15232c89284dcc832fe2aab9c2b7323e41c944300a2",
+      "model_requested": "gpt-6-astra",
+      "reasoning_effort": "max",
+      "seconds_per_call": 600,
+      "usage": [
+        {
+          "input_tokens": 18248,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 6086,
+          "reasoning_output_tokens": 5002
+        }
+      ],
+      "prompt_sha256": "1eda42e555fcfd1d145c56fc03a873d8fc37ec8331e2ec32898ac47c6d28d16e",
+      "candidate": {
+        "poses": [
+          {
+            "id": "stowed",
+            "q": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "left_pickup",
+            "q": [
+              0.28,
+              0,
+              3.141592653589793,
+              0
+            ]
+          },
+          {
+            "id": "right_pickup",
+            "q": [
+              0,
+              0.28,
+              0,
+              -3.141592653589793
+            ]
+          },
+          {
+            "id": "right_delivery",
+            "q": [
+              0,
+              0.28,
+              0,
+              0
+            ]
+          },
+          {
+            "id": "inside_service",
+            "q": [
+              0,
+              0.28,
+              0,
+              -1.5707963267948966
+            ]
+          },
+          {
+            "id": "left_holder",
+            "q": [
+              0,
+              0,
+              3.141592653589793,
+              0
+            ]
+          }
+        ],
+        "scenes": [
+          {
+            "id": "stockroom_pickup",
+            "keyframes": [
+              {
+                "time": 0,
+                "root": [
+                  0,
+                  -1.05,
+                  0
+                ],
+                "pose": "stowed"
+              },
+              {
+                "time": 6,
+                "root": [
+                  0,
+                  0,
+                  0
+                ],
+                "pose": "stowed"
+              },
+              {
+                "time": 18.5,
+                "root": [
+                  0,
+                  0,
+                  0
+                ],
+                "pose": "left_pickup"
+              },
+              {
+                "time": 19.5,
+                "root": [
+                  0,
+                  0,
+                  0
+                ],
+                "pose": "left_pickup"
+              },
+              {
+                "time": 32,
+                "root": [
+                  0,
+                  0,
+                  0
+                ],
+                "pose": "stowed"
+              },
+              {
+                "time": 44.5,
+                "root": [
+                  0,
+                  0,
+                  0
+                ],
+                "pose": "right_pickup"
+              },
+              {
+                "time": 45.5,
+                "root": [
+                  0,
+                  0,
+                  0
+                ],
+                "pose": "right_pickup"
+              },
+              {
+                "time": 58,
+                "root": [
+                  0,
+                  0,
+                  0
+                ],
+                "pose": "stowed"
+              },
+              {
+                "time": 64,
+                "root": [
+                  0,
+                  -1.05,
+                  0
+                ],
+                "pose": "stowed"
+              }
+            ]
+          },
+          {
+            "id": "corner_delivery",
+            "keyframes": [
+              {
+                "time": 0,
+                "root": [
+                  0,
+                  -1.1,
+                  0
+                ],
+                "pose": "stowed"
+              },
+              {
+                "time": 6,
+                "root": [
+                  0,
+                  0,
+                  0
+                ],
+                "pose": "stowed"
+              },
+              {
+                "time": 18,
+                "root": [
+                  0,
+                  0,
+                  1.5707963267948966
+                ],
+                "pose": "stowed"
+              },
+              {
+                "time": 24,
+                "root": [
+                  1.2,
+                  0,
+                  1.5707963267948966
+                ],
+                "pose": "stowed"
+              },
+              {
+                "time": 27,
+                "root": [
+                  1.2,
+                  0,
+                  1.5707963267948966
+                ],
+                "pose": "right_delivery"
+              },
+              {
+                "time": 28,
+                "root": [
+                  1.2,
+                  0,
+                  1.5707963267948966
+                ],
+                "pose": "right_delivery"
+              },
+              {
+                "time": 31,
+                "root": [
+                  1.2,
+                  0,
+                  1.5707963267948966
+                ],
+                "pose": "stowed"
+              }
+            ]
+          },
+          {
+            "id": "alcove_service",
+            "keyframes": [
+              {
+                "time": 0,
+                "root": [
+                  0,
+                  -1.05,
+                  0
+                ],
+                "pose": "stowed"
+              },
+              {
+                "time": 12.5,
+                "root": [
+                  0,
+                  -1.05,
+                  0
+                ],
+                "pose": "left_pickup"
+              },
+              {
+                "time": 13.5,
+                "root": [
+                  0,
+                  -1.05,
+                  0
+                ],
+                "pose": "left_pickup"
+              },
+              {
+                "time": 26,
+                "root": [
+                  0,
+                  -1.05,
+                  0
+                ],
+                "pose": "stowed"
+              },
+              {
+                "time": 32,
+                "root": [
+                  0,
+                  0,
+                  0
+                ],
+                "pose": "stowed"
+              },
+              {
+                "time": 38.5,
+                "root": [
+                  0,
+                  0,
+                  0
+                ],
+                "pose": "inside_service"
+              },
+              {
+                "time": 39.5,
+                "root": [
+                  0,
+                  0,
+                  0
+                ],
+                "pose": "inside_service"
+              },
+              {
+                "time": 46,
+                "root": [
+                  0,
+                  0,
+                  0
+                ],
+                "pose": "stowed"
+              },
+              {
+                "time": 52,
+                "root": [
+                  0,
+                  -1.05,
+                  0
+                ],
+                "pose": "stowed"
+              },
+              {
+                "time": 64.5,
+                "root": [
+                  0,
+                  -1.05,
+                  0
+                ],
+                "pose": "left_holder"
+              },
+              {
+                "time": 65.5,
+                "root": [
+                  0,
+                  -1.05,
+                  0
+                ],
+                "pose": "left_holder"
+              },
+              {
+                "time": 78,
+                "root": [
+                  0,
+                  -1.05,
+                  0
+                ],
+                "pose": "stowed"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "incomplete_runs": [
+    {
+      "run": "v4-calibration-001",
+      "scored": false,
+      "status": "incomplete_local_deadline",
+      "seconds_per_call": 300,
+      "wall_seconds": 300.069,
+      "native_sha256": "9731de41ee8fd89ff42b2ab7942d116948dce997fa37be20d823a4f6c6b580ea",
+      "original_source_commit": "30bac84",
+      "note": "No completed candidate, no evaluation, no score; retained separately"
+    }
+  ],
+  "environment": {
+    "python": "3.12.13",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "codex_cli": "codex-cli 0.166.0",
+    "packages": {
+      "numpy": "2.4.4",
+      "scipy": "1.17.1",
+      "trimesh": "4.12.2",
+      "python-fcl": "0.7.0.11",
+      "Pillow": "13.0.0"
+    }
+  },
+  "pre_sampling_source_hashes": {
+    "study-v3/core.py": "71d3a65069213f8a6bd8a2f06ecf315246a99953e92f0d2cc002a0d4c3d17c28",
+    "study-v3/sources.json": "63e1451428886c53aa1e7b12dcbb08d08075638b84564902eb0a1fc3a7056b39",
+    "study-v4/CAPACITY-AMENDMENT.md": "e0e7f8c510dd6e1ac5aa4befdce92c76435fb2ed3cb42c6d47a7aa6d73584961",
+    "study-v4/PROTOCOL.md": "19145423b9f03514ff84a1bd6d0124b63f141dc35e860f119ff1fb5d6d614a3a",
+    "study-v4/controls.py": "332b3c080b1b9eb288683df4cc145d0b235a9c79f56a027bc59a706a07d54f7c",
+    "study-v4/fixtures.json": "a38fa21df94c0ebc7d45983fc32aab68005006b86295adf63673d3a05a0c70be",
+    "study-v4/motion.py": "71e713f68fab624a3185dc1b8381b817b514ee0b8a993f708a9f03d76e8b4bd9",
+    "study-v4/prediction.schema.json": "ce3a1e8325864d555f1c443ff3325229b1b7d0c06e66b7158dc4c620c0c2f0bd",
+    "study-v4/run.py": "6413f5c66a7bc5943bb43b967b48d09dc69b952503af7fed5449b2ba0032b33d",
+    "tools/inference.py": "089a1ebc892b3174efebe94814f442c45b01a3e645c7df0dad3b731e10f0640d"
+  },
+  "controls": [
+    {
+      "name": "witness",
+      "result": {
+        "kind": "Three public development fixtures; sampled kinematic function and clearance, not an official reward or RSI gain",
+        "passed": 3,
+        "total": 3,
+        "fraction": 1.0,
+        "scenes": [
+          {
+            "scene": "stockroom_pickup",
+            "passed": true,
+            "endpoint_passed": true,
+            "events": {
+              "passed": true,
+              "completed": [
+                {
+                  "id": "left_pickup",
+                  "start": 7.360759493670885,
+                  "end": 7.799999999999999
+                },
+                {
+                  "id": "right_pickup",
+                  "start": 12.360759493670903,
+                  "end": 12.800000000000017
+                }
+              ]
+            },
+            "motion_passed": true,
+            "first_failure": null,
+            "sampled_frames": 2836,
+            "collision_verified_prefix_frames": 2836,
+            "actual_duration_seconds": 21.500000000000025,
+            "root_travel_metres": 2.100000000000027,
+            "wall_seconds": 4.2338
+          },
+          {
+            "scene": "corner_delivery",
+            "passed": true,
+            "endpoint_passed": true,
+            "events": {
+              "passed": true,
+              "completed": [
+                {
+                  "id": "deliver_right_drawer",
+                  "start": 16.008266737144282,
+                  "end": 16.433266737144287
+                }
+              ]
+            },
+            "motion_passed": true,
+            "first_failure": null,
+            "sampled_frames": 3068,
+            "collision_verified_prefix_frames": 3068,
+            "actual_duration_seconds": 20.13326673714434,
+            "root_travel_metres": 2.300000000000032,
+            "wall_seconds": 4.5154
+          },
+          {
+            "scene": "alcove_service",
+            "passed": true,
+            "endpoint_passed": true,
+            "events": {
+              "passed": true,
+              "completed": [
+                {
+                  "id": "prepare_outside",
+                  "start": 1.8607594936708893,
+                  "end": 2.3000000000000043
+                },
+                {
+                  "id": "service_inside",
+                  "start": 11.415611814346004,
+                  "end": 11.900000000000011
+                },
+                {
+                  "id": "release_outside",
+                  "start": 21.348101265822542,
+                  "end": 21.74999999999974
+                }
+              ]
+            },
+            "motion_passed": true,
+            "first_failure": null,
+            "sampled_frames": 3329,
+            "collision_verified_prefix_frames": 3329,
+            "actual_duration_seconds": 25.499999999999496,
+            "root_travel_metres": 2.1000000000000334,
+            "wall_seconds": 4.3353
+          }
+        ]
+      }
+    },
+    {
+      "name": "static_noop",
+      "result": {
+        "kind": "Three public development fixtures; sampled kinematic function and clearance, not an official reward or RSI gain",
+        "passed": 0,
+        "total": 3,
+        "fraction": 0.0,
+        "scenes": [
+          {
+            "scene": "stockroom_pickup",
+            "passed": false,
+            "endpoint_passed": true,
+            "events": {
+              "passed": false,
+              "completed": [],
+              "missing": "left_pickup"
+            },
+            "motion_passed": true,
+            "first_failure": null,
+            "sampled_frames": 30,
+            "collision_verified_prefix_frames": 30,
+            "actual_duration_seconds": 2.0000000000000004,
+            "root_travel_metres": 4.440892098500626e-16,
+            "wall_seconds": 0.013
+          },
+          {
+            "scene": "corner_delivery",
+            "passed": false,
+            "endpoint_passed": false,
+            "events": {
+              "passed": false,
+              "completed": [],
+              "missing": "deliver_right_drawer"
+            },
+            "motion_passed": true,
+            "first_failure": null,
+            "sampled_frames": 30,
+            "collision_verified_prefix_frames": 30,
+            "actual_duration_seconds": 2.0000000000000004,
+            "root_travel_metres": 4.440892098500626e-16,
+            "wall_seconds": 0.0132
+          },
+          {
+            "scene": "alcove_service",
+            "passed": false,
+            "endpoint_passed": true,
+            "events": {
+              "passed": false,
+              "completed": [],
+              "missing": "prepare_outside"
+            },
+            "motion_passed": true,
+            "first_failure": null,
+            "sampled_frames": 30,
+            "collision_verified_prefix_frames": 30,
+            "actual_duration_seconds": 2.0000000000000004,
+            "root_travel_metres": 4.440892098500626e-16,
+            "wall_seconds": 0.0132
+          }
+        ]
+      }
+    },
+    {
+      "name": "diagonal_shortcut",
+      "result": {
+        "kind": "Three public development fixtures; sampled kinematic function and clearance, not an official reward or RSI gain",
+        "passed": 2,
+        "total": 3,
+        "fraction": 0.6666666666666666,
+        "scenes": [
+          {
+            "scene": "stockroom_pickup",
+            "passed": true,
+            "endpoint_passed": true,
+            "events": {
+              "passed": true,
+              "completed": [
+                {
+                  "id": "left_pickup",
+                  "start": 7.360759493670885,
+                  "end": 7.799999999999999
+                },
+                {
+                  "id": "right_pickup",
+                  "start": 12.360759493670903,
+                  "end": 12.800000000000017
+                }
+              ]
+            },
+            "motion_passed": true,
+            "first_failure": null,
+            "sampled_frames": 2836,
+            "collision_verified_prefix_frames": 2836,
+            "actual_duration_seconds": 21.500000000000025,
+            "root_travel_metres": 2.100000000000027,
+            "wall_seconds": 4.3141
+          },
+          {
+            "scene": "corner_delivery",
+            "passed": false,
+            "endpoint_passed": true,
+            "events": {
+              "passed": true,
+              "completed": [
+                {
+                  "id": "deliver_right_drawer",
+                  "start": 14.213794993737098,
+                  "end": 14.638794993737097
+                }
+              ]
+            },
+            "motion_passed": false,
+            "first_failure": {
+              "kind": "scene_clearance",
+              "frame": 144,
+              "time": 0.8602673863751894,
+              "part": "p04",
+              "obstacle": "inner_corner_vertical",
+              "distance_metres": 0.007268195625775076,
+              "root": [
+                0.05214723926380368,
+                -1.05219836400818,
+                0.06826057657339786
+              ],
+              "q": [
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            "sampled_frames": 2206,
+            "collision_verified_prefix_frames": 144,
+            "actual_duration_seconds": 18.338794993737125,
+            "root_travel_metres": 1.6278820596099592,
+            "wall_seconds": 0.1727
+          },
+          {
+            "scene": "alcove_service",
+            "passed": true,
+            "endpoint_passed": true,
+            "events": {
+              "passed": true,
+              "completed": [
+                {
+                  "id": "prepare_outside",
+                  "start": 1.8607594936708893,
+                  "end": 2.3000000000000043
+                },
+                {
+                  "id": "service_inside",
+                  "start": 11.415611814346004,
+                  "end": 11.900000000000011
+                },
+                {
+                  "id": "release_outside",
+                  "start": 21.348101265822542,
+                  "end": 21.74999999999974
+                }
+              ]
+            },
+            "motion_passed": true,
+            "first_failure": null,
+            "sampled_frames": 3329,
+            "collision_verified_prefix_frames": 3329,
+            "actual_duration_seconds": 25.499999999999496,
+            "root_travel_metres": 2.1000000000000334,
+            "wall_seconds": 4.3638
+          }
+        ]
+      }
+    },
+    {
+      "name": "universal_deployment",
+      "result": {
+        "kind": "Three public development fixtures; sampled kinematic function and clearance, not an official reward or RSI gain",
+        "passed": 2,
+        "total": 3,
+        "fraction": 0.6666666666666666,
+        "scenes": [
+          {
+            "scene": "stockroom_pickup",
+            "passed": true,
+            "endpoint_passed": true,
+            "events": {
+              "passed": true,
+              "completed": [
+                {
+                  "id": "left_pickup",
+                  "start": 7.360759493670885,
+                  "end": 7.799999999999999
+                },
+                {
+                  "id": "right_pickup",
+                  "start": 12.360759493670903,
+                  "end": 12.800000000000017
+                }
+              ]
+            },
+            "motion_passed": true,
+            "first_failure": null,
+            "sampled_frames": 2836,
+            "collision_verified_prefix_frames": 2836,
+            "actual_duration_seconds": 21.500000000000025,
+            "root_travel_metres": 2.100000000000027,
+            "wall_seconds": 4.3218
+          },
+          {
+            "scene": "corner_delivery",
+            "passed": true,
+            "endpoint_passed": true,
+            "events": {
+              "passed": true,
+              "completed": [
+                {
+                  "id": "deliver_right_drawer",
+                  "start": 16.008266737144282,
+                  "end": 16.433266737144287
+                }
+              ]
+            },
+            "motion_passed": true,
+            "first_failure": null,
+            "sampled_frames": 3068,
+            "collision_verified_prefix_frames": 3068,
+            "actual_duration_seconds": 20.13326673714434,
+            "root_travel_metres": 2.300000000000032,
+            "wall_seconds": 4.5572
+          },
+          {
+            "scene": "alcove_service",
+            "passed": false,
+            "endpoint_passed": true,
+            "events": {
+              "passed": false,
+              "completed": [
+                {
+                  "id": "prepare_outside",
+                  "start": 1.8607594936708893,
+                  "end": 2.3000000000000043
+                }
+              ],
+              "missing": "service_inside"
+            },
+            "motion_passed": false,
+            "first_failure": {
+              "kind": "scene_clearance",
+              "frame": 1646,
+              "time": 11.253164556962037,
+              "part": "p07",
+              "obstacle": "left_alcove",
+              "distance_metres": 0.007072291415723797,
+              "root": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "q": [
+                0.2454430379746836,
+                0.0,
+                2.7538644463429516,
+                0.0
+              ]
+            },
+            "sampled_frames": 3487,
+            "collision_verified_prefix_frames": 1646,
+            "actual_duration_seconds": 25.499999999999496,
+            "root_travel_metres": 2.1000000000000334,
+            "wall_seconds": 1.7527
+          }
+        ]
+      }
+    },
+    {
+      "name": "shared_pose_regression",
+      "result": {
+        "kind": "Three public development fixtures; sampled kinematic function and clearance, not an official reward or RSI gain",
+        "passed": 1,
+        "total": 3,
+        "fraction": 0.3333333333333333,
+        "scenes": [
+          {
+            "scene": "stockroom_pickup",
+            "passed": false,
+            "endpoint_passed": true,
+            "events": {
+              "passed": false,
+              "completed": [],
+              "missing": "left_pickup"
+            },
+            "motion_passed": true,
+            "first_failure": null,
+            "sampled_frames": 2678,
+            "collision_verified_prefix_frames": 2678,
+            "actual_duration_seconds": 21.500000000000025,
+            "root_travel_metres": 2.100000000000027,
+            "wall_seconds": 4.0695
+          },
+          {
+            "scene": "corner_delivery",
+            "passed": true,
+            "endpoint_passed": true,
+            "events": {
+              "passed": true,
+              "completed": [
+                {
+                  "id": "deliver_right_drawer",
+                  "start": 16.008266737144282,
+                  "end": 16.433266737144287
+                }
+              ]
+            },
+            "motion_passed": true,
+            "first_failure": null,
+            "sampled_frames": 3068,
+            "collision_verified_prefix_frames": 3068,
+            "actual_duration_seconds": 20.13326673714434,
+            "root_travel_metres": 2.300000000000032,
+            "wall_seconds": 4.5654
+          },
+          {
+            "scene": "alcove_service",
+            "passed": false,
+            "endpoint_passed": true,
+            "events": {
+              "passed": false,
+              "completed": [],
+              "missing": "prepare_outside"
+            },
+            "motion_passed": true,
+            "first_failure": null,
+            "sampled_frames": 3171,
+            "collision_verified_prefix_frames": 3171,
+            "actual_duration_seconds": 25.49999999999949,
+            "root_travel_metres": 2.1000000000000316,
+            "wall_seconds": 4.2938
+          }
+        ]
+      }
+    }
+  ],
+  "controls_verified": {
+    "all_functional_controls_passed": true,
+    "mesh_box_separation_distance_intersection_and_enclosure_passed": true
+  },
+  "model_glb_import": {
+    "checked_transforms": 117,
+    "clips": [
+      "alcove_service",
+      "corner_delivery",
+      "stockroom_pickup"
+    ],
+    "engine": "4.7.2-stable (official)",
+    "failures": [],
+    "max_transform_error": 4.17861546042619e-06,
+    "mesh_count": 13,
+    "passed": true,
+    "triangles": 81254
+  }
+}

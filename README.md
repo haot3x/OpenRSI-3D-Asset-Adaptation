@@ -10,7 +10,14 @@ while transferring to new constraints and avoiding regressions in prior scenes.
 This repository is a public, runnable **engineering prototype**, not an accepted
 OpenRSI task, a completed RSI trajectory, or evidence of continual-learning gains.
 
-**Latest real-asset screening (v3):** three public articulated assets run on native
+**Latest functional-motion calibration (v4):** generated behavior adapters move a
+real 13-part prop through stockroom pickup, an L-corridor and a service alcove.
+Full sampled mesh clearance, operation sequences and previous-scene regression
+checks work; the model's first completed candidate still passes 3/3. Its GLB
+roundtrip passes 117 transform checks in Godot. This is a saturated development
+calibration, not an RSI gain or a formal task. See [study-v4/RESULTS.md](study-v4/RESULTS.md).
+
+**Preserved real-asset screening (v3):** three public articulated assets run on native
 Mac CPU geometry/collision infrastructure. Astra at max reasoning recovered all
 18 reference movable joints within the frozen structural tolerances. This subset
 still saturates; movement-based cross-scene functionality has yet to be tested.

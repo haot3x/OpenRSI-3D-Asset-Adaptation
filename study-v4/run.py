@@ -34,10 +34,11 @@ def maps(folder,actor):
 
 
 def main():
-    parser=argparse.ArgumentParser();parser.add_argument('out',type=Path);parser.add_argument('--controls',type=Path,required=True);args=parser.parse_args()
+    parser=argparse.ArgumentParser();parser.add_argument('out',type=Path);parser.add_argument('--controls',type=Path,required=True);parser.add_argument('--seconds-per-call',type=int,choices=[300,600],default=300);args=parser.parse_args()
     verified=json.loads((args.controls/'verified.json').read_text())
     assert verified['all_functional_controls_passed'] and verified['mesh_box_separation_distance_intersection_and_enclosure_passed']
     out=args.out.resolve();out.mkdir(parents=True,exist_ok=False);actor=Actor()
+    save(out/'run-config.json',dict(model='gpt-6-astra',reasoning_effort='max',seconds_per_call=args.seconds_per_call,maximum_attempts=2,automatic_retries=0,tools=False,capacity_amendment=args.seconds_per_call==600))
     save(out/'controls-verification.json',verified);save(out/'actor-metadata.json',actor.metadata());save(out/'fixtures.json',FIXTURES)
     source=list((ROOT/'study-v4').glob('*'))+[ROOT/'study-v3/core.py',ROOT/'study-v3/sources.json',ROOT/'tools/inference.py']
     save(out/'frozen-source.json',{str(p.relative_to(ROOT)):sha(p) for p in sorted(source) if p.is_file()})
@@ -59,7 +60,7 @@ ASSET INTERFACE:\n'''+json.dumps(actor.metadata())+'\nFIXTURES:\n'+json.dumps(FI
         prompt=base
         if previous is not None:prompt+='\nYour unchanged previous candidate:\n'+json.dumps(previous)+'\nEvaluator feedback for ALL scenes:\n'+json.dumps(feedback)+'\nRevise the shared bank and scene programs to repair failures while retaining all previous successes.'
         print('START ATTEMPT',number,flush=True)
-        try:invocation=generate(prompt,images,d/'generation',dict(model='gpt-6-astra',reasoning_effort='max',seconds_per_call=300,schema=ROOT/'study-v4/prediction.schema.json'))
+        try:invocation=generate(prompt,images,d/'generation',dict(model='gpt-6-astra',reasoning_effort='max',seconds_per_call=args.seconds_per_call,schema=ROOT/'study-v4/prediction.schema.json'))
         except Exception as error:
             records.append(dict(attempt=number,scored=False,status='invocation_infrastructure_failure',error=repr(error)));save(out/'results.json',records);break
         record=dict(attempt=number,status=invocation['status'],seconds=invocation['wall_seconds']);records.append(record)

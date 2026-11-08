@@ -33,7 +33,7 @@ func run() -> void:
 		push_error("GLB import failed")
 		quit(2)
 		return
-	var asset: Node3D = document.generate_scene(state,60.0,false,false)
+	var asset: Node3D = document.generate_scene(state,240.0,false,false)
 	root.add_child(asset)
 	collect(asset)
 	if players.size() != 1:
