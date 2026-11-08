@@ -1,0 +1,5 @@
+-r ../study-v3/requirements.txt
+fast-simplification==0.2.0
+rtree==1.4.1
+coacd==1.0.14
+networkx==3.5

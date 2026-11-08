@@ -1,0 +1,32 @@
+[
+  {
+    "filename": "coacd-1.0.14-cp39-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+    "url": "https://files.pythonhosted.org/packages/d6/3e/e930a366ec69a966f1a55307b52d036d266314e2f6c58e72e212fdc09182/coacd-1.0.14-cp39-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
+    "sha256": "1242941fc9d49ebcb0368c68f31c86e278b9a6f1a255d11da2f1668797e2626e"
+  },
+  {
+    "filename": "fast_simplification-0.2.0-cp312-cp312-manylinux_2_24_aarch64.manylinux_2_28_aarch64.whl",
+    "url": "https://files.pythonhosted.org/packages/e6/d8/858d63ac701ed90aba0b99941de961f8ee15be254c33dd43382895d28a08/fast_simplification-0.2.0-cp312-cp312-manylinux_2_24_aarch64.manylinux_2_28_aarch64.whl",
+    "sha256": "15c844cb7d3b6ab0408ff0dc5f31d1264254d0d335a3149e55e9b377ff3615bd"
+  },
+  {
+    "filename": "rtree-1.4.1-py3-none-manylinux_2_24_aarch64.manylinux_2_28_aarch64.whl",
+    "url": "https://files.pythonhosted.org/packages/55/e1/4d075268a46e68db3cac51846eb6a3ab96ed481c585c5a1ad411b3c23aad/rtree-1.4.1-py3-none-manylinux_2_24_aarch64.manylinux_2_28_aarch64.whl",
+    "sha256": "efa8c4496e31e9ad58ff6c7df89abceac7022d906cb64a3e18e4fceae6b77f65"
+  },
+  {
+    "filename": "networkx-3.5-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/eb/8d/776adee7bbf76365fdd7f2552710282c79a4ead5d2a46408c9043a2b70ba/networkx-3.5-py3-none-any.whl",
+    "sha256": "0030d386a9a06dee3565298b4a734b68589749a544acbb6c412dc9e2489ec6ec"
+  },
+  {
+    "filename": "trimesh-4.12.2-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/05/98/716a473cfb24750858ddd5d14e6527539dd206583a46408d08eeb2844a75/trimesh-4.12.2-py3-none-any.whl",
+    "sha256": "b5b5afa63c5272345f2858f7676bc8c217dc8a89f4fadf6193fe10a81b5ff2aa"
+  },
+  {
+    "filename": "pip-25.0.1-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/c9/bc/b7db44f5f39f9d0494071bddae6880eb645970366d0a200022a1a93d57f5/pip-25.0.1-py3-none-any.whl",
+    "sha256": "c46efd13b6aa8279f33f2864459c8ce587ea6a1a59ee20de055868d8f7688f7f"
+  }
+]
