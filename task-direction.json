@@ -5,27 +5,49 @@
   "owner": "Haotian Xu",
   "discussion": "https://github.com/OpenRSI-Foundation/OpenRSI-Index/discussions/324",
   "research_question": "Can a fixed-model research agent improve a reusable asset-adaptation method across a sequence of game scenes, transferring to new scene constraints while preserving asset identity and previously supported functionality?",
-  "candidate_deliverable": "A shared base asset, bounded scene adapters and a reusable generation/adaptation/verification method.",
+  "candidate_deliverable": "Reusable generation/adaptation code producing visual mesh variants, registered articulation, interaction behavior and collision proxies from an input asset and fixed scene requirements.",
   "scope": "Existing interactive 3D assets adapted to fixed scenes; the scene and evaluator are not candidate-editable.",
   "planned_comparison": "Continually improved reusable adaptation versus matched-budget independent per-scene adaptation, with regression checks on prior scenes.",
-  "planned_outcomes": ["new-scene functional success", "prior-scene regression", "asset identity/structure preservation", "adaptation cost under matched budgets"],
+  "planned_outcomes": [
+    "new-scene functional success",
+    "prior-scene regression",
+    "asset identity/structure preservation",
+    "adaptation cost under matched budgets"
+  ],
   "formal_reward": null,
   "formal_workload": null,
   "official_task_repository": null,
   "smoke": {
     "kind": "engineering smoke, not the formal benchmark",
     "asset": "one newly authored, Codex-generated cycling-pelican base asset",
-    "public_scenes": ["open_courtyard", "low_archway"],
+    "public_scenes": [
+      "open_courtyard",
+      "low_archway"
+    ],
     "adaptation_model": "gpt-6-astra",
     "reasoning_effort": "low",
     "maximum_calls": 1,
     "seconds_per_call": 180,
     "automatic_retries": 0,
-    "evaluator": "Godot 4.7.2 headless: inherited animation diagnostics, neutral-pose metric ceiling/floor envelope and simple part-volume guards"
+    "evaluator": "Godot 4.7.2 headless: inherited animation diagnostics, neutral-pose metric ceiling/floor envelope and simple part-volume guards",
+    "status": "Archived initial pipeline smoke; not the current study"
   },
   "limitations": [
     "The two scenes are public development fixtures; this does not establish held-out transfer or RSI gain.",
     "Envelope checks do not establish traversal, dynamic obstacle clearance, contact forces or full semantic identity.",
     "Final baseline, primary metric, inference budget, broad workload and official execution contract still require calibration and confirmation."
-  ]
+  ],
+  "latest_study": {
+    "version": "v6",
+    "kind": "Bounded convex-proxy short calibration; only one component of the broader direction",
+    "report": "study-v6/RESULTS.md",
+    "development_first": 0.8796040636458438,
+    "development_final": 0.9965432098765432,
+    "transfer_first": 0.9554452776879327,
+    "transfer_final": 0.9765541621234705,
+    "status": "Completed; near-ceiling transfer, not ready for a long run",
+    "official_reward": false,
+    "long_run_started": false,
+    "pending": "Nonplanar assets, coupled LOD fidelity and full joint-motion interaction constraints, feasible references and strong-model calibration"
+  }
 }

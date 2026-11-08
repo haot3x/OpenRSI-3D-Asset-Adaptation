@@ -1,0 +1,1299 @@
+{
+  "kind": "Short bounded convex-proxy method calibration; not an official task reward",
+  "experiment_source_commit": "0009fd0169eaf5cffca74176204f3d3f60c7eda9",
+  "model": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "max",
+    "tools": true,
+    "seconds": 900,
+    "max_dev_submissions": 6,
+    "automatic_retries": 0,
+    "status": "completed",
+    "returncode": 0,
+    "wall_seconds": 864.938,
+    "dev_submissions": 5,
+    "completed_item_counts": {
+      "command_execution": 41,
+      "file_change": 6
+    },
+    "codex_cli": "codex-cli 0.166.0",
+    "usage": [
+      {
+        "input_tokens": 1371185,
+        "cached_input_tokens": 1324160,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 22470,
+        "reasoning_output_tokens": 11260
+      }
+    ]
+  },
+  "native_session": {
+    "original_preserved_local": true,
+    "publicly_uploaded": false,
+    "sha256": "e9745f71fb4dc289748fe55dc183696ffb46b9b45e3bb2526524af6b5cc1aea1"
+  },
+  "image": {
+    "Id": "sha256:876fef2862f9fa01c5d1ff827fb921d2518c1bff0b917e0fbf9a655797aa9793",
+    "Architecture": "arm64",
+    "Os": "linux",
+    "Created": "2026-11-08T19:08:52.145619788+08:00"
+  },
+  "cases": [
+    {
+      "id": "dev-frame",
+      "asset": "medical_cart001",
+      "part": "p00",
+      "split": "dev",
+      "max_hulls": 32
+    },
+    {
+      "id": "dev-drawer",
+      "asset": "medical_cart001",
+      "part": "p01",
+      "split": "dev",
+      "max_hulls": 32
+    },
+    {
+      "id": "dev-wheel",
+      "asset": "medical_cart001",
+      "part": "p02",
+      "split": "dev",
+      "max_hulls": 16
+    },
+    {
+      "id": "transfer-holder",
+      "asset": "medical_cart001",
+      "part": "p07",
+      "split": "heldout",
+      "max_hulls": 24
+    },
+    {
+      "id": "transfer-cabinet-frame",
+      "asset": "cabinet_1",
+      "part": "p01",
+      "split": "heldout",
+      "max_hulls": 32
+    },
+    {
+      "id": "transfer-cabinet-drawer",
+      "asset": "cabinet_1",
+      "part": "p00",
+      "split": "heldout",
+      "max_hulls": 24
+    }
+  ],
+  "metric": "Unweighted mean of contact recall * free-space specificity, subject to hull/vertex budgets",
+  "development": [
+    {
+      "folder": "dev-01",
+      "status": "evaluated",
+      "submission": 1,
+      "remaining": 5,
+      "generator_sha256": "31cc98506321aa27720a45768821e91b9d3f2089f64ca3819b42c71c3c2479f9",
+      "summary": {
+        "scorable": true,
+        "cases": 3,
+        "mean_score": 0.8796040636458438,
+        "budget_passes": 3
+      },
+      "cases": [
+        {
+          "case": "dev-frame",
+          "scored": true,
+          "generator_sha256": "31cc98506321aa27720a45768821e91b9d3f2089f64ca3819b42c71c3c2479f9",
+          "status": "evaluated",
+          "evaluation": {
+            "status": "evaluated",
+            "score": 1.0,
+            "budget_passed": true,
+            "measurement": {
+              "status": "measured",
+              "hulls": 26,
+              "vertices": 1932,
+              "contact_count": 294,
+              "free_count": 1260,
+              "false_free": 0,
+              "false_blocked": 0,
+              "false_free_fraction": 0.0,
+              "false_blocked_fraction": 0.0,
+              "exact_sampled_agreement": true,
+              "convex": true
+            }
+          }
+        },
+        {
+          "case": "dev-drawer",
+          "scored": true,
+          "generator_sha256": "31cc98506321aa27720a45768821e91b9d3f2089f64ca3819b42c71c3c2479f9",
+          "status": "evaluated",
+          "evaluation": {
+            "status": "evaluated",
+            "score": 0.6491825613079019,
+            "budget_passed": true,
+            "measurement": {
+              "status": "measured",
+              "hulls": 18,
+              "vertices": 1146,
+              "contact_count": 374,
+              "free_count": 1468,
+              "false_free": 0,
+              "false_blocked": 515,
+              "false_free_fraction": 0.0,
+              "false_blocked_fraction": 0.3508174386920981,
+              "exact_sampled_agreement": false,
+              "convex": true
+            }
+          }
+        },
+        {
+          "case": "dev-wheel",
+          "scored": true,
+          "generator_sha256": "31cc98506321aa27720a45768821e91b9d3f2089f64ca3819b42c71c3c2479f9",
+          "status": "evaluated",
+          "evaluation": {
+            "status": "evaluated",
+            "score": 0.9896296296296296,
+            "budget_passed": true,
+            "measurement": {
+              "status": "measured",
+              "hulls": 1,
+              "vertices": 128,
+              "contact_count": 406,
+              "free_count": 1350,
+              "false_free": 0,
+              "false_blocked": 14,
+              "false_free_fraction": 0.0,
+              "false_blocked_fraction": 0.01037037037037037,
+              "exact_sampled_agreement": false,
+              "convex": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "folder": "dev-02",
+      "status": "evaluated",
+      "submission": 2,
+      "remaining": 4,
+      "generator_sha256": "be88441b19cf3d1219c96bc36ccf9f059bb932198b709c9438c31cc36836d8ab",
+      "summary": {
+        "scorable": true,
+        "cases": 3,
+        "mean_score": 0.9965432098765432,
+        "budget_passes": 3
+      },
+      "cases": [
+        {
+          "case": "dev-frame",
+          "scored": true,
+          "generator_sha256": "be88441b19cf3d1219c96bc36ccf9f059bb932198b709c9438c31cc36836d8ab",
+          "status": "evaluated",
+          "evaluation": {
+            "status": "evaluated",
+            "score": 1.0,
+            "budget_passed": true,
+            "measurement": {
+              "status": "measured",
+              "hulls": 26,
+              "vertices": 1932,
+              "contact_count": 294,
+              "free_count": 1260,
+              "false_free": 0,
+              "false_blocked": 0,
+              "false_free_fraction": 0.0,
+              "false_blocked_fraction": 0.0,
+              "exact_sampled_agreement": true,
+              "convex": true
+            }
+          }
+        },
+        {
+          "case": "dev-drawer",
+          "scored": true,
+          "generator_sha256": "be88441b19cf3d1219c96bc36ccf9f059bb932198b709c9438c31cc36836d8ab",
+          "status": "evaluated",
+          "evaluation": {
+            "status": "evaluated",
+            "score": 1.0,
+            "budget_passed": true,
+            "measurement": {
+              "status": "measured",
+              "hulls": 26,
+              "vertices": 1469,
+              "contact_count": 374,
+              "free_count": 1468,
+              "false_free": 0,
+              "false_blocked": 0,
+              "false_free_fraction": 0.0,
+              "false_blocked_fraction": 0.0,
+              "exact_sampled_agreement": true,
+              "convex": true
+            }
+          }
+        },
+        {
+          "case": "dev-wheel",
+          "scored": true,
+          "generator_sha256": "be88441b19cf3d1219c96bc36ccf9f059bb932198b709c9438c31cc36836d8ab",
+          "status": "evaluated",
+          "evaluation": {
+            "status": "evaluated",
+            "score": 0.9896296296296296,
+            "budget_passed": true,
+            "measurement": {
+              "status": "measured",
+              "hulls": 1,
+              "vertices": 128,
+              "contact_count": 406,
+              "free_count": 1350,
+              "false_free": 0,
+              "false_blocked": 14,
+              "false_free_fraction": 0.0,
+              "false_blocked_fraction": 0.01037037037037037,
+              "exact_sampled_agreement": false,
+              "convex": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "folder": "dev-03",
+      "status": "evaluated",
+      "submission": 3,
+      "remaining": 3,
+      "generator_sha256": "dda45226a2a326399c04e8be8a43093323d063e1a5161e7279ad9eea27cad80c",
+      "summary": {
+        "scorable": true,
+        "cases": 3,
+        "mean_score": 0.9925925925925926,
+        "budget_passes": 3
+      },
+      "cases": [
+        {
+          "case": "dev-frame",
+          "scored": true,
+          "generator_sha256": "dda45226a2a326399c04e8be8a43093323d063e1a5161e7279ad9eea27cad80c",
+          "status": "evaluated",
+          "evaluation": {
+            "status": "evaluated",
+            "score": 1.0,
+            "budget_passed": true,
+            "measurement": {
+              "status": "measured",
+              "hulls": 26,
+              "vertices": 1932,
+              "contact_count": 294,
+              "free_count": 1260,
+              "false_free": 0,
+              "false_blocked": 0,
+              "false_free_fraction": 0.0,
+              "false_blocked_fraction": 0.0,
+              "exact_sampled_agreement": true,
+              "convex": true
+            }
+          }
+        },
+        {
+          "case": "dev-drawer",
+          "scored": true,
+          "generator_sha256": "dda45226a2a326399c04e8be8a43093323d063e1a5161e7279ad9eea27cad80c",
+          "status": "evaluated",
+          "evaluation": {
+            "status": "evaluated",
+            "score": 1.0,
+            "budget_passed": true,
+            "measurement": {
+              "status": "measured",
+              "hulls": 26,
+              "vertices": 1469,
+              "contact_count": 374,
+              "free_count": 1468,
+              "false_free": 0,
+              "false_blocked": 0,
+              "false_free_fraction": 0.0,
+              "false_blocked_fraction": 0.0,
+              "exact_sampled_agreement": true,
+              "convex": true
+            }
+          }
+        },
+        {
+          "case": "dev-wheel",
+          "scored": true,
+          "generator_sha256": "dda45226a2a326399c04e8be8a43093323d063e1a5161e7279ad9eea27cad80c",
+          "status": "evaluated",
+          "evaluation": {
+            "status": "evaluated",
+            "score": 0.9777777777777777,
+            "budget_passed": true,
+            "measurement": {
+              "status": "measured",
+              "hulls": 16,
+              "vertices": 1680,
+              "contact_count": 406,
+              "free_count": 1350,
+              "false_free": 0,
+              "false_blocked": 30,
+              "false_free_fraction": 0.0,
+              "false_blocked_fraction": 0.022222222222222223,
+              "exact_sampled_agreement": false,
+              "convex": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "folder": "dev-04",
+      "status": "evaluated",
+      "submission": 4,
+      "remaining": 2,
+      "generator_sha256": "e18808973b96a27d7adc35f96bf84dcfcdea8bf38062df3df3a04463b28777ee",
+      "summary": {
+        "scorable": true,
+        "cases": 3,
+        "mean_score": 0.9925925925925926,
+        "budget_passes": 3
+      },
+      "cases": [
+        {
+          "case": "dev-frame",
+          "scored": true,
+          "generator_sha256": "e18808973b96a27d7adc35f96bf84dcfcdea8bf38062df3df3a04463b28777ee",
+          "status": "evaluated",
+          "evaluation": {
+            "status": "evaluated",
+            "score": 1.0,
+            "budget_passed": true,
+            "measurement": {
+              "status": "measured",
+              "hulls": 26,
+              "vertices": 1932,
+              "contact_count": 294,
+              "free_count": 1260,
+              "false_free": 0,
+              "false_blocked": 0,
+              "false_free_fraction": 0.0,
+              "false_blocked_fraction": 0.0,
+              "exact_sampled_agreement": true,
+              "convex": true
+            }
+          }
+        },
+        {
+          "case": "dev-drawer",
+          "scored": true,
+          "generator_sha256": "e18808973b96a27d7adc35f96bf84dcfcdea8bf38062df3df3a04463b28777ee",
+          "status": "evaluated",
+          "evaluation": {
+            "status": "evaluated",
+            "score": 1.0,
+            "budget_passed": true,
+            "measurement": {
+              "status": "measured",
+              "hulls": 26,
+              "vertices": 1469,
+              "contact_count": 374,
+              "free_count": 1468,
+              "false_free": 0,
+              "false_blocked": 0,
+              "false_free_fraction": 0.0,
+              "false_blocked_fraction": 0.0,
+              "exact_sampled_agreement": true,
+              "convex": true
+            }
+          }
+        },
+        {
+          "case": "dev-wheel",
+          "scored": true,
+          "generator_sha256": "e18808973b96a27d7adc35f96bf84dcfcdea8bf38062df3df3a04463b28777ee",
+          "status": "evaluated",
+          "evaluation": {
+            "status": "evaluated",
+            "score": 0.9777777777777777,
+            "budget_passed": true,
+            "measurement": {
+              "status": "measured",
+              "hulls": 16,
+              "vertices": 1752,
+              "contact_count": 406,
+              "free_count": 1350,
+              "false_free": 0,
+              "false_blocked": 30,
+              "false_free_fraction": 0.0,
+              "false_blocked_fraction": 0.022222222222222223,
+              "exact_sampled_agreement": false,
+              "convex": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "folder": "dev-05",
+      "status": "evaluated",
+      "submission": 5,
+      "remaining": 1,
+      "generator_sha256": "1af4cd5d4a21eafb9d06d261d837780383c2c75097a6992eb0e030fddd9d2bcc",
+      "summary": {
+        "scorable": true,
+        "cases": 3,
+        "mean_score": 0.9925925925925926,
+        "budget_passes": 3
+      },
+      "cases": [
+        {
+          "case": "dev-frame",
+          "scored": true,
+          "generator_sha256": "1af4cd5d4a21eafb9d06d261d837780383c2c75097a6992eb0e030fddd9d2bcc",
+          "status": "evaluated",
+          "evaluation": {
+            "status": "evaluated",
+            "score": 1.0,
+            "budget_passed": true,
+            "measurement": {
+              "status": "measured",
+              "hulls": 26,
+              "vertices": 1932,
+              "contact_count": 294,
+              "free_count": 1260,
+              "false_free": 0,
+              "false_blocked": 0,
+              "false_free_fraction": 0.0,
+              "false_blocked_fraction": 0.0,
+              "exact_sampled_agreement": true,
+              "convex": true
+            }
+          }
+        },
+        {
+          "case": "dev-drawer",
+          "scored": true,
+          "generator_sha256": "1af4cd5d4a21eafb9d06d261d837780383c2c75097a6992eb0e030fddd9d2bcc",
+          "status": "evaluated",
+          "evaluation": {
+            "status": "evaluated",
+            "score": 1.0,
+            "budget_passed": true,
+            "measurement": {
+              "status": "measured",
+              "hulls": 26,
+              "vertices": 1469,
+              "contact_count": 374,
+              "free_count": 1468,
+              "false_free": 0,
+              "false_blocked": 0,
+              "false_free_fraction": 0.0,
+              "false_blocked_fraction": 0.0,
+              "exact_sampled_agreement": true,
+              "convex": true
+            }
+          }
+        },
+        {
+          "case": "dev-wheel",
+          "scored": true,
+          "generator_sha256": "1af4cd5d4a21eafb9d06d261d837780383c2c75097a6992eb0e030fddd9d2bcc",
+          "status": "evaluated",
+          "evaluation": {
+            "status": "evaluated",
+            "score": 0.9777777777777777,
+            "budget_passed": true,
+            "measurement": {
+              "status": "measured",
+              "hulls": 16,
+              "vertices": 1754,
+              "contact_count": 406,
+              "free_count": 1350,
+              "false_free": 0,
+              "false_blocked": 30,
+              "false_free_fraction": 0.0,
+              "false_blocked_fraction": 0.022222222222222223,
+              "exact_sampled_agreement": false,
+              "convex": true
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "transfer": {
+    "first": {
+      "generator_sha256": "31cc98506321aa27720a45768821e91b9d3f2089f64ca3819b42c71c3c2479f9",
+      "summary": {
+        "scorable": true,
+        "cases": 3,
+        "mean_score": 0.9554452776879327,
+        "budget_passes": 3
+      },
+      "cases": [
+        {
+          "case": "transfer-holder",
+          "scored": true,
+          "generator_sha256": "31cc98506321aa27720a45768821e91b9d3f2089f64ca3819b42c71c3c2479f9",
+          "status": "evaluated",
+          "evaluation": {
+            "status": "evaluated",
+            "score": 1.0,
+            "budget_passed": true,
+            "measurement": {
+              "status": "measured",
+              "hulls": 24,
+              "vertices": 1797,
+              "contact_count": 226,
+              "free_count": 1456,
+              "false_free": 0,
+              "false_blocked": 0,
+              "false_free_fraction": 0.0,
+              "false_blocked_fraction": 0.0,
+              "exact_sampled_agreement": true,
+              "convex": true
+            }
+          }
+        },
+        {
+          "case": "transfer-cabinet-frame",
+          "scored": true,
+          "generator_sha256": "31cc98506321aa27720a45768821e91b9d3f2089f64ca3819b42c71c3c2479f9",
+          "status": "evaluated",
+          "evaluation": {
+            "status": "evaluated",
+            "score": 0.9945923460898503,
+            "budget_passed": true,
+            "measurement": {
+              "status": "measured",
+              "hulls": 32,
+              "vertices": 1003,
+              "contact_count": 718,
+              "free_count": 2404,
+              "false_free": 0,
+              "false_blocked": 13,
+              "false_free_fraction": 0.0,
+              "false_blocked_fraction": 0.005407653910149751,
+              "exact_sampled_agreement": false,
+              "convex": true
+            }
+          }
+        },
+        {
+          "case": "transfer-cabinet-drawer",
+          "scored": true,
+          "generator_sha256": "31cc98506321aa27720a45768821e91b9d3f2089f64ca3819b42c71c3c2479f9",
+          "status": "evaluated",
+          "evaluation": {
+            "status": "evaluated",
+            "score": 0.8717434869739479,
+            "budget_passed": true,
+            "measurement": {
+              "status": "measured",
+              "hulls": 24,
+              "vertices": 1066,
+              "contact_count": 626,
+              "free_count": 2495,
+              "false_free": 0,
+              "false_blocked": 320,
+              "false_free_fraction": 0.0,
+              "false_blocked_fraction": 0.1282565130260521,
+              "exact_sampled_agreement": false,
+              "convex": true
+            }
+          }
+        }
+      ]
+    },
+    "final": {
+      "generator_sha256": "be88441b19cf3d1219c96bc36ccf9f059bb932198b709c9438c31cc36836d8ab",
+      "summary": {
+        "scorable": true,
+        "cases": 3,
+        "mean_score": 0.9765541621234705,
+        "budget_passes": 3
+      },
+      "cases": [
+        {
+          "case": "transfer-holder",
+          "scored": true,
+          "generator_sha256": "be88441b19cf3d1219c96bc36ccf9f059bb932198b709c9438c31cc36836d8ab",
+          "status": "evaluated",
+          "evaluation": {
+            "status": "evaluated",
+            "score": 1.0,
+            "budget_passed": true,
+            "measurement": {
+              "status": "measured",
+              "hulls": 24,
+              "vertices": 1957,
+              "contact_count": 226,
+              "free_count": 1456,
+              "false_free": 0,
+              "false_blocked": 0,
+              "false_free_fraction": 0.0,
+              "false_blocked_fraction": 0.0,
+              "exact_sampled_agreement": true,
+              "convex": true
+            }
+          }
+        },
+        {
+          "case": "transfer-cabinet-frame",
+          "scored": true,
+          "generator_sha256": "be88441b19cf3d1219c96bc36ccf9f059bb932198b709c9438c31cc36836d8ab",
+          "status": "evaluated",
+          "evaluation": {
+            "status": "evaluated",
+            "score": 0.9945923460898503,
+            "budget_passed": true,
+            "measurement": {
+              "status": "measured",
+              "hulls": 32,
+              "vertices": 1003,
+              "contact_count": 718,
+              "free_count": 2404,
+              "false_free": 0,
+              "false_blocked": 13,
+              "false_free_fraction": 0.0,
+              "false_blocked_fraction": 0.005407653910149751,
+              "exact_sampled_agreement": false,
+              "convex": true
+            }
+          }
+        },
+        {
+          "case": "transfer-cabinet-drawer",
+          "scored": true,
+          "generator_sha256": "be88441b19cf3d1219c96bc36ccf9f059bb932198b709c9438c31cc36836d8ab",
+          "status": "evaluated",
+          "evaluation": {
+            "status": "evaluated",
+            "score": 0.9350701402805611,
+            "budget_passed": true,
+            "measurement": {
+              "status": "measured",
+              "hulls": 6,
+              "vertices": 165,
+              "contact_count": 626,
+              "free_count": 2495,
+              "false_free": 0,
+              "false_blocked": 162,
+              "false_free_fraction": 0.0,
+              "false_blocked_fraction": 0.06492985971943888,
+              "exact_sampled_agreement": false,
+              "convex": true
+            }
+          }
+        }
+      ]
+    }
+  },
+  "retention": {
+    "reused_exact_code_submission": 2,
+    "summary": {
+      "scorable": true,
+      "cases": 3,
+      "mean_score": 0.9965432098765432,
+      "budget_passes": 3
+    },
+    "cases": [
+      {
+        "case": "dev-frame",
+        "scored": true,
+        "generator_sha256": "be88441b19cf3d1219c96bc36ccf9f059bb932198b709c9438c31cc36836d8ab",
+        "status": "evaluated",
+        "evaluation": {
+          "status": "evaluated",
+          "score": 1.0,
+          "budget_passed": true,
+          "measurement": {
+            "status": "measured",
+            "hulls": 26,
+            "vertices": 1932,
+            "contact_count": 294,
+            "free_count": 1260,
+            "false_free": 0,
+            "false_blocked": 0,
+            "false_free_fraction": 0.0,
+            "false_blocked_fraction": 0.0,
+            "exact_sampled_agreement": true,
+            "convex": true
+          }
+        }
+      },
+      {
+        "case": "dev-drawer",
+        "scored": true,
+        "generator_sha256": "be88441b19cf3d1219c96bc36ccf9f059bb932198b709c9438c31cc36836d8ab",
+        "status": "evaluated",
+        "evaluation": {
+          "status": "evaluated",
+          "score": 1.0,
+          "budget_passed": true,
+          "measurement": {
+            "status": "measured",
+            "hulls": 26,
+            "vertices": 1469,
+            "contact_count": 374,
+            "free_count": 1468,
+            "false_free": 0,
+            "false_blocked": 0,
+            "false_free_fraction": 0.0,
+            "false_blocked_fraction": 0.0,
+            "exact_sampled_agreement": true,
+            "convex": true
+          }
+        }
+      },
+      {
+        "case": "dev-wheel",
+        "scored": true,
+        "generator_sha256": "be88441b19cf3d1219c96bc36ccf9f059bb932198b709c9438c31cc36836d8ab",
+        "status": "evaluated",
+        "evaluation": {
+          "status": "evaluated",
+          "score": 0.9896296296296296,
+          "budget_passed": true,
+          "measurement": {
+            "status": "measured",
+            "hulls": 1,
+            "vertices": 128,
+            "contact_count": 406,
+            "free_count": 1350,
+            "false_free": 0,
+            "false_blocked": 14,
+            "false_free_fraction": 0.0,
+            "false_blocked_fraction": 0.01037037037037037,
+            "exact_sampled_agreement": false,
+            "convex": true
+          }
+        }
+      }
+    ]
+  },
+  "scoring_portability": {
+    "image_id": "sha256:876fef2862f9fa01c5d1ff827fb921d2518c1bff0b917e0fbf9a655797aa9793",
+    "rows": [
+      {
+        "snapshot": "transfer-final",
+        "case": "transfer-cabinet-drawer",
+        "output_sha256": "9c07ae0ab8e5363224584ba6530be94cd19bf230ca3709e8394fda64b7f6438a",
+        "probes_sha256": "23ed3a411aa6305502bf24fdebadc335b963e5837ab9f8057f5e503867630f42",
+        "identical": true,
+        "mac": {
+          "status": "evaluated",
+          "score": 0.9350701402805611,
+          "budget_passed": true,
+          "measurement": {
+            "status": "measured",
+            "hulls": 6,
+            "vertices": 165,
+            "contact_count": 626,
+            "free_count": 2495,
+            "false_free": 0,
+            "false_blocked": 162,
+            "false_free_fraction": 0.0,
+            "false_blocked_fraction": 0.06492985971943888,
+            "exact_sampled_agreement": false,
+            "convex": true
+          }
+        },
+        "linux": {
+          "status": "evaluated",
+          "score": 0.9350701402805611,
+          "budget_passed": true,
+          "measurement": {
+            "status": "measured",
+            "hulls": 6,
+            "vertices": 165,
+            "contact_count": 626,
+            "free_count": 2495,
+            "false_free": 0,
+            "false_blocked": 162,
+            "false_free_fraction": 0.0,
+            "false_blocked_fraction": 0.06492985971943888,
+            "exact_sampled_agreement": false,
+            "convex": true
+          }
+        }
+      },
+      {
+        "snapshot": "transfer-final",
+        "case": "transfer-cabinet-frame",
+        "output_sha256": "9871d99fd88fabce80f3ec8940ab3e6a4ac0b26430ae2eb15b9a47f94322c4e5",
+        "probes_sha256": "a29656484a0016d89b422786440b97581bc38e96293bb37ee793b1fb3488fa46",
+        "identical": true,
+        "mac": {
+          "status": "evaluated",
+          "score": 0.9945923460898503,
+          "budget_passed": true,
+          "measurement": {
+            "status": "measured",
+            "hulls": 32,
+            "vertices": 1003,
+            "contact_count": 718,
+            "free_count": 2404,
+            "false_free": 0,
+            "false_blocked": 13,
+            "false_free_fraction": 0.0,
+            "false_blocked_fraction": 0.005407653910149751,
+            "exact_sampled_agreement": false,
+            "convex": true
+          }
+        },
+        "linux": {
+          "status": "evaluated",
+          "score": 0.9945923460898503,
+          "budget_passed": true,
+          "measurement": {
+            "status": "measured",
+            "hulls": 32,
+            "vertices": 1003,
+            "contact_count": 718,
+            "free_count": 2404,
+            "false_free": 0,
+            "false_blocked": 13,
+            "false_free_fraction": 0.0,
+            "false_blocked_fraction": 0.005407653910149751,
+            "exact_sampled_agreement": false,
+            "convex": true
+          }
+        }
+      },
+      {
+        "snapshot": "transfer-final",
+        "case": "transfer-holder",
+        "output_sha256": "f136d8ebba87d4899445684ba912a24678c9d3739c1b98cb5cfb9dc16f7cb6ef",
+        "probes_sha256": "30196d04b43bf6906f4e0ab2921deae3794121762738ad304940506fc9d54f8a",
+        "identical": true,
+        "mac": {
+          "status": "evaluated",
+          "score": 1.0,
+          "budget_passed": true,
+          "measurement": {
+            "status": "measured",
+            "hulls": 24,
+            "vertices": 1957,
+            "contact_count": 226,
+            "free_count": 1456,
+            "false_free": 0,
+            "false_blocked": 0,
+            "false_free_fraction": 0.0,
+            "false_blocked_fraction": 0.0,
+            "exact_sampled_agreement": true,
+            "convex": true
+          }
+        },
+        "linux": {
+          "status": "evaluated",
+          "score": 1.0,
+          "budget_passed": true,
+          "measurement": {
+            "status": "measured",
+            "hulls": 24,
+            "vertices": 1957,
+            "contact_count": 226,
+            "free_count": 1456,
+            "false_free": 0,
+            "false_blocked": 0,
+            "false_free_fraction": 0.0,
+            "false_blocked_fraction": 0.0,
+            "exact_sampled_agreement": true,
+            "convex": true
+          }
+        }
+      },
+      {
+        "snapshot": "transfer-first",
+        "case": "transfer-cabinet-drawer",
+        "output_sha256": "11d381b05305118fb49b03dd96e251db6b308d10a40f95d465031ccad449ffb3",
+        "probes_sha256": "23ed3a411aa6305502bf24fdebadc335b963e5837ab9f8057f5e503867630f42",
+        "identical": true,
+        "mac": {
+          "status": "evaluated",
+          "score": 0.8717434869739479,
+          "budget_passed": true,
+          "measurement": {
+            "status": "measured",
+            "hulls": 24,
+            "vertices": 1066,
+            "contact_count": 626,
+            "free_count": 2495,
+            "false_free": 0,
+            "false_blocked": 320,
+            "false_free_fraction": 0.0,
+            "false_blocked_fraction": 0.1282565130260521,
+            "exact_sampled_agreement": false,
+            "convex": true
+          }
+        },
+        "linux": {
+          "status": "evaluated",
+          "score": 0.8717434869739479,
+          "budget_passed": true,
+          "measurement": {
+            "status": "measured",
+            "hulls": 24,
+            "vertices": 1066,
+            "contact_count": 626,
+            "free_count": 2495,
+            "false_free": 0,
+            "false_blocked": 320,
+            "false_free_fraction": 0.0,
+            "false_blocked_fraction": 0.1282565130260521,
+            "exact_sampled_agreement": false,
+            "convex": true
+          }
+        }
+      },
+      {
+        "snapshot": "transfer-first",
+        "case": "transfer-cabinet-frame",
+        "output_sha256": "9871d99fd88fabce80f3ec8940ab3e6a4ac0b26430ae2eb15b9a47f94322c4e5",
+        "probes_sha256": "a29656484a0016d89b422786440b97581bc38e96293bb37ee793b1fb3488fa46",
+        "identical": true,
+        "mac": {
+          "status": "evaluated",
+          "score": 0.9945923460898503,
+          "budget_passed": true,
+          "measurement": {
+            "status": "measured",
+            "hulls": 32,
+            "vertices": 1003,
+            "contact_count": 718,
+            "free_count": 2404,
+            "false_free": 0,
+            "false_blocked": 13,
+            "false_free_fraction": 0.0,
+            "false_blocked_fraction": 0.005407653910149751,
+            "exact_sampled_agreement": false,
+            "convex": true
+          }
+        },
+        "linux": {
+          "status": "evaluated",
+          "score": 0.9945923460898503,
+          "budget_passed": true,
+          "measurement": {
+            "status": "measured",
+            "hulls": 32,
+            "vertices": 1003,
+            "contact_count": 718,
+            "free_count": 2404,
+            "false_free": 0,
+            "false_blocked": 13,
+            "false_free_fraction": 0.0,
+            "false_blocked_fraction": 0.005407653910149751,
+            "exact_sampled_agreement": false,
+            "convex": true
+          }
+        }
+      },
+      {
+        "snapshot": "transfer-first",
+        "case": "transfer-holder",
+        "output_sha256": "d6ffb01f21e59d4361c79af515776a7bf5db38e16a3f8fd9b24ec1e47553354b",
+        "probes_sha256": "30196d04b43bf6906f4e0ab2921deae3794121762738ad304940506fc9d54f8a",
+        "identical": true,
+        "mac": {
+          "status": "evaluated",
+          "score": 1.0,
+          "budget_passed": true,
+          "measurement": {
+            "status": "measured",
+            "hulls": 24,
+            "vertices": 1797,
+            "contact_count": 226,
+            "free_count": 1456,
+            "false_free": 0,
+            "false_blocked": 0,
+            "false_free_fraction": 0.0,
+            "false_blocked_fraction": 0.0,
+            "exact_sampled_agreement": true,
+            "convex": true
+          }
+        },
+        "linux": {
+          "status": "evaluated",
+          "score": 1.0,
+          "budget_passed": true,
+          "measurement": {
+            "status": "measured",
+            "hulls": 24,
+            "vertices": 1797,
+            "contact_count": 226,
+            "free_count": 1456,
+            "false_free": 0,
+            "false_blocked": 0,
+            "false_free_fraction": 0.0,
+            "false_blocked_fraction": 0.0,
+            "exact_sampled_agreement": true,
+            "convex": true
+          }
+        }
+      }
+    ]
+  },
+  "actual_model_engine": {
+    "analytic_mismatches": 0,
+    "checked": 1728,
+    "engine": "4.7.2-stable (official)",
+    "kind": "Posed convex sphere queries on frozen RigidBody3Ds; not dynamics",
+    "passed": true,
+    "physics_engine": "GodotPhysics3D",
+    "rows": [
+      {
+        "analytic_mismatches": 0,
+        "asset": "transfer-final/cabinet_1",
+        "hulls": 6,
+        "part": "p00",
+        "pose": 0,
+        "queries": 144,
+        "query_usec": 678,
+        "source_false_blocked": 5,
+        "source_false_free": 0
+      },
+      {
+        "analytic_mismatches": 0,
+        "asset": "transfer-final/cabinet_1",
+        "hulls": 6,
+        "part": "p00",
+        "pose": 1,
+        "queries": 144,
+        "query_usec": 336,
+        "source_false_blocked": 5,
+        "source_false_free": 0
+      },
+      {
+        "analytic_mismatches": 0,
+        "asset": "transfer-final/cabinet_1",
+        "hulls": 32,
+        "part": "p01",
+        "pose": 0,
+        "queries": 144,
+        "query_usec": 1591,
+        "source_false_blocked": 0,
+        "source_false_free": 0
+      },
+      {
+        "analytic_mismatches": 0,
+        "asset": "transfer-final/cabinet_1",
+        "hulls": 32,
+        "part": "p01",
+        "pose": 1,
+        "queries": 144,
+        "query_usec": 1715,
+        "source_false_blocked": 0,
+        "source_false_free": 0
+      },
+      {
+        "analytic_mismatches": 0,
+        "asset": "transfer-final/medical_cart001",
+        "hulls": 24,
+        "part": "p07",
+        "pose": 0,
+        "queries": 144,
+        "query_usec": 2201,
+        "source_false_blocked": 0,
+        "source_false_free": 0
+      },
+      {
+        "analytic_mismatches": 0,
+        "asset": "transfer-final/medical_cart001",
+        "hulls": 24,
+        "part": "p07",
+        "pose": 1,
+        "queries": 144,
+        "query_usec": 2263,
+        "source_false_blocked": 0,
+        "source_false_free": 0
+      },
+      {
+        "analytic_mismatches": 0,
+        "asset": "transfer-first/cabinet_1",
+        "hulls": 24,
+        "part": "p00",
+        "pose": 0,
+        "queries": 144,
+        "query_usec": 1201,
+        "source_false_blocked": 13,
+        "source_false_free": 0
+      },
+      {
+        "analytic_mismatches": 0,
+        "asset": "transfer-first/cabinet_1",
+        "hulls": 24,
+        "part": "p00",
+        "pose": 1,
+        "queries": 144,
+        "query_usec": 1277,
+        "source_false_blocked": 13,
+        "source_false_free": 0
+      },
+      {
+        "analytic_mismatches": 0,
+        "asset": "transfer-first/cabinet_1",
+        "hulls": 32,
+        "part": "p01",
+        "pose": 0,
+        "queries": 144,
+        "query_usec": 1622,
+        "source_false_blocked": 0,
+        "source_false_free": 0
+      },
+      {
+        "analytic_mismatches": 0,
+        "asset": "transfer-first/cabinet_1",
+        "hulls": 32,
+        "part": "p01",
+        "pose": 1,
+        "queries": 144,
+        "query_usec": 1701,
+        "source_false_blocked": 0,
+        "source_false_free": 0
+      },
+      {
+        "analytic_mismatches": 0,
+        "asset": "transfer-first/medical_cart001",
+        "hulls": 24,
+        "part": "p07",
+        "pose": 0,
+        "queries": 144,
+        "query_usec": 2258,
+        "source_false_blocked": 0,
+        "source_false_free": 0
+      },
+      {
+        "analytic_mismatches": 0,
+        "asset": "transfer-first/medical_cart001",
+        "hulls": 24,
+        "part": "p07",
+        "pose": 1,
+        "queries": 144,
+        "query_usec": 2288,
+        "source_false_blocked": 0,
+        "source_false_free": 0
+      }
+    ],
+    "wall_seconds": 0.433042
+  },
+  "episode_inventory_sha256": "8d04c80ad4a2a591da17a638a0f0c93ac325edd7c0e244eb7460e2ed2de83298",
+  "original_local_file_count": 277,
+  "frozen_source_and_input_hashes": {
+    "study-v6/screen.py": "6286cd7698faab62681bab49fd3db34a8e755aa841677aa0678ed50f32fc9579",
+    "study-v6/isolation.py": "6cb395b0c792db40f33dd2383ab0ef65445b66b2d91f690410a1272cb84a5e94",
+    "study-v6/controls.py": "3784c99cbcaf0d0eb3debb2d06bdb2e7c0b97e1d765a2bc84a7205fe89ad0442",
+    "study-v6/requirements.txt": "9ea87609e2133d4d1b2c419d9556039f8f0405ffaeacde934d466bd4a0e67711",
+    "study-v6/episode.py": "04b2458bc98240b95e1351f06b6fb652a2fc28f39752d20b3fc27f6df244194c",
+    "study-v6/Dockerfile": "0b6218bddc00eec1626cc9c9b74b65a006ebb7bcd903f4747278590325face9d",
+    "study-v6/witness.py": "3e86a4de72aeea81b0157eef172e51dd19579d949d50e3e3f06409ba8a286d4f",
+    "study-v6/proxy_controls.py": "4786b64f36de063cf79de1c2b3c27d408b9318cae7ab5b55ce39fde098b90900",
+    "study-v6/try_coacd.py": "a75bb282b02c06cd012ef30a993336597ff202b808885c9438235ad2d6daf8fd",
+    "study-v6/engine_job.py": "bc7bad63d4e9bb58ff090e6f1641bba88d6b4fdf2c96714101561dd6b40abf14",
+    "study-v6/proxy_sdk.py": "8ed883e02244203fc794771ab0b4b91d602977ef7fb7cec25cdfaf24cdfec32d",
+    "study-v6/README.md": "256b6cb4e931b4a701e9cd75aea03b3ff45b68e4dd988df5801320e01e328553",
+    "study-v6/proxy_execution.py": "f8e0cceedcd620d5fc56ceece561a5a9ff6341f5c404ff694a747d0cde269e58",
+    "study-v6/runtime-wheels.json": "2b666fbf94df12bacb2713dc4b71a8be6d954ae3ecb62ab33cf2e83f11215803",
+    "study-v6/geometry.py": "d4cc32b2d2235bf2d56e9a81a552a820225a74f2f46b3c691b1bfe66bea7edef",
+    "study-v6/PROXY_PROTOCOL.md": "2f506db57bb8676b379268ab3e84d2d78c0a6d7663cbea981a463e46505a2ee9",
+    "study-v6/TASK.md": "3274986cedc970377ccec8d8b8d97e91d1a14d7bc29038d4e81b4cff18a5eeba",
+    "study-v6/proxy_task.py": "3fe318af0997a0f3a7caec3b71142cd537b07776205411cbb06baa82b894601a",
+    "study-v6/dev_eval.py": "3313176a3501aecfada975c3822f0e6c0b6d20490b2b1635f8eef762304d0048",
+    ".tools/v6-calibration/transfer-holder/probes.npz": "30196d04b43bf6906f4e0ab2921deae3794121762738ad304940506fc9d54f8a",
+    ".tools/v6-calibration/transfer-holder/source.npz": "ed312ccc62390de4cd0e48049453dba59da5369cb7de9e1b25ad12bb44a1093f",
+    ".tools/v6-calibration/transfer-holder/case.json": "ac3c58cf86de8d3d2cdb04aa79d310895b357f18c7b35385e859b3785a79281a",
+    ".tools/v6-calibration/transfer-cabinet-drawer/probes.npz": "23ed3a411aa6305502bf24fdebadc335b963e5837ab9f8057f5e503867630f42",
+    ".tools/v6-calibration/transfer-cabinet-drawer/source.npz": "f421323dca2df98081921440b8985fef892cb994004f2bd3ee1e98b5ca27f333",
+    ".tools/v6-calibration/transfer-cabinet-drawer/case.json": "23bb736684bd1af34e7d1a1fe1c19c37222a4932b1092a42fcf53e13db1ee5b2",
+    ".tools/v6-calibration/transfer-cabinet-frame/probes.npz": "a29656484a0016d89b422786440b97581bc38e96293bb37ee793b1fb3488fa46",
+    ".tools/v6-calibration/transfer-cabinet-frame/source.npz": "908712e5e4e62c13385109245d62e55a5723751431fedd3254c072b5ed32a4ba",
+    ".tools/v6-calibration/transfer-cabinet-frame/case.json": "3a3cf18932116ec987a259ec16dfafa207a0ad54638922f9d6ade374f10580bb",
+    ".tools/v6-calibration/dev-drawer/probes.npz": "4aa1d32b6213a8778abca6abd6662a6bc9f864b79942fac4c60d7a9e6af0b4d1",
+    ".tools/v6-calibration/dev-drawer/source.npz": "f47c0eac3a510e555cbb7f16c2df6400b7842d97c1f3d09adb3f9414b7426e14",
+    ".tools/v6-calibration/dev-drawer/case.json": "199127a507f4e735eb51a44e43c908843aec0756b20da730bb2f3668d0ff4047",
+    ".tools/v6-calibration/dev-wheel/probes.npz": "508b802876543b8b2fa6652d6e270d397c820adbb2f9fe85351edc5237a5a8c3",
+    ".tools/v6-calibration/dev-wheel/source.npz": "1a9857395996ab7ce83023c2ae8934decec218a5c06dee6a32accf7bc1395a2a",
+    ".tools/v6-calibration/dev-wheel/case.json": "511dfdb0934b89d692b78a9bf2ddd3eac975037f4eaccf4c332d2d7d2f538a93",
+    ".tools/v6-calibration/dev-frame/probes.npz": "9b00f1b06debb904451e8a621be7b9de4ed734315bbf99cde6b7c42ff9f52c3c",
+    ".tools/v6-calibration/dev-frame/source.npz": "f7c2840db4bd42c6d3345755c7d12e28d6d095b09f08a298f8f5edd4beb835cb",
+    ".tools/v6-calibration/dev-frame/case.json": "43ab82b48c6506ace3652e6cfa2afcae9cfca25374592127165b82ad3c1660eb",
+    "runs/v6-proxy-controls-001/input-hashes.json": "48a84fe361984fc526da77dce2a6a42fd006401a42c85f9ec427a017d5abc3e5",
+    "runs/v6-proxy-controls-001/transfer-cabinet-frame-empty.json": "3d6b7e12f55fef25fff64f026e6d4fb6909af9228bf5df4be21543c25bf125e8",
+    "runs/v6-proxy-controls-001/verified.json": "77d3a8da8c2dcea4f846f78904d5b43fd0b0c2665c7fca040e23a46408244042",
+    "runs/v6-proxy-controls-001/dev-drawer-empty.json": "3d6b7e12f55fef25fff64f026e6d4fb6909af9228bf5df4be21543c25bf125e8",
+    "runs/v6-proxy-controls-001/transfer-holder-empty.json": "3d6b7e12f55fef25fff64f026e6d4fb6909af9228bf5df4be21543c25bf125e8",
+    "runs/v6-proxy-controls-001/dev-wheel-empty.json": "3d6b7e12f55fef25fff64f026e6d4fb6909af9228bf5df4be21543c25bf125e8",
+    "runs/v6-proxy-controls-001/transfer-cabinet-drawer-empty.json": "3d6b7e12f55fef25fff64f026e6d4fb6909af9228bf5df4be21543c25bf125e8",
+    "runs/v6-proxy-controls-001/library-results.json": "9876cb4cb7ee3cf069488b90bb6d5eb48dcfb6397b4dd7173ef18f1db5ca4364",
+    "runs/v6-proxy-controls-001/cases.json": "8b3f2fdd5c3a2862449256eea2722865b371e7eab8f401e10e67b72880e276f1",
+    "runs/v6-proxy-controls-001/dev-frame-empty.json": "3d6b7e12f55fef25fff64f026e6d4fb6909af9228bf5df4be21543c25bf125e8",
+    "runs/v6-proxy-controls-001/image.json": "0a44fd731a39e6388edcb8cb882b033d207fe60e885c39ddbd7af8f3245762e2",
+    "runs/v6-proxy-controls-001/transfer-holder/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "runs/v6-proxy-controls-001/transfer-holder/result.json": "941e19c71d35ec5c3b113bd17cd9508f8e6f76b58e7360b146600c1a01919f88",
+    "runs/v6-proxy-controls-001/transfer-holder/output.json": "1fdc4f46258e57247bf2c69590bd69ae63e9ba68459e19df8a1b8d19ddcd5e69",
+    "runs/v6-proxy-controls-001/transfer-holder/stdout.log": "0c8a7987f9da8d8166f7326c0a313748e8029ffc263a74ab988d3963cf2d975c",
+    "runs/v6-proxy-controls-001/transfer-holder/generator.py": "85d093d2bffb5ea219888d46ffb1b7ff78303d003f64dcee6df22aa562925afa",
+    "runs/v6-proxy-controls-001/transfer-holder/execution.json": "5461c3682711d05915cacec8d18cb2750b17ab56bc4fac95c58a3fe7fad3e003",
+    "runs/v6-proxy-controls-001/transfer-cabinet-drawer/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "runs/v6-proxy-controls-001/transfer-cabinet-drawer/result.json": "e37040375c78e0c06e240fcc3b745ef2d119c02c0c4c8c8a876075cf933ffbe6",
+    "runs/v6-proxy-controls-001/transfer-cabinet-drawer/output.json": "5e6fe0c42ca5eefe1e89391af28db757d8b314544bede258b99dd0ef7ff24416",
+    "runs/v6-proxy-controls-001/transfer-cabinet-drawer/stdout.log": "47fda07b0aed4257d3dd33750e032965352d1507026aad3fc4e9ecef2c60b5ae",
+    "runs/v6-proxy-controls-001/transfer-cabinet-drawer/generator.py": "85d093d2bffb5ea219888d46ffb1b7ff78303d003f64dcee6df22aa562925afa",
+    "runs/v6-proxy-controls-001/transfer-cabinet-drawer/execution.json": "dc563da5aa731e7887b836b341e867c896bb41c9de8363fab4239633e546eed7",
+    "runs/v6-proxy-controls-001/transfer-cabinet-frame/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "runs/v6-proxy-controls-001/transfer-cabinet-frame/result.json": "322696d7901c293eefe90a30664aa655847e6947b4c6c5b9c317f4c56ba45294",
+    "runs/v6-proxy-controls-001/transfer-cabinet-frame/output.json": "4b556c68df67ce5c8e9914e9ebfbe0c1ebb808fd18b6da2639c97d61b0adc037",
+    "runs/v6-proxy-controls-001/transfer-cabinet-frame/stdout.log": "6cf3b5f78d88dbe397ac00c882294c8c270a21635d91e14a4d4b34cca952f870",
+    "runs/v6-proxy-controls-001/transfer-cabinet-frame/generator.py": "85d093d2bffb5ea219888d46ffb1b7ff78303d003f64dcee6df22aa562925afa",
+    "runs/v6-proxy-controls-001/transfer-cabinet-frame/execution.json": "c45aad5e85109082d0c261928bc6fc3c960caeaa366d362f26e334a8a96481f0",
+    "runs/v6-proxy-controls-001/dev-drawer/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "runs/v6-proxy-controls-001/dev-drawer/result.json": "68ee6cad1aa5feb90a6b94b717d919db1089accb68679e6610379e2bc2bba3ef",
+    "runs/v6-proxy-controls-001/dev-drawer/output.json": "ade140cd99bcdb0ba8abb8ac2c66f63b70bef38bf8128a72e0ce6fc01783e11e",
+    "runs/v6-proxy-controls-001/dev-drawer/stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "runs/v6-proxy-controls-001/dev-drawer/generator.py": "85d093d2bffb5ea219888d46ffb1b7ff78303d003f64dcee6df22aa562925afa",
+    "runs/v6-proxy-controls-001/dev-drawer/execution.json": "5a0d5bfd6011ff64533da84bb7e1f749265772441e7a4b61378c9173dd53793f",
+    "runs/v6-proxy-controls-001/dev-wheel/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "runs/v6-proxy-controls-001/dev-wheel/result.json": "8f615839b639dbe9458671c7e5906bb9bebecef804fbfe3acef65015ba2a821c",
+    "runs/v6-proxy-controls-001/dev-wheel/output.json": "7538e902fc3ad71eb3fb17013ced73fd2951ef2db8d29f1aff9e8308d183c32d",
+    "runs/v6-proxy-controls-001/dev-wheel/stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "runs/v6-proxy-controls-001/dev-wheel/generator.py": "85d093d2bffb5ea219888d46ffb1b7ff78303d003f64dcee6df22aa562925afa",
+    "runs/v6-proxy-controls-001/dev-wheel/execution.json": "4b723292b3e69ca7219bfdd8ad41110ae97558870053d5874cf65d853d3a07c4",
+    "runs/v6-proxy-controls-001/dev-frame/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "runs/v6-proxy-controls-001/dev-frame/result.json": "95b0ab3fdfcde2facb014c735624352ae76b42ca932464f6773e6db3ef707757",
+    "runs/v6-proxy-controls-001/dev-frame/output.json": "e7cb55bb72bcdc7549bc8a91a10931182050c5dacf694a9c74600549e3deb0ea",
+    "runs/v6-proxy-controls-001/dev-frame/stdout.log": "8a884d38d3d0aa6b3f33e0c5e09bba3f469f61702c183f66e95fed518d1a38e2",
+    "runs/v6-proxy-controls-001/dev-frame/generator.py": "85d093d2bffb5ea219888d46ffb1b7ff78303d003f64dcee6df22aa562925afa",
+    "runs/v6-proxy-controls-001/dev-frame/execution.json": "1501962945a15ce604a0b1129f9d1ca86ec6a7438b8b719a906cc6aeb1c9a581",
+    "study-v3/sources.json": "63e1451428886c53aa1e7b12dcbb08d08075638b84564902eb0a1fc3a7056b39"
+  },
+  "output_hashes": {
+    "dev-01/dev-drawer/output.json": "6dca55c7d15ebbc0c11b6bb3933b91d6ee0cb0556f0ef572a64387530ba3a8f0",
+    "dev-01/dev-wheel/output.json": "ca3a987dc675e2b884e5144c7231f050985605e4ec4a7762b7be430b7b4f16e9",
+    "dev-01/dev-frame/output.json": "2b2584455aa59e7974694b63ba8ae32d006b344256fa7a61682eaf693ac1017a",
+    "transfer-final/transfer-holder/output.json": "f136d8ebba87d4899445684ba912a24678c9d3739c1b98cb5cfb9dc16f7cb6ef",
+    "transfer-final/transfer-cabinet-drawer/output.json": "9c07ae0ab8e5363224584ba6530be94cd19bf230ca3709e8394fda64b7f6438a",
+    "transfer-final/transfer-cabinet-frame/output.json": "9871d99fd88fabce80f3ec8940ab3e6a4ac0b26430ae2eb15b9a47f94322c4e5",
+    "dev-02/dev-drawer/output.json": "87ee508c0362108b8c65dfa3b7ab970bf6f75e8ea2adccaa77e74de1079c3217",
+    "dev-02/dev-wheel/output.json": "ca3a987dc675e2b884e5144c7231f050985605e4ec4a7762b7be430b7b4f16e9",
+    "dev-02/dev-frame/output.json": "2b2584455aa59e7974694b63ba8ae32d006b344256fa7a61682eaf693ac1017a",
+    "dev-05/dev-drawer/output.json": "87ee508c0362108b8c65dfa3b7ab970bf6f75e8ea2adccaa77e74de1079c3217",
+    "dev-05/dev-wheel/output.json": "4086d9baead4f6f510021ba4d0861368a58d5d01cad4ed48a937cad1289159ac",
+    "dev-05/dev-frame/output.json": "2b2584455aa59e7974694b63ba8ae32d006b344256fa7a61682eaf693ac1017a",
+    "dev-04/dev-drawer/output.json": "87ee508c0362108b8c65dfa3b7ab970bf6f75e8ea2adccaa77e74de1079c3217",
+    "dev-04/dev-wheel/output.json": "d8562cd41ab5e96879b94cddf001ed8c7f7f02623f22e62e1ddd8d784691040e",
+    "dev-04/dev-frame/output.json": "2b2584455aa59e7974694b63ba8ae32d006b344256fa7a61682eaf693ac1017a",
+    "dev-03/dev-drawer/output.json": "87ee508c0362108b8c65dfa3b7ab970bf6f75e8ea2adccaa77e74de1079c3217",
+    "dev-03/dev-wheel/output.json": "79b9fc608b4bdddfb06e91e7f6c38a6bfa44a1d76e5233e7e743503547d5bb92",
+    "dev-03/dev-frame/output.json": "2b2584455aa59e7974694b63ba8ae32d006b344256fa7a61682eaf693ac1017a",
+    "frozen-source-copy/runs/v6-proxy-controls-001/transfer-holder/output.json": "1fdc4f46258e57247bf2c69590bd69ae63e9ba68459e19df8a1b8d19ddcd5e69",
+    "frozen-source-copy/runs/v6-proxy-controls-001/transfer-cabinet-drawer/output.json": "5e6fe0c42ca5eefe1e89391af28db757d8b314544bede258b99dd0ef7ff24416",
+    "frozen-source-copy/runs/v6-proxy-controls-001/transfer-cabinet-frame/output.json": "4b556c68df67ce5c8e9914e9ebfbe0c1ebb808fd18b6da2639c97d61b0adc037",
+    "frozen-source-copy/runs/v6-proxy-controls-001/dev-drawer/output.json": "ade140cd99bcdb0ba8abb8ac2c66f63b70bef38bf8128a72e0ce6fc01783e11e",
+    "frozen-source-copy/runs/v6-proxy-controls-001/dev-wheel/output.json": "7538e902fc3ad71eb3fb17013ced73fd2951ef2db8d29f1aff9e8308d183c32d",
+    "frozen-source-copy/runs/v6-proxy-controls-001/dev-frame/output.json": "e7cb55bb72bcdc7549bc8a91a10931182050c5dacf694a9c74600549e3deb0ea",
+    "transfer-first/transfer-holder/output.json": "d6ffb01f21e59d4361c79af515776a7bf5db38e16a3f8fd9b24ec1e47553354b",
+    "transfer-first/transfer-cabinet-drawer/output.json": "11d381b05305118fb49b03dd96e251db6b308d10a40f95d465031ccad449ffb3",
+    "transfer-first/transfer-cabinet-frame/output.json": "9871d99fd88fabce80f3ec8940ab3e6a4ac0b26430ae2eb15b9a47f94322c4e5"
+  },
+  "transfer_mean_delta": 0.02110888443553771
+}

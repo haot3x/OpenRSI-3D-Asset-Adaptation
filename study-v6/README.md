@@ -1,5 +1,10 @@
 # Functional LOD feasibility and bounded convex-proxy calibration (v6)
 
+**Completed short-study result:** development score 0.879604 → 0.996543;
+withheld transfer score 0.955445 → 0.976554. There is a small observed gain, but
+the first strong-model program is already near the transfer ceiling. This is
+**not ready for a long run**. See [RESULTS.md](RESULTS.md).
+
 This is a new development study with a **pre-model engineering feasibility screen**
 and a separately specified bounded convex-proxy model calibration. It does not relabel
 v5's saturated geometry/rig result, is not a formal task, and does not claim an

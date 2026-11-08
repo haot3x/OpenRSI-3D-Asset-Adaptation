@@ -10,7 +10,15 @@ while transferring to new constraints and avoiding regressions in prior scenes.
 This repository is a public, runnable **engineering prototype**, not an accepted
 OpenRSI task, a completed RSI trajectory, or evidence of continual-learning gains.
 
-**Latest tool-using geometry/rig study (v5):** Astra max wrote and tested a reusable
+**Latest bounded convex-proxy study (v6):** one tool-using Astra-max episode
+improved development score **0.879604 → 0.996543** and withheld transfer score
+**0.955445 → 0.976554**. It generates real compound convex shapes under fixed
+hull/vertex budgets. There is a small observed method gain, but the first strong
+program is already near the transfer ceiling; a long run is not justified.
+Frozen outputs score identically on Mac/Linux, and 1,728 actual model-output
+Godot queries pass. See [study-v6/RESULTS.md](study-v6/RESULTS.md).
+
+**Preserved tool-using geometry/rig study (v5):** Astra max wrote and tested a reusable
 mesh/rig generator. Both its first submitted and final programs pass 4/4 withheld
 transfer cases, including an unseen three-part cabinet. Capacity is preserved at
 95%+, rigid functional parts retain size, and generated joint hierarchies import
@@ -46,8 +54,11 @@ current protocol is not ready for a formal long research run.
 
 ## Research target
 
-The planned candidate contains a shared base asset, bounded scene adapters and
-a reusable adaptation/verification method. The scene and evaluator stay fixed.
+The planned candidate is reusable code producing game-ready mesh variants,
+registered articulation, behavior and collision proxies from an input asset and
+scene requirements. The scene and evaluator stay fixed. The current v6 study
+isolates compound-convex proxy generation; the broader coupled task remains
+unimplemented and uncalibrated.
 The intended comparison is continually improved reusable adaptation versus
 matched-budget independent per-scene adaptation. New-scene success, previous-scene
 regressions, asset preservation and adaptation cost are distinct outcomes.

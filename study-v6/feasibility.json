@@ -1,0 +1,3573 @@
+{
+  "kind": "Separate developer feasibility measurements; not the actual model baseline",
+  "screen_note": "Confirmation run of the same pre-model screen after adding a nonfinite-result guard; original pre-model screen remains local in runs/v6-screen-001",
+  "screen": {
+    "kind": "Pre-model tool feasibility, not an RSI experiment",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "python": "3.12.13",
+    "packages": {
+      "numpy": "2.4.4",
+      "scipy": "1.17.1",
+      "trimesh": "4.12.2",
+      "rtree": "1.4.1",
+      "coacd": "1.0.14",
+      "fast-simplification": "0.2.0",
+      "networkx": "3.5"
+    },
+    "rows": [
+      {
+        "asset": "medical_cart001",
+        "part": "p00",
+        "role": "body",
+        "original_triangles": 20360,
+        "cleaned_triangles": 20084,
+        "lods": [
+          {
+            "source_triangles": 20360,
+            "triangles": 4176,
+            "source_samples": 11100,
+            "candidate_samples": 3132,
+            "sampled_max_metres": 0.06051717403069623,
+            "sampled_rms_metres": 0.0017610145455751475,
+            "sampled_p99_metres": 0.0019927326257341764,
+            "approximate_max_pixels": {
+              "2": 28.301081440946504,
+              "6": 9.433693813648835,
+              "12": 4.716846906824418
+            },
+            "ratio": 0.2,
+            "target_triangles": 4016
+          },
+          {
+            "source_triangles": 20360,
+            "triangles": 4176,
+            "source_samples": 11100,
+            "candidate_samples": 3132,
+            "sampled_max_metres": 0.06051717403069623,
+            "sampled_rms_metres": 0.0017610145455751475,
+            "sampled_p99_metres": 0.0019927326257341764,
+            "approximate_max_pixels": {
+              "2": 28.301081440946504,
+              "6": 9.433693813648835,
+              "12": 4.716846906824418
+            },
+            "ratio": 0.05,
+            "target_triangles": 1004
+          },
+          {
+            "source_triangles": 20360,
+            "triangles": 4176,
+            "source_samples": 11100,
+            "candidate_samples": 3132,
+            "sampled_max_metres": 0.06051717403069623,
+            "sampled_rms_metres": 0.0017610145455751475,
+            "sampled_p99_metres": 0.0019927326257341764,
+            "approximate_max_pixels": {
+              "2": 28.301081440946504,
+              "6": 9.433693813648835,
+              "12": 4.716846906824418
+            },
+            "ratio": 0.015,
+            "target_triangles": 301
+          }
+        ],
+        "cleaning": {
+          "source_triangles": 20360,
+          "triangles": 20084,
+          "source_samples": 11100,
+          "candidate_samples": 11092,
+          "sampled_max_metres": 8.559443795431227e-05,
+          "sampled_rms_metres": 5.844919788631332e-07,
+          "sampled_p99_metres": 7.531352121556891e-13,
+          "approximate_max_pixels": {
+            "2": 0.04002855715318611,
+            "6": 0.01334285238439537,
+            "12": 0.006671426192197685
+          }
+        },
+        "proxies": {
+          "single_hull": {
+            "status": "measured",
+            "hulls": 1,
+            "vertices": 1534,
+            "contact_count": 294,
+            "free_count": 1260,
+            "false_free": 0,
+            "false_blocked": 667,
+            "false_free_fraction": 0.0,
+            "false_blocked_fraction": 0.5293650793650794,
+            "exact_sampled_agreement": false,
+            "convex": true
+          },
+          "component_hulls": {
+            "status": "measured",
+            "hulls": 17,
+            "vertices": 9489,
+            "contact_count": 294,
+            "free_count": 1260,
+            "false_free": 0,
+            "false_blocked": 49,
+            "false_free_fraction": 0.0,
+            "false_blocked_fraction": 0.03888888888888889,
+            "exact_sampled_agreement": false,
+            "convex": true
+          }
+        },
+        "wall_seconds": 4.596
+      },
+      {
+        "asset": "medical_cart001",
+        "part": "p01",
+        "role": "drawer",
+        "original_triangles": 5227,
+        "cleaned_triangles": 5220,
+        "lods": [
+          {
+            "source_triangles": 5227,
+            "triangles": 1044,
+            "source_samples": 3636,
+            "candidate_samples": 1547,
+            "sampled_max_metres": 0.0008017763030596089,
+            "sampled_rms_metres": 8.9957881241913e-05,
+            "sampled_p99_metres": 0.0003375487569530543,
+            "approximate_max_pixels": {
+              "2": 0.37495366916507594,
+              "6": 0.12498455638835865,
+              "12": 0.062492278194179324
+            },
+            "ratio": 0.2,
+            "target_triangles": 1044
+          },
+          {
+            "source_triangles": 5227,
+            "triangles": 399,
+            "source_samples": 3636,
+            "candidate_samples": 1223,
+            "sampled_max_metres": 0.08555905431124865,
+            "sampled_rms_metres": 0.02209155085041086,
+            "sampled_p99_metres": 0.06400644042607335,
+            "approximate_max_pixels": {
+              "2": 40.012009860949476,
+              "6": 13.337336620316494,
+              "12": 6.668668310158247
+            },
+            "ratio": 0.05,
+            "target_triangles": 261
+          },
+          {
+            "source_triangles": 5227,
+            "triangles": 399,
+            "source_samples": 3636,
+            "candidate_samples": 1223,
+            "sampled_max_metres": 0.08555905431124865,
+            "sampled_rms_metres": 0.02209155085041086,
+            "sampled_p99_metres": 0.06400644042607335,
+            "approximate_max_pixels": {
+              "2": 40.012009860949476,
+              "6": 13.337336620316494,
+              "12": 6.668668310158247
+            },
+            "ratio": 0.015,
+            "target_triangles": 78
+          }
+        ],
+        "cleaning": {
+          "source_triangles": 5227,
+          "triangles": 5220,
+          "source_samples": 3636,
+          "candidate_samples": 3636,
+          "sampled_max_metres": 7.948126828281134e-06,
+          "sampled_rms_metres": 1.2840108018562554e-07,
+          "sampled_p99_metres": 1.3877787807814457e-16,
+          "approximate_max_pixels": {
+            "2": 0.0037169710627277344,
+            "6": 0.0012389903542425781,
+            "12": 0.0006194951771212891
+          }
+        },
+        "proxies": {
+          "single_hull": {
+            "status": "measured",
+            "hulls": 1,
+            "vertices": 270,
+            "contact_count": 374,
+            "free_count": 1468,
+            "false_free": 0,
+            "false_blocked": 625,
+            "false_free_fraction": 0.0,
+            "false_blocked_fraction": 0.4257493188010899,
+            "exact_sampled_agreement": false,
+            "convex": true
+          },
+          "component_hulls": {
+            "status": "measured",
+            "hulls": 2,
+            "vertices": 1026,
+            "contact_count": 374,
+            "free_count": 1468,
+            "false_free": 0,
+            "false_blocked": 523,
+            "false_free_fraction": 0.0,
+            "false_blocked_fraction": 0.35626702997275206,
+            "exact_sampled_agreement": false,
+            "convex": true
+          }
+        },
+        "wall_seconds": 1.335
+      },
+      {
+        "asset": "medical_cart001",
+        "part": "p02",
+        "role": "wheel",
+        "original_triangles": 8050,
+        "cleaned_triangles": 7938,
+        "lods": [
+          {
+            "source_triangles": 8050,
+            "triangles": 1586,
+            "source_samples": 5014,
+            "candidate_samples": 1820,
+            "sampled_max_metres": 0.004133575856738734,
+            "sampled_rms_metres": 0.00037425934323621766,
+            "sampled_p99_metres": 0.0017102535267783181,
+            "approximate_max_pixels": {
+              "2": 1.933082118219116,
+              "6": 0.6443607060730386,
+              "12": 0.3221803530365193
+            },
+            "ratio": 0.2,
+            "target_triangles": 1587
+          },
+          {
+            "source_triangles": 8050,
+            "triangles": 396,
+            "source_samples": 5014,
+            "candidate_samples": 1224,
+            "sampled_max_metres": 0.004997045865072047,
+            "sampled_rms_metres": 0.000887103334337459,
+            "sampled_p99_metres": 0.0034417158779756515,
+            "approximate_max_pixels": {
+              "2": 2.3368870780353252,
+              "6": 0.7789623593451085,
+              "12": 0.38948117967255425
+            },
+            "ratio": 0.05,
+            "target_triangles": 396
+          },
+          {
+            "source_triangles": 8050,
+            "triangles": 118,
+            "source_samples": 5014,
+            "candidate_samples": 1085,
+            "sampled_max_metres": 0.008047247309334508,
+            "sampled_rms_metres": 0.0023327095329175903,
+            "sampled_p99_metres": 0.006724691775215023,
+            "approximate_max_pixels": {
+              "2": 3.763325124226615,
+              "6": 1.2544417080755383,
+              "12": 0.6272208540377692
+            },
+            "ratio": 0.015,
+            "target_triangles": 119
+          }
+        ],
+        "cleaning": {
+          "source_triangles": 8050,
+          "triangles": 7938,
+          "source_samples": 5014,
+          "candidate_samples": 5013,
+          "sampled_max_metres": 0.00012001120934424309,
+          "sampled_rms_metres": 4.136345940604253e-06,
+          "sampled_p99_metres": 8.100465987397872e-17,
+          "approximate_max_pixels": {
+            "2": 0.05612368825674375,
+            "6": 0.018707896085581252,
+            "12": 0.009353948042790626
+          }
+        },
+        "proxies": {
+          "single_hull": {
+            "status": "measured",
+            "hulls": 1,
+            "vertices": 920,
+            "contact_count": 406,
+            "free_count": 1350,
+            "false_free": 0,
+            "false_blocked": 30,
+            "false_free_fraction": 0.0,
+            "false_blocked_fraction": 0.022222222222222223,
+            "exact_sampled_agreement": false,
+            "convex": true
+          },
+          "component_hulls": {
+            "status": "measured",
+            "hulls": 1,
+            "vertices": 920,
+            "contact_count": 406,
+            "free_count": 1350,
+            "false_free": 0,
+            "false_blocked": 30,
+            "false_free_fraction": 0.0,
+            "false_blocked_fraction": 0.022222222222222223,
+            "exact_sampled_agreement": false,
+            "convex": true
+          }
+        },
+        "wall_seconds": 0.787
+      },
+      {
+        "asset": "medical_cart001",
+        "part": "p03",
+        "role": "caster",
+        "original_triangles": 2686,
+        "cleaned_triangles": 2675,
+        "lods": [
+          {
+            "source_triangles": 2686,
+            "triangles": 535,
+            "source_samples": 2440,
+            "candidate_samples": 1300,
+            "sampled_max_metres": 0.007038597582251287,
+            "sampled_rms_metres": 0.0010373350478394365,
+            "sampled_p99_metres": 0.005084821011378106,
+            "approximate_max_pixels": {
+              "2": 3.291626329152487,
+              "6": 1.0972087763841623,
+              "12": 0.5486043881920811
+            },
+            "ratio": 0.2,
+            "target_triangles": 535
+          },
+          {
+            "source_triangles": 2686,
+            "triangles": 303,
+            "source_samples": 2440,
+            "candidate_samples": 1183,
+            "sampled_max_metres": 0.020720280947243496,
+            "sampled_rms_metres": 0.006246412843854264,
+            "sampled_p99_metres": 0.01952153935721321,
+            "approximate_max_pixels": {
+              "2": 9.689916423886325,
+              "6": 3.2299721412954416,
+              "12": 1.6149860706477208
+            },
+            "ratio": 0.05,
+            "target_triangles": 133
+          },
+          {
+            "source_triangles": 2686,
+            "triangles": 303,
+            "source_samples": 2440,
+            "candidate_samples": 1183,
+            "sampled_max_metres": 0.020720280947243496,
+            "sampled_rms_metres": 0.006246412843854264,
+            "sampled_p99_metres": 0.01952153935721321,
+            "approximate_max_pixels": {
+              "2": 9.689916423886325,
+              "6": 3.2299721412954416,
+              "12": 1.6149860706477208
+            },
+            "ratio": 0.015,
+            "target_triangles": 40
+          }
+        ],
+        "cleaning": {
+          "source_triangles": 2686,
+          "triangles": 2675,
+          "source_samples": 2440,
+          "candidate_samples": 2440,
+          "sampled_max_metres": 0.00011611992598592129,
+          "sampled_rms_metres": 2.7879608805050288e-06,
+          "sampled_p99_metres": 6.973039719944224e-09,
+          "approximate_max_pixels": {
+            "2": 0.05430391512626338,
+            "6": 0.018101305042087797,
+            "12": 0.009050652521043898
+          }
+        },
+        "proxies": {
+          "single_hull": {
+            "status": "measured",
+            "hulls": 1,
+            "vertices": 373,
+            "contact_count": 336,
+            "free_count": 1252,
+            "false_free": 0,
+            "false_blocked": 339,
+            "false_free_fraction": 0.0,
+            "false_blocked_fraction": 0.2707667731629393,
+            "exact_sampled_agreement": false,
+            "convex": true
+          },
+          "component_hulls": {
+            "status": "non_volumetric_component",
+            "deployable": false
+          }
+        },
+        "wall_seconds": 0.521
+      },
+      {
+        "asset": "medical_cart001",
+        "part": "p04",
+        "role": "caster",
+        "original_triangles": 2686,
+        "cleaned_triangles": 2675,
+        "lods": [
+          {
+            "source_triangles": 2686,
+            "triangles": 535,
+            "source_samples": 2440,
+            "candidate_samples": 1300,
+            "sampled_max_metres": 0.007038597582251287,
+            "sampled_rms_metres": 0.0010396710165778134,
+            "sampled_p99_metres": 0.005084821011378087,
+            "approximate_max_pixels": {
+              "2": 3.291626329152487,
+              "6": 1.0972087763841623,
+              "12": 0.5486043881920811
+            },
+            "ratio": 0.2,
+            "target_triangles": 535
+          },
+          {
+            "source_triangles": 2686,
+            "triangles": 303,
+            "source_samples": 2440,
+            "candidate_samples": 1183,
+            "sampled_max_metres": 0.02072027934978797,
+            "sampled_rms_metres": 0.006295825150662531,
+            "sampled_p99_metres": 0.019651529346540686,
+            "approximate_max_pixels": {
+              "2": 9.689915676830308,
+              "6": 3.2299718922767697,
+              "12": 1.6149859461383849
+            },
+            "ratio": 0.05,
+            "target_triangles": 133
+          },
+          {
+            "source_triangles": 2686,
+            "triangles": 303,
+            "source_samples": 2440,
+            "candidate_samples": 1183,
+            "sampled_max_metres": 0.02072027934978797,
+            "sampled_rms_metres": 0.006295825150662531,
+            "sampled_p99_metres": 0.019651529346540686,
+            "approximate_max_pixels": {
+              "2": 9.689915676830308,
+              "6": 3.2299718922767697,
+              "12": 1.6149859461383849
+            },
+            "ratio": 0.015,
+            "target_triangles": 40
+          }
+        ],
+        "cleaning": {
+          "source_triangles": 2686,
+          "triangles": 2675,
+          "source_samples": 2440,
+          "candidate_samples": 2440,
+          "sampled_max_metres": 0.00015877745460375097,
+          "sampled_rms_metres": 3.6932788832915814e-06,
+          "sampled_p99_metres": 1.685525052118828e-06,
+          "approximate_max_pixels": {
+            "2": 0.07425286698694257,
+            "6": 0.024750955662314195,
+            "12": 0.012375477831157097
+          }
+        },
+        "proxies": {
+          "single_hull": {
+            "status": "measured",
+            "hulls": 1,
+            "vertices": 373,
+            "contact_count": 336,
+            "free_count": 1252,
+            "false_free": 0,
+            "false_blocked": 339,
+            "false_free_fraction": 0.0,
+            "false_blocked_fraction": 0.2707667731629393,
+            "exact_sampled_agreement": false,
+            "convex": true
+          },
+          "component_hulls": {
+            "status": "non_volumetric_component",
+            "deployable": false
+          }
+        },
+        "wall_seconds": 0.518
+      },
+      {
+        "asset": "medical_cart001",
+        "part": "p05",
+        "role": "drawer",
+        "original_triangles": 5227,
+        "cleaned_triangles": 5220,
+        "lods": [
+          {
+            "source_triangles": 5227,
+            "triangles": 1044,
+            "source_samples": 3636,
+            "candidate_samples": 1547,
+            "sampled_max_metres": 0.0008017777239716054,
+            "sampled_rms_metres": 8.905517974636102e-05,
+            "sampled_p99_metres": 0.0003248078013391411,
+            "approximate_max_pixels": {
+              "2": 0.3749543336598541,
+              "6": 0.12498477788661803,
+              "12": 0.06249238894330902
+            },
+            "ratio": 0.2,
+            "target_triangles": 1044
+          },
+          {
+            "source_triangles": 5227,
+            "triangles": 399,
+            "source_samples": 3636,
+            "candidate_samples": 1223,
+            "sampled_max_metres": 0.08555905392401014,
+            "sampled_rms_metres": 0.02130600194686986,
+            "sampled_p99_metres": 0.06194986085373783,
+            "approximate_max_pixels": {
+              "2": 40.01200967985595,
+              "6": 13.337336559951984,
+              "12": 6.668668279975992
+            },
+            "ratio": 0.05,
+            "target_triangles": 261
+          },
+          {
+            "source_triangles": 5227,
+            "triangles": 399,
+            "source_samples": 3636,
+            "candidate_samples": 1223,
+            "sampled_max_metres": 0.08555905392401014,
+            "sampled_rms_metres": 0.02130600194686986,
+            "sampled_p99_metres": 0.06194986085373783,
+            "approximate_max_pixels": {
+              "2": 40.01200967985595,
+              "6": 13.337336559951984,
+              "12": 6.668668279975992
+            },
+            "ratio": 0.015,
+            "target_triangles": 78
+          }
+        ],
+        "cleaning": {
+          "source_triangles": 5227,
+          "triangles": 5220,
+          "source_samples": 3636,
+          "candidate_samples": 3636,
+          "sampled_max_metres": 3.007346353408876e-13,
+          "sampled_rms_metres": 5.9122590953127965e-15,
+          "sampled_p99_metres": 1.6977824781759551e-16,
+          "approximate_max_pixels": {
+            "2": 1.4063967036165142e-10,
+            "6": 4.687989012055048e-11,
+            "12": 2.343994506027524e-11
+          }
+        },
+        "proxies": {
+          "single_hull": {
+            "status": "measured",
+            "hulls": 1,
+            "vertices": 266,
+            "contact_count": 374,
+            "free_count": 1468,
+            "false_free": 0,
+            "false_blocked": 625,
+            "false_free_fraction": 0.0,
+            "false_blocked_fraction": 0.4257493188010899,
+            "exact_sampled_agreement": false,
+            "convex": true
+          },
+          "component_hulls": {
+            "status": "measured",
+            "hulls": 2,
+            "vertices": 1010,
+            "contact_count": 374,
+            "free_count": 1468,
+            "false_free": 0,
+            "false_blocked": 523,
+            "false_free_fraction": 0.0,
+            "false_blocked_fraction": 0.35626702997275206,
+            "exact_sampled_agreement": false,
+            "convex": true
+          }
+        },
+        "wall_seconds": 1.315
+      },
+      {
+        "asset": "medical_cart001",
+        "part": "p06",
+        "role": "wheel",
+        "original_triangles": 8050,
+        "cleaned_triangles": 7938,
+        "lods": [
+          {
+            "source_triangles": 8050,
+            "triangles": 1587,
+            "source_samples": 5014,
+            "candidate_samples": 1821,
+            "sampled_max_metres": 0.0041335758567392425,
+            "sampled_rms_metres": 0.0003820593651826937,
+            "sampled_p99_metres": 0.0017522194624798408,
+            "approximate_max_pixels": {
+              "2": 1.9330821182193536,
+              "6": 0.6443607060731179,
+              "12": 0.32218035303655895
+            },
+            "ratio": 0.2,
+            "target_triangles": 1587
+          },
+          {
+            "source_triangles": 8050,
+            "triangles": 396,
+            "source_samples": 5014,
+            "candidate_samples": 1224,
+            "sampled_max_metres": 0.0046344956833802775,
+            "sampled_rms_metres": 0.000858191940939256,
+            "sampled_p99_metres": 0.0031462545370308814,
+            "approximate_max_pixels": {
+              "2": 2.1673391375897877,
+              "6": 0.7224463791965959,
+              "12": 0.36122318959829797
+            },
+            "ratio": 0.05,
+            "target_triangles": 396
+          },
+          {
+            "source_triangles": 8050,
+            "triangles": 118,
+            "source_samples": 5014,
+            "candidate_samples": 1085,
+            "sampled_max_metres": 0.006980650470550887,
+            "sampled_rms_metres": 0.002077758992266362,
+            "sampled_p99_metres": 0.006198077757331921,
+            "approximate_max_pixels": {
+              "2": 3.264527146915907,
+              "6": 1.0881757156386358,
+              "12": 0.5440878578193179
+            },
+            "ratio": 0.015,
+            "target_triangles": 119
+          }
+        ],
+        "cleaning": {
+          "source_triangles": 8050,
+          "triangles": 7938,
+          "source_samples": 5014,
+          "candidate_samples": 5013,
+          "sampled_max_metres": 0.00011436090083281069,
+          "sampled_rms_metres": 3.8132767728903426e-06,
+          "sampled_p99_metres": 7.140969828582642e-07,
+          "approximate_max_pixels": {
+            "2": 0.05348130047327901,
+            "6": 0.01782710015775967,
+            "12": 0.008913550078879834
+          }
+        },
+        "proxies": {
+          "single_hull": {
+            "status": "measured",
+            "hulls": 1,
+            "vertices": 920,
+            "contact_count": 406,
+            "free_count": 1350,
+            "false_free": 0,
+            "false_blocked": 30,
+            "false_free_fraction": 0.0,
+            "false_blocked_fraction": 0.022222222222222223,
+            "exact_sampled_agreement": false,
+            "convex": true
+          },
+          "component_hulls": {
+            "status": "measured",
+            "hulls": 1,
+            "vertices": 920,
+            "contact_count": 406,
+            "free_count": 1350,
+            "false_free": 0,
+            "false_blocked": 30,
+            "false_free_fraction": 0.0,
+            "false_blocked_fraction": 0.022222222222222223,
+            "exact_sampled_agreement": false,
+            "convex": true
+          }
+        },
+        "wall_seconds": 0.763
+      },
+      {
+        "asset": "medical_cart001",
+        "part": "p07",
+        "role": "holder",
+        "original_triangles": 3748,
+        "cleaned_triangles": 3747,
+        "lods": [
+          {
+            "source_triangles": 3748,
+            "triangles": 748,
+            "source_samples": 2889,
+            "candidate_samples": 1394,
+            "sampled_max_metres": 0.003484662822192104,
+            "sampled_rms_metres": 0.00045420885784858416,
+            "sampled_p99_metres": 0.0018430996704215563,
+            "approximate_max_pixels": {
+              "2": 1.629615524926431,
+              "6": 0.543205174975477,
+              "12": 0.2716025874877385
+            },
+            "ratio": 0.2,
+            "target_triangles": 749
+          },
+          {
+            "source_triangles": 3748,
+            "triangles": 186,
+            "source_samples": 2889,
+            "candidate_samples": 1115,
+            "sampled_max_metres": 0.015159311969538531,
+            "sampled_rms_metres": 0.0023866811728621025,
+            "sampled_p99_metres": 0.011044149742403612,
+            "approximate_max_pixels": {
+              "2": 7.089308605537497,
+              "6": 2.3631028685124993,
+              "12": 1.1815514342562496
+            },
+            "ratio": 0.05,
+            "target_triangles": 187
+          },
+          {
+            "source_triangles": 3748,
+            "triangles": 56,
+            "source_samples": 2889,
+            "candidate_samples": 1056,
+            "sampled_max_metres": 0.01777819917019802,
+            "sampled_rms_metres": 0.003874297646333206,
+            "sampled_p99_metres": 0.014181223461955274,
+            "approximate_max_pixels": {
+              "2": 8.314040942062695,
+              "6": 2.7713469806875652,
+              "12": 1.3856734903437826
+            },
+            "ratio": 0.015,
+            "target_triangles": 56
+          }
+        ],
+        "cleaning": {
+          "source_triangles": 3748,
+          "triangles": 3747,
+          "source_samples": 2889,
+          "candidate_samples": 2889,
+          "sampled_max_metres": 3.0812261230256545e-05,
+          "sampled_rms_metres": 4.178223868714427e-07,
+          "sampled_p99_metres": 6.206335383118183e-17,
+          "approximate_max_pixels": {
+            "2": 0.01440946852566005,
+            "6": 0.004803156175220017,
+            "12": 0.0024015780876100084
+          }
+        },
+        "proxies": {
+          "single_hull": {
+            "status": "measured",
+            "hulls": 1,
+            "vertices": 763,
+            "contact_count": 122,
+            "free_count": 941,
+            "false_free": 0,
+            "false_blocked": 267,
+            "false_free_fraction": 0.0,
+            "false_blocked_fraction": 0.28374070138150903,
+            "exact_sampled_agreement": false,
+            "convex": true
+          },
+          "component_hulls": {
+            "status": "non_volumetric_component",
+            "deployable": false
+          }
+        },
+        "wall_seconds": 0.414
+      },
+      {
+        "asset": "medical_cart001",
+        "part": "p08",
+        "role": "caster",
+        "original_triangles": 2686,
+        "cleaned_triangles": 2675,
+        "lods": [
+          {
+            "source_triangles": 2686,
+            "triangles": 535,
+            "source_samples": 2440,
+            "candidate_samples": 1300,
+            "sampled_max_metres": 0.0070385975822512496,
+            "sampled_rms_metres": 0.0010224894398056911,
+            "sampled_p99_metres": 0.005084821011378106,
+            "approximate_max_pixels": {
+              "2": 3.291626329152469,
+              "6": 1.0972087763841565,
+              "12": 0.5486043881920782
+            },
+            "ratio": 0.2,
+            "target_triangles": 535
+          },
+          {
+            "source_triangles": 2686,
+            "triangles": 303,
+            "source_samples": 2440,
+            "candidate_samples": 1183,
+            "sampled_max_metres": 0.02072027980982556,
+            "sampled_rms_metres": 0.006234451092555953,
+            "sampled_p99_metres": 0.019544606828874767,
+            "approximate_max_pixels": {
+              "2": 9.689915891968598,
+              "6": 3.2299719639895326,
+              "12": 1.6149859819947663
+            },
+            "ratio": 0.05,
+            "target_triangles": 133
+          },
+          {
+            "source_triangles": 2686,
+            "triangles": 303,
+            "source_samples": 2440,
+            "candidate_samples": 1183,
+            "sampled_max_metres": 0.02072027980982556,
+            "sampled_rms_metres": 0.006234451092555953,
+            "sampled_p99_metres": 0.019544606828874767,
+            "approximate_max_pixels": {
+              "2": 9.689915891968598,
+              "6": 3.2299719639895326,
+              "12": 1.6149859819947663
+            },
+            "ratio": 0.015,
+            "target_triangles": 40
+          }
+        ],
+        "cleaning": {
+          "source_triangles": 2686,
+          "triangles": 2675,
+          "source_samples": 2440,
+          "candidate_samples": 2440,
+          "sampled_max_metres": 0.00013486694455988596,
+          "sampled_rms_metres": 3.415125322737977e-06,
+          "sampled_p99_metres": 6.43516370415084e-15,
+          "approximate_max_pixels": {
+            "2": 0.06307102806461033,
+            "6": 0.02102367602153678,
+            "12": 0.01051183801076839
+          }
+        },
+        "proxies": {
+          "single_hull": {
+            "status": "measured",
+            "hulls": 1,
+            "vertices": 373,
+            "contact_count": 336,
+            "free_count": 1252,
+            "false_free": 0,
+            "false_blocked": 339,
+            "false_free_fraction": 0.0,
+            "false_blocked_fraction": 0.2707667731629393,
+            "exact_sampled_agreement": false,
+            "convex": true
+          },
+          "component_hulls": {
+            "status": "non_volumetric_component",
+            "deployable": false
+          }
+        },
+        "wall_seconds": 0.513
+      },
+      {
+        "asset": "medical_cart001",
+        "part": "p09",
+        "role": "caster",
+        "original_triangles": 2686,
+        "cleaned_triangles": 2675,
+        "lods": [
+          {
+            "source_triangles": 2686,
+            "triangles": 535,
+            "source_samples": 2440,
+            "candidate_samples": 1300,
+            "sampled_max_metres": 0.0070385975822512496,
+            "sampled_rms_metres": 0.0010406495857853864,
+            "sampled_p99_metres": 0.005277012100837479,
+            "approximate_max_pixels": {
+              "2": 3.291626329152469,
+              "6": 1.0972087763841565,
+              "12": 0.5486043881920782
+            },
+            "ratio": 0.2,
+            "target_triangles": 535
+          },
+          {
+            "source_triangles": 2686,
+            "triangles": 303,
+            "source_samples": 2440,
+            "candidate_samples": 1183,
+            "sampled_max_metres": 0.02072028094724347,
+            "sampled_rms_metres": 0.006294799923744427,
+            "sampled_p99_metres": 0.01957865246602913,
+            "approximate_max_pixels": {
+              "2": 9.689916423886311,
+              "6": 3.2299721412954376,
+              "12": 1.6149860706477188
+            },
+            "ratio": 0.05,
+            "target_triangles": 133
+          },
+          {
+            "source_triangles": 2686,
+            "triangles": 303,
+            "source_samples": 2440,
+            "candidate_samples": 1183,
+            "sampled_max_metres": 0.02072028094724347,
+            "sampled_rms_metres": 0.006294799923744427,
+            "sampled_p99_metres": 0.01957865246602913,
+            "approximate_max_pixels": {
+              "2": 9.689916423886311,
+              "6": 3.2299721412954376,
+              "12": 1.6149860706477188
+            },
+            "ratio": 0.015,
+            "target_triangles": 40
+          }
+        ],
+        "cleaning": {
+          "source_triangles": 2686,
+          "triangles": 2675,
+          "source_samples": 2440,
+          "candidate_samples": 2440,
+          "sampled_max_metres": 0.0001108990468979052,
+          "sampled_rms_metres": 3.55432016342601e-06,
+          "sampled_p99_metres": 2.4369490734855876e-07,
+          "approximate_max_pixels": {
+            "2": 0.0518623516092966,
+            "6": 0.017287450536432204,
+            "12": 0.008643725268216102
+          }
+        },
+        "proxies": {
+          "single_hull": {
+            "status": "measured",
+            "hulls": 1,
+            "vertices": 373,
+            "contact_count": 336,
+            "free_count": 1252,
+            "false_free": 0,
+            "false_blocked": 339,
+            "false_free_fraction": 0.0,
+            "false_blocked_fraction": 0.2707667731629393,
+            "exact_sampled_agreement": false,
+            "convex": true
+          },
+          "component_hulls": {
+            "status": "non_volumetric_component",
+            "deployable": false
+          }
+        },
+        "wall_seconds": 0.523
+      },
+      {
+        "asset": "medical_cart001",
+        "part": "p10",
+        "role": "wheel",
+        "original_triangles": 8050,
+        "cleaned_triangles": 7938,
+        "lods": [
+          {
+            "source_triangles": 8050,
+            "triangles": 1587,
+            "source_samples": 5014,
+            "candidate_samples": 1821,
+            "sampled_max_metres": 0.004133575856739456,
+            "sampled_rms_metres": 0.0003894700893472896,
+            "sampled_p99_metres": 0.0017796419200848295,
+            "approximate_max_pixels": {
+              "2": 1.9330821182194533,
+              "6": 0.6443607060731512,
+              "12": 0.3221803530365756
+            },
+            "ratio": 0.2,
+            "target_triangles": 1587
+          },
+          {
+            "source_triangles": 8050,
+            "triangles": 396,
+            "source_samples": 5014,
+            "candidate_samples": 1224,
+            "sampled_max_metres": 0.004634495683379947,
+            "sampled_rms_metres": 0.000857798070224413,
+            "sampled_p99_metres": 0.003154119250379127,
+            "approximate_max_pixels": {
+              "2": 2.167339137589633,
+              "6": 0.7224463791965444,
+              "12": 0.3612231895982722
+            },
+            "ratio": 0.05,
+            "target_triangles": 396
+          },
+          {
+            "source_triangles": 8050,
+            "triangles": 118,
+            "source_samples": 5014,
+            "candidate_samples": 1085,
+            "sampled_max_metres": 0.007261189254327727,
+            "sampled_rms_metres": 0.00210504916821624,
+            "sampled_p99_metres": 0.006176407236237365,
+            "approximate_max_pixels": {
+              "2": 3.3957221522045753,
+              "6": 1.1319073840681917,
+              "12": 0.5659536920340958
+            },
+            "ratio": 0.015,
+            "target_triangles": 119
+          }
+        ],
+        "cleaning": {
+          "source_triangles": 8050,
+          "triangles": 7938,
+          "source_samples": 5014,
+          "candidate_samples": 5013,
+          "sampled_max_metres": 0.0001406967615651426,
+          "sampled_rms_metres": 4.3712762590646535e-06,
+          "sampled_p99_metres": 9.713971184744647e-07,
+          "approximate_max_pixels": {
+            "2": 0.06579736366263239,
+            "6": 0.0219324545542108,
+            "12": 0.0109662272771054
+          }
+        },
+        "proxies": {
+          "single_hull": {
+            "status": "measured",
+            "hulls": 1,
+            "vertices": 920,
+            "contact_count": 406,
+            "free_count": 1350,
+            "false_free": 0,
+            "false_blocked": 30,
+            "false_free_fraction": 0.0,
+            "false_blocked_fraction": 0.022222222222222223,
+            "exact_sampled_agreement": false,
+            "convex": true
+          },
+          "component_hulls": {
+            "status": "measured",
+            "hulls": 1,
+            "vertices": 920,
+            "contact_count": 406,
+            "free_count": 1350,
+            "false_free": 0,
+            "false_blocked": 30,
+            "false_free_fraction": 0.0,
+            "false_blocked_fraction": 0.022222222222222223,
+            "exact_sampled_agreement": false,
+            "convex": true
+          }
+        },
+        "wall_seconds": 0.773
+      },
+      {
+        "asset": "medical_cart001",
+        "part": "p11",
+        "role": "wheel",
+        "original_triangles": 8050,
+        "cleaned_triangles": 7938,
+        "lods": [
+          {
+            "source_triangles": 8050,
+            "triangles": 1586,
+            "source_samples": 5014,
+            "candidate_samples": 1820,
+            "sampled_max_metres": 0.0041335758567388374,
+            "sampled_rms_metres": 0.0003843986486575215,
+            "sampled_p99_metres": 0.0017201056300503604,
+            "approximate_max_pixels": {
+              "2": 1.9330821182191642,
+              "6": 0.6443607060730547,
+              "12": 0.32218035303652737
+            },
+            "ratio": 0.2,
+            "target_triangles": 1587
+          },
+          {
+            "source_triangles": 8050,
+            "triangles": 396,
+            "source_samples": 5014,
+            "candidate_samples": 1224,
+            "sampled_max_metres": 0.0048848558719862935,
+            "sampled_rms_metres": 0.0008749900212256978,
+            "sampled_p99_metres": 0.003389227908473272,
+            "approximate_max_pixels": {
+              "2": 2.2844210106414873,
+              "6": 0.7614736702138292,
+              "12": 0.3807368351069146
+            },
+            "ratio": 0.05,
+            "target_triangles": 396
+          },
+          {
+            "source_triangles": 8050,
+            "triangles": 118,
+            "source_samples": 5014,
+            "candidate_samples": 1085,
+            "sampled_max_metres": 0.008047247309334331,
+            "sampled_rms_metres": 0.002306109957591402,
+            "sampled_p99_metres": 0.006689548679750181,
+            "approximate_max_pixels": {
+              "2": 3.7633251242265318,
+              "6": 1.2544417080755108,
+              "12": 0.6272208540377554
+            },
+            "ratio": 0.015,
+            "target_triangles": 119
+          }
+        ],
+        "cleaning": {
+          "source_triangles": 8050,
+          "triangles": 7938,
+          "source_samples": 5014,
+          "candidate_samples": 5013,
+          "sampled_max_metres": 0.00015601060350525344,
+          "sampled_rms_metres": 4.881778900964644e-06,
+          "sampled_p99_metres": 1.2853445831345142e-06,
+          "approximate_max_pixels": {
+            "2": 0.0729589387834572,
+            "6": 0.024319646261152402,
+            "12": 0.012159823130576201
+          }
+        },
+        "proxies": {
+          "single_hull": {
+            "status": "measured",
+            "hulls": 1,
+            "vertices": 920,
+            "contact_count": 406,
+            "free_count": 1350,
+            "false_free": 0,
+            "false_blocked": 30,
+            "false_free_fraction": 0.0,
+            "false_blocked_fraction": 0.022222222222222223,
+            "exact_sampled_agreement": false,
+            "convex": true
+          },
+          "component_hulls": {
+            "status": "measured",
+            "hulls": 1,
+            "vertices": 920,
+            "contact_count": 406,
+            "free_count": 1350,
+            "false_free": 0,
+            "false_blocked": 30,
+            "false_free_fraction": 0.0,
+            "false_blocked_fraction": 0.022222222222222223,
+            "exact_sampled_agreement": false,
+            "convex": true
+          }
+        },
+        "wall_seconds": 0.774
+      },
+      {
+        "asset": "medical_cart001",
+        "part": "p12",
+        "role": "holder",
+        "original_triangles": 3748,
+        "cleaned_triangles": 3747,
+        "lods": [
+          {
+            "source_triangles": 3748,
+            "triangles": 748,
+            "source_samples": 2889,
+            "candidate_samples": 1395,
+            "sampled_max_metres": 0.0034846620575592954,
+            "sampled_rms_metres": 0.0004448522200704428,
+            "sampled_p99_metres": 0.0018852547113318604,
+            "approximate_max_pixels": {
+              "2": 1.6296151673430552,
+              "6": 0.5432050557810185,
+              "12": 0.27160252789050926
+            },
+            "ratio": 0.2,
+            "target_triangles": 749
+          },
+          {
+            "source_triangles": 3748,
+            "triangles": 186,
+            "source_samples": 2889,
+            "candidate_samples": 1117,
+            "sampled_max_metres": 0.00876537375140125,
+            "sampled_rms_metres": 0.0014854547759674034,
+            "sampled_p99_metres": 0.005479480137061687,
+            "approximate_max_pixels": {
+              "2": 4.099159624884546,
+              "6": 1.3663865416281822,
+              "12": 0.6831932708140911
+            },
+            "ratio": 0.05,
+            "target_triangles": 187
+          },
+          {
+            "source_triangles": 3748,
+            "triangles": 54,
+            "source_samples": 2889,
+            "candidate_samples": 1056,
+            "sampled_max_metres": 0.033356032016447185,
+            "sampled_rms_metres": 0.006096201466754966,
+            "sampled_p99_metres": 0.027832257976475996,
+            "approximate_max_pixels": {
+              "2": 15.599072391672786,
+              "6": 5.199690797224262,
+              "12": 2.599845398612131
+            },
+            "ratio": 0.015,
+            "target_triangles": 56
+          }
+        ],
+        "cleaning": {
+          "source_triangles": 3748,
+          "triangles": 3747,
+          "source_samples": 2889,
+          "candidate_samples": 2889,
+          "sampled_max_metres": 4.737891243261176e-06,
+          "sampled_rms_metres": 8.867623522568538e-08,
+          "sampled_p99_metres": 5.74355420452419e-17,
+          "approximate_max_pixels": {
+            "2": 0.0022156924555972895,
+            "6": 0.0007385641518657632,
+            "12": 0.0003692820759328816
+          }
+        },
+        "proxies": {
+          "single_hull": {
+            "status": "measured",
+            "hulls": 1,
+            "vertices": 769,
+            "contact_count": 122,
+            "free_count": 947,
+            "false_free": 0,
+            "false_blocked": 248,
+            "false_free_fraction": 0.0,
+            "false_blocked_fraction": 0.26187961985216474,
+            "exact_sampled_agreement": false,
+            "convex": true
+          },
+          "component_hulls": {
+            "status": "non_volumetric_component",
+            "deployable": false
+          }
+        },
+        "wall_seconds": 0.406
+      },
+      {
+        "asset": "cabinet_1",
+        "part": "p00",
+        "role": "drawer",
+        "original_triangles": 292,
+        "cleaned_triangles": 292,
+        "lods": [
+          {
+            "source_triangles": 292,
+            "triangles": 84,
+            "source_samples": 1178,
+            "candidate_samples": 1071,
+            "sampled_max_metres": 0.07518347387907497,
+            "sampled_rms_metres": 0.017590269497067042,
+            "sampled_p99_metres": 0.054636641625653196,
+            "approximate_max_pixels": {
+              "2": 35.15983109498306,
+              "6": 11.71994369832769,
+              "12": 5.859971849163845
+            },
+            "ratio": 0.2,
+            "target_triangles": 58
+          },
+          {
+            "source_triangles": 292,
+            "triangles": 84,
+            "source_samples": 1178,
+            "candidate_samples": 1071,
+            "sampled_max_metres": 0.07518347387907497,
+            "sampled_rms_metres": 0.017590269497067042,
+            "sampled_p99_metres": 0.054636641625653196,
+            "approximate_max_pixels": {
+              "2": 35.15983109498306,
+              "6": 11.71994369832769,
+              "12": 5.859971849163845
+            },
+            "ratio": 0.05,
+            "target_triangles": 14
+          },
+          {
+            "source_triangles": 292,
+            "triangles": 84,
+            "source_samples": 1178,
+            "candidate_samples": 1071,
+            "sampled_max_metres": 0.07518347387907497,
+            "sampled_rms_metres": 0.017590269497067042,
+            "sampled_p99_metres": 0.054636641625653196,
+            "approximate_max_pixels": {
+              "2": 35.15983109498306,
+              "6": 11.71994369832769,
+              "12": 5.859971849163845
+            },
+            "ratio": 0.015,
+            "target_triangles": 12
+          }
+        ],
+        "cleaning": {
+          "source_triangles": 292,
+          "triangles": 292,
+          "source_samples": 1178,
+          "candidate_samples": 1178,
+          "sampled_max_metres": 1.751516808424967e-12,
+          "sampled_rms_metres": 3.7600122469560375e-14,
+          "sampled_p99_metres": 3.803765983620047e-15,
+          "approximate_max_pixels": {
+            "2": 8.191033476757904e-10,
+            "6": 2.730344492252635e-10,
+            "12": 1.3651722461263174e-10
+          }
+        },
+        "proxies": {
+          "single_hull": {
+            "status": "measured",
+            "hulls": 1,
+            "vertices": 42,
+            "contact_count": 422,
+            "free_count": 1662,
+            "false_free": 0,
+            "false_blocked": 774,
+            "false_free_fraction": 0.0,
+            "false_blocked_fraction": 0.4657039711191336,
+            "exact_sampled_agreement": false,
+            "convex": true
+          },
+          "component_hulls": {
+            "status": "measured",
+            "hulls": 3,
+            "vertices": 141,
+            "contact_count": 422,
+            "free_count": 1662,
+            "false_free": 0,
+            "false_blocked": 294,
+            "false_free_fraction": 0.0,
+            "false_blocked_fraction": 0.17689530685920576,
+            "exact_sampled_agreement": false,
+            "convex": true
+          }
+        },
+        "wall_seconds": 0.233
+      },
+      {
+        "asset": "cabinet_1",
+        "part": "p01",
+        "role": "body",
+        "original_triangles": 468,
+        "cleaned_triangles": 468,
+        "lods": [
+          {
+            "source_triangles": 468,
+            "triangles": 230,
+            "source_samples": 1264,
+            "candidate_samples": 1145,
+            "sampled_max_metres": 0.12306930532563845,
+            "sampled_rms_metres": 0.028961684951498493,
+            "sampled_p99_metres": 0.10659473124940119,
+            "approximate_max_pixels": {
+              "2": 57.553818212577475,
+              "6": 19.18460607085916,
+              "12": 9.59230303542958
+            },
+            "ratio": 0.2,
+            "target_triangles": 93
+          },
+          {
+            "source_triangles": 468,
+            "triangles": 230,
+            "source_samples": 1264,
+            "candidate_samples": 1145,
+            "sampled_max_metres": 0.12306930532563845,
+            "sampled_rms_metres": 0.028961684951498493,
+            "sampled_p99_metres": 0.10659473124940119,
+            "approximate_max_pixels": {
+              "2": 57.553818212577475,
+              "6": 19.18460607085916,
+              "12": 9.59230303542958
+            },
+            "ratio": 0.05,
+            "target_triangles": 23
+          },
+          {
+            "source_triangles": 468,
+            "triangles": 230,
+            "source_samples": 1264,
+            "candidate_samples": 1145,
+            "sampled_max_metres": 0.12306930532563845,
+            "sampled_rms_metres": 0.028961684951498493,
+            "sampled_p99_metres": 0.10659473124940119,
+            "approximate_max_pixels": {
+              "2": 57.553818212577475,
+              "6": 19.18460607085916,
+              "12": 9.59230303542958
+            },
+            "ratio": 0.015,
+            "target_triangles": 12
+          }
+        ],
+        "cleaning": {
+          "source_triangles": 468,
+          "triangles": 468,
+          "source_samples": 1264,
+          "candidate_samples": 1264,
+          "sampled_max_metres": 5.6559511309992916e-12,
+          "sampled_rms_metres": 1.2539768915691949e-13,
+          "sampled_p99_metres": 1.0981722307281486e-15,
+          "approximate_max_pixels": {
+            "2": 2.6450265754847064e-09,
+            "6": 8.816755251615688e-10,
+            "12": 4.408377625807844e-10
+          }
+        },
+        "proxies": {
+          "single_hull": {
+            "status": "measured",
+            "hulls": 1,
+            "vertices": 54,
+            "contact_count": 478,
+            "free_count": 1632,
+            "false_free": 0,
+            "false_blocked": 483,
+            "false_free_fraction": 0.0,
+            "false_blocked_fraction": 0.2959558823529412,
+            "exact_sampled_agreement": false,
+            "convex": true
+          },
+          "component_hulls": {
+            "status": "measured",
+            "hulls": 3,
+            "vertices": 168,
+            "contact_count": 478,
+            "free_count": 1632,
+            "false_free": 0,
+            "false_blocked": 354,
+            "false_free_fraction": 0.0,
+            "false_blocked_fraction": 0.21691176470588236,
+            "exact_sampled_agreement": false,
+            "convex": true
+          }
+        },
+        "wall_seconds": 0.359
+      },
+      {
+        "asset": "cabinet_1",
+        "part": "p02",
+        "role": "drawer",
+        "original_triangles": 292,
+        "cleaned_triangles": 292,
+        "lods": [
+          {
+            "source_triangles": 292,
+            "triangles": 84,
+            "source_samples": 1178,
+            "candidate_samples": 1071,
+            "sampled_max_metres": 0.07518347387907495,
+            "sampled_rms_metres": 0.01739694351586616,
+            "sampled_p99_metres": 0.052400650981288543,
+            "approximate_max_pixels": {
+              "2": 35.159831094983055,
+              "6": 11.719943698327686,
+              "12": 5.859971849163843
+            },
+            "ratio": 0.2,
+            "target_triangles": 58
+          },
+          {
+            "source_triangles": 292,
+            "triangles": 84,
+            "source_samples": 1178,
+            "candidate_samples": 1071,
+            "sampled_max_metres": 0.07518347387907495,
+            "sampled_rms_metres": 0.01739694351586616,
+            "sampled_p99_metres": 0.052400650981288543,
+            "approximate_max_pixels": {
+              "2": 35.159831094983055,
+              "6": 11.719943698327686,
+              "12": 5.859971849163843
+            },
+            "ratio": 0.05,
+            "target_triangles": 14
+          },
+          {
+            "source_triangles": 292,
+            "triangles": 84,
+            "source_samples": 1178,
+            "candidate_samples": 1071,
+            "sampled_max_metres": 0.07518347387907495,
+            "sampled_rms_metres": 0.01739694351586616,
+            "sampled_p99_metres": 0.052400650981288543,
+            "approximate_max_pixels": {
+              "2": 35.159831094983055,
+              "6": 11.719943698327686,
+              "12": 5.859971849163843
+            },
+            "ratio": 0.015,
+            "target_triangles": 12
+          }
+        ],
+        "cleaning": {
+          "source_triangles": 292,
+          "triangles": 292,
+          "source_samples": 1178,
+          "candidate_samples": 1178,
+          "sampled_max_metres": 8.492652341892144e-13,
+          "sampled_rms_metres": 2.503421335795919e-14,
+          "sampled_p99_metres": 4.314493111826106e-15,
+          "approximate_max_pixels": {
+            "2": 3.971620443737522e-10,
+            "6": 1.323873481245841e-10,
+            "12": 6.619367406229205e-11
+          }
+        },
+        "proxies": {
+          "single_hull": {
+            "status": "measured",
+            "hulls": 1,
+            "vertices": 42,
+            "contact_count": 406,
+            "free_count": 1632,
+            "false_free": 0,
+            "false_blocked": 819,
+            "false_free_fraction": 0.0,
+            "false_blocked_fraction": 0.5018382352941176,
+            "exact_sampled_agreement": false,
+            "convex": true
+          },
+          "component_hulls": {
+            "status": "measured",
+            "hulls": 3,
+            "vertices": 139,
+            "contact_count": 406,
+            "free_count": 1632,
+            "false_free": 0,
+            "false_blocked": 346,
+            "false_free_fraction": 0.0,
+            "false_blocked_fraction": 0.21200980392156862,
+            "exact_sampled_agreement": false,
+            "convex": true
+          }
+        },
+        "wall_seconds": 0.228
+      }
+    ],
+    "coacd": [
+      {
+        "asset": "medical_cart001",
+        "part": "p01",
+        "status": "completed",
+        "cap_seconds": 60,
+        "wall_seconds": 1.648,
+        "measurement": {
+          "status": "measured",
+          "hulls": 27,
+          "vertices": 929,
+          "contact_count": 374,
+          "free_count": 1468,
+          "false_free": 0,
+          "false_blocked": 478,
+          "false_free_fraction": 0.0,
+          "false_blocked_fraction": 0.32561307901907355,
+          "exact_sampled_agreement": false,
+          "convex": true
+        }
+      },
+      {
+        "asset": "medical_cart001",
+        "part": "p07",
+        "status": "completed",
+        "cap_seconds": 60,
+        "wall_seconds": 1.214,
+        "measurement": {
+          "status": "measured",
+          "hulls": 24,
+          "vertices": 1389,
+          "contact_count": 122,
+          "free_count": 941,
+          "false_free": 0,
+          "false_blocked": 61,
+          "false_free_fraction": 0.0,
+          "false_blocked_fraction": 0.06482465462274177,
+          "exact_sampled_agreement": false,
+          "convex": true
+        }
+      },
+      {
+        "asset": "cabinet_1",
+        "part": "p01",
+        "status": "completed",
+        "cap_seconds": 60,
+        "wall_seconds": 3.154,
+        "measurement": {
+          "status": "measured",
+          "hulls": 32,
+          "vertices": 941,
+          "contact_count": 478,
+          "free_count": 1632,
+          "false_free": 0,
+          "false_blocked": 946,
+          "false_free_fraction": 0.0,
+          "false_blocked_fraction": 0.5796568627450981,
+          "exact_sampled_agreement": false,
+          "convex": true
+        }
+      }
+    ],
+    "source_hashes": {
+      "study-v6/controls.py": "3784c99cbcaf0d0eb3debb2d06bdb2e7c0b97e1d765a2bc84a7205fe89ad0442",
+      "study-v6/dev_eval.py": "3313176a3501aecfada975c3822f0e6c0b6d20490b2b1635f8eef762304d0048",
+      "study-v6/engine_job.py": "bc7bad63d4e9bb58ff090e6f1641bba88d6b4fdf2c96714101561dd6b40abf14",
+      "study-v6/episode.py": "04b2458bc98240b95e1351f06b6fb652a2fc28f39752d20b3fc27f6df244194c",
+      "study-v6/geometry.py": "d4cc32b2d2235bf2d56e9a81a552a820225a74f2f46b3c691b1bfe66bea7edef",
+      "study-v6/isolation.py": "6cb395b0c792db40f33dd2383ab0ef65445b66b2d91f690410a1272cb84a5e94",
+      "study-v6/proxy_controls.py": "4786b64f36de063cf79de1c2b3c27d408b9318cae7ab5b55ce39fde098b90900",
+      "study-v6/proxy_execution.py": "f8e0cceedcd620d5fc56ceece561a5a9ff6341f5c404ff694a747d0cde269e58",
+      "study-v6/proxy_sdk.py": "8ed883e02244203fc794771ab0b4b91d602977ef7fb7cec25cdfaf24cdfec32d",
+      "study-v6/proxy_task.py": "3fe318af0997a0f3a7caec3b71142cd537b07776205411cbb06baa82b894601a",
+      "study-v6/screen.py": "6286cd7698faab62681bab49fd3db34a8e755aa841677aa0678ed50f32fc9579",
+      "study-v6/try_coacd.py": "a75bb282b02c06cd012ef30a993336597ff202b808885c9438235ad2d6daf8fd",
+      "study-v6/witness.py": "3e86a4de72aeea81b0157eef172e51dd19579d949d50e3e3f06409ba8a286d4f"
+    },
+    "input_hashes": {
+      "medical_cart001": {
+        "canonical.npz": "5ca46c59e88a55c63b9ea0624289d96d21c0d501d11526bb764f26ec3c9cb77f",
+        "metadata.json": "d57be8330616a0d7675e1f499be6dde3c20aaaf6a669791455ddfc21d9f7a037"
+      },
+      "cabinet_1": {
+        "canonical.npz": "61f506fe5ee5affde63f0ded2d034a0f108a53df6a677617822c9b1e984cc73a",
+        "metadata.json": "545891143e69696052c8daa45f27d06dc69c3df1b1e9c15a5b6c3416b9cfb51f"
+      }
+    }
+  },
+  "mac_witness": {
+    "kind": "Exploratory developer feasibility witness, not a model experiment",
+    "max_hulls_per_part": 64,
+    "train_grid": 9,
+    "validation_grid": 11,
+    "rows": [
+      {
+        "asset": "medical_cart001",
+        "part": "p00",
+        "role": "body",
+        "development": {
+          "status": "measured",
+          "hulls": 25,
+          "vertices": 9586,
+          "contact_count": 294,
+          "free_count": 1260,
+          "false_free": 0,
+          "false_blocked": 0,
+          "false_free_fraction": 0.0,
+          "false_blocked_fraction": 0.0,
+          "exact_sampled_agreement": true,
+          "convex": true
+        },
+        "validation": {
+          "status": "measured",
+          "hulls": 25,
+          "vertices": 9586,
+          "contact_count": 406,
+          "free_count": 1842,
+          "false_free": 0,
+          "false_blocked": 0,
+          "false_free_fraction": 0.0,
+          "false_blocked_fraction": 0.0,
+          "exact_sampled_agreement": true,
+          "convex": true
+        },
+        "wall_seconds": 1.751
+      },
+      {
+        "asset": "medical_cart001",
+        "part": "p01",
+        "role": "drawer",
+        "development": {
+          "status": "measured",
+          "hulls": 21,
+          "vertices": 1610,
+          "contact_count": 374,
+          "free_count": 1468,
+          "false_free": 0,
+          "false_blocked": 0,
+          "false_free_fraction": 0.0,
+          "false_blocked_fraction": 0.0,
+          "exact_sampled_agreement": true,
+          "convex": true
+        },
+        "validation": {
+          "status": "measured",
+          "hulls": 21,
+          "vertices": 1610,
+          "contact_count": 598,
+          "free_count": 2389,
+          "false_free": 0,
+          "false_blocked": 0,
+          "false_free_fraction": 0.0,
+          "false_blocked_fraction": 0.0,
+          "exact_sampled_agreement": true,
+          "convex": true
+        },
+        "wall_seconds": 0.849
+      },
+      {
+        "asset": "medical_cart001",
+        "part": "p02",
+        "role": "wheel",
+        "development": {
+          "status": "measured",
+          "hulls": 46,
+          "vertices": 2269,
+          "contact_count": 406,
+          "free_count": 1350,
+          "false_free": 0,
+          "false_blocked": 0,
+          "false_free_fraction": 0.0,
+          "false_blocked_fraction": 0.0,
+          "exact_sampled_agreement": true,
+          "convex": true
+        },
+        "validation": {
+          "status": "measured",
+          "hulls": 46,
+          "vertices": 2269,
+          "contact_count": 610,
+          "free_count": 2011,
+          "false_free": 0,
+          "false_blocked": 8,
+          "false_free_fraction": 0.0,
+          "false_blocked_fraction": 0.003978120338140228,
+          "exact_sampled_agreement": false,
+          "convex": true
+        },
+        "wall_seconds": 0.89
+      },
+      {
+        "asset": "medical_cart001",
+        "part": "p03",
+        "role": "caster",
+        "development": {
+          "status": "measured",
+          "hulls": 35,
+          "vertices": 1415,
+          "contact_count": 336,
+          "free_count": 1252,
+          "false_free": 0,
+          "false_blocked": 0,
+          "false_free_fraction": 0.0,
+          "false_blocked_fraction": 0.0,
+          "exact_sampled_agreement": true,
+          "convex": true
+        },
+        "validation": {
+          "status": "measured",
+          "hulls": 35,
+          "vertices": 1415,
+          "contact_count": 532,
+          "free_count": 1908,
+          "false_free": 0,
+          "false_blocked": 6,
+          "false_free_fraction": 0.0,
+          "false_blocked_fraction": 0.0031446540880503146,
+          "exact_sampled_agreement": false,
+          "convex": true
+        },
+        "wall_seconds": 0.481
+      },
+      {
+        "asset": "medical_cart001",
+        "part": "p04",
+        "role": "caster",
+        "development": {
+          "status": "measured",
+          "hulls": 35,
+          "vertices": 1415,
+          "contact_count": 336,
+          "free_count": 1252,
+          "false_free": 0,
+          "false_blocked": 0,
+          "false_free_fraction": 0.0,
+          "false_blocked_fraction": 0.0,
+          "exact_sampled_agreement": true,
+          "convex": true
+        },
+        "validation": {
+          "status": "measured",
+          "hulls": 35,
+          "vertices": 1415,
+          "contact_count": 532,
+          "free_count": 1908,
+          "false_free": 0,
+          "false_blocked": 6,
+          "false_free_fraction": 0.0,
+          "false_blocked_fraction": 0.0031446540880503146,
+          "exact_sampled_agreement": false,
+          "convex": true
+        },
+        "wall_seconds": 0.461
+      },
+      {
+        "asset": "medical_cart001",
+        "part": "p05",
+        "role": "drawer",
+        "development": {
+          "status": "measured",
+          "hulls": 21,
+          "vertices": 1585,
+          "contact_count": 374,
+          "free_count": 1468,
+          "false_free": 0,
+          "false_blocked": 0,
+          "false_free_fraction": 0.0,
+          "false_blocked_fraction": 0.0,
+          "exact_sampled_agreement": true,
+          "convex": true
+        },
+        "validation": {
+          "status": "measured",
+          "hulls": 21,
+          "vertices": 1585,
+          "contact_count": 598,
+          "free_count": 2389,
+          "false_free": 0,
+          "false_blocked": 0,
+          "false_free_fraction": 0.0,
+          "false_blocked_fraction": 0.0,
+          "exact_sampled_agreement": true,
+          "convex": true
+        },
+        "wall_seconds": 0.855
+      },
+      {
+        "asset": "medical_cart001",
+        "part": "p06",
+        "role": "wheel",
+        "development": {
+          "status": "measured",
+          "hulls": 50,
+          "vertices": 2318,
+          "contact_count": 406,
+          "free_count": 1350,
+          "false_free": 0,
+          "false_blocked": 0,
+          "false_free_fraction": 0.0,
+          "false_blocked_fraction": 0.0,
+          "exact_sampled_agreement": true,
+          "convex": true
+        },
+        "validation": {
+          "status": "measured",
+          "hulls": 50,
+          "vertices": 2318,
+          "contact_count": 610,
+          "free_count": 2011,
+          "false_free": 0,
+          "false_blocked": 8,
+          "false_free_fraction": 0.0,
+          "false_blocked_fraction": 0.003978120338140228,
+          "exact_sampled_agreement": false,
+          "convex": true
+        },
+        "wall_seconds": 0.901
+      },
+      {
+        "asset": "medical_cart001",
+        "part": "p07",
+        "role": "holder",
+        "development": {
+          "status": "measured",
+          "hulls": 15,
+          "vertices": 1377,
+          "contact_count": 122,
+          "free_count": 941,
+          "false_free": 0,
+          "false_blocked": 0,
+          "false_free_fraction": 0.0,
+          "false_blocked_fraction": 0.0,
+          "exact_sampled_agreement": true,
+          "convex": true
+        },
+        "validation": {
+          "status": "measured",
+          "hulls": 15,
+          "vertices": 1377,
+          "contact_count": 226,
+          "free_count": 1456,
+          "false_free": 0,
+          "false_blocked": 3,
+          "false_free_fraction": 0.0,
+          "false_blocked_fraction": 0.0020604395604395605,
+          "exact_sampled_agreement": false,
+          "convex": true
+        },
+        "wall_seconds": 0.428
+      },
+      {
+        "asset": "medical_cart001",
+        "part": "p08",
+        "role": "caster",
+        "development": {
+          "status": "measured",
+          "hulls": 35,
+          "vertices": 1415,
+          "contact_count": 336,
+          "free_count": 1252,
+          "false_free": 0,
+          "false_blocked": 0,
+          "false_free_fraction": 0.0,
+          "false_blocked_fraction": 0.0,
+          "exact_sampled_agreement": true,
+          "convex": true
+        },
+        "validation": {
+          "status": "measured",
+          "hulls": 35,
+          "vertices": 1415,
+          "contact_count": 532,
+          "free_count": 1908,
+          "false_free": 0,
+          "false_blocked": 6,
+          "false_free_fraction": 0.0,
+          "false_blocked_fraction": 0.0031446540880503146,
+          "exact_sampled_agreement": false,
+          "convex": true
+        },
+        "wall_seconds": 0.473
+      },
+      {
+        "asset": "medical_cart001",
+        "part": "p09",
+        "role": "caster",
+        "development": {
+          "status": "measured",
+          "hulls": 35,
+          "vertices": 1415,
+          "contact_count": 336,
+          "free_count": 1252,
+          "false_free": 0,
+          "false_blocked": 0,
+          "false_free_fraction": 0.0,
+          "false_blocked_fraction": 0.0,
+          "exact_sampled_agreement": true,
+          "convex": true
+        },
+        "validation": {
+          "status": "measured",
+          "hulls": 35,
+          "vertices": 1415,
+          "contact_count": 532,
+          "free_count": 1908,
+          "false_free": 0,
+          "false_blocked": 6,
+          "false_free_fraction": 0.0,
+          "false_blocked_fraction": 0.0031446540880503146,
+          "exact_sampled_agreement": false,
+          "convex": true
+        },
+        "wall_seconds": 0.496
+      },
+      {
+        "asset": "medical_cart001",
+        "part": "p10",
+        "role": "wheel",
+        "development": {
+          "status": "measured",
+          "hulls": 50,
+          "vertices": 2318,
+          "contact_count": 406,
+          "free_count": 1350,
+          "false_free": 0,
+          "false_blocked": 0,
+          "false_free_fraction": 0.0,
+          "false_blocked_fraction": 0.0,
+          "exact_sampled_agreement": true,
+          "convex": true
+        },
+        "validation": {
+          "status": "measured",
+          "hulls": 50,
+          "vertices": 2318,
+          "contact_count": 610,
+          "free_count": 2011,
+          "false_free": 0,
+          "false_blocked": 8,
+          "false_free_fraction": 0.0,
+          "false_blocked_fraction": 0.003978120338140228,
+          "exact_sampled_agreement": false,
+          "convex": true
+        },
+        "wall_seconds": 0.911
+      },
+      {
+        "asset": "medical_cart001",
+        "part": "p11",
+        "role": "wheel",
+        "development": {
+          "status": "measured",
+          "hulls": 49,
+          "vertices": 2318,
+          "contact_count": 406,
+          "free_count": 1350,
+          "false_free": 0,
+          "false_blocked": 0,
+          "false_free_fraction": 0.0,
+          "false_blocked_fraction": 0.0,
+          "exact_sampled_agreement": true,
+          "convex": true
+        },
+        "validation": {
+          "status": "measured",
+          "hulls": 49,
+          "vertices": 2318,
+          "contact_count": 610,
+          "free_count": 2011,
+          "false_free": 0,
+          "false_blocked": 8,
+          "false_free_fraction": 0.0,
+          "false_blocked_fraction": 0.003978120338140228,
+          "exact_sampled_agreement": false,
+          "convex": true
+        },
+        "wall_seconds": 0.912
+      },
+      {
+        "asset": "medical_cart001",
+        "part": "p12",
+        "role": "holder",
+        "development": {
+          "status": "measured",
+          "hulls": 14,
+          "vertices": 1359,
+          "contact_count": 122,
+          "free_count": 947,
+          "false_free": 0,
+          "false_blocked": 0,
+          "false_free_fraction": 0.0,
+          "false_blocked_fraction": 0.0,
+          "exact_sampled_agreement": true,
+          "convex": true
+        },
+        "validation": {
+          "status": "measured",
+          "hulls": 14,
+          "vertices": 1359,
+          "contact_count": 208,
+          "free_count": 1442,
+          "false_free": 0,
+          "false_blocked": 6,
+          "false_free_fraction": 0.0,
+          "false_blocked_fraction": 0.004160887656033287,
+          "exact_sampled_agreement": false,
+          "convex": true
+        },
+        "wall_seconds": 0.44
+      },
+      {
+        "asset": "cabinet_1",
+        "part": "p00",
+        "role": "drawer",
+        "development": {
+          "status": "measured",
+          "hulls": 14,
+          "vertices": 251,
+          "contact_count": 422,
+          "free_count": 1662,
+          "false_free": 0,
+          "false_blocked": 0,
+          "false_free_fraction": 0.0,
+          "false_blocked_fraction": 0.0,
+          "exact_sampled_agreement": true,
+          "convex": true
+        },
+        "validation": {
+          "status": "measured",
+          "hulls": 14,
+          "vertices": 251,
+          "contact_count": 626,
+          "free_count": 2495,
+          "false_free": 0,
+          "false_blocked": 0,
+          "false_free_fraction": 0.0,
+          "false_blocked_fraction": 0.0,
+          "exact_sampled_agreement": true,
+          "convex": true
+        },
+        "wall_seconds": 0.198
+      },
+      {
+        "asset": "cabinet_1",
+        "part": "p01",
+        "role": "body",
+        "development": {
+          "status": "measured",
+          "hulls": 64,
+          "vertices": 729,
+          "contact_count": 478,
+          "free_count": 1632,
+          "false_free": 0,
+          "false_blocked": 88,
+          "false_free_fraction": 0.0,
+          "false_blocked_fraction": 0.05392156862745098,
+          "exact_sampled_agreement": false,
+          "convex": true
+        },
+        "validation": {
+          "status": "measured",
+          "hulls": 64,
+          "vertices": 729,
+          "contact_count": 718,
+          "free_count": 2404,
+          "false_free": 0,
+          "false_blocked": 129,
+          "false_free_fraction": 0.0,
+          "false_blocked_fraction": 0.05366056572379368,
+          "exact_sampled_agreement": false,
+          "convex": true
+        },
+        "wall_seconds": 0.5
+      },
+      {
+        "asset": "cabinet_1",
+        "part": "p02",
+        "role": "drawer",
+        "development": {
+          "status": "measured",
+          "hulls": 14,
+          "vertices": 249,
+          "contact_count": 406,
+          "free_count": 1632,
+          "false_free": 0,
+          "false_blocked": 0,
+          "false_free_fraction": 0.0,
+          "false_blocked_fraction": 0.0,
+          "exact_sampled_agreement": true,
+          "convex": true
+        },
+        "validation": {
+          "status": "measured",
+          "hulls": 14,
+          "vertices": 249,
+          "contact_count": 626,
+          "free_count": 2498,
+          "false_free": 0,
+          "false_blocked": 0,
+          "false_free_fraction": 0.0,
+          "false_blocked_fraction": 0.0,
+          "exact_sampled_agreement": true,
+          "convex": true
+        },
+        "wall_seconds": 0.21
+      }
+    ]
+  },
+  "linux_witness": {
+    "kind": "Exploratory developer feasibility witness, not a model experiment",
+    "max_hulls_per_part": 64,
+    "train_grid": 9,
+    "validation_grid": 11,
+    "rows": [
+      {
+        "asset": "medical_cart001",
+        "part": "p00",
+        "role": "body",
+        "development": {
+          "status": "measured",
+          "hulls": 25,
+          "vertices": 9586,
+          "contact_count": 294,
+          "free_count": 1260,
+          "false_free": 0,
+          "false_blocked": 0,
+          "false_free_fraction": 0.0,
+          "false_blocked_fraction": 0.0,
+          "exact_sampled_agreement": true,
+          "convex": true
+        },
+        "validation": {
+          "status": "measured",
+          "hulls": 25,
+          "vertices": 9586,
+          "contact_count": 406,
+          "free_count": 1842,
+          "false_free": 0,
+          "false_blocked": 0,
+          "false_free_fraction": 0.0,
+          "false_blocked_fraction": 0.0,
+          "exact_sampled_agreement": true,
+          "convex": true
+        },
+        "wall_seconds": 4.904
+      },
+      {
+        "asset": "medical_cart001",
+        "part": "p01",
+        "role": "drawer",
+        "development": {
+          "status": "measured",
+          "hulls": 19,
+          "vertices": 1592,
+          "contact_count": 374,
+          "free_count": 1468,
+          "false_free": 0,
+          "false_blocked": 0,
+          "false_free_fraction": 0.0,
+          "false_blocked_fraction": 0.0,
+          "exact_sampled_agreement": true,
+          "convex": true
+        },
+        "validation": {
+          "status": "measured",
+          "hulls": 19,
+          "vertices": 1592,
+          "contact_count": 598,
+          "free_count": 2389,
+          "false_free": 0,
+          "false_blocked": 0,
+          "false_free_fraction": 0.0,
+          "false_blocked_fraction": 0.0,
+          "exact_sampled_agreement": true,
+          "convex": true
+        },
+        "wall_seconds": 2.557
+      },
+      {
+        "asset": "medical_cart001",
+        "part": "p02",
+        "role": "wheel",
+        "development": {
+          "status": "measured",
+          "hulls": 46,
+          "vertices": 2280,
+          "contact_count": 406,
+          "free_count": 1350,
+          "false_free": 0,
+          "false_blocked": 0,
+          "false_free_fraction": 0.0,
+          "false_blocked_fraction": 0.0,
+          "exact_sampled_agreement": true,
+          "convex": true
+        },
+        "validation": {
+          "status": "measured",
+          "hulls": 46,
+          "vertices": 2280,
+          "contact_count": 610,
+          "free_count": 2011,
+          "false_free": 0,
+          "false_blocked": 8,
+          "false_free_fraction": 0.0,
+          "false_blocked_fraction": 0.003978120338140228,
+          "exact_sampled_agreement": false,
+          "convex": true
+        },
+        "wall_seconds": 3.011
+      },
+      {
+        "asset": "medical_cart001",
+        "part": "p03",
+        "role": "caster",
+        "development": {
+          "status": "measured",
+          "hulls": 35,
+          "vertices": 1415,
+          "contact_count": 336,
+          "free_count": 1252,
+          "false_free": 0,
+          "false_blocked": 0,
+          "false_free_fraction": 0.0,
+          "false_blocked_fraction": 0.0,
+          "exact_sampled_agreement": true,
+          "convex": true
+        },
+        "validation": {
+          "status": "measured",
+          "hulls": 35,
+          "vertices": 1415,
+          "contact_count": 532,
+          "free_count": 1908,
+          "false_free": 0,
+          "false_blocked": 6,
+          "false_free_fraction": 0.0,
+          "false_blocked_fraction": 0.0031446540880503146,
+          "exact_sampled_agreement": false,
+          "convex": true
+        },
+        "wall_seconds": 1.368
+      },
+      {
+        "asset": "medical_cart001",
+        "part": "p04",
+        "role": "caster",
+        "development": {
+          "status": "measured",
+          "hulls": 35,
+          "vertices": 1415,
+          "contact_count": 336,
+          "free_count": 1252,
+          "false_free": 0,
+          "false_blocked": 0,
+          "false_free_fraction": 0.0,
+          "false_blocked_fraction": 0.0,
+          "exact_sampled_agreement": true,
+          "convex": true
+        },
+        "validation": {
+          "status": "measured",
+          "hulls": 35,
+          "vertices": 1415,
+          "contact_count": 532,
+          "free_count": 1908,
+          "false_free": 0,
+          "false_blocked": 6,
+          "false_free_fraction": 0.0,
+          "false_blocked_fraction": 0.0031446540880503146,
+          "exact_sampled_agreement": false,
+          "convex": true
+        },
+        "wall_seconds": 1.363
+      },
+      {
+        "asset": "medical_cart001",
+        "part": "p05",
+        "role": "drawer",
+        "development": {
+          "status": "measured",
+          "hulls": 19,
+          "vertices": 1567,
+          "contact_count": 374,
+          "free_count": 1468,
+          "false_free": 0,
+          "false_blocked": 0,
+          "false_free_fraction": 0.0,
+          "false_blocked_fraction": 0.0,
+          "exact_sampled_agreement": true,
+          "convex": true
+        },
+        "validation": {
+          "status": "measured",
+          "hulls": 19,
+          "vertices": 1567,
+          "contact_count": 598,
+          "free_count": 2389,
+          "false_free": 0,
+          "false_blocked": 0,
+          "false_free_fraction": 0.0,
+          "false_blocked_fraction": 0.0,
+          "exact_sampled_agreement": true,
+          "convex": true
+        },
+        "wall_seconds": 2.536
+      },
+      {
+        "asset": "medical_cart001",
+        "part": "p06",
+        "role": "wheel",
+        "development": {
+          "status": "measured",
+          "hulls": 50,
+          "vertices": 2318,
+          "contact_count": 406,
+          "free_count": 1350,
+          "false_free": 0,
+          "false_blocked": 0,
+          "false_free_fraction": 0.0,
+          "false_blocked_fraction": 0.0,
+          "exact_sampled_agreement": true,
+          "convex": true
+        },
+        "validation": {
+          "status": "measured",
+          "hulls": 50,
+          "vertices": 2318,
+          "contact_count": 610,
+          "free_count": 2011,
+          "false_free": 0,
+          "false_blocked": 8,
+          "false_free_fraction": 0.0,
+          "false_blocked_fraction": 0.003978120338140228,
+          "exact_sampled_agreement": false,
+          "convex": true
+        },
+        "wall_seconds": 3.041
+      },
+      {
+        "asset": "medical_cart001",
+        "part": "p07",
+        "role": "holder",
+        "development": {
+          "status": "measured",
+          "hulls": 15,
+          "vertices": 1377,
+          "contact_count": 122,
+          "free_count": 941,
+          "false_free": 0,
+          "false_blocked": 0,
+          "false_free_fraction": 0.0,
+          "false_blocked_fraction": 0.0,
+          "exact_sampled_agreement": true,
+          "convex": true
+        },
+        "validation": {
+          "status": "measured",
+          "hulls": 15,
+          "vertices": 1377,
+          "contact_count": 226,
+          "free_count": 1456,
+          "false_free": 0,
+          "false_blocked": 3,
+          "false_free_fraction": 0.0,
+          "false_blocked_fraction": 0.0020604395604395605,
+          "exact_sampled_agreement": false,
+          "convex": true
+        },
+        "wall_seconds": 1.329
+      },
+      {
+        "asset": "medical_cart001",
+        "part": "p08",
+        "role": "caster",
+        "development": {
+          "status": "measured",
+          "hulls": 35,
+          "vertices": 1415,
+          "contact_count": 336,
+          "free_count": 1252,
+          "false_free": 0,
+          "false_blocked": 0,
+          "false_free_fraction": 0.0,
+          "false_blocked_fraction": 0.0,
+          "exact_sampled_agreement": true,
+          "convex": true
+        },
+        "validation": {
+          "status": "measured",
+          "hulls": 35,
+          "vertices": 1415,
+          "contact_count": 532,
+          "free_count": 1908,
+          "false_free": 0,
+          "false_blocked": 6,
+          "false_free_fraction": 0.0,
+          "false_blocked_fraction": 0.0031446540880503146,
+          "exact_sampled_agreement": false,
+          "convex": true
+        },
+        "wall_seconds": 1.395
+      },
+      {
+        "asset": "medical_cart001",
+        "part": "p09",
+        "role": "caster",
+        "development": {
+          "status": "measured",
+          "hulls": 35,
+          "vertices": 1415,
+          "contact_count": 336,
+          "free_count": 1252,
+          "false_free": 0,
+          "false_blocked": 0,
+          "false_free_fraction": 0.0,
+          "false_blocked_fraction": 0.0,
+          "exact_sampled_agreement": true,
+          "convex": true
+        },
+        "validation": {
+          "status": "measured",
+          "hulls": 35,
+          "vertices": 1415,
+          "contact_count": 532,
+          "free_count": 1908,
+          "false_free": 0,
+          "false_blocked": 6,
+          "false_free_fraction": 0.0,
+          "false_blocked_fraction": 0.0031446540880503146,
+          "exact_sampled_agreement": false,
+          "convex": true
+        },
+        "wall_seconds": 1.446
+      },
+      {
+        "asset": "medical_cart001",
+        "part": "p10",
+        "role": "wheel",
+        "development": {
+          "status": "measured",
+          "hulls": 50,
+          "vertices": 2318,
+          "contact_count": 406,
+          "free_count": 1350,
+          "false_free": 0,
+          "false_blocked": 0,
+          "false_free_fraction": 0.0,
+          "false_blocked_fraction": 0.0,
+          "exact_sampled_agreement": true,
+          "convex": true
+        },
+        "validation": {
+          "status": "measured",
+          "hulls": 50,
+          "vertices": 2318,
+          "contact_count": 610,
+          "free_count": 2011,
+          "false_free": 0,
+          "false_blocked": 8,
+          "false_free_fraction": 0.0,
+          "false_blocked_fraction": 0.003978120338140228,
+          "exact_sampled_agreement": false,
+          "convex": true
+        },
+        "wall_seconds": 3.082
+      },
+      {
+        "asset": "medical_cart001",
+        "part": "p11",
+        "role": "wheel",
+        "development": {
+          "status": "measured",
+          "hulls": 49,
+          "vertices": 2329,
+          "contact_count": 406,
+          "free_count": 1350,
+          "false_free": 0,
+          "false_blocked": 0,
+          "false_free_fraction": 0.0,
+          "false_blocked_fraction": 0.0,
+          "exact_sampled_agreement": true,
+          "convex": true
+        },
+        "validation": {
+          "status": "measured",
+          "hulls": 49,
+          "vertices": 2329,
+          "contact_count": 610,
+          "free_count": 2011,
+          "false_free": 0,
+          "false_blocked": 8,
+          "false_free_fraction": 0.0,
+          "false_blocked_fraction": 0.003978120338140228,
+          "exact_sampled_agreement": false,
+          "convex": true
+        },
+        "wall_seconds": 3.025
+      },
+      {
+        "asset": "medical_cart001",
+        "part": "p12",
+        "role": "holder",
+        "development": {
+          "status": "measured",
+          "hulls": 14,
+          "vertices": 1359,
+          "contact_count": 122,
+          "free_count": 947,
+          "false_free": 0,
+          "false_blocked": 0,
+          "false_free_fraction": 0.0,
+          "false_blocked_fraction": 0.0,
+          "exact_sampled_agreement": true,
+          "convex": true
+        },
+        "validation": {
+          "status": "measured",
+          "hulls": 14,
+          "vertices": 1359,
+          "contact_count": 208,
+          "free_count": 1442,
+          "false_free": 0,
+          "false_blocked": 6,
+          "false_free_fraction": 0.0,
+          "false_blocked_fraction": 0.004160887656033287,
+          "exact_sampled_agreement": false,
+          "convex": true
+        },
+        "wall_seconds": 1.357
+      },
+      {
+        "asset": "cabinet_1",
+        "part": "p00",
+        "role": "drawer",
+        "development": {
+          "status": "measured",
+          "hulls": 14,
+          "vertices": 251,
+          "contact_count": 422,
+          "free_count": 1662,
+          "false_free": 0,
+          "false_blocked": 0,
+          "false_free_fraction": 0.0,
+          "false_blocked_fraction": 0.0,
+          "exact_sampled_agreement": true,
+          "convex": true
+        },
+        "validation": {
+          "status": "measured",
+          "hulls": 14,
+          "vertices": 251,
+          "contact_count": 626,
+          "free_count": 2495,
+          "false_free": 0,
+          "false_blocked": 0,
+          "false_free_fraction": 0.0,
+          "false_blocked_fraction": 0.0,
+          "exact_sampled_agreement": true,
+          "convex": true
+        },
+        "wall_seconds": 0.632
+      },
+      {
+        "asset": "cabinet_1",
+        "part": "p01",
+        "role": "body",
+        "development": {
+          "status": "measured",
+          "hulls": 64,
+          "vertices": 733,
+          "contact_count": 478,
+          "free_count": 1632,
+          "false_free": 0,
+          "false_blocked": 35,
+          "false_free_fraction": 0.0,
+          "false_blocked_fraction": 0.02144607843137255,
+          "exact_sampled_agreement": false,
+          "convex": true
+        },
+        "validation": {
+          "status": "measured",
+          "hulls": 64,
+          "vertices": 733,
+          "contact_count": 718,
+          "free_count": 2404,
+          "false_free": 0,
+          "false_blocked": 32,
+          "false_free_fraction": 0.0,
+          "false_blocked_fraction": 0.013311148086522463,
+          "exact_sampled_agreement": false,
+          "convex": true
+        },
+        "wall_seconds": 1.598
+      },
+      {
+        "asset": "cabinet_1",
+        "part": "p02",
+        "role": "drawer",
+        "development": {
+          "status": "measured",
+          "hulls": 14,
+          "vertices": 249,
+          "contact_count": 406,
+          "free_count": 1632,
+          "false_free": 0,
+          "false_blocked": 0,
+          "false_free_fraction": 0.0,
+          "false_blocked_fraction": 0.0,
+          "exact_sampled_agreement": true,
+          "convex": true
+        },
+        "validation": {
+          "status": "measured",
+          "hulls": 14,
+          "vertices": 249,
+          "contact_count": 626,
+          "free_count": 2498,
+          "false_free": 0,
+          "false_blocked": 0,
+          "false_free_fraction": 0.0,
+          "false_blocked_fraction": 0.0,
+          "exact_sampled_agreement": true,
+          "convex": true
+        },
+        "wall_seconds": 0.655
+      }
+    ]
+  },
+  "mac_engine": {
+    "analytic_mismatches": 0,
+    "checked": 4608,
+    "engine": "4.7.2-stable (official)",
+    "kind": "Posed convex sphere queries on frozen RigidBody3Ds; not dynamics",
+    "passed": true,
+    "physics_engine": "GodotPhysics3D",
+    "rows": [
+      {
+        "analytic_mismatches": 0,
+        "asset": "cabinet_1",
+        "hulls": 14,
+        "part": "p00",
+        "pose": 0,
+        "queries": 144,
+        "query_usec": 778,
+        "source_false_blocked": 0,
+        "source_false_free": 0
+      },
+      {
+        "analytic_mismatches": 0,
+        "asset": "cabinet_1",
+        "hulls": 14,
+        "part": "p00",
+        "pose": 1,
+        "queries": 144,
+        "query_usec": 441,
+        "source_false_blocked": 0,
+        "source_false_free": 0
+      },
+      {
+        "analytic_mismatches": 0,
+        "asset": "cabinet_1",
+        "hulls": 64,
+        "part": "p01",
+        "pose": 0,
+        "queries": 144,
+        "query_usec": 1317,
+        "source_false_blocked": 4,
+        "source_false_free": 0
+      },
+      {
+        "analytic_mismatches": 0,
+        "asset": "cabinet_1",
+        "hulls": 64,
+        "part": "p01",
+        "pose": 1,
+        "queries": 144,
+        "query_usec": 1978,
+        "source_false_blocked": 4,
+        "source_false_free": 0
+      },
+      {
+        "analytic_mismatches": 0,
+        "asset": "cabinet_1",
+        "hulls": 14,
+        "part": "p02",
+        "pose": 0,
+        "queries": 144,
+        "query_usec": 806,
+        "source_false_blocked": 0,
+        "source_false_free": 0
+      },
+      {
+        "analytic_mismatches": 0,
+        "asset": "cabinet_1",
+        "hulls": 14,
+        "part": "p02",
+        "pose": 1,
+        "queries": 144,
+        "query_usec": 1207,
+        "source_false_blocked": 0,
+        "source_false_free": 0
+      },
+      {
+        "analytic_mismatches": 0,
+        "asset": "medical_cart001",
+        "hulls": 25,
+        "part": "p00",
+        "pose": 0,
+        "queries": 144,
+        "query_usec": 39626,
+        "source_false_blocked": 0,
+        "source_false_free": 0
+      },
+      {
+        "analytic_mismatches": 0,
+        "asset": "medical_cart001",
+        "hulls": 25,
+        "part": "p00",
+        "pose": 1,
+        "queries": 144,
+        "query_usec": 31782,
+        "source_false_blocked": 0,
+        "source_false_free": 0
+      },
+      {
+        "analytic_mismatches": 0,
+        "asset": "medical_cart001",
+        "hulls": 21,
+        "part": "p01",
+        "pose": 0,
+        "queries": 144,
+        "query_usec": 1754,
+        "source_false_blocked": 0,
+        "source_false_free": 0
+      },
+      {
+        "analytic_mismatches": 0,
+        "asset": "medical_cart001",
+        "hulls": 21,
+        "part": "p01",
+        "pose": 1,
+        "queries": 144,
+        "query_usec": 1850,
+        "source_false_blocked": 0,
+        "source_false_free": 0
+      },
+      {
+        "analytic_mismatches": 0,
+        "asset": "medical_cart001",
+        "hulls": 46,
+        "part": "p02",
+        "pose": 0,
+        "queries": 144,
+        "query_usec": 10995,
+        "source_false_blocked": 0,
+        "source_false_free": 0
+      },
+      {
+        "analytic_mismatches": 0,
+        "asset": "medical_cart001",
+        "hulls": 46,
+        "part": "p02",
+        "pose": 1,
+        "queries": 144,
+        "query_usec": 9004,
+        "source_false_blocked": 0,
+        "source_false_free": 0
+      },
+      {
+        "analytic_mismatches": 0,
+        "asset": "medical_cart001",
+        "hulls": 35,
+        "part": "p03",
+        "pose": 0,
+        "queries": 144,
+        "query_usec": 18705,
+        "source_false_blocked": 1,
+        "source_false_free": 0
+      },
+      {
+        "analytic_mismatches": 0,
+        "asset": "medical_cart001",
+        "hulls": 35,
+        "part": "p03",
+        "pose": 1,
+        "queries": 144,
+        "query_usec": 15060,
+        "source_false_blocked": 1,
+        "source_false_free": 0
+      },
+      {
+        "analytic_mismatches": 0,
+        "asset": "medical_cart001",
+        "hulls": 35,
+        "part": "p04",
+        "pose": 0,
+        "queries": 144,
+        "query_usec": 14743,
+        "source_false_blocked": 1,
+        "source_false_free": 0
+      },
+      {
+        "analytic_mismatches": 0,
+        "asset": "medical_cart001",
+        "hulls": 35,
+        "part": "p04",
+        "pose": 1,
+        "queries": 144,
+        "query_usec": 14474,
+        "source_false_blocked": 1,
+        "source_false_free": 0
+      },
+      {
+        "analytic_mismatches": 0,
+        "asset": "medical_cart001",
+        "hulls": 21,
+        "part": "p05",
+        "pose": 0,
+        "queries": 144,
+        "query_usec": 2233,
+        "source_false_blocked": 0,
+        "source_false_free": 0
+      },
+      {
+        "analytic_mismatches": 0,
+        "asset": "medical_cart001",
+        "hulls": 21,
+        "part": "p05",
+        "pose": 1,
+        "queries": 144,
+        "query_usec": 3406,
+        "source_false_blocked": 0,
+        "source_false_free": 0
+      },
+      {
+        "analytic_mismatches": 0,
+        "asset": "medical_cart001",
+        "hulls": 50,
+        "part": "p06",
+        "pose": 0,
+        "queries": 144,
+        "query_usec": 14753,
+        "source_false_blocked": 0,
+        "source_false_free": 0
+      },
+      {
+        "analytic_mismatches": 0,
+        "asset": "medical_cart001",
+        "hulls": 50,
+        "part": "p06",
+        "pose": 1,
+        "queries": 144,
+        "query_usec": 12013,
+        "source_false_blocked": 0,
+        "source_false_free": 0
+      },
+      {
+        "analytic_mismatches": 0,
+        "asset": "medical_cart001",
+        "hulls": 15,
+        "part": "p07",
+        "pose": 0,
+        "queries": 144,
+        "query_usec": 4659,
+        "source_false_blocked": 0,
+        "source_false_free": 0
+      },
+      {
+        "analytic_mismatches": 0,
+        "asset": "medical_cart001",
+        "hulls": 15,
+        "part": "p07",
+        "pose": 1,
+        "queries": 144,
+        "query_usec": 6409,
+        "source_false_blocked": 0,
+        "source_false_free": 0
+      },
+      {
+        "analytic_mismatches": 0,
+        "asset": "medical_cart001",
+        "hulls": 35,
+        "part": "p08",
+        "pose": 0,
+        "queries": 144,
+        "query_usec": 24793,
+        "source_false_blocked": 1,
+        "source_false_free": 0
+      },
+      {
+        "analytic_mismatches": 0,
+        "asset": "medical_cart001",
+        "hulls": 35,
+        "part": "p08",
+        "pose": 1,
+        "queries": 144,
+        "query_usec": 20880,
+        "source_false_blocked": 1,
+        "source_false_free": 0
+      },
+      {
+        "analytic_mismatches": 0,
+        "asset": "medical_cart001",
+        "hulls": 35,
+        "part": "p09",
+        "pose": 0,
+        "queries": 144,
+        "query_usec": 18931,
+        "source_false_blocked": 1,
+        "source_false_free": 0
+      },
+      {
+        "analytic_mismatches": 0,
+        "asset": "medical_cart001",
+        "hulls": 35,
+        "part": "p09",
+        "pose": 1,
+        "queries": 144,
+        "query_usec": 15240,
+        "source_false_blocked": 1,
+        "source_false_free": 0
+      },
+      {
+        "analytic_mismatches": 0,
+        "asset": "medical_cart001",
+        "hulls": 50,
+        "part": "p10",
+        "pose": 0,
+        "queries": 144,
+        "query_usec": 7293,
+        "source_false_blocked": 0,
+        "source_false_free": 0
+      },
+      {
+        "analytic_mismatches": 0,
+        "asset": "medical_cart001",
+        "hulls": 50,
+        "part": "p10",
+        "pose": 1,
+        "queries": 144,
+        "query_usec": 8876,
+        "source_false_blocked": 0,
+        "source_false_free": 0
+      },
+      {
+        "analytic_mismatches": 0,
+        "asset": "medical_cart001",
+        "hulls": 49,
+        "part": "p11",
+        "pose": 0,
+        "queries": 144,
+        "query_usec": 8959,
+        "source_false_blocked": 0,
+        "source_false_free": 0
+      },
+      {
+        "analytic_mismatches": 0,
+        "asset": "medical_cart001",
+        "hulls": 49,
+        "part": "p11",
+        "pose": 1,
+        "queries": 144,
+        "query_usec": 13134,
+        "source_false_blocked": 0,
+        "source_false_free": 0
+      },
+      {
+        "analytic_mismatches": 0,
+        "asset": "medical_cart001",
+        "hulls": 14,
+        "part": "p12",
+        "pose": 0,
+        "queries": 144,
+        "query_usec": 4922,
+        "source_false_blocked": 1,
+        "source_false_free": 0
+      },
+      {
+        "analytic_mismatches": 0,
+        "asset": "medical_cart001",
+        "hulls": 14,
+        "part": "p12",
+        "pose": 1,
+        "queries": 144,
+        "query_usec": 7594,
+        "source_false_blocked": 1,
+        "source_false_free": 0
+      }
+    ],
+    "wall_seconds": 1.29783
+  },
+  "linux_engine": {
+    "analytic_mismatches": 0,
+    "checked": 4608,
+    "engine": "4.7.2-stable (official)",
+    "kind": "Posed convex sphere queries on frozen RigidBody3Ds; not dynamics",
+    "passed": true,
+    "physics_engine": "GodotPhysics3D",
+    "rows": [
+      {
+        "analytic_mismatches": 0,
+        "asset": "cabinet_1",
+        "hulls": 14,
+        "part": "p00",
+        "pose": 0,
+        "queries": 144,
+        "query_usec": 935,
+        "source_false_blocked": 0,
+        "source_false_free": 0
+      },
+      {
+        "analytic_mismatches": 0,
+        "asset": "cabinet_1",
+        "hulls": 14,
+        "part": "p00",
+        "pose": 1,
+        "queries": 144,
+        "query_usec": 1113,
+        "source_false_blocked": 0,
+        "source_false_free": 0
+      },
+      {
+        "analytic_mismatches": 0,
+        "asset": "cabinet_1",
+        "hulls": 64,
+        "part": "p01",
+        "pose": 0,
+        "queries": 144,
+        "query_usec": 2320,
+        "source_false_blocked": 2,
+        "source_false_free": 0
+      },
+      {
+        "analytic_mismatches": 0,
+        "asset": "cabinet_1",
+        "hulls": 64,
+        "part": "p01",
+        "pose": 1,
+        "queries": 144,
+        "query_usec": 2595,
+        "source_false_blocked": 2,
+        "source_false_free": 0
+      },
+      {
+        "analytic_mismatches": 0,
+        "asset": "cabinet_1",
+        "hulls": 14,
+        "part": "p02",
+        "pose": 0,
+        "queries": 144,
+        "query_usec": 1062,
+        "source_false_blocked": 0,
+        "source_false_free": 0
+      },
+      {
+        "analytic_mismatches": 0,
+        "asset": "cabinet_1",
+        "hulls": 14,
+        "part": "p02",
+        "pose": 1,
+        "queries": 144,
+        "query_usec": 1042,
+        "source_false_blocked": 0,
+        "source_false_free": 0
+      },
+      {
+        "analytic_mismatches": 0,
+        "asset": "medical_cart001",
+        "hulls": 25,
+        "part": "p00",
+        "pose": 0,
+        "queries": 144,
+        "query_usec": 62063,
+        "source_false_blocked": 0,
+        "source_false_free": 0
+      },
+      {
+        "analytic_mismatches": 0,
+        "asset": "medical_cart001",
+        "hulls": 25,
+        "part": "p00",
+        "pose": 1,
+        "queries": 144,
+        "query_usec": 63507,
+        "source_false_blocked": 0,
+        "source_false_free": 0
+      },
+      {
+        "analytic_mismatches": 0,
+        "asset": "medical_cart001",
+        "hulls": 19,
+        "part": "p01",
+        "pose": 0,
+        "queries": 144,
+        "query_usec": 3193,
+        "source_false_blocked": 0,
+        "source_false_free": 0
+      },
+      {
+        "analytic_mismatches": 0,
+        "asset": "medical_cart001",
+        "hulls": 19,
+        "part": "p01",
+        "pose": 1,
+        "queries": 144,
+        "query_usec": 3281,
+        "source_false_blocked": 0,
+        "source_false_free": 0
+      },
+      {
+        "analytic_mismatches": 0,
+        "asset": "medical_cart001",
+        "hulls": 46,
+        "part": "p02",
+        "pose": 0,
+        "queries": 144,
+        "query_usec": 12060,
+        "source_false_blocked": 0,
+        "source_false_free": 0
+      },
+      {
+        "analytic_mismatches": 0,
+        "asset": "medical_cart001",
+        "hulls": 46,
+        "part": "p02",
+        "pose": 1,
+        "queries": 144,
+        "query_usec": 11781,
+        "source_false_blocked": 0,
+        "source_false_free": 0
+      },
+      {
+        "analytic_mismatches": 0,
+        "asset": "medical_cart001",
+        "hulls": 35,
+        "part": "p03",
+        "pose": 0,
+        "queries": 144,
+        "query_usec": 24576,
+        "source_false_blocked": 1,
+        "source_false_free": 0
+      },
+      {
+        "analytic_mismatches": 0,
+        "asset": "medical_cart001",
+        "hulls": 35,
+        "part": "p03",
+        "pose": 1,
+        "queries": 144,
+        "query_usec": 24481,
+        "source_false_blocked": 1,
+        "source_false_free": 0
+      },
+      {
+        "analytic_mismatches": 0,
+        "asset": "medical_cart001",
+        "hulls": 35,
+        "part": "p04",
+        "pose": 0,
+        "queries": 144,
+        "query_usec": 24745,
+        "source_false_blocked": 1,
+        "source_false_free": 0
+      },
+      {
+        "analytic_mismatches": 0,
+        "asset": "medical_cart001",
+        "hulls": 35,
+        "part": "p04",
+        "pose": 1,
+        "queries": 144,
+        "query_usec": 24617,
+        "source_false_blocked": 1,
+        "source_false_free": 0
+      },
+      {
+        "analytic_mismatches": 0,
+        "asset": "medical_cart001",
+        "hulls": 19,
+        "part": "p05",
+        "pose": 0,
+        "queries": 144,
+        "query_usec": 3346,
+        "source_false_blocked": 0,
+        "source_false_free": 0
+      },
+      {
+        "analytic_mismatches": 0,
+        "asset": "medical_cart001",
+        "hulls": 19,
+        "part": "p05",
+        "pose": 1,
+        "queries": 144,
+        "query_usec": 3510,
+        "source_false_blocked": 0,
+        "source_false_free": 0
+      },
+      {
+        "analytic_mismatches": 0,
+        "asset": "medical_cart001",
+        "hulls": 50,
+        "part": "p06",
+        "pose": 0,
+        "queries": 144,
+        "query_usec": 12194,
+        "source_false_blocked": 0,
+        "source_false_free": 0
+      },
+      {
+        "analytic_mismatches": 0,
+        "asset": "medical_cart001",
+        "hulls": 50,
+        "part": "p06",
+        "pose": 1,
+        "queries": 144,
+        "query_usec": 11959,
+        "source_false_blocked": 0,
+        "source_false_free": 0
+      },
+      {
+        "analytic_mismatches": 0,
+        "asset": "medical_cart001",
+        "hulls": 15,
+        "part": "p07",
+        "pose": 0,
+        "queries": 144,
+        "query_usec": 5093,
+        "source_false_blocked": 0,
+        "source_false_free": 0
+      },
+      {
+        "analytic_mismatches": 0,
+        "asset": "medical_cart001",
+        "hulls": 15,
+        "part": "p07",
+        "pose": 1,
+        "queries": 144,
+        "query_usec": 5233,
+        "source_false_blocked": 0,
+        "source_false_free": 0
+      },
+      {
+        "analytic_mismatches": 0,
+        "asset": "medical_cart001",
+        "hulls": 35,
+        "part": "p08",
+        "pose": 0,
+        "queries": 144,
+        "query_usec": 24874,
+        "source_false_blocked": 1,
+        "source_false_free": 0
+      },
+      {
+        "analytic_mismatches": 0,
+        "asset": "medical_cart001",
+        "hulls": 35,
+        "part": "p08",
+        "pose": 1,
+        "queries": 144,
+        "query_usec": 24491,
+        "source_false_blocked": 1,
+        "source_false_free": 0
+      },
+      {
+        "analytic_mismatches": 0,
+        "asset": "medical_cart001",
+        "hulls": 35,
+        "part": "p09",
+        "pose": 0,
+        "queries": 144,
+        "query_usec": 24446,
+        "source_false_blocked": 1,
+        "source_false_free": 0
+      },
+      {
+        "analytic_mismatches": 0,
+        "asset": "medical_cart001",
+        "hulls": 35,
+        "part": "p09",
+        "pose": 1,
+        "queries": 144,
+        "query_usec": 24671,
+        "source_false_blocked": 1,
+        "source_false_free": 0
+      },
+      {
+        "analytic_mismatches": 0,
+        "asset": "medical_cart001",
+        "hulls": 50,
+        "part": "p10",
+        "pose": 0,
+        "queries": 144,
+        "query_usec": 15827,
+        "source_false_blocked": 0,
+        "source_false_free": 0
+      },
+      {
+        "analytic_mismatches": 0,
+        "asset": "medical_cart001",
+        "hulls": 50,
+        "part": "p10",
+        "pose": 1,
+        "queries": 144,
+        "query_usec": 11770,
+        "source_false_blocked": 0,
+        "source_false_free": 0
+      },
+      {
+        "analytic_mismatches": 0,
+        "asset": "medical_cart001",
+        "hulls": 49,
+        "part": "p11",
+        "pose": 0,
+        "queries": 144,
+        "query_usec": 12013,
+        "source_false_blocked": 0,
+        "source_false_free": 0
+      },
+      {
+        "analytic_mismatches": 0,
+        "asset": "medical_cart001",
+        "hulls": 49,
+        "part": "p11",
+        "pose": 1,
+        "queries": 144,
+        "query_usec": 11936,
+        "source_false_blocked": 0,
+        "source_false_free": 0
+      },
+      {
+        "analytic_mismatches": 0,
+        "asset": "medical_cart001",
+        "hulls": 14,
+        "part": "p12",
+        "pose": 0,
+        "queries": 144,
+        "query_usec": 5642,
+        "source_false_blocked": 1,
+        "source_false_free": 0
+      },
+      {
+        "analytic_mismatches": 0,
+        "asset": "medical_cart001",
+        "hulls": 14,
+        "part": "p12",
+        "pose": 1,
+        "queries": 144,
+        "query_usec": 5437,
+        "source_false_blocked": 1,
+        "source_false_free": 0
+      }
+    ],
+    "wall_seconds": 1.320857
+  },
+  "library_controls": {
+    "rows": [
+      {
+        "case": "dev-frame",
+        "scored": true,
+        "generator_sha256": "85d093d2bffb5ea219888d46ffb1b7ff78303d003f64dcee6df22aa562925afa",
+        "status": "evaluated",
+        "evaluation": {
+          "status": "evaluated",
+          "score": 0.4380952380952381,
+          "budget_passed": true,
+          "measurement": {
+            "status": "measured",
+            "hulls": 32,
+            "vertices": 1741,
+            "contact_count": 294,
+            "free_count": 1260,
+            "false_free": 0,
+            "false_blocked": 708,
+            "false_free_fraction": 0.0,
+            "false_blocked_fraction": 0.5619047619047619,
+            "exact_sampled_agreement": false,
+            "convex": true
+          }
+        }
+      },
+      {
+        "case": "dev-drawer",
+        "scored": true,
+        "generator_sha256": "85d093d2bffb5ea219888d46ffb1b7ff78303d003f64dcee6df22aa562925afa",
+        "status": "evaluated",
+        "evaluation": {
+          "status": "evaluated",
+          "score": 0.6743869209809265,
+          "budget_passed": true,
+          "measurement": {
+            "status": "measured",
+            "hulls": 27,
+            "vertices": 1003,
+            "contact_count": 374,
+            "free_count": 1468,
+            "false_free": 0,
+            "false_blocked": 478,
+            "false_free_fraction": 0.0,
+            "false_blocked_fraction": 0.32561307901907355,
+            "exact_sampled_agreement": false,
+            "convex": true
+          }
+        }
+      },
+      {
+        "case": "dev-wheel",
+        "scored": true,
+        "generator_sha256": "85d093d2bffb5ea219888d46ffb1b7ff78303d003f64dcee6df22aa562925afa",
+        "status": "evaluated",
+        "evaluation": {
+          "status": "evaluated",
+          "score": 0.9985185185185185,
+          "budget_passed": true,
+          "measurement": {
+            "status": "measured",
+            "hulls": 3,
+            "vertices": 382,
+            "contact_count": 406,
+            "free_count": 1350,
+            "false_free": 0,
+            "false_blocked": 2,
+            "false_free_fraction": 0.0,
+            "false_blocked_fraction": 0.0014814814814814814,
+            "exact_sampled_agreement": false,
+            "convex": true
+          }
+        }
+      },
+      {
+        "case": "transfer-holder",
+        "scored": true,
+        "generator_sha256": "85d093d2bffb5ea219888d46ffb1b7ff78303d003f64dcee6df22aa562925afa",
+        "status": "evaluated",
+        "evaluation": {
+          "status": "evaluated",
+          "score": 0.9230769230769231,
+          "budget_passed": true,
+          "measurement": {
+            "status": "measured",
+            "hulls": 24,
+            "vertices": 2145,
+            "contact_count": 226,
+            "free_count": 1456,
+            "false_free": 0,
+            "false_blocked": 112,
+            "false_free_fraction": 0.0,
+            "false_blocked_fraction": 0.07692307692307693,
+            "exact_sampled_agreement": false,
+            "convex": true
+          }
+        }
+      },
+      {
+        "case": "transfer-cabinet-frame",
+        "scored": true,
+        "generator_sha256": "85d093d2bffb5ea219888d46ffb1b7ff78303d003f64dcee6df22aa562925afa",
+        "status": "evaluated",
+        "evaluation": {
+          "status": "evaluated",
+          "score": 0.410981697171381,
+          "budget_passed": true,
+          "measurement": {
+            "status": "measured",
+            "hulls": 32,
+            "vertices": 993,
+            "contact_count": 718,
+            "free_count": 2404,
+            "false_free": 0,
+            "false_blocked": 1416,
+            "false_free_fraction": 0.0,
+            "false_blocked_fraction": 0.589018302828619,
+            "exact_sampled_agreement": false,
+            "convex": true
+          }
+        }
+      },
+      {
+        "case": "transfer-cabinet-drawer",
+        "scored": true,
+        "generator_sha256": "85d093d2bffb5ea219888d46ffb1b7ff78303d003f64dcee6df22aa562925afa",
+        "status": "evaluated",
+        "evaluation": {
+          "status": "evaluated",
+          "score": 0.588376753507014,
+          "budget_passed": true,
+          "measurement": {
+            "status": "measured",
+            "hulls": 24,
+            "vertices": 726,
+            "contact_count": 626,
+            "free_count": 2495,
+            "false_free": 0,
+            "false_blocked": 1027,
+            "false_free_fraction": 0.0,
+            "false_blocked_fraction": 0.411623246492986,
+            "exact_sampled_agreement": false,
+            "convex": true
+          }
+        }
+      }
+    ],
+    "summary": {
+      "scorable": true,
+      "cases": 6,
+      "mean_score": 0.6722393418916669,
+      "budget_passes": 6
+    }
+  }
+}
