@@ -1,0 +1,214 @@
+{
+  "kind": "three real public assets for CPU/mechanism screening, not a formal task dataset",
+  "repository": "mastercai/Artisan-Benchmark",
+  "revision": "17d219e8abea0a5489e2280bf713748aa1e0f6b9",
+  "assets": [
+    "cabinet_1",
+    "microscope001",
+    "medical_cart001"
+  ],
+  "files": [
+    {
+      "path": "ArtVIP/cabinet_1/close.png",
+      "bytes": 147049,
+      "sha256": "f6a7258fc73c93564e28e882782422bb2255f3a2b754e52b7b1861cfcc4c3d47",
+      "url": "https://huggingface.co/datasets/mastercai/Artisan-Benchmark/resolve/17d219e8abea0a5489e2280bf713748aa1e0f6b9/ArtVIP/cabinet_1/close.png"
+    },
+    {
+      "path": "ArtVIP/cabinet_1/open.png",
+      "bytes": 217610,
+      "sha256": "c69da6e44ba4f6a49194768ca61bc5ad593a9c0b1a46879fb301fab555237d55",
+      "url": "https://huggingface.co/datasets/mastercai/Artisan-Benchmark/resolve/17d219e8abea0a5489e2280bf713748aa1e0f6b9/ArtVIP/cabinet_1/open.png"
+    },
+    {
+      "path": "ArtVIP/cabinet_1/prompt.txt",
+      "bytes": 175,
+      "sha256": "4340f32ce19dc049e81a3911a17abce2c983d6c6db286de2dbe75f20913dedfc",
+      "url": "https://huggingface.co/datasets/mastercai/Artisan-Benchmark/resolve/17d219e8abea0a5489e2280bf713748aa1e0f6b9/ArtVIP/cabinet_1/prompt.txt"
+    },
+    {
+      "path": "ArtVIP/cabinet_1/urdf/cabinet_1.urdf",
+      "bytes": 2560,
+      "sha256": "2732dd243b72a17c4b037d211bb1a27285a03d7756bcc15b486d150db4fb5bca",
+      "url": "https://huggingface.co/datasets/mastercai/Artisan-Benchmark/resolve/17d219e8abea0a5489e2280bf713748aa1e0f6b9/ArtVIP/cabinet_1/urdf/cabinet_1.urdf"
+    },
+    {
+      "path": "ArtVIP/cabinet_1/urdf/meshes/E_body_1_collision.obj",
+      "bytes": 40770,
+      "sha256": "7ae0551bb049c4df4eb7cb206574087e8c8178e4a17db0ede2339787c5090bc4",
+      "url": "https://huggingface.co/datasets/mastercai/Artisan-Benchmark/resolve/17d219e8abea0a5489e2280bf713748aa1e0f6b9/ArtVIP/cabinet_1/urdf/meshes/E_body_1_collision.obj"
+    },
+    {
+      "path": "ArtVIP/cabinet_1/urdf/meshes/E_drawer1_5_collision.obj",
+      "bytes": 25635,
+      "sha256": "5536fb8a44f84e893d7112cecbaf4ec138a076c24635090e18fbe99e8aeee684",
+      "url": "https://huggingface.co/datasets/mastercai/Artisan-Benchmark/resolve/17d219e8abea0a5489e2280bf713748aa1e0f6b9/ArtVIP/cabinet_1/urdf/meshes/E_drawer1_5_collision.obj"
+    },
+    {
+      "path": "ArtVIP/cabinet_1/urdf/meshes/E_drawer2_8_collision.obj",
+      "bytes": 25625,
+      "sha256": "acb890f047d1baa6fdefb525e91185676c81b20f927bd085df17d16250fff101",
+      "url": "https://huggingface.co/datasets/mastercai/Artisan-Benchmark/resolve/17d219e8abea0a5489e2280bf713748aa1e0f6b9/ArtVIP/cabinet_1/urdf/meshes/E_drawer2_8_collision.obj"
+    },
+    {
+      "path": "ArtVIP/microscope001/close.png",
+      "bytes": 164232,
+      "sha256": "3947d25a095036b4a119025b0f3d88c1ac2d89c04c3b312c9f01e8bb32ab21b0",
+      "url": "https://huggingface.co/datasets/mastercai/Artisan-Benchmark/resolve/17d219e8abea0a5489e2280bf713748aa1e0f6b9/ArtVIP/microscope001/close.png"
+    },
+    {
+      "path": "ArtVIP/microscope001/open.png",
+      "bytes": 165907,
+      "sha256": "ef0f9686aabc7e4155abaa0277c9c04f53c9e23e212c70e98efc66763c541878",
+      "url": "https://huggingface.co/datasets/mastercai/Artisan-Benchmark/resolve/17d219e8abea0a5489e2280bf713748aa1e0f6b9/ArtVIP/microscope001/open.png"
+    },
+    {
+      "path": "ArtVIP/microscope001/prompt.txt",
+      "bytes": 336,
+      "sha256": "1df9954133208a7a5072f2c8e22a956062c89b5caba2ff4d6c01dfa18f85f5f2",
+      "url": "https://huggingface.co/datasets/mastercai/Artisan-Benchmark/resolve/17d219e8abea0a5489e2280bf713748aa1e0f6b9/ArtVIP/microscope001/prompt.txt"
+    },
+    {
+      "path": "ArtVIP/microscope001/urdf/meshes/E_body_1_collision.obj",
+      "bytes": 44956118,
+      "sha256": "2f62f71578a27f3341a5ef3e65911224b39091ea4d2e2dedc08675e3923108ce",
+      "url": "https://huggingface.co/datasets/mastercai/Artisan-Benchmark/resolve/17d219e8abea0a5489e2280bf713748aa1e0f6b9/ArtVIP/microscope001/urdf/meshes/E_body_1_collision.obj"
+    },
+    {
+      "path": "ArtVIP/microscope001/urdf/meshes/E_knob001_58_collision.obj",
+      "bytes": 197264,
+      "sha256": "74265d80d8b70f4049fac12b55c77cf11a19e2df3a2ce7bb5672d733c0dc6f29",
+      "url": "https://huggingface.co/datasets/mastercai/Artisan-Benchmark/resolve/17d219e8abea0a5489e2280bf713748aa1e0f6b9/ArtVIP/microscope001/urdf/meshes/E_knob001_58_collision.obj"
+    },
+    {
+      "path": "ArtVIP/microscope001/urdf/meshes/E_knob_57_collision.obj",
+      "bytes": 372963,
+      "sha256": "74edf1e266e61035eb60ff6c978313caeb0ab26d04d4a7848f3dd3fdfc473875",
+      "url": "https://huggingface.co/datasets/mastercai/Artisan-Benchmark/resolve/17d219e8abea0a5489e2280bf713748aa1e0f6b9/ArtVIP/microscope001/urdf/meshes/E_knob_57_collision.obj"
+    },
+    {
+      "path": "ArtVIP/microscope001/urdf/meshes/E_lens001_51_collision.obj",
+      "bytes": 2993936,
+      "sha256": "2813eb8ccd9851fe2496fb7f2d26d65e11a1259c76a4cd207b122f845ebd60dd",
+      "url": "https://huggingface.co/datasets/mastercai/Artisan-Benchmark/resolve/17d219e8abea0a5489e2280bf713748aa1e0f6b9/ArtVIP/microscope001/urdf/meshes/E_lens001_51_collision.obj"
+    },
+    {
+      "path": "ArtVIP/microscope001/urdf/meshes/E_lens002_56_collision.obj",
+      "bytes": 99894,
+      "sha256": "9ea800bf8ecb09360ecb75cc5dc8bfee10f012d531c52fe256782304038bb1c4",
+      "url": "https://huggingface.co/datasets/mastercai/Artisan-Benchmark/resolve/17d219e8abea0a5489e2280bf713748aa1e0f6b9/ArtVIP/microscope001/urdf/meshes/E_lens002_56_collision.obj"
+    },
+    {
+      "path": "ArtVIP/microscope001/urdf/microscope001.urdf",
+      "bytes": 4008,
+      "sha256": "ffd7556ed2cefff62261b341806fad6c28031e1a0201870d13ce28aa05da1979",
+      "url": "https://huggingface.co/datasets/mastercai/Artisan-Benchmark/resolve/17d219e8abea0a5489e2280bf713748aa1e0f6b9/ArtVIP/microscope001/urdf/microscope001.urdf"
+    },
+    {
+      "path": "ArtVIP/medical_cart001/close.png",
+      "bytes": 139511,
+      "sha256": "619f268269b7b93337f5904146cc469ce9aeace37cf9cbfa0f96f1dcc335b1dd",
+      "url": "https://huggingface.co/datasets/mastercai/Artisan-Benchmark/resolve/17d219e8abea0a5489e2280bf713748aa1e0f6b9/ArtVIP/medical_cart001/close.png"
+    },
+    {
+      "path": "ArtVIP/medical_cart001/open.png",
+      "bytes": 167334,
+      "sha256": "4ec8f7ce40fb6f2b0a08187fb072cb7f25e5ef22cb5ad327eb6aa26cb8ad9702",
+      "url": "https://huggingface.co/datasets/mastercai/Artisan-Benchmark/resolve/17d219e8abea0a5489e2280bf713748aa1e0f6b9/ArtVIP/medical_cart001/open.png"
+    },
+    {
+      "path": "ArtVIP/medical_cart001/prompt.txt",
+      "bytes": 290,
+      "sha256": "d5abcf1cf46a3f0d15e12d54272485cfd6249700517dfac0b436c080b936793c",
+      "url": "https://huggingface.co/datasets/mastercai/Artisan-Benchmark/resolve/17d219e8abea0a5489e2280bf713748aa1e0f6b9/ArtVIP/medical_cart001/prompt.txt"
+    },
+    {
+      "path": "ArtVIP/medical_cart001/urdf/medical_cart001.urdf",
+      "bytes": 10441,
+      "sha256": "7b29fcd65da1eb4b05ca5d2ac8ca554cba2bf83bccd6602eeaf82b2dc31e5e42",
+      "url": "https://huggingface.co/datasets/mastercai/Artisan-Benchmark/resolve/17d219e8abea0a5489e2280bf713748aa1e0f6b9/ArtVIP/medical_cart001/urdf/medical_cart001.urdf"
+    },
+    {
+      "path": "ArtVIP/medical_cart001/urdf/meshes/E_Component212_1_collision.obj",
+      "bytes": 2597951,
+      "sha256": "3d04bb15533a35493037cdd626af73699fe1f6b10ce51fa002a8b52753cf734e",
+      "url": "https://huggingface.co/datasets/mastercai/Artisan-Benchmark/resolve/17d219e8abea0a5489e2280bf713748aa1e0f6b9/ArtVIP/medical_cart001/urdf/meshes/E_Component212_1_collision.obj"
+    },
+    {
+      "path": "ArtVIP/medical_cart001/urdf/meshes/E_drawer_27_collision.obj",
+      "bytes": 672128,
+      "sha256": "bc24495738f285d13661dcd6960bd451960e1f840f27c4b1758f739fc1c32a3b",
+      "url": "https://huggingface.co/datasets/mastercai/Artisan-Benchmark/resolve/17d219e8abea0a5489e2280bf713748aa1e0f6b9/ArtVIP/medical_cart001/urdf/meshes/E_drawer_27_collision.obj"
+    },
+    {
+      "path": "ArtVIP/medical_cart001/urdf/meshes/E_drawer_30_collision.obj",
+      "bytes": 672128,
+      "sha256": "85a8438870556c2580823e3800258d98c503e2e73c2c3331ee20b17900b3fe24",
+      "url": "https://huggingface.co/datasets/mastercai/Artisan-Benchmark/resolve/17d219e8abea0a5489e2280bf713748aa1e0f6b9/ArtVIP/medical_cart001/urdf/meshes/E_drawer_30_collision.obj"
+    },
+    {
+      "path": "ArtVIP/medical_cart001/urdf/meshes/E_link1_23_collision.obj",
+      "bytes": 335276,
+      "sha256": "3389b683ccdd29835e08b756f7675b2ab2c690cf66c723927c9cc20efd84a77b",
+      "url": "https://huggingface.co/datasets/mastercai/Artisan-Benchmark/resolve/17d219e8abea0a5489e2280bf713748aa1e0f6b9/ArtVIP/medical_cart001/urdf/meshes/E_link1_23_collision.obj"
+    },
+    {
+      "path": "ArtVIP/medical_cart001/urdf/meshes/E_link1_24_collision.obj",
+      "bytes": 335276,
+      "sha256": "07102bd6ba9d581f9c094cf6bb547c2db2a30582d8bcb86a07954a0d250f4b00",
+      "url": "https://huggingface.co/datasets/mastercai/Artisan-Benchmark/resolve/17d219e8abea0a5489e2280bf713748aa1e0f6b9/ArtVIP/medical_cart001/urdf/meshes/E_link1_24_collision.obj"
+    },
+    {
+      "path": "ArtVIP/medical_cart001/urdf/meshes/E_link1_25_collision.obj",
+      "bytes": 335369,
+      "sha256": "19d3f2bef6b4bd23d8685d9199d9a370b964b03e8672d3f1442bc1c531e02365",
+      "url": "https://huggingface.co/datasets/mastercai/Artisan-Benchmark/resolve/17d219e8abea0a5489e2280bf713748aa1e0f6b9/ArtVIP/medical_cart001/urdf/meshes/E_link1_25_collision.obj"
+    },
+    {
+      "path": "ArtVIP/medical_cart001/urdf/meshes/E_link1_26_collision.obj",
+      "bytes": 335276,
+      "sha256": "549c8d5103b14ce1bbbdcb680243bc50e6a54744b42f8a795765dafddf4e148c",
+      "url": "https://huggingface.co/datasets/mastercai/Artisan-Benchmark/resolve/17d219e8abea0a5489e2280bf713748aa1e0f6b9/ArtVIP/medical_cart001/urdf/meshes/E_link1_26_collision.obj"
+    },
+    {
+      "path": "ArtVIP/medical_cart001/urdf/meshes/E_part1_34_collision.obj",
+      "bytes": 483947,
+      "sha256": "1e1ec4dd334795b1879bcc2f4b8172bf271ca226ba001c210854c779b365dda9",
+      "url": "https://huggingface.co/datasets/mastercai/Artisan-Benchmark/resolve/17d219e8abea0a5489e2280bf713748aa1e0f6b9/ArtVIP/medical_cart001/urdf/meshes/E_part1_34_collision.obj"
+    },
+    {
+      "path": "ArtVIP/medical_cart001/urdf/meshes/E_part_33_collision.obj",
+      "bytes": 475163,
+      "sha256": "fa6b0b05f26ee0b54f755f67aa0ae337648f2331d724a27a47043d07c088161f",
+      "url": "https://huggingface.co/datasets/mastercai/Artisan-Benchmark/resolve/17d219e8abea0a5489e2280bf713748aa1e0f6b9/ArtVIP/medical_cart001/urdf/meshes/E_part_33_collision.obj"
+    },
+    {
+      "path": "ArtVIP/medical_cart001/urdf/meshes/E_wheel_19_collision.obj",
+      "bytes": 1036974,
+      "sha256": "51e0b8814813b893e929a29e5de6160eebe92a44bf8ee9343a98ac7148a18f87",
+      "url": "https://huggingface.co/datasets/mastercai/Artisan-Benchmark/resolve/17d219e8abea0a5489e2280bf713748aa1e0f6b9/ArtVIP/medical_cart001/urdf/meshes/E_wheel_19_collision.obj"
+    },
+    {
+      "path": "ArtVIP/medical_cart001/urdf/meshes/E_wheel_20_collision.obj",
+      "bytes": 1037678,
+      "sha256": "fec0dbb9f1108969f3d3c1adff35b507f3766646d39e0539c484f8c9c90a1770",
+      "url": "https://huggingface.co/datasets/mastercai/Artisan-Benchmark/resolve/17d219e8abea0a5489e2280bf713748aa1e0f6b9/ArtVIP/medical_cart001/urdf/meshes/E_wheel_20_collision.obj"
+    },
+    {
+      "path": "ArtVIP/medical_cart001/urdf/meshes/E_wheel_21_collision.obj",
+      "bytes": 1037727,
+      "sha256": "155841981f5181a45019c2c67830d612800864168fb0d734d6290eff2ae846d5",
+      "url": "https://huggingface.co/datasets/mastercai/Artisan-Benchmark/resolve/17d219e8abea0a5489e2280bf713748aa1e0f6b9/ArtVIP/medical_cart001/urdf/meshes/E_wheel_21_collision.obj"
+    },
+    {
+      "path": "ArtVIP/medical_cart001/urdf/meshes/E_wheel_22_collision.obj",
+      "bytes": 1037023,
+      "sha256": "72b5bfd21222640ad73a4959ee5313b61db70662e73c6dabe7c881f5bb26a1d8",
+      "url": "https://huggingface.co/datasets/mastercai/Artisan-Benchmark/resolve/17d219e8abea0a5489e2280bf713748aa1e0f6b9/ArtVIP/medical_cart001/urdf/meshes/E_wheel_22_collision.obj"
+    }
+  ],
+  "source_dataset": "X-Humanoid/ArtVIP",
+  "source_revision": "d22f2095bc9db29fdd4b60f4a3c4f8177e1f5e9e",
+  "source_declared_license": "apache-2.0",
+  "distribution_note": "Raw assets remain local pending delivery/redistribution verification; publish source links, hashes and derived measurements only."
+}

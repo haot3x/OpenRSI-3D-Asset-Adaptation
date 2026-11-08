@@ -10,7 +10,14 @@ while transferring to new constraints and avoiding regressions in prior scenes.
 This repository is a public, runnable **engineering prototype**, not an accepted
 OpenRSI task, a completed RSI trajectory, or evidence of continual-learning gains.
 
-**Latest adapter calibration (v2):** the model edited an existing GLB without
+**Latest real-asset screening (v3):** three public articulated assets run on native
+Mac CPU geometry/collision infrastructure. Astra at max reasoning recovered all
+18 reference movable joints within the frozen structural tolerances. This subset
+still saturates; movement-based cross-scene functionality has yet to be tested.
+See [study-v3/RESULTS.md](study-v3/RESULTS.md) for predictions, controls, CPU timings
+and the limits of this prerequisite screening. No long run was started.
+
+**Preserved adapter calibration (v2):** the model edited an existing GLB without
 construction source, preserved its meshes and passed three distinct pose scenes
 plus seven switches on its first call. The no-op control passed only the upright
 scene. This confirms the controlled-adapter pipeline, but the one-asset workload

@@ -1,0 +1,651 @@
+{
+  "kind": "Local bounded mechanism-recovery screening; not official reward or RSI trajectory",
+  "date": "2026-11-08",
+  "cases": [
+    {
+      "asset": "cabinet_1",
+      "wall_seconds": 19.695,
+      "status": "completed",
+      "model_requested": "gpt-6-astra",
+      "reasoning_effort": "max",
+      "native_sha256": "cdeab5a0057a08df876fda6e498d69ac91cad53ea2601316ad8009baff3e65ad",
+      "prompt_sha256": "e6010c0cce4d4372654ebe10333b7d056cedd207655024f8786ad4d0b1fd992f",
+      "usage": [
+        {
+          "input_tokens": 16926,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 278,
+          "reasoning_output_tokens": 176
+        }
+      ],
+      "prediction": {
+        "root_id": "p01",
+        "joints": [
+          {
+            "child": "p00",
+            "parent": "p01",
+            "type": "prismatic",
+            "axis_world": [
+              0,
+              -1,
+              0
+            ],
+            "pivot_world": [
+              0,
+              0,
+              0
+            ],
+            "confidence": 0.99
+          },
+          {
+            "child": "p02",
+            "parent": "p01",
+            "type": "prismatic",
+            "axis_world": [
+              0,
+              -1,
+              0
+            ],
+            "pivot_world": [
+              0,
+              0,
+              0
+            ],
+            "confidence": 0.99
+          }
+        ]
+      },
+      "diagnostic": {
+        "kind": "URDF ground-truth agreement diagnostic, not physical functionality or official reward",
+        "joint_count": 2,
+        "correct": 2,
+        "fraction": 1.0,
+        "root_correct": true,
+        "pivot_tolerance_metres": 0.0141506006974436,
+        "rows": [
+          {
+            "child": "p02",
+            "parent_correct": true,
+            "type_correct": true,
+            "axis_correct": true,
+            "pivot_correct": null,
+            "axis_error_degrees": 0.0,
+            "passed": true
+          },
+          {
+            "child": "p00",
+            "parent_correct": true,
+            "type_correct": true,
+            "axis_correct": true,
+            "pivot_correct": null,
+            "axis_error_degrees": 0.0,
+            "passed": true
+          }
+        ]
+      }
+    },
+    {
+      "asset": "microscope001",
+      "wall_seconds": 197.91,
+      "status": "completed",
+      "model_requested": "gpt-6-astra",
+      "reasoning_effort": "max",
+      "native_sha256": "bd1db94a21d1959ab3a62203659a91d8d7d5c6b520ff0c9a68802fd8961befc9",
+      "prompt_sha256": "289fc4c99839f3ad7e5251dfabb99ef8d1a13ac0468e9efc2fa4a24ac7a479d9",
+      "usage": [
+        {
+          "input_tokens": 17233,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 5354,
+          "reasoning_output_tokens": 5129
+        }
+      ],
+      "prediction": {
+        "root_id": "p03",
+        "joints": [
+          {
+            "child": "p00",
+            "parent": "p03",
+            "type": "revolute",
+            "axis_world": [
+              0,
+              0.5,
+              0.866025
+            ],
+            "pivot_world": [
+              0.0195,
+              -0.084,
+              0.473
+            ],
+            "confidence": 0.93
+          },
+          {
+            "child": "p01",
+            "parent": "p03",
+            "type": "revolute",
+            "axis_world": [
+              1,
+              0,
+              0
+            ],
+            "pivot_world": [
+              0.019498,
+              -0.172007,
+              0.191045
+            ],
+            "confidence": 0.95
+          },
+          {
+            "child": "p02",
+            "parent": "p03",
+            "type": "revolute",
+            "axis_world": [
+              1,
+              0,
+              0
+            ],
+            "pivot_world": [
+              -0.058532,
+              0.120374,
+              0.475541
+            ],
+            "confidence": 0.98
+          },
+          {
+            "child": "p04",
+            "parent": "p03",
+            "type": "revolute",
+            "axis_world": [
+              1,
+              0,
+              0
+            ],
+            "pivot_world": [
+              -0.039039,
+              0.109597,
+              0.601535
+            ],
+            "confidence": 0.98
+          }
+        ]
+      },
+      "diagnostic": {
+        "kind": "URDF ground-truth agreement diagnostic, not physical functionality or official reward",
+        "joint_count": 4,
+        "correct": 4,
+        "fraction": 1.0,
+        "root_correct": true,
+        "pivot_tolerance_metres": 0.021925402231533365,
+        "rows": [
+          {
+            "child": "p00",
+            "parent_correct": true,
+            "type_correct": true,
+            "axis_correct": true,
+            "pivot_correct": true,
+            "axis_error_degrees": 3.8275686964433198,
+            "pivot_perpendicular_error_metres": 0.007853807915647156,
+            "passed": true
+          },
+          {
+            "child": "p01",
+            "parent_correct": true,
+            "type_correct": true,
+            "axis_correct": true,
+            "pivot_correct": true,
+            "axis_error_degrees": 0.00021045823441599067,
+            "pivot_perpendicular_error_metres": 0.0044324751509838825,
+            "passed": true
+          },
+          {
+            "child": "p04",
+            "parent_correct": true,
+            "type_correct": true,
+            "axis_correct": true,
+            "pivot_correct": true,
+            "axis_error_degrees": 0.0,
+            "pivot_perpendicular_error_metres": 0.00025495097567963836,
+            "passed": true
+          },
+          {
+            "child": "p02",
+            "parent_correct": true,
+            "type_correct": true,
+            "axis_correct": true,
+            "pivot_correct": true,
+            "axis_error_degrees": 0.0,
+            "pivot_perpendicular_error_metres": 0.002706011825546961,
+            "passed": true
+          }
+        ]
+      }
+    },
+    {
+      "asset": "medical_cart001",
+      "wall_seconds": 177.105,
+      "status": "completed",
+      "model_requested": "gpt-6-astra",
+      "reasoning_effort": "max",
+      "native_sha256": "9e75fa6b5f707708d63fbe4c6e48b8e35f63f22e9ccdfa5ac581fa83acd0b298",
+      "prompt_sha256": "241bac90b94b98f881b7cac4247c6b8c65a91c7d626925b63418897395d8fbd6",
+      "usage": [
+        {
+          "input_tokens": 18345,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 5257,
+          "reasoning_output_tokens": 4660
+        }
+      ],
+      "prediction": {
+        "root_id": "p00",
+        "joints": [
+          {
+            "child": "p01",
+            "parent": "p00",
+            "type": "prismatic",
+            "axis_world": [
+              0,
+              1,
+              0
+            ],
+            "pivot_world": [
+              0,
+              0,
+              0
+            ],
+            "confidence": 0.99
+          },
+          {
+            "child": "p02",
+            "parent": "p04",
+            "type": "revolute",
+            "axis_world": [
+              0,
+              1,
+              0
+            ],
+            "pivot_world": [
+              0.328264,
+              -0.196309,
+              0.043973
+            ],
+            "confidence": 0.98
+          },
+          {
+            "child": "p03",
+            "parent": "p00",
+            "type": "revolute",
+            "axis_world": [
+              0,
+              0,
+              1
+            ],
+            "pivot_world": [
+              0.3109,
+              0.203036,
+              0.1065
+            ],
+            "confidence": 0.95
+          },
+          {
+            "child": "p04",
+            "parent": "p00",
+            "type": "revolute",
+            "axis_world": [
+              0,
+              0,
+              1
+            ],
+            "pivot_world": [
+              0.3109,
+              -0.196147,
+              0.1065
+            ],
+            "confidence": 0.95
+          },
+          {
+            "child": "p05",
+            "parent": "p00",
+            "type": "prismatic",
+            "axis_world": [
+              0,
+              1,
+              0
+            ],
+            "pivot_world": [
+              0,
+              0,
+              0
+            ],
+            "confidence": 0.99
+          },
+          {
+            "child": "p06",
+            "parent": "p03",
+            "type": "revolute",
+            "axis_world": [
+              0,
+              1,
+              0
+            ],
+            "pivot_world": [
+              0.328264,
+              0.202874,
+              0.043973
+            ],
+            "confidence": 0.98
+          },
+          {
+            "child": "p07",
+            "parent": "p00",
+            "type": "revolute",
+            "axis_world": [
+              0,
+              0,
+              1
+            ],
+            "pivot_world": [
+              -0.2945,
+              0.2023,
+              0.48759
+            ],
+            "confidence": 0.96
+          },
+          {
+            "child": "p08",
+            "parent": "p00",
+            "type": "revolute",
+            "axis_world": [
+              0,
+              0,
+              1
+            ],
+            "pivot_world": [
+              -0.2934,
+              0.203036,
+              0.1065
+            ],
+            "confidence": 0.95
+          },
+          {
+            "child": "p09",
+            "parent": "p00",
+            "type": "revolute",
+            "axis_world": [
+              0,
+              0,
+              1
+            ],
+            "pivot_world": [
+              -0.2934,
+              -0.196148,
+              0.1065
+            ],
+            "confidence": 0.95
+          },
+          {
+            "child": "p10",
+            "parent": "p09",
+            "type": "revolute",
+            "axis_world": [
+              0,
+              1,
+              0
+            ],
+            "pivot_world": [
+              -0.276036,
+              -0.19631,
+              0.043973
+            ],
+            "confidence": 0.98
+          },
+          {
+            "child": "p11",
+            "parent": "p08",
+            "type": "revolute",
+            "axis_world": [
+              0,
+              1,
+              0
+            ],
+            "pivot_world": [
+              -0.276036,
+              0.202874,
+              0.043973
+            ],
+            "confidence": 0.98
+          },
+          {
+            "child": "p12",
+            "parent": "p00",
+            "type": "revolute",
+            "axis_world": [
+              0,
+              0,
+              1
+            ],
+            "pivot_world": [
+              0.3105,
+              0.2023,
+              0.48759
+            ],
+            "confidence": 0.96
+          }
+        ]
+      },
+      "diagnostic": {
+        "kind": "URDF ground-truth agreement diagnostic, not physical functionality or official reward",
+        "joint_count": 12,
+        "correct": 12,
+        "fraction": 1.0,
+        "root_correct": true,
+        "pivot_tolerance_metres": 0.025122011121019625,
+        "rows": [
+          {
+            "child": "p02",
+            "parent_correct": true,
+            "type_correct": true,
+            "axis_correct": true,
+            "pivot_correct": true,
+            "axis_error_degrees": 0.0,
+            "pivot_perpendicular_error_metres": 0.0010510851630576774,
+            "passed": true
+          },
+          {
+            "child": "p10",
+            "parent_correct": true,
+            "type_correct": true,
+            "axis_correct": true,
+            "pivot_correct": true,
+            "axis_error_degrees": 0.0,
+            "pivot_perpendicular_error_metres": 0.0010510851630576774,
+            "passed": true
+          },
+          {
+            "child": "p06",
+            "parent_correct": true,
+            "type_correct": true,
+            "axis_correct": true,
+            "pivot_correct": true,
+            "axis_error_degrees": 0.0,
+            "pivot_perpendicular_error_metres": 0.001050985275824537,
+            "passed": true
+          },
+          {
+            "child": "p11",
+            "parent_correct": true,
+            "type_correct": true,
+            "axis_correct": true,
+            "pivot_correct": true,
+            "axis_error_degrees": 0.0,
+            "pivot_perpendicular_error_metres": 0.001050985275824537,
+            "passed": true
+          },
+          {
+            "child": "p08",
+            "parent_correct": true,
+            "type_correct": true,
+            "axis_correct": true,
+            "pivot_correct": true,
+            "axis_error_degrees": 0.0,
+            "pivot_perpendicular_error_metres": 1.8000000000018e-05,
+            "passed": true
+          },
+          {
+            "child": "p09",
+            "parent_correct": true,
+            "type_correct": true,
+            "axis_correct": true,
+            "pivot_correct": true,
+            "axis_error_degrees": 0.0,
+            "pivot_perpendicular_error_metres": 1.8000000000018e-05,
+            "passed": true
+          },
+          {
+            "child": "p04",
+            "parent_correct": true,
+            "type_correct": true,
+            "axis_correct": true,
+            "pivot_correct": true,
+            "axis_error_degrees": 0.0,
+            "pivot_perpendicular_error_metres": 1.8999999999991246e-05,
+            "passed": true
+          },
+          {
+            "child": "p03",
+            "parent_correct": true,
+            "type_correct": true,
+            "axis_correct": true,
+            "pivot_correct": true,
+            "axis_error_degrees": 0.0,
+            "pivot_perpendicular_error_metres": 1.8999999999991246e-05,
+            "passed": true
+          },
+          {
+            "child": "p05",
+            "parent_correct": true,
+            "type_correct": true,
+            "axis_correct": true,
+            "pivot_correct": null,
+            "axis_error_degrees": 0.0,
+            "passed": true
+          },
+          {
+            "child": "p01",
+            "parent_correct": true,
+            "type_correct": true,
+            "axis_correct": true,
+            "pivot_correct": null,
+            "axis_error_degrees": 0.0,
+            "passed": true
+          },
+          {
+            "child": "p07",
+            "parent_correct": true,
+            "type_correct": true,
+            "axis_correct": true,
+            "pivot_correct": true,
+            "axis_error_degrees": 0.0,
+            "pivot_perpendicular_error_metres": 0.0010097841353477377,
+            "passed": true
+          },
+          {
+            "child": "p12",
+            "parent_correct": true,
+            "type_correct": true,
+            "axis_correct": true,
+            "pivot_correct": true,
+            "axis_error_degrees": 0.0,
+            "pivot_perpendicular_error_metres": 0.0026705596791683855,
+            "passed": true
+          }
+        ]
+      }
+    }
+  ],
+  "environment": {
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "python": "3.12.13",
+    "codex_cli": "codex-cli 0.166.0",
+    "packages": {
+      "numpy": "2.4.4",
+      "scipy": "1.17.1",
+      "trimesh": "4.12.2",
+      "python-fcl": "0.7.0.11",
+      "Pillow": "13.0.0"
+    },
+    "inference_helper_sha256": "089a1ebc892b3174efebe94814f442c45b01a3e645c7df0dad3b731e10f0640d"
+  },
+  "cpu_feasibility": {
+    "kind": "Native CPU feasibility; pair queries include expected adjacent contacts and are not functionality scores",
+    "machine": "arm64",
+    "cases": [
+      {
+        "asset": "cabinet_1",
+        "parts": 3,
+        "triangles": 1052,
+        "load_seconds": 0.004043875029310584,
+        "bvh_build_seconds": 0.0020350420381873846,
+        "zero_pose_pairs": 3,
+        "pair_queries_seconds": 0.00011879194062203169
+      },
+      {
+        "asset": "microscope001",
+        "parts": 5,
+        "triangles": 372335,
+        "load_seconds": 0.8480282919481397,
+        "bvh_build_seconds": 1.0032962911063805,
+        "zero_pose_pairs": 10,
+        "pair_queries_seconds": 0.0002223749179393053
+      },
+      {
+        "asset": "medical_cart001",
+        "parts": 13,
+        "triangles": 81254,
+        "load_seconds": 0.1875641660299152,
+        "bvh_build_seconds": 0.1757235419936478,
+        "zero_pose_pairs": 78,
+        "pair_queries_seconds": 0.0008934170473366976
+      }
+    ]
+  },
+  "pre_sampling_controls": {
+    "fcl_boxes_pass": true,
+    "assets": {
+      "cabinet_1": {
+        "reference_pass": true,
+        "axis_sign_invariant": true,
+        "unidentifiable_pivot_invariant": true,
+        "orthogonal_axis_rejected": true,
+        "displaced_rotational_pivot_rejected": true,
+        "self_cycle_rejected": true
+      },
+      "microscope001": {
+        "reference_pass": true,
+        "axis_sign_invariant": true,
+        "unidentifiable_pivot_invariant": true,
+        "orthogonal_axis_rejected": true,
+        "displaced_rotational_pivot_rejected": true,
+        "self_cycle_rejected": true
+      },
+      "medical_cart001": {
+        "reference_pass": true,
+        "axis_sign_invariant": true,
+        "unidentifiable_pivot_invariant": true,
+        "orthogonal_axis_rejected": true,
+        "displaced_rotational_pivot_rejected": true,
+        "self_cycle_rejected": true
+      }
+    }
+  },
+  "pre_sampling_source_hashes": {
+    "study-v3/PROTOCOL.md": "1e3727c88e24ed1d6999f8998dded8fba9047bab64f206e3c451f233f296c5de",
+    "study-v3/core.py": "71d3a65069213f8a6bd8a2f06ecf315246a99953e92f0d2cc002a0d4c3d17c28",
+    "study-v3/prediction.schema.json": "9feb62b4ec527380a7df3aa02124a35aabf089063f5d1b14b2f0a2fdc1efe4f6",
+    "study-v3/run.py": "a2829d35820510cb0b26a0ef4b31ef2ff2cdf1162c2a96f3e2a187d209f03a21",
+    "study-v3/sources.json": "63e1451428886c53aa1e7b12dcbb08d08075638b84564902eb0a1fc3a7056b39"
+  }
+}

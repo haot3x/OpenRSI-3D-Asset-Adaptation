@@ -1,0 +1,14 @@
+{
+  "type":"object",
+  "properties":{
+    "root_id":{"type":"string"},
+    "joints":{"type":"array","items":{"type":"object","properties":{
+      "child":{"type":"string"},"parent":{"type":"string"},
+      "type":{"type":"string","enum":["fixed","revolute","continuous","prismatic"]},
+      "axis_world":{"type":"array","items":{"type":"number"},"minItems":3,"maxItems":3},
+      "pivot_world":{"type":"array","items":{"type":"number"},"minItems":3,"maxItems":3},
+      "confidence":{"type":"number"}
+    },"required":["child","parent","type","axis_world","pivot_world","confidence"],"additionalProperties":false}}
+  },
+  "required":["root_id","joints"],"additionalProperties":false
+}
