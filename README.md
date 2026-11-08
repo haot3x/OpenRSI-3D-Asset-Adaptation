@@ -10,7 +10,14 @@ while transferring to new constraints and avoiding regressions in prior scenes.
 This repository is a public, runnable **engineering prototype**, not an accepted
 OpenRSI task, a completed RSI trajectory, or evidence of continual-learning gains.
 
-**Latest functional-motion calibration (v4):** generated behavior adapters move a
+**Latest tool-using geometry/rig study (v5):** Astra max wrote and tested a reusable
+mesh/rig generator. Both its first submitted and final programs pass 4/4 withheld
+transfer cases, including an unseen three-part cabinet. Capacity is preserved at
+95%+, rigid functional parts retain size, and generated joint hierarchies import
+into Godot. This parametric family still saturates; no RSI gain or long-run
+readiness is demonstrated. See [study-v5/RESULTS.md](study-v5/RESULTS.md).
+
+**Preserved functional-motion calibration (v4):** generated behavior adapters move a
 real 13-part prop through stockroom pickup, an L-corridor and a service alcove.
 Full sampled mesh clearance, operation sequences and previous-scene regression
 checks work; the model's first completed candidate still passes 3/3. Its GLB

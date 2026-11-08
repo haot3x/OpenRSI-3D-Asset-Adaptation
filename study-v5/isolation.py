@@ -13,7 +13,10 @@ def toml(value):
 
 def config_args(workspace,protected=()):
     workspace=Path(workspace).resolve();(workspace/'.tmp').mkdir(exist_ok=True)
-    filesystem={':root':'deny',':minimal':'read',':slash_tmp':'deny',':tmpdir':'deny',str(ROOT/'.tools/physics-venv'):'read',str(PYTHON.resolve().parents[2]):'read','/opt/homebrew':'read'}
+    runtime_root=PYTHON.resolve().parents[2]
+    if runtime_root==Path('/'):runtime_root=PYTHON.resolve().parents[1]
+    filesystem={':root':'deny',':minimal':'read',':slash_tmp':'deny',':tmpdir':'deny',str(ROOT/'.tools/physics-venv'):'read',str(runtime_root):'read'}
+    if Path('/opt/homebrew').exists():filesystem['/opt/homebrew']='read'
     if protected:filesystem[':workspace_roots']={'.':'write',**{str(p):'read' for p in protected},'.exchange/requests':'write'}
     policy=dict(extends=':workspace',filesystem=filesystem,network=dict(enabled=False))
     values={'default_permissions':PROFILE,'permissions.'+PROFILE:policy,'approval_policy':'never','shell_environment_policy.inherit':'none','shell_environment_policy.set':dict(PATH='/usr/bin:/bin:/usr/sbin:/sbin:/opt/homebrew/bin',OMP_NUM_THREADS='1',OPENBLAS_NUM_THREADS='1',PYTHONDONTWRITEBYTECODE='1',TMPDIR=str(workspace/'.tmp'))}
