@@ -1,0 +1,13 @@
+{
+  "type":"object","properties":{
+    "poses":{"type":"array","minItems":1,"maxItems":12,"items":{"type":"object","properties":{
+      "id":{"type":"string"},"q":{"type":"array","items":{"type":"number"},"minItems":4,"maxItems":4}
+    },"required":["id","q"],"additionalProperties":false}},
+    "scenes":{"type":"array","minItems":3,"maxItems":3,"items":{"type":"object","properties":{
+      "id":{"type":"string","enum":["stockroom_pickup","corner_delivery","alcove_service"]},
+      "keyframes":{"type":"array","minItems":2,"maxItems":64,"items":{"type":"object","properties":{
+        "time":{"type":"number"},"root":{"type":"array","items":{"type":"number"},"minItems":3,"maxItems":3},"pose":{"type":"string"}
+      },"required":["time","root","pose"],"additionalProperties":false}}
+    },"required":["id","keyframes"],"additionalProperties":false}}
+  },"required":["poses","scenes"],"additionalProperties":false
+}
