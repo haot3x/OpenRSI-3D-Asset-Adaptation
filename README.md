@@ -10,7 +10,15 @@ while transferring to new constraints and avoiding regressions in prior scenes.
 This repository is a public, runnable **engineering prototype**, not an accepted
 OpenRSI task, a completed RSI trajectory, or evidence of continual-learning gains.
 
-**Latest bounded convex-proxy study (v6):** one tool-using Astra-max episode
+**New coupled-asset pilot (v7, calibration pending):** a reusable compiler must
+jointly produce visual LODs and solid collision proxies for complete moving
+mechanisms within triangle/hull/vertex budgets. All 18 original procedural
+reference configurations pass on Mac CPU; native sandbox/broker checks and a
+60-transform Godot roundtrip pass. These are feasibility checks, not model
+results or proof of 12-hour headroom. The first planned model calibration is
+30 minutes. See [study-v7/README.md](study-v7/README.md).
+
+**Latest completed bounded convex-proxy study (v6):** one tool-using Astra-max episode
 improved development score **0.879604 → 0.996543** and withheld transfer score
 **0.955445 → 0.976554**. It generates real compound convex shapes under fixed
 hull/vertex budgets. There is a small observed method gain, but the first strong
@@ -56,9 +64,10 @@ current protocol is not ready for a formal long research run.
 
 The planned candidate is reusable code producing game-ready mesh variants,
 registered articulation, behavior and collision proxies from an input asset and
-scene requirements. The scene and evaluator stay fixed. The current v6 study
-isolates compound-convex proxy generation; the broader coupled task remains
-unimplemented and uncalibrated.
+scene requirements. The scene and evaluator stay fixed. The completed v6 study
+isolates compound-convex proxy generation. The new v7 prototype couples visual
+topology, proxies and prescribed full-asset motion; the broader task involving
+new assemblies, materials and game scenarios remains unimplemented and uncalibrated.
 The intended comparison is continually improved reusable adaptation versus
 matched-budget independent per-scene adaptation. New-scene success, previous-scene
 regressions, asset preservation and adaptation cost are distinct outcomes.

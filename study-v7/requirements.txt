@@ -1,0 +1,1 @@
+-r ../study-v6/requirements.txt
