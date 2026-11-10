@@ -1,0 +1,116 @@
+{
+  "family": "folding_workbench",
+  "root_id": "base",
+  "joints": [
+    {
+      "child": "leg_a",
+      "parent": "base",
+      "type": "revolute",
+      "pivot": [
+        -0.32,
+        -0.17,
+        0.875
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "lower": -0.8,
+      "upper": 0.0
+    },
+    {
+      "child": "leg_b",
+      "parent": "base",
+      "type": "revolute",
+      "pivot": [
+        0.32,
+        0.17,
+        0.875
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "lower": 0.0,
+      "upper": 0.8
+    },
+    {
+      "child": "tray",
+      "parent": "base",
+      "type": "prismatic",
+      "pivot": [
+        0,
+        0,
+        0.81
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "lower": 0.0,
+      "upper": 0.3
+    }
+  ],
+  "knots": [
+    {
+      "leg_a": 0.0,
+      "leg_b": 0.0,
+      "tray": 0.0
+    },
+    {
+      "leg_a": -0.8,
+      "leg_b": 0.0,
+      "tray": 0.0
+    },
+    {
+      "leg_a": 0.0,
+      "leg_b": 0.0,
+      "tray": 0.0
+    },
+    {
+      "leg_a": 0.0,
+      "leg_b": 0.8,
+      "tray": 0.0
+    },
+    {
+      "leg_a": 0.0,
+      "leg_b": 0.0,
+      "tray": 0.0
+    },
+    {
+      "leg_a": 0.0,
+      "leg_b": 0.0,
+      "tray": 0.3
+    },
+    {
+      "leg_a": 0.0,
+      "leg_b": 0.0,
+      "tray": 0.0
+    },
+    {
+      "leg_a": -0.8,
+      "leg_b": 0.8,
+      "tray": 0.3
+    },
+    {
+      "leg_a": 0.0,
+      "leg_b": 0.0,
+      "tray": 0.0
+    }
+  ],
+  "roles": {
+    "base": "work_surface",
+    "leg_a": "support",
+    "leg_b": "support",
+    "tray": "storage"
+  },
+  "part_ids": [
+    "base",
+    "leg_a",
+    "leg_b",
+    "tray"
+  ]
+}

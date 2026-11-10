@@ -1,0 +1,106 @@
+{
+  "family": "folding_bridge",
+  "root_id": "base",
+  "joints": [
+    {
+      "child": "deck_a",
+      "parent": "base",
+      "type": "revolute",
+      "pivot": [
+        0,
+        0,
+        0.6
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "lower": -0.9,
+      "upper": 0.0
+    },
+    {
+      "child": "deck_b",
+      "parent": "deck_a",
+      "type": "revolute",
+      "pivot": [
+        0.7,
+        0,
+        0.6
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "lower": -1.8,
+      "upper": 0.0
+    },
+    {
+      "child": "ring_handle",
+      "parent": "deck_b",
+      "type": "fixed",
+      "pivot": [
+        1.35,
+        0,
+        0.66
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "lower": 0.0,
+      "upper": 0.0
+    }
+  ],
+  "knots": [
+    {
+      "deck_a": 0.0,
+      "deck_b": 0.0,
+      "ring_handle": 0.0
+    },
+    {
+      "deck_a": -0.9,
+      "deck_b": 0.0,
+      "ring_handle": 0.0
+    },
+    {
+      "deck_a": 0.0,
+      "deck_b": 0.0,
+      "ring_handle": 0.0
+    },
+    {
+      "deck_a": 0.0,
+      "deck_b": -1.8,
+      "ring_handle": 0.0
+    },
+    {
+      "deck_a": 0.0,
+      "deck_b": 0.0,
+      "ring_handle": 0.0
+    },
+    {
+      "deck_a": -0.9,
+      "deck_b": -1.8,
+      "ring_handle": 0.0
+    },
+    {
+      "deck_a": 0.0,
+      "deck_b": 0.0,
+      "ring_handle": 0.0
+    }
+  ],
+  "roles": {
+    "base": "anchor",
+    "deck_a": "walkable",
+    "deck_b": "walkable",
+    "ring_handle": "grasp"
+  },
+  "part_ids": [
+    "base",
+    "deck_a",
+    "deck_b",
+    "ring_handle"
+  ]
+}

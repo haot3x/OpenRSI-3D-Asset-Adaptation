@@ -10,13 +10,14 @@ while transferring to new constraints and avoiding regressions in prior scenes.
 This repository is a public, runnable **engineering prototype**, not an accepted
 OpenRSI task, a completed RSI trajectory, or evidence of continual-learning gains.
 
-**New coupled-asset pilot (v7, calibration pending):** a reusable compiler must
-jointly produce visual LODs and solid collision proxies for complete moving
-mechanisms within triangle/hull/vertex budgets. All 18 original procedural
-reference configurations pass on Mac CPU; native sandbox/broker checks and a
-60-transform Godot roundtrip pass. These are feasibility checks, not model
-results or proof of 12-hour headroom. The first planned model calibration is
-30 minutes. See [study-v7/README.md](study-v7/README.md).
+**Latest completed coupled-asset pilot (v7):** a 28.1-minute tool-using Astra-max
+episode improved development **0 → 1** and withheld transfer **0.333333 → 1**.
+Development already reached full score on submission two; all nine final
+transfer configurations are full score. The subset still saturates and does
+**not** justify a 12-hour run. Exact frozen outputs reproduce on Mac/Linux;
+the actual generated cart passes 60 Godot transforms and 3,456 collision queries.
+See [study-v7/RESULTS.md](study-v7/RESULTS.md). The next planned scope adds module
+selection, assembly generation and conflicting game-scene constraints.
 
 **Latest completed bounded convex-proxy study (v6):** one tool-using Astra-max episode
 improved development score **0.879604 → 0.996543** and withheld transfer score

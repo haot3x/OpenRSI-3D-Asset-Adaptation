@@ -1,0 +1,1 @@
+{"root_id": "base", "joints": [{"child": "lid", "parent": "base", "type": "revolute", "pivot": [0, -0.22, 0.67], "axis": [1, 0, 0], "lower": 0.0, "upper": 1.1}, {"child": "tray", "parent": "base", "type": "prismatic", "pivot": [0, 0, 0.4], "axis": [0, 1, 0], "lower": 0.0, "upper": 0.28}]}

@@ -1,0 +1,548 @@
+{
+  "family": "service_cart",
+  "root_id": "base",
+  "joints": [
+    {
+      "child": "drawer_0",
+      "parent": "base",
+      "type": "prismatic",
+      "pivot": [
+        0,
+        0,
+        0.46
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "lower": 0.0,
+      "upper": 0.26
+    },
+    {
+      "child": "drawer_1",
+      "parent": "base",
+      "type": "prismatic",
+      "pivot": [
+        0,
+        0,
+        0.63
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "lower": 0.0,
+      "upper": 0.26
+    },
+    {
+      "child": "caster_0",
+      "parent": "base",
+      "type": "continuous",
+      "pivot": [
+        -0.26,
+        -0.2,
+        0.32
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "lower": 0.0,
+      "upper": 1.5707963267948966
+    },
+    {
+      "child": "wheel_0",
+      "parent": "caster_0",
+      "type": "continuous",
+      "pivot": [
+        -0.26,
+        -0.2,
+        0.245
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "lower": 0.0,
+      "upper": 6.283185307179586
+    },
+    {
+      "child": "caster_1",
+      "parent": "base",
+      "type": "continuous",
+      "pivot": [
+        -0.26,
+        0.2,
+        0.32
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "lower": 0.0,
+      "upper": 1.5707963267948966
+    },
+    {
+      "child": "wheel_1",
+      "parent": "caster_1",
+      "type": "continuous",
+      "pivot": [
+        -0.26,
+        0.2,
+        0.245
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "lower": 0.0,
+      "upper": 6.283185307179586
+    },
+    {
+      "child": "caster_2",
+      "parent": "base",
+      "type": "continuous",
+      "pivot": [
+        0.26,
+        -0.2,
+        0.32
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "lower": 0.0,
+      "upper": 1.5707963267948966
+    },
+    {
+      "child": "wheel_2",
+      "parent": "caster_2",
+      "type": "continuous",
+      "pivot": [
+        0.26,
+        -0.2,
+        0.245
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "lower": 0.0,
+      "upper": 6.283185307179586
+    },
+    {
+      "child": "caster_3",
+      "parent": "base",
+      "type": "continuous",
+      "pivot": [
+        0.26,
+        0.2,
+        0.32
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "lower": 0.0,
+      "upper": 1.5707963267948966
+    },
+    {
+      "child": "wheel_3",
+      "parent": "caster_3",
+      "type": "continuous",
+      "pivot": [
+        0.26,
+        0.2,
+        0.245
+      ],
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "lower": 0.0,
+      "upper": 6.283185307179586
+    },
+    {
+      "child": "holder",
+      "parent": "base",
+      "type": "revolute",
+      "pivot": [
+        0.32,
+        0,
+        0.7
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "lower": 0.0,
+      "upper": 1.2
+    }
+  ],
+  "knots": [
+    {
+      "drawer_0": 0.0,
+      "drawer_1": 0.0,
+      "caster_0": 0.0,
+      "wheel_0": 0.0,
+      "caster_1": 0.0,
+      "wheel_1": 0.0,
+      "caster_2": 0.0,
+      "wheel_2": 0.0,
+      "caster_3": 0.0,
+      "wheel_3": 0.0,
+      "holder": 0.0
+    },
+    {
+      "drawer_0": 0.26,
+      "drawer_1": 0.0,
+      "caster_0": 0.0,
+      "wheel_0": 0.0,
+      "caster_1": 0.0,
+      "wheel_1": 0.0,
+      "caster_2": 0.0,
+      "wheel_2": 0.0,
+      "caster_3": 0.0,
+      "wheel_3": 0.0,
+      "holder": 0.0
+    },
+    {
+      "drawer_0": 0.0,
+      "drawer_1": 0.0,
+      "caster_0": 0.0,
+      "wheel_0": 0.0,
+      "caster_1": 0.0,
+      "wheel_1": 0.0,
+      "caster_2": 0.0,
+      "wheel_2": 0.0,
+      "caster_3": 0.0,
+      "wheel_3": 0.0,
+      "holder": 0.0
+    },
+    {
+      "drawer_0": 0.0,
+      "drawer_1": 0.26,
+      "caster_0": 0.0,
+      "wheel_0": 0.0,
+      "caster_1": 0.0,
+      "wheel_1": 0.0,
+      "caster_2": 0.0,
+      "wheel_2": 0.0,
+      "caster_3": 0.0,
+      "wheel_3": 0.0,
+      "holder": 0.0
+    },
+    {
+      "drawer_0": 0.0,
+      "drawer_1": 0.0,
+      "caster_0": 0.0,
+      "wheel_0": 0.0,
+      "caster_1": 0.0,
+      "wheel_1": 0.0,
+      "caster_2": 0.0,
+      "wheel_2": 0.0,
+      "caster_3": 0.0,
+      "wheel_3": 0.0,
+      "holder": 0.0
+    },
+    {
+      "drawer_0": 0.0,
+      "drawer_1": 0.0,
+      "caster_0": 1.5707963267948966,
+      "wheel_0": 0.0,
+      "caster_1": 0.0,
+      "wheel_1": 0.0,
+      "caster_2": 0.0,
+      "wheel_2": 0.0,
+      "caster_3": 0.0,
+      "wheel_3": 0.0,
+      "holder": 0.0
+    },
+    {
+      "drawer_0": 0.0,
+      "drawer_1": 0.0,
+      "caster_0": 0.0,
+      "wheel_0": 0.0,
+      "caster_1": 0.0,
+      "wheel_1": 0.0,
+      "caster_2": 0.0,
+      "wheel_2": 0.0,
+      "caster_3": 0.0,
+      "wheel_3": 0.0,
+      "holder": 0.0
+    },
+    {
+      "drawer_0": 0.0,
+      "drawer_1": 0.0,
+      "caster_0": 0.0,
+      "wheel_0": 6.283185307179586,
+      "caster_1": 0.0,
+      "wheel_1": 0.0,
+      "caster_2": 0.0,
+      "wheel_2": 0.0,
+      "caster_3": 0.0,
+      "wheel_3": 0.0,
+      "holder": 0.0
+    },
+    {
+      "drawer_0": 0.0,
+      "drawer_1": 0.0,
+      "caster_0": 0.0,
+      "wheel_0": 0.0,
+      "caster_1": 0.0,
+      "wheel_1": 0.0,
+      "caster_2": 0.0,
+      "wheel_2": 0.0,
+      "caster_3": 0.0,
+      "wheel_3": 0.0,
+      "holder": 0.0
+    },
+    {
+      "drawer_0": 0.0,
+      "drawer_1": 0.0,
+      "caster_0": 0.0,
+      "wheel_0": 0.0,
+      "caster_1": 1.5707963267948966,
+      "wheel_1": 0.0,
+      "caster_2": 0.0,
+      "wheel_2": 0.0,
+      "caster_3": 0.0,
+      "wheel_3": 0.0,
+      "holder": 0.0
+    },
+    {
+      "drawer_0": 0.0,
+      "drawer_1": 0.0,
+      "caster_0": 0.0,
+      "wheel_0": 0.0,
+      "caster_1": 0.0,
+      "wheel_1": 0.0,
+      "caster_2": 0.0,
+      "wheel_2": 0.0,
+      "caster_3": 0.0,
+      "wheel_3": 0.0,
+      "holder": 0.0
+    },
+    {
+      "drawer_0": 0.0,
+      "drawer_1": 0.0,
+      "caster_0": 0.0,
+      "wheel_0": 0.0,
+      "caster_1": 0.0,
+      "wheel_1": 6.283185307179586,
+      "caster_2": 0.0,
+      "wheel_2": 0.0,
+      "caster_3": 0.0,
+      "wheel_3": 0.0,
+      "holder": 0.0
+    },
+    {
+      "drawer_0": 0.0,
+      "drawer_1": 0.0,
+      "caster_0": 0.0,
+      "wheel_0": 0.0,
+      "caster_1": 0.0,
+      "wheel_1": 0.0,
+      "caster_2": 0.0,
+      "wheel_2": 0.0,
+      "caster_3": 0.0,
+      "wheel_3": 0.0,
+      "holder": 0.0
+    },
+    {
+      "drawer_0": 0.0,
+      "drawer_1": 0.0,
+      "caster_0": 0.0,
+      "wheel_0": 0.0,
+      "caster_1": 0.0,
+      "wheel_1": 0.0,
+      "caster_2": 1.5707963267948966,
+      "wheel_2": 0.0,
+      "caster_3": 0.0,
+      "wheel_3": 0.0,
+      "holder": 0.0
+    },
+    {
+      "drawer_0": 0.0,
+      "drawer_1": 0.0,
+      "caster_0": 0.0,
+      "wheel_0": 0.0,
+      "caster_1": 0.0,
+      "wheel_1": 0.0,
+      "caster_2": 0.0,
+      "wheel_2": 0.0,
+      "caster_3": 0.0,
+      "wheel_3": 0.0,
+      "holder": 0.0
+    },
+    {
+      "drawer_0": 0.0,
+      "drawer_1": 0.0,
+      "caster_0": 0.0,
+      "wheel_0": 0.0,
+      "caster_1": 0.0,
+      "wheel_1": 0.0,
+      "caster_2": 0.0,
+      "wheel_2": 6.283185307179586,
+      "caster_3": 0.0,
+      "wheel_3": 0.0,
+      "holder": 0.0
+    },
+    {
+      "drawer_0": 0.0,
+      "drawer_1": 0.0,
+      "caster_0": 0.0,
+      "wheel_0": 0.0,
+      "caster_1": 0.0,
+      "wheel_1": 0.0,
+      "caster_2": 0.0,
+      "wheel_2": 0.0,
+      "caster_3": 0.0,
+      "wheel_3": 0.0,
+      "holder": 0.0
+    },
+    {
+      "drawer_0": 0.0,
+      "drawer_1": 0.0,
+      "caster_0": 0.0,
+      "wheel_0": 0.0,
+      "caster_1": 0.0,
+      "wheel_1": 0.0,
+      "caster_2": 0.0,
+      "wheel_2": 0.0,
+      "caster_3": 1.5707963267948966,
+      "wheel_3": 0.0,
+      "holder": 0.0
+    },
+    {
+      "drawer_0": 0.0,
+      "drawer_1": 0.0,
+      "caster_0": 0.0,
+      "wheel_0": 0.0,
+      "caster_1": 0.0,
+      "wheel_1": 0.0,
+      "caster_2": 0.0,
+      "wheel_2": 0.0,
+      "caster_3": 0.0,
+      "wheel_3": 0.0,
+      "holder": 0.0
+    },
+    {
+      "drawer_0": 0.0,
+      "drawer_1": 0.0,
+      "caster_0": 0.0,
+      "wheel_0": 0.0,
+      "caster_1": 0.0,
+      "wheel_1": 0.0,
+      "caster_2": 0.0,
+      "wheel_2": 0.0,
+      "caster_3": 0.0,
+      "wheel_3": 6.283185307179586,
+      "holder": 0.0
+    },
+    {
+      "drawer_0": 0.0,
+      "drawer_1": 0.0,
+      "caster_0": 0.0,
+      "wheel_0": 0.0,
+      "caster_1": 0.0,
+      "wheel_1": 0.0,
+      "caster_2": 0.0,
+      "wheel_2": 0.0,
+      "caster_3": 0.0,
+      "wheel_3": 0.0,
+      "holder": 0.0
+    },
+    {
+      "drawer_0": 0.0,
+      "drawer_1": 0.0,
+      "caster_0": 0.0,
+      "wheel_0": 0.0,
+      "caster_1": 0.0,
+      "wheel_1": 0.0,
+      "caster_2": 0.0,
+      "wheel_2": 0.0,
+      "caster_3": 0.0,
+      "wheel_3": 0.0,
+      "holder": 1.2
+    },
+    {
+      "drawer_0": 0.0,
+      "drawer_1": 0.0,
+      "caster_0": 0.0,
+      "wheel_0": 0.0,
+      "caster_1": 0.0,
+      "wheel_1": 0.0,
+      "caster_2": 0.0,
+      "wheel_2": 0.0,
+      "caster_3": 0.0,
+      "wheel_3": 0.0,
+      "holder": 0.0
+    },
+    {
+      "drawer_0": 0.26,
+      "drawer_1": 0.26,
+      "caster_0": 1.5707963267948966,
+      "wheel_0": 6.283185307179586,
+      "caster_1": 1.5707963267948966,
+      "wheel_1": 6.283185307179586,
+      "caster_2": 1.5707963267948966,
+      "wheel_2": 6.283185307179586,
+      "caster_3": 1.5707963267948966,
+      "wheel_3": 6.283185307179586,
+      "holder": 1.2
+    },
+    {
+      "drawer_0": 0.0,
+      "drawer_1": 0.0,
+      "caster_0": 0.0,
+      "wheel_0": 0.0,
+      "caster_1": 0.0,
+      "wheel_1": 0.0,
+      "caster_2": 0.0,
+      "wheel_2": 0.0,
+      "caster_3": 0.0,
+      "wheel_3": 0.0,
+      "holder": 0.0
+    }
+  ],
+  "roles": {
+    "base": "frame",
+    "drawer_0": "storage",
+    "drawer_1": "storage",
+    "caster_0": "caster",
+    "wheel_0": "wheel",
+    "caster_1": "caster",
+    "wheel_1": "wheel",
+    "caster_2": "caster",
+    "wheel_2": "wheel",
+    "caster_3": "caster",
+    "wheel_3": "wheel",
+    "holder": "aperture"
+  },
+  "part_ids": [
+    "base",
+    "drawer_0",
+    "drawer_1",
+    "caster_0",
+    "wheel_0",
+    "caster_1",
+    "wheel_1",
+    "caster_2",
+    "wheel_2",
+    "caster_3",
+    "wheel_3",
+    "holder"
+  ]
+}

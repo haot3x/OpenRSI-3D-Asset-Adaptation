@@ -1,0 +1,28 @@
+{
+  "frozen_outputs": 21,
+  "linux_arm64_replay_passed": true,
+  "scores_exactly_equal": true,
+  "discrete_outcomes_exact": true,
+  "geometric_diagnostic_tolerance": {
+    "relative": 1e-07,
+    "absolute": 1e-09
+  },
+  "actual_model_godot": {
+    "geometry_transforms": 60,
+    "posed_convex_queries": 3456,
+    "analytic_mismatches": 0,
+    "states": 3,
+    "body_transforms_per_state": 2,
+    "forces_or_dynamics": false
+  },
+  "native_integrity": {
+    "files": 562,
+    "inventory_sha256": "bf9df39506d37311f1e9f0dfaeb2caf7ac4a8a5b896fde9a6c6c9b1ccc77db1b",
+    "native_sha256": "c1eeb5edd1e181d538b52e9bfd7229d10820a0d4ab8c91ae755e9fba5db6a8b9",
+    "verified": true,
+    "native_public": false,
+    "official_runner": false
+  },
+  "official_runner": false,
+  "long_run_ready": false
+}

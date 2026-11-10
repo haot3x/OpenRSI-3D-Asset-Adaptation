@@ -1,0 +1,1556 @@
+{
+  "kind": "Developer controls only; not model baseline or difficulty proof",
+  "references": [
+    {
+      "case": "folding_bridge--inspection",
+      "family": "folding_bridge",
+      "profile": "inspection",
+      "evaluation": {
+        "status": "evaluated",
+        "score": 1.0,
+        "guards_passed": true,
+        "counts": {
+          "triangles": 2724,
+          "hulls": 235,
+          "proxy_vertices": 3298
+        },
+        "parts": [
+          {
+            "part": "base",
+            "visual_max_error_m": 0.00040103399567745663,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 368,
+            "free_count": 1746,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "deck_a",
+            "visual_max_error_m": 0.00019196994471966407,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 352,
+            "free_count": 1788,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "deck_b",
+            "visual_max_error_m": 0.00018784969455281947,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 352,
+            "free_count": 1788,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "ring_handle",
+            "visual_max_error_m": 0.0008015236874794999,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 338,
+            "free_count": 1640,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          }
+        ],
+        "motion": {
+          "passed": true,
+          "frames": 186,
+          "verified": 186,
+          "nonadjacent_pairs": 3
+        },
+        "wall_seconds": 0.553
+      }
+    },
+    {
+      "case": "folding_bridge--standard",
+      "family": "folding_bridge",
+      "profile": "standard",
+      "evaluation": {
+        "status": "evaluated",
+        "score": 1.0,
+        "guards_passed": true,
+        "counts": {
+          "triangles": 1572,
+          "hulls": 235,
+          "proxy_vertices": 3298
+        },
+        "parts": [
+          {
+            "part": "base",
+            "visual_max_error_m": 0.0007724179853456166,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 368,
+            "free_count": 1746,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "deck_a",
+            "visual_max_error_m": 0.0003668043867730452,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 352,
+            "free_count": 1788,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "deck_b",
+            "visual_max_error_m": 0.0003668043867730452,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 352,
+            "free_count": 1788,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "ring_handle",
+            "visual_max_error_m": 0.0013665557066955682,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 338,
+            "free_count": 1640,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          }
+        ],
+        "motion": {
+          "passed": true,
+          "frames": 186,
+          "verified": 186,
+          "nonadjacent_pairs": 3
+        },
+        "wall_seconds": 0.531
+      }
+    },
+    {
+      "case": "folding_bridge--mobile",
+      "family": "folding_bridge",
+      "profile": "mobile",
+      "evaluation": {
+        "status": "evaluated",
+        "score": 1.0,
+        "guards_passed": true,
+        "counts": {
+          "triangles": 1092,
+          "hulls": 235,
+          "proxy_vertices": 3298
+        },
+        "parts": [
+          {
+            "part": "base",
+            "visual_max_error_m": 0.0015562573708588698,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 368,
+            "free_count": 1746,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "deck_a",
+            "visual_max_error_m": 0.0007359827499210213,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 352,
+            "free_count": 1788,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "deck_b",
+            "visual_max_error_m": 0.0007359827499210213,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 352,
+            "free_count": 1788,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "ring_handle",
+            "visual_max_error_m": 0.002099971730221671,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 338,
+            "free_count": 1640,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          }
+        ],
+        "motion": {
+          "passed": true,
+          "frames": 186,
+          "verified": 186,
+          "nonadjacent_pairs": 3
+        },
+        "wall_seconds": 0.513
+      }
+    },
+    {
+      "case": "telescoping_platform--inspection",
+      "family": "telescoping_platform",
+      "profile": "inspection",
+      "evaluation": {
+        "status": "evaluated",
+        "score": 1.0,
+        "guards_passed": true,
+        "counts": {
+          "triangles": 2340,
+          "hulls": 167,
+          "proxy_vertices": 2650
+        },
+        "parts": [
+          {
+            "part": "base",
+            "visual_max_error_m": 0.000417443765672951,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 322,
+            "free_count": 1779,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "carriage",
+            "visual_max_error_m": 0.00032811872373607944,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 354,
+            "free_count": 1687,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "panel",
+            "visual_max_error_m": 0.0006550329994184899,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 358,
+            "free_count": 1676,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          }
+        ],
+        "motion": {
+          "passed": true,
+          "frames": 200,
+          "verified": 200,
+          "nonadjacent_pairs": 2
+        },
+        "wall_seconds": 0.414
+      }
+    },
+    {
+      "case": "telescoping_platform--standard",
+      "family": "telescoping_platform",
+      "profile": "standard",
+      "evaluation": {
+        "status": "evaluated",
+        "score": 1.0,
+        "guards_passed": true,
+        "counts": {
+          "triangles": 1316,
+          "hulls": 167,
+          "proxy_vertices": 2650
+        },
+        "parts": [
+          {
+            "part": "base",
+            "visual_max_error_m": 0.0008151208594956032,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 322,
+            "free_count": 1779,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "carriage",
+            "visual_max_error_m": 0.0006319783516464298,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 354,
+            "free_count": 1687,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "panel",
+            "visual_max_error_m": 0.0011441629405058397,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 358,
+            "free_count": 1676,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          }
+        ],
+        "motion": {
+          "passed": true,
+          "frames": 200,
+          "verified": 200,
+          "nonadjacent_pairs": 2
+        },
+        "wall_seconds": 0.392
+      }
+    },
+    {
+      "case": "telescoping_platform--mobile",
+      "family": "telescoping_platform",
+      "profile": "mobile",
+      "evaluation": {
+        "status": "evaluated",
+        "score": 1.0,
+        "guards_passed": true,
+        "counts": {
+          "triangles": 900,
+          "hulls": 167,
+          "proxy_vertices": 2650
+        },
+        "parts": [
+          {
+            "part": "base",
+            "visual_max_error_m": 0.0016355172220467507,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 322,
+            "free_count": 1779,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "carriage",
+            "visual_max_error_m": 0.001273301485248168,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 354,
+            "free_count": 1687,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "panel",
+            "visual_max_error_m": 0.0015222726417205964,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 358,
+            "free_count": 1676,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          }
+        ],
+        "motion": {
+          "passed": true,
+          "frames": 200,
+          "verified": 200,
+          "nonadjacent_pairs": 2
+        },
+        "wall_seconds": 0.395
+      }
+    },
+    {
+      "case": "folding_workbench--inspection",
+      "family": "folding_workbench",
+      "profile": "inspection",
+      "evaluation": {
+        "status": "evaluated",
+        "score": 1.0,
+        "guards_passed": true,
+        "counts": {
+          "triangles": 3900,
+          "hulls": 217,
+          "proxy_vertices": 4164
+        },
+        "parts": [
+          {
+            "part": "base",
+            "visual_max_error_m": 0.0004666577404246808,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 368,
+            "free_count": 1656,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "leg_a",
+            "visual_max_error_m": 0.0006003443995733792,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 246,
+            "free_count": 1812,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "leg_b",
+            "visual_max_error_m": 0.0006003443995733792,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 246,
+            "free_count": 1812,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "tray",
+            "visual_max_error_m": 4.12319795766459e-15,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 452,
+            "free_count": 1554,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          }
+        ],
+        "motion": {
+          "passed": true,
+          "frames": 192,
+          "verified": 192,
+          "nonadjacent_pairs": 4
+        },
+        "wall_seconds": 0.633
+      }
+    },
+    {
+      "case": "folding_workbench--standard",
+      "family": "folding_workbench",
+      "profile": "standard",
+      "evaluation": {
+        "status": "evaluated",
+        "score": 1.0,
+        "guards_passed": true,
+        "counts": {
+          "triangles": 2108,
+          "hulls": 217,
+          "proxy_vertices": 4164
+        },
+        "parts": [
+          {
+            "part": "base",
+            "visual_max_error_m": 0.0008988136556749298,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 368,
+            "free_count": 1656,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "leg_a",
+            "visual_max_error_m": 0.0010822574931896635,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 246,
+            "free_count": 1812,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "leg_b",
+            "visual_max_error_m": 0.0010822574931896795,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 246,
+            "free_count": 1812,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "tray",
+            "visual_max_error_m": 4.12319795766459e-15,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 452,
+            "free_count": 1554,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          }
+        ],
+        "motion": {
+          "passed": true,
+          "frames": 192,
+          "verified": 192,
+          "nonadjacent_pairs": 4
+        },
+        "wall_seconds": 0.577
+      }
+    },
+    {
+      "case": "folding_workbench--mobile",
+      "family": "folding_workbench",
+      "profile": "mobile",
+      "evaluation": {
+        "status": "evaluated",
+        "score": 1.0,
+        "guards_passed": true,
+        "counts": {
+          "triangles": 1404,
+          "hulls": 217,
+          "proxy_vertices": 4164
+        },
+        "parts": [
+          {
+            "part": "base",
+            "visual_max_error_m": 0.0018109176679085464,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 368,
+            "free_count": 1656,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "leg_a",
+            "visual_max_error_m": 0.001673672778110812,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 246,
+            "free_count": 1812,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "leg_b",
+            "visual_max_error_m": 0.0016736727781108036,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 246,
+            "free_count": 1812,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "tray",
+            "visual_max_error_m": 4.12319795766459e-15,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 452,
+            "free_count": 1554,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          }
+        ],
+        "motion": {
+          "passed": true,
+          "frames": 192,
+          "verified": 192,
+          "nonadjacent_pairs": 4
+        },
+        "wall_seconds": 0.564
+      }
+    },
+    {
+      "case": "inspection_lamp--inspection",
+      "family": "inspection_lamp",
+      "profile": "inspection",
+      "evaluation": {
+        "status": "evaluated",
+        "score": 1.0,
+        "guards_passed": true,
+        "counts": {
+          "triangles": 3840,
+          "hulls": 376,
+          "proxy_vertices": 4708
+        },
+        "parts": [
+          {
+            "part": "base",
+            "visual_max_error_m": 0.0013566922384370531,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 266,
+            "free_count": 1814,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "arm_a",
+            "visual_max_error_m": 0.0003645763597068055,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 296,
+            "free_count": 1784,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "arm_b",
+            "visual_max_error_m": 0.0003427017781243477,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 298,
+            "free_count": 1788,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "shade",
+            "visual_max_error_m": 0.0006946558768672668,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 354,
+            "free_count": 1768,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          }
+        ],
+        "motion": {
+          "passed": true,
+          "frames": 96,
+          "verified": 96,
+          "nonadjacent_pairs": 3
+        },
+        "wall_seconds": 0.543
+      }
+    },
+    {
+      "case": "inspection_lamp--standard",
+      "family": "inspection_lamp",
+      "profile": "standard",
+      "evaluation": {
+        "status": "evaluated",
+        "score": 1.0,
+        "guards_passed": true,
+        "counts": {
+          "triangles": 2304,
+          "hulls": 376,
+          "proxy_vertices": 4708
+        },
+        "parts": [
+          {
+            "part": "base",
+            "visual_max_error_m": 0.002649142793360805,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 266,
+            "free_count": 1814,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "arm_a",
+            "visual_max_error_m": 0.0007021981684959939,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 296,
+            "free_count": 1784,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "arm_b",
+            "visual_max_error_m": 0.0006600662783862937,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 298,
+            "free_count": 1788,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "shade",
+            "visual_max_error_m": 0.0013806394083468428,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 354,
+            "free_count": 1768,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          }
+        ],
+        "motion": {
+          "passed": true,
+          "frames": 96,
+          "verified": 96,
+          "nonadjacent_pairs": 3
+        },
+        "wall_seconds": 0.54
+      }
+    },
+    {
+      "case": "inspection_lamp--mobile",
+      "family": "inspection_lamp",
+      "profile": "mobile",
+      "evaluation": {
+        "status": "evaluated",
+        "score": 1.0,
+        "guards_passed": true,
+        "counts": {
+          "triangles": 1632,
+          "hulls": 376,
+          "proxy_vertices": 4708
+        },
+        "parts": [
+          {
+            "part": "base",
+            "visual_max_error_m": 0.005315430971651879,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 266,
+            "free_count": 1814,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "arm_a",
+            "visual_max_error_m": 0.0014147794280535263,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 296,
+            "free_count": 1784,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "arm_b",
+            "visual_max_error_m": 0.0013298926623703305,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 298,
+            "free_count": 1788,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "shade",
+            "visual_max_error_m": 0.0020746297306359477,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 354,
+            "free_count": 1768,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          }
+        ],
+        "motion": {
+          "passed": true,
+          "frames": 96,
+          "verified": 96,
+          "nonadjacent_pairs": 3
+        },
+        "wall_seconds": 0.513
+      }
+    },
+    {
+      "case": "service_cart--inspection",
+      "family": "service_cart",
+      "profile": "inspection",
+      "evaluation": {
+        "status": "evaluated",
+        "score": 1.0,
+        "guards_passed": true,
+        "counts": {
+          "triangles": 5268,
+          "hulls": 439,
+          "proxy_vertices": 6252
+        },
+        "parts": [
+          {
+            "part": "base",
+            "visual_max_error_m": 0.00018784969455284395,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 342,
+            "free_count": 1655,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "drawer_0",
+            "visual_max_error_m": 0.000473651112280944,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 408,
+            "free_count": 1623,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "drawer_1",
+            "visual_max_error_m": 0.000473651112280944,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 408,
+            "free_count": 1623,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "caster_0",
+            "visual_max_error_m": 5.551115123125783e-17,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 388,
+            "free_count": 1470,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "wheel_0",
+            "visual_max_error_m": 0.0005426768953748514,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 430,
+            "free_count": 1671,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "caster_1",
+            "visual_max_error_m": 5.551115123125783e-17,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 388,
+            "free_count": 1470,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "wheel_1",
+            "visual_max_error_m": 0.0005426768953748514,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 430,
+            "free_count": 1671,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "caster_2",
+            "visual_max_error_m": 5.551115123125783e-17,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 388,
+            "free_count": 1470,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "wheel_2",
+            "visual_max_error_m": 0.0005426768953748514,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 430,
+            "free_count": 1671,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "caster_3",
+            "visual_max_error_m": 5.551115123125783e-17,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 388,
+            "free_count": 1470,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "wheel_3",
+            "visual_max_error_m": 0.0005426768953748514,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 430,
+            "free_count": 1671,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "holder",
+            "visual_max_error_m": 0.0005468645395601676,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 276,
+            "free_count": 1786,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          }
+        ],
+        "motion": {
+          "passed": true,
+          "frames": 1692,
+          "verified": 1692,
+          "nonadjacent_pairs": 57
+        },
+        "wall_seconds": 15.957
+      }
+    },
+    {
+      "case": "service_cart--standard",
+      "family": "service_cart",
+      "profile": "standard",
+      "evaluation": {
+        "status": "evaluated",
+        "score": 1.0,
+        "guards_passed": true,
+        "counts": {
+          "triangles": 3092,
+          "hulls": 439,
+          "proxy_vertices": 6252
+        },
+        "parts": [
+          {
+            "part": "base",
+            "visual_max_error_m": 0.00036680438677306196,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 342,
+            "free_count": 1655,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "drawer_0",
+            "visual_max_error_m": 0.0009033619119945629,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 408,
+            "free_count": 1623,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "drawer_1",
+            "visual_max_error_m": 0.0009033454123550221,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 408,
+            "free_count": 1623,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "caster_0",
+            "visual_max_error_m": 5.551115123125783e-17,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 388,
+            "free_count": 1470,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "wheel_0",
+            "visual_max_error_m": 0.0010596571173443448,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 430,
+            "free_count": 1671,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "caster_1",
+            "visual_max_error_m": 5.551115123125783e-17,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 388,
+            "free_count": 1470,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "wheel_1",
+            "visual_max_error_m": 0.0010596571173443184,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 430,
+            "free_count": 1671,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "caster_2",
+            "visual_max_error_m": 5.551115123125783e-17,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 388,
+            "free_count": 1470,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "wheel_2",
+            "visual_max_error_m": 0.0010596571173443448,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 430,
+            "free_count": 1671,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "caster_3",
+            "visual_max_error_m": 5.551115123125783e-17,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 388,
+            "free_count": 1470,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "wheel_3",
+            "visual_max_error_m": 0.0010596571173443184,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 430,
+            "free_count": 1671,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "holder",
+            "visual_max_error_m": 0.001053297252744031,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 276,
+            "free_count": 1786,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          }
+        ],
+        "motion": {
+          "passed": true,
+          "frames": 1692,
+          "verified": 1692,
+          "nonadjacent_pairs": 57
+        },
+        "wall_seconds": 15.821
+      }
+    },
+    {
+      "case": "service_cart--mobile",
+      "family": "service_cart",
+      "profile": "mobile",
+      "evaluation": {
+        "status": "evaluated",
+        "score": 1.0,
+        "guards_passed": true,
+        "counts": {
+          "triangles": 2196,
+          "hulls": 439,
+          "proxy_vertices": 6252
+        },
+        "parts": [
+          {
+            "part": "base",
+            "visual_max_error_m": 0.0007359827499210221,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 342,
+            "free_count": 1655,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "drawer_0",
+            "visual_max_error_m": 0.001292535912658328,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 408,
+            "free_count": 1623,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "drawer_1",
+            "visual_max_error_m": 0.0012925359126582318,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 408,
+            "free_count": 1623,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "caster_0",
+            "visual_max_error_m": 5.551115123125783e-17,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 388,
+            "free_count": 1470,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "wheel_0",
+            "visual_max_error_m": 0.0021261723886607515,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 430,
+            "free_count": 1671,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "caster_1",
+            "visual_max_error_m": 5.551115123125783e-17,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 388,
+            "free_count": 1470,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "wheel_1",
+            "visual_max_error_m": 0.0021261723886607515,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 430,
+            "free_count": 1671,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "caster_2",
+            "visual_max_error_m": 5.551115123125783e-17,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 388,
+            "free_count": 1470,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "wheel_2",
+            "visual_max_error_m": 0.0021261723886607515,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 430,
+            "free_count": 1671,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "caster_3",
+            "visual_max_error_m": 5.551115123125783e-17,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 388,
+            "free_count": 1470,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "wheel_3",
+            "visual_max_error_m": 0.0021261723886607515,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 430,
+            "free_count": 1671,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "holder",
+            "visual_max_error_m": 0.0021221691420803116,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 276,
+            "free_count": 1786,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          }
+        ],
+        "motion": {
+          "passed": true,
+          "frames": 1692,
+          "verified": 1692,
+          "nonadjacent_pairs": 57
+        },
+        "wall_seconds": 15.933
+      }
+    },
+    {
+      "case": "supply_chest--inspection",
+      "family": "supply_chest",
+      "profile": "inspection",
+      "evaluation": {
+        "status": "evaluated",
+        "score": 1.0,
+        "guards_passed": true,
+        "counts": {
+          "triangles": 1644,
+          "hulls": 57,
+          "proxy_vertices": 1570
+        },
+        "parts": [
+          {
+            "part": "base",
+            "visual_max_error_m": 6.735403850255025e-15,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 464,
+            "free_count": 1613,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "lid",
+            "visual_max_error_m": 0.0007921275001968036,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 288,
+            "free_count": 1702,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "tray",
+            "visual_max_error_m": 1.5765264680274356e-14,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 444,
+            "free_count": 1650,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          }
+        ],
+        "motion": {
+          "passed": true,
+          "frames": 166,
+          "verified": 166,
+          "nonadjacent_pairs": 2
+        },
+        "wall_seconds": 0.271
+      }
+    },
+    {
+      "case": "supply_chest--standard",
+      "family": "supply_chest",
+      "profile": "standard",
+      "evaluation": {
+        "status": "evaluated",
+        "score": 1.0,
+        "guards_passed": true,
+        "counts": {
+          "triangles": 876,
+          "hulls": 57,
+          "proxy_vertices": 1570
+        },
+        "parts": [
+          {
+            "part": "base",
+            "visual_max_error_m": 6.735403850255025e-15,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 464,
+            "free_count": 1613,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "lid",
+            "visual_max_error_m": 0.0013619434905572303,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 288,
+            "free_count": 1702,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "tray",
+            "visual_max_error_m": 1.5765264680274356e-14,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 444,
+            "free_count": 1650,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          }
+        ],
+        "motion": {
+          "passed": true,
+          "frames": 166,
+          "verified": 166,
+          "nonadjacent_pairs": 2
+        },
+        "wall_seconds": 0.248
+      }
+    },
+    {
+      "case": "supply_chest--mobile",
+      "family": "supply_chest",
+      "profile": "mobile",
+      "evaluation": {
+        "status": "evaluated",
+        "score": 1.0,
+        "guards_passed": true,
+        "counts": {
+          "triangles": 588,
+          "hulls": 57,
+          "proxy_vertices": 1570
+        },
+        "parts": [
+          {
+            "part": "base",
+            "visual_max_error_m": 6.735403850255025e-15,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 464,
+            "free_count": 1613,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "lid",
+            "visual_max_error_m": 0.0018323523805216532,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 288,
+            "free_count": 1702,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "tray",
+            "visual_max_error_m": 1.5765264680274356e-14,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 444,
+            "free_count": 1650,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          }
+        ],
+        "motion": {
+          "passed": true,
+          "frames": 166,
+          "verified": 166,
+          "nonadjacent_pairs": 2
+        },
+        "wall_seconds": 0.242
+      }
+    }
+  ],
+  "negative_controls": {
+    "no_lod": {
+      "status": "evaluated",
+      "score": 0.0,
+      "guards_passed": false,
+      "issues": [
+        "max_triangles"
+      ],
+      "counts": {
+        "triangles": 6252,
+        "hulls": 57,
+        "proxy_vertices": 1570
+      },
+      "wall_seconds": 0.011
+    },
+    "missing_proxy": {
+      "status": "evaluated",
+      "score": 0.0,
+      "guards_passed": false,
+      "issues": [
+        "required_collision_part_missing"
+      ],
+      "counts": {
+        "triangles": 876,
+        "hulls": 0,
+        "proxy_vertices": 0
+      },
+      "wall_seconds": 0.001
+    },
+    "filled_apertures": {
+      "status": "evaluated",
+      "score": 0.0,
+      "guards_passed": true,
+      "counts": {
+        "triangles": 876,
+        "hulls": 3,
+        "proxy_vertices": 24
+      },
+      "parts": [
+        {
+          "part": "base",
+          "visual_max_error_m": 6.735403850255025e-15,
+          "visual_quality": 1.0,
+          "proxy_quality": 0.7786732796032239,
+          "contact_count": 464,
+          "free_count": 1613,
+          "false_free": 0,
+          "false_blocked": 357,
+          "quality": 0.7786732796032239
+        },
+        {
+          "part": "lid",
+          "visual_max_error_m": 0.0013619434905572303,
+          "visual_quality": 1.0,
+          "proxy_quality": 0.4682726204465335,
+          "contact_count": 288,
+          "free_count": 1702,
+          "false_free": 0,
+          "false_blocked": 905,
+          "quality": 0.4682726204465335
+        },
+        {
+          "part": "tray",
+          "visual_max_error_m": 1.5765264680274356e-14,
+          "visual_quality": 1.0,
+          "proxy_quality": 0.7460606060606061,
+          "contact_count": 444,
+          "free_count": 1650,
+          "false_free": 0,
+          "false_blocked": 419,
+          "quality": 0.7460606060606061
+        }
+      ],
+      "motion": {
+        "passed": false,
+        "kind": "nonadjacent_solid_collision",
+        "parts": [
+          "base",
+          "tray"
+        ],
+        "frame": 0,
+        "frames": 166,
+        "verified": 0
+      },
+      "wall_seconds": 0.165
+    },
+    "misregistered_rig": {
+      "status": "evaluated",
+      "score": 0.0,
+      "guards_passed": false,
+      "issues": [
+        "rig_registration"
+      ],
+      "counts": {
+        "triangles": 876,
+        "hulls": 57,
+        "proxy_vertices": 1570
+      },
+      "wall_seconds": 0.01
+    },
+    "disabled_motion": {
+      "status": "evaluated",
+      "score": 0.0,
+      "guards_passed": false,
+      "issues": [
+        "required_motion_changed"
+      ],
+      "counts": {
+        "triangles": 876,
+        "hulls": 57,
+        "proxy_vertices": 1570
+      },
+      "wall_seconds": 0.01
+    },
+    "inverted_winding": {
+      "status": "evaluated",
+      "score": 0.0,
+      "guards_passed": false,
+      "issues": [
+        "nonpositive_or_inverted_visual_solid"
+      ],
+      "counts": {
+        "triangles": 876,
+        "hulls": 57,
+        "proxy_vertices": 1570
+      },
+      "wall_seconds": 0.009
+    }
+  }
+}

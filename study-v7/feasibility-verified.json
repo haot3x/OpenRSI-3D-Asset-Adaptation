@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "feasible_cases": 18,
+  "families": 6,
+  "profiles": 3,
+  "negative_controls": [
+    "no_lod",
+    "missing_proxy",
+    "filled_apertures",
+    "misregistered_rig",
+    "disabled_motion",
+    "inverted_winding"
+  ],
+  "solid_containment": true,
+  "intermediate_collision": true,
+  "wall_seconds": 60.62
+}

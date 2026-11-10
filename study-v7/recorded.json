@@ -1,0 +1,4490 @@
+{
+  "schema": "frozen-complete-asset-v7",
+  "experiment_source_commit": "9b2c8f0b3a13c4e838f7041177199878bf97f3d4",
+  "kind": "Completed development calibration; saturated, not ready for a long run",
+  "model_episode": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "max",
+    "seconds": 1800,
+    "wall_seconds": 1686.401,
+    "max_dev_submissions": 8,
+    "dev_submissions": 6,
+    "completed_item_counts": {
+      "command_execution": 49,
+      "file_change": 14
+    },
+    "codex_cli": "codex-cli 0.166.0",
+    "status": "completed",
+    "returncode": 0,
+    "usage": [
+      {
+        "input_tokens": 2147004,
+        "cached_input_tokens": 2088960,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 43747,
+        "reasoning_output_tokens": 24290
+      }
+    ]
+  },
+  "image": {
+    "Id": "sha256:876fef2862f9fa01c5d1ff827fb921d2518c1bff0b917e0fbf9a655797aa9793",
+    "Architecture": "arm64",
+    "Os": "linux",
+    "Created": "2026-11-08T19:08:52.145619788+08:00"
+  },
+  "development": [
+    {
+      "folder": "dev-01",
+      "status": "evaluated",
+      "submission": 1,
+      "remaining": 7,
+      "generator_sha256": "559102c3f4e9a390fa9666ea2c94038bfd6083e6246121fb28d5356b91f7e812",
+      "summary": {
+        "scorable": true,
+        "cases": 3,
+        "families": 3,
+        "family_scores": {
+          "folding_bridge": 0.0,
+          "folding_workbench": 0.0,
+          "service_cart": 0.0
+        },
+        "mean_score": 0.0
+      },
+      "cases": [
+        {
+          "case": "folding_bridge--standard",
+          "family": "folding_bridge",
+          "profile": "standard",
+          "scored": true,
+          "generator_sha256": "559102c3f4e9a390fa9666ea2c94038bfd6083e6246121fb28d5356b91f7e812",
+          "status": "evaluated",
+          "evaluation": {
+            "status": "evaluated",
+            "score": 0.0,
+            "guards_passed": false,
+            "issues": [
+              "max_triangles"
+            ],
+            "counts": {
+              "triangles": 2868,
+              "hulls": 130,
+              "proxy_vertices": 3536
+            },
+            "wall_seconds": 0.026
+          }
+        },
+        {
+          "case": "folding_workbench--standard",
+          "family": "folding_workbench",
+          "profile": "standard",
+          "scored": true,
+          "generator_sha256": "559102c3f4e9a390fa9666ea2c94038bfd6083e6246121fb28d5356b91f7e812",
+          "status": "evaluated",
+          "evaluation": {
+            "status": "evaluated",
+            "score": 0.0,
+            "guards_passed": false,
+            "issues": [
+              "max_triangles"
+            ],
+            "counts": {
+              "triangles": 2820,
+              "hulls": 177,
+              "proxy_vertices": 4532
+            },
+            "wall_seconds": 0.03
+          }
+        },
+        {
+          "case": "service_cart--standard",
+          "family": "service_cart",
+          "profile": "standard",
+          "scored": true,
+          "generator_sha256": "559102c3f4e9a390fa9666ea2c94038bfd6083e6246121fb28d5356b91f7e812",
+          "status": "evaluated",
+          "evaluation": {
+            "status": "evaluated",
+            "score": 0.0,
+            "guards_passed": false,
+            "issues": [
+              "max_triangles"
+            ],
+            "counts": {
+              "triangles": 4438,
+              "hulls": 68,
+              "proxy_vertices": 1254
+            },
+            "wall_seconds": 0.015
+          }
+        }
+      ]
+    },
+    {
+      "folder": "dev-02",
+      "status": "evaluated",
+      "submission": 2,
+      "remaining": 6,
+      "generator_sha256": "4e62b300f8e703515a8180de6d0d6068b2bae712a3f7b7e26205af933eb7c009",
+      "summary": {
+        "scorable": true,
+        "cases": 3,
+        "families": 3,
+        "family_scores": {
+          "folding_bridge": 1.0,
+          "folding_workbench": 1.0,
+          "service_cart": 1.0
+        },
+        "mean_score": 1.0
+      },
+      "cases": [
+        {
+          "case": "folding_bridge--standard",
+          "family": "folding_bridge",
+          "profile": "standard",
+          "scored": true,
+          "generator_sha256": "4e62b300f8e703515a8180de6d0d6068b2bae712a3f7b7e26205af933eb7c009",
+          "status": "evaluated",
+          "evaluation": {
+            "status": "evaluated",
+            "score": 1.0,
+            "guards_passed": true,
+            "counts": {
+              "triangles": 1352,
+              "hulls": 264,
+              "proxy_vertices": 3674
+            },
+            "parts": [
+              {
+                "part": "base",
+                "visual_max_error_m": 0.001687456952234015,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 368,
+                "free_count": 1746,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "deck_a",
+                "visual_max_error_m": 0.0019537546510431355,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 352,
+                "free_count": 1788,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "deck_b",
+                "visual_max_error_m": 0.0019537546510431355,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 352,
+                "free_count": 1788,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "ring_handle",
+                "visual_max_error_m": 0.0014697869471008288,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 338,
+                "free_count": 1640,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              }
+            ],
+            "motion": {
+              "passed": true,
+              "frames": 186,
+              "verified": 186,
+              "nonadjacent_pairs": 3
+            },
+            "wall_seconds": 0.498
+          }
+        },
+        {
+          "case": "folding_workbench--standard",
+          "family": "folding_workbench",
+          "profile": "standard",
+          "scored": true,
+          "generator_sha256": "4e62b300f8e703515a8180de6d0d6068b2bae712a3f7b7e26205af933eb7c009",
+          "status": "evaluated",
+          "evaluation": {
+            "status": "evaluated",
+            "score": 1.0,
+            "guards_passed": true,
+            "counts": {
+              "triangles": 2312,
+              "hulls": 244,
+              "proxy_vertices": 4629
+            },
+            "parts": [
+              {
+                "part": "base",
+                "visual_max_error_m": 0.00196358627169063,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 368,
+                "free_count": 1656,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "leg_a",
+                "visual_max_error_m": 0.0018650802595088537,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 246,
+                "free_count": 1812,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "leg_b",
+                "visual_max_error_m": 0.0018650802595003375,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 246,
+                "free_count": 1812,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "tray",
+                "visual_max_error_m": 2.2232198742534223e-15,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 452,
+                "free_count": 1554,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              }
+            ],
+            "motion": {
+              "passed": true,
+              "frames": 192,
+              "verified": 192,
+              "nonadjacent_pairs": 4
+            },
+            "wall_seconds": 0.57
+          }
+        },
+        {
+          "case": "service_cart--standard",
+          "family": "service_cart",
+          "profile": "standard",
+          "scored": true,
+          "generator_sha256": "4e62b300f8e703515a8180de6d0d6068b2bae712a3f7b7e26205af933eb7c009",
+          "status": "evaluated",
+          "evaluation": {
+            "status": "evaluated",
+            "score": 1.0,
+            "guards_passed": true,
+            "counts": {
+              "triangles": 2184,
+              "hulls": 463,
+              "proxy_vertices": 6978
+            },
+            "parts": [
+              {
+                "part": "base",
+                "visual_max_error_m": 0.001953754651043086,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 342,
+                "free_count": 1655,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "drawer_0",
+                "visual_max_error_m": 0.001615838572991724,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 408,
+                "free_count": 1623,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "drawer_1",
+                "visual_max_error_m": 0.001615838572991939,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 408,
+                "free_count": 1623,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "caster_0",
+                "visual_max_error_m": 5.551115123125783e-17,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 388,
+                "free_count": 1470,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "wheel_0",
+                "visual_max_error_m": 0.0019104114650763703,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 430,
+                "free_count": 1671,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "caster_1",
+                "visual_max_error_m": 5.551115123125783e-17,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 388,
+                "free_count": 1470,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "wheel_1",
+                "visual_max_error_m": 0.0019104114650763436,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 430,
+                "free_count": 1671,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "caster_2",
+                "visual_max_error_m": 5.551115123125783e-17,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 388,
+                "free_count": 1470,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "wheel_2",
+                "visual_max_error_m": 0.0019104114650763703,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 430,
+                "free_count": 1671,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "caster_3",
+                "visual_max_error_m": 5.551115123125783e-17,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 388,
+                "free_count": 1470,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "wheel_3",
+                "visual_max_error_m": 0.0019104114650763436,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 430,
+                "free_count": 1671,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "holder",
+                "visual_max_error_m": 0.0018077781602281137,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 276,
+                "free_count": 1786,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              }
+            ],
+            "motion": {
+              "passed": true,
+              "frames": 1692,
+              "verified": 1692,
+              "nonadjacent_pairs": 57
+            },
+            "wall_seconds": 15.473
+          }
+        }
+      ]
+    },
+    {
+      "folder": "dev-03",
+      "status": "evaluated",
+      "submission": 3,
+      "remaining": 5,
+      "generator_sha256": "6535cc3eba3af0707e4ec4d3a9ea852207bd967f52a34982963fa529756b6d57",
+      "summary": {
+        "scorable": true,
+        "cases": 3,
+        "families": 3,
+        "family_scores": {
+          "folding_bridge": 1.0,
+          "folding_workbench": 1.0,
+          "service_cart": 1.0
+        },
+        "mean_score": 1.0
+      },
+      "cases": [
+        {
+          "case": "folding_bridge--standard",
+          "family": "folding_bridge",
+          "profile": "standard",
+          "scored": true,
+          "generator_sha256": "6535cc3eba3af0707e4ec4d3a9ea852207bd967f52a34982963fa529756b6d57",
+          "status": "evaluated",
+          "evaluation": {
+            "status": "evaluated",
+            "score": 1.0,
+            "guards_passed": true,
+            "counts": {
+              "triangles": 1352,
+              "hulls": 204,
+              "proxy_vertices": 3694
+            },
+            "parts": [
+              {
+                "part": "base",
+                "visual_max_error_m": 0.001687456952234015,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 368,
+                "free_count": 1746,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "deck_a",
+                "visual_max_error_m": 0.0019537546510431355,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 352,
+                "free_count": 1788,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "deck_b",
+                "visual_max_error_m": 0.0019537546510431355,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 352,
+                "free_count": 1788,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "ring_handle",
+                "visual_max_error_m": 0.0014697869471008288,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 338,
+                "free_count": 1640,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              }
+            ],
+            "motion": {
+              "passed": true,
+              "frames": 186,
+              "verified": 186,
+              "nonadjacent_pairs": 3
+            },
+            "wall_seconds": 0.452
+          }
+        },
+        {
+          "case": "folding_workbench--standard",
+          "family": "folding_workbench",
+          "profile": "standard",
+          "scored": true,
+          "generator_sha256": "6535cc3eba3af0707e4ec4d3a9ea852207bd967f52a34982963fa529756b6d57",
+          "status": "evaluated",
+          "evaluation": {
+            "status": "evaluated",
+            "score": 1.0,
+            "guards_passed": true,
+            "counts": {
+              "triangles": 2312,
+              "hulls": 240,
+              "proxy_vertices": 4663
+            },
+            "parts": [
+              {
+                "part": "base",
+                "visual_max_error_m": 0.00196358627169063,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 368,
+                "free_count": 1656,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "leg_a",
+                "visual_max_error_m": 0.0018650802595088537,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 246,
+                "free_count": 1812,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "leg_b",
+                "visual_max_error_m": 0.0018650802595003375,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 246,
+                "free_count": 1812,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "tray",
+                "visual_max_error_m": 2.2232198742534223e-15,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 452,
+                "free_count": 1554,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              }
+            ],
+            "motion": {
+              "passed": true,
+              "frames": 192,
+              "verified": 192,
+              "nonadjacent_pairs": 4
+            },
+            "wall_seconds": 0.556
+          }
+        },
+        {
+          "case": "service_cart--standard",
+          "family": "service_cart",
+          "profile": "standard",
+          "scored": true,
+          "generator_sha256": "6535cc3eba3af0707e4ec4d3a9ea852207bd967f52a34982963fa529756b6d57",
+          "status": "evaluated",
+          "evaluation": {
+            "status": "evaluated",
+            "score": 1.0,
+            "guards_passed": true,
+            "counts": {
+              "triangles": 2184,
+              "hulls": 463,
+              "proxy_vertices": 7002
+            },
+            "parts": [
+              {
+                "part": "base",
+                "visual_max_error_m": 0.001953754651043086,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 342,
+                "free_count": 1655,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "drawer_0",
+                "visual_max_error_m": 0.001615838572991724,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 408,
+                "free_count": 1623,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "drawer_1",
+                "visual_max_error_m": 0.001615838572991939,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 408,
+                "free_count": 1623,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "caster_0",
+                "visual_max_error_m": 5.551115123125783e-17,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 388,
+                "free_count": 1470,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "wheel_0",
+                "visual_max_error_m": 0.0019104114650763703,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 430,
+                "free_count": 1671,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "caster_1",
+                "visual_max_error_m": 5.551115123125783e-17,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 388,
+                "free_count": 1470,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "wheel_1",
+                "visual_max_error_m": 0.0019104114650763436,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 430,
+                "free_count": 1671,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "caster_2",
+                "visual_max_error_m": 5.551115123125783e-17,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 388,
+                "free_count": 1470,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "wheel_2",
+                "visual_max_error_m": 0.0019104114650763703,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 430,
+                "free_count": 1671,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "caster_3",
+                "visual_max_error_m": 5.551115123125783e-17,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 388,
+                "free_count": 1470,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "wheel_3",
+                "visual_max_error_m": 0.0019104114650763436,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 430,
+                "free_count": 1671,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "holder",
+                "visual_max_error_m": 0.0018077781602281137,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 276,
+                "free_count": 1786,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              }
+            ],
+            "motion": {
+              "passed": true,
+              "frames": 1692,
+              "verified": 1692,
+              "nonadjacent_pairs": 57
+            },
+            "wall_seconds": 14.665
+          }
+        }
+      ]
+    },
+    {
+      "folder": "dev-04",
+      "status": "evaluated",
+      "submission": 4,
+      "remaining": 4,
+      "generator_sha256": "d08cf5cec96e41025589e8ec6e3d787527f7b2b90971d37a6b93ccd27a6926f5",
+      "summary": {
+        "scorable": true,
+        "cases": 3,
+        "families": 3,
+        "family_scores": {
+          "folding_bridge": 1.0,
+          "folding_workbench": 1.0,
+          "service_cart": 1.0
+        },
+        "mean_score": 1.0
+      },
+      "cases": [
+        {
+          "case": "folding_bridge--standard",
+          "family": "folding_bridge",
+          "profile": "standard",
+          "scored": true,
+          "generator_sha256": "d08cf5cec96e41025589e8ec6e3d787527f7b2b90971d37a6b93ccd27a6926f5",
+          "status": "evaluated",
+          "evaluation": {
+            "status": "evaluated",
+            "score": 1.0,
+            "guards_passed": true,
+            "counts": {
+              "triangles": 1424,
+              "hulls": 264,
+              "proxy_vertices": 3694
+            },
+            "parts": [
+              {
+                "part": "base",
+                "visual_max_error_m": 0.0013257039841672576,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 368,
+                "free_count": 1746,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "deck_a",
+                "visual_max_error_m": 0.0010916693880007869,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 352,
+                "free_count": 1788,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "deck_b",
+                "visual_max_error_m": 0.0010916693880007869,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 352,
+                "free_count": 1788,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "ring_handle",
+                "visual_max_error_m": 0.0014697869471008288,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 338,
+                "free_count": 1640,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              }
+            ],
+            "motion": {
+              "passed": true,
+              "frames": 186,
+              "verified": 186,
+              "nonadjacent_pairs": 3
+            },
+            "wall_seconds": 0.526
+          }
+        },
+        {
+          "case": "folding_workbench--standard",
+          "family": "folding_workbench",
+          "profile": "standard",
+          "scored": true,
+          "generator_sha256": "d08cf5cec96e41025589e8ec6e3d787527f7b2b90971d37a6b93ccd27a6926f5",
+          "status": "evaluated",
+          "evaluation": {
+            "status": "evaluated",
+            "score": 1.0,
+            "guards_passed": true,
+            "counts": {
+              "triangles": 2328,
+              "hulls": 244,
+              "proxy_vertices": 4664
+            },
+            "parts": [
+              {
+                "part": "base",
+                "visual_max_error_m": 0.0015426373633946487,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 368,
+                "free_count": 1656,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "leg_a",
+                "visual_max_error_m": 0.0018650802595088537,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 246,
+                "free_count": 1812,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "leg_b",
+                "visual_max_error_m": 0.0018650802595003375,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 246,
+                "free_count": 1812,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "tray",
+                "visual_max_error_m": 2.2232198742534223e-15,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 452,
+                "free_count": 1554,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              }
+            ],
+            "motion": {
+              "passed": true,
+              "frames": 192,
+              "verified": 192,
+              "nonadjacent_pairs": 4
+            },
+            "wall_seconds": 0.568
+          }
+        },
+        {
+          "case": "service_cart--standard",
+          "family": "service_cart",
+          "profile": "standard",
+          "scored": true,
+          "generator_sha256": "d08cf5cec96e41025589e8ec6e3d787527f7b2b90971d37a6b93ccd27a6926f5",
+          "status": "evaluated",
+          "evaluation": {
+            "status": "evaluated",
+            "score": 1.0,
+            "guards_passed": true,
+            "counts": {
+              "triangles": 3028,
+              "hulls": 463,
+              "proxy_vertices": 7002
+            },
+            "parts": [
+              {
+                "part": "base",
+                "visual_max_error_m": 0.0010916693880006806,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 342,
+                "free_count": 1655,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "drawer_0",
+                "visual_max_error_m": 0.0012781333670782453,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 408,
+                "free_count": 1623,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "drawer_1",
+                "visual_max_error_m": 0.001278133367077884,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 408,
+                "free_count": 1623,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "caster_0",
+                "visual_max_error_m": 5.551115123125783e-17,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 388,
+                "free_count": 1470,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "wheel_0",
+                "visual_max_error_m": 0.0012331398757400905,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 430,
+                "free_count": 1671,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "caster_1",
+                "visual_max_error_m": 5.551115123125783e-17,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 388,
+                "free_count": 1470,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "wheel_1",
+                "visual_max_error_m": 0.0012331398757400905,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 430,
+                "free_count": 1671,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "caster_2",
+                "visual_max_error_m": 5.551115123125783e-17,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 388,
+                "free_count": 1470,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "wheel_2",
+                "visual_max_error_m": 0.0012331398757400905,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 430,
+                "free_count": 1671,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "caster_3",
+                "visual_max_error_m": 5.551115123125783e-17,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 388,
+                "free_count": 1470,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "wheel_3",
+                "visual_max_error_m": 0.0012331398757400905,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 430,
+                "free_count": 1671,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "holder",
+                "visual_max_error_m": 0.0012397079863165112,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 276,
+                "free_count": 1786,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              }
+            ],
+            "motion": {
+              "passed": true,
+              "frames": 1692,
+              "verified": 1692,
+              "nonadjacent_pairs": 57
+            },
+            "wall_seconds": 14.537
+          }
+        }
+      ]
+    },
+    {
+      "folder": "dev-05",
+      "status": "evaluated",
+      "submission": 5,
+      "remaining": 3,
+      "generator_sha256": "7c9e83c889935981be0d746d798e9b3d2cc97fe2316816a2cd122d6a9344d5c1",
+      "summary": {
+        "scorable": true,
+        "cases": 3,
+        "families": 3,
+        "family_scores": {
+          "folding_bridge": 1.0,
+          "folding_workbench": 1.0,
+          "service_cart": 1.0
+        },
+        "mean_score": 1.0
+      },
+      "cases": [
+        {
+          "case": "folding_bridge--standard",
+          "family": "folding_bridge",
+          "profile": "standard",
+          "scored": true,
+          "generator_sha256": "7c9e83c889935981be0d746d798e9b3d2cc97fe2316816a2cd122d6a9344d5c1",
+          "status": "evaluated",
+          "evaluation": {
+            "status": "evaluated",
+            "score": 1.0,
+            "guards_passed": true,
+            "counts": {
+              "triangles": 1760,
+              "hulls": 264,
+              "proxy_vertices": 3694
+            },
+            "parts": [
+              {
+                "part": "base",
+                "visual_max_error_m": 0.0013257039841672576,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 368,
+                "free_count": 1746,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "deck_a",
+                "visual_max_error_m": 0.0010916693880007869,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 352,
+                "free_count": 1788,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "deck_b",
+                "visual_max_error_m": 0.0010916693880007869,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 352,
+                "free_count": 1788,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "ring_handle",
+                "visual_max_error_m": 0.0009314386230891171,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 338,
+                "free_count": 1640,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              }
+            ],
+            "motion": {
+              "passed": true,
+              "frames": 186,
+              "verified": 186,
+              "nonadjacent_pairs": 3
+            },
+            "wall_seconds": 0.52
+          }
+        },
+        {
+          "case": "folding_workbench--standard",
+          "family": "folding_workbench",
+          "profile": "standard",
+          "scored": true,
+          "generator_sha256": "7c9e83c889935981be0d746d798e9b3d2cc97fe2316816a2cd122d6a9344d5c1",
+          "status": "evaluated",
+          "evaluation": {
+            "status": "evaluated",
+            "score": 1.0,
+            "guards_passed": true,
+            "counts": {
+              "triangles": 2360,
+              "hulls": 244,
+              "proxy_vertices": 4664
+            },
+            "parts": [
+              {
+                "part": "base",
+                "visual_max_error_m": 0.0015426373633946487,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 368,
+                "free_count": 1656,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "leg_a",
+                "visual_max_error_m": 0.001578681492742043,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 246,
+                "free_count": 1812,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "leg_b",
+                "visual_max_error_m": 0.001576587872606843,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 246,
+                "free_count": 1812,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "tray",
+                "visual_max_error_m": 2.2232198742534223e-15,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 452,
+                "free_count": 1554,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              }
+            ],
+            "motion": {
+              "passed": true,
+              "frames": 192,
+              "verified": 192,
+              "nonadjacent_pairs": 4
+            },
+            "wall_seconds": 0.545
+          }
+        },
+        {
+          "case": "service_cart--standard",
+          "family": "service_cart",
+          "profile": "standard",
+          "scored": true,
+          "generator_sha256": "7c9e83c889935981be0d746d798e9b3d2cc97fe2316816a2cd122d6a9344d5c1",
+          "status": "evaluated",
+          "evaluation": {
+            "status": "evaluated",
+            "score": 1.0,
+            "guards_passed": true,
+            "counts": {
+              "triangles": 3464,
+              "hulls": 463,
+              "proxy_vertices": 7002
+            },
+            "parts": [
+              {
+                "part": "base",
+                "visual_max_error_m": 0.0010916693880006806,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 342,
+                "free_count": 1655,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "drawer_0",
+                "visual_max_error_m": 0.000786743615624695,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 408,
+                "free_count": 1623,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "drawer_1",
+                "visual_max_error_m": 0.0007867436156284841,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 408,
+                "free_count": 1623,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "caster_0",
+                "visual_max_error_m": 5.551115123125783e-17,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 388,
+                "free_count": 1470,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "wheel_0",
+                "visual_max_error_m": 0.0012331398757400905,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 430,
+                "free_count": 1671,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "caster_1",
+                "visual_max_error_m": 5.551115123125783e-17,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 388,
+                "free_count": 1470,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "wheel_1",
+                "visual_max_error_m": 0.0012331398757400905,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 430,
+                "free_count": 1671,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "caster_2",
+                "visual_max_error_m": 5.551115123125783e-17,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 388,
+                "free_count": 1470,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "wheel_2",
+                "visual_max_error_m": 0.0012331398757400905,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 430,
+                "free_count": 1671,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "caster_3",
+                "visual_max_error_m": 5.551115123125783e-17,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 388,
+                "free_count": 1470,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "wheel_3",
+                "visual_max_error_m": 0.0012331398757400905,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 430,
+                "free_count": 1671,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "holder",
+                "visual_max_error_m": 0.0012397079863165112,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 276,
+                "free_count": 1786,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              }
+            ],
+            "motion": {
+              "passed": true,
+              "frames": 1692,
+              "verified": 1692,
+              "nonadjacent_pairs": 57
+            },
+            "wall_seconds": 14.609
+          }
+        }
+      ]
+    },
+    {
+      "folder": "dev-06",
+      "status": "evaluated",
+      "submission": 6,
+      "remaining": 2,
+      "generator_sha256": "677673165e62ce62e76aafd98026bc06fbbb7fd7e460bfdc8bbceea362aaecdf",
+      "summary": {
+        "scorable": true,
+        "cases": 3,
+        "families": 3,
+        "family_scores": {
+          "folding_bridge": 1.0,
+          "folding_workbench": 1.0,
+          "service_cart": 1.0
+        },
+        "mean_score": 1.0
+      },
+      "cases": [
+        {
+          "case": "folding_bridge--standard",
+          "family": "folding_bridge",
+          "profile": "standard",
+          "scored": true,
+          "generator_sha256": "677673165e62ce62e76aafd98026bc06fbbb7fd7e460bfdc8bbceea362aaecdf",
+          "status": "evaluated",
+          "evaluation": {
+            "status": "evaluated",
+            "score": 1.0,
+            "guards_passed": true,
+            "counts": {
+              "triangles": 1760,
+              "hulls": 264,
+              "proxy_vertices": 3694
+            },
+            "parts": [
+              {
+                "part": "base",
+                "visual_max_error_m": 0.0013257039841672576,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 368,
+                "free_count": 1746,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "deck_a",
+                "visual_max_error_m": 0.0010916693880007869,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 352,
+                "free_count": 1788,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "deck_b",
+                "visual_max_error_m": 0.0010916693880007869,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 352,
+                "free_count": 1788,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "ring_handle",
+                "visual_max_error_m": 0.0009314386230891171,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 338,
+                "free_count": 1640,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              }
+            ],
+            "motion": {
+              "passed": true,
+              "frames": 186,
+              "verified": 186,
+              "nonadjacent_pairs": 3
+            },
+            "wall_seconds": 0.495
+          }
+        },
+        {
+          "case": "folding_workbench--standard",
+          "family": "folding_workbench",
+          "profile": "standard",
+          "scored": true,
+          "generator_sha256": "677673165e62ce62e76aafd98026bc06fbbb7fd7e460bfdc8bbceea362aaecdf",
+          "status": "evaluated",
+          "evaluation": {
+            "status": "evaluated",
+            "score": 1.0,
+            "guards_passed": true,
+            "counts": {
+              "triangles": 2360,
+              "hulls": 244,
+              "proxy_vertices": 4664
+            },
+            "parts": [
+              {
+                "part": "base",
+                "visual_max_error_m": 0.0015426373633946487,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 368,
+                "free_count": 1656,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "leg_a",
+                "visual_max_error_m": 0.001578681492742043,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 246,
+                "free_count": 1812,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "leg_b",
+                "visual_max_error_m": 0.001576587872606843,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 246,
+                "free_count": 1812,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "tray",
+                "visual_max_error_m": 2.2232198742534223e-15,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 452,
+                "free_count": 1554,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              }
+            ],
+            "motion": {
+              "passed": true,
+              "frames": 192,
+              "verified": 192,
+              "nonadjacent_pairs": 4
+            },
+            "wall_seconds": 0.545
+          }
+        },
+        {
+          "case": "service_cart--standard",
+          "family": "service_cart",
+          "profile": "standard",
+          "scored": true,
+          "generator_sha256": "677673165e62ce62e76aafd98026bc06fbbb7fd7e460bfdc8bbceea362aaecdf",
+          "status": "evaluated",
+          "evaluation": {
+            "status": "evaluated",
+            "score": 1.0,
+            "guards_passed": true,
+            "counts": {
+              "triangles": 3464,
+              "hulls": 463,
+              "proxy_vertices": 7002
+            },
+            "parts": [
+              {
+                "part": "base",
+                "visual_max_error_m": 0.0010916693880006806,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 342,
+                "free_count": 1655,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "drawer_0",
+                "visual_max_error_m": 0.000786743615624695,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 408,
+                "free_count": 1623,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "drawer_1",
+                "visual_max_error_m": 0.0007867436156284841,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 408,
+                "free_count": 1623,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "caster_0",
+                "visual_max_error_m": 5.551115123125783e-17,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 388,
+                "free_count": 1470,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "wheel_0",
+                "visual_max_error_m": 0.0012331398757400905,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 430,
+                "free_count": 1671,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "caster_1",
+                "visual_max_error_m": 5.551115123125783e-17,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 388,
+                "free_count": 1470,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "wheel_1",
+                "visual_max_error_m": 0.0012331398757400905,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 430,
+                "free_count": 1671,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "caster_2",
+                "visual_max_error_m": 5.551115123125783e-17,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 388,
+                "free_count": 1470,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "wheel_2",
+                "visual_max_error_m": 0.0012331398757400905,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 430,
+                "free_count": 1671,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "caster_3",
+                "visual_max_error_m": 5.551115123125783e-17,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 388,
+                "free_count": 1470,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "wheel_3",
+                "visual_max_error_m": 0.0012331398757400905,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 430,
+                "free_count": 1671,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "holder",
+                "visual_max_error_m": 0.0012397079863165112,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 276,
+                "free_count": 1786,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              }
+            ],
+            "motion": {
+              "passed": true,
+              "frames": 1692,
+              "verified": 1692,
+              "nonadjacent_pairs": 57
+            },
+            "wall_seconds": 14.627
+          }
+        }
+      ]
+    }
+  ],
+  "transfer": {
+    "first": {
+      "generator_sha256": "559102c3f4e9a390fa9666ea2c94038bfd6083e6246121fb28d5356b91f7e812",
+      "summary": {
+        "scorable": true,
+        "cases": 9,
+        "families": 3,
+        "family_scores": {
+          "inspection_lamp": 0.0,
+          "supply_chest": 1.0,
+          "telescoping_platform": 0.0
+        },
+        "mean_score": 0.3333333333333333
+      },
+      "cases": [
+        {
+          "case": "telescoping_platform--inspection",
+          "family": "telescoping_platform",
+          "profile": "inspection",
+          "scored": true,
+          "generator_sha256": "559102c3f4e9a390fa9666ea2c94038bfd6083e6246121fb28d5356b91f7e812",
+          "status": "evaluated",
+          "evaluation": {
+            "status": "evaluated",
+            "score": 0.0,
+            "guards_passed": false,
+            "issues": [
+              "max_triangles"
+            ],
+            "counts": {
+              "triangles": 2940,
+              "hulls": 123,
+              "proxy_vertices": 2869
+            },
+            "wall_seconds": 0.022
+          }
+        },
+        {
+          "case": "telescoping_platform--standard",
+          "family": "telescoping_platform",
+          "profile": "standard",
+          "scored": true,
+          "generator_sha256": "559102c3f4e9a390fa9666ea2c94038bfd6083e6246121fb28d5356b91f7e812",
+          "status": "evaluated",
+          "evaluation": {
+            "status": "evaluated",
+            "score": 0.0,
+            "guards_passed": false,
+            "issues": [
+              "max_triangles"
+            ],
+            "counts": {
+              "triangles": 1992,
+              "hulls": 123,
+              "proxy_vertices": 2869
+            },
+            "wall_seconds": 0.022
+          }
+        },
+        {
+          "case": "telescoping_platform--mobile",
+          "family": "telescoping_platform",
+          "profile": "mobile",
+          "scored": true,
+          "generator_sha256": "559102c3f4e9a390fa9666ea2c94038bfd6083e6246121fb28d5356b91f7e812",
+          "status": "evaluated",
+          "evaluation": {
+            "status": "evaluated",
+            "score": 0.0,
+            "guards_passed": false,
+            "issues": [
+              "max_triangles"
+            ],
+            "counts": {
+              "triangles": 1604,
+              "hulls": 123,
+              "proxy_vertices": 2869
+            },
+            "wall_seconds": 0.022
+          }
+        },
+        {
+          "case": "inspection_lamp--inspection",
+          "family": "inspection_lamp",
+          "profile": "inspection",
+          "scored": true,
+          "generator_sha256": "559102c3f4e9a390fa9666ea2c94038bfd6083e6246121fb28d5356b91f7e812",
+          "status": "evaluated",
+          "evaluation": {
+            "status": "evaluated",
+            "score": 0.0,
+            "guards_passed": false,
+            "issues": [
+              "max_triangles"
+            ],
+            "counts": {
+              "triangles": 4680,
+              "hulls": 295,
+              "proxy_vertices": 5091
+            },
+            "wall_seconds": 0.042
+          }
+        },
+        {
+          "case": "inspection_lamp--standard",
+          "family": "inspection_lamp",
+          "profile": "standard",
+          "scored": true,
+          "generator_sha256": "559102c3f4e9a390fa9666ea2c94038bfd6083e6246121fb28d5356b91f7e812",
+          "status": "evaluated",
+          "evaluation": {
+            "status": "evaluated",
+            "score": 0.0,
+            "guards_passed": false,
+            "issues": [
+              "max_triangles"
+            ],
+            "counts": {
+              "triangles": 3264,
+              "hulls": 295,
+              "proxy_vertices": 5091
+            },
+            "wall_seconds": 0.06
+          }
+        },
+        {
+          "case": "inspection_lamp--mobile",
+          "family": "inspection_lamp",
+          "profile": "mobile",
+          "scored": true,
+          "generator_sha256": "559102c3f4e9a390fa9666ea2c94038bfd6083e6246121fb28d5356b91f7e812",
+          "status": "evaluated",
+          "evaluation": {
+            "status": "evaluated",
+            "score": 0.0,
+            "guards_passed": false,
+            "issues": [
+              "max_triangles"
+            ],
+            "counts": {
+              "triangles": 2652,
+              "hulls": 295,
+              "proxy_vertices": 5091
+            },
+            "wall_seconds": 0.041
+          }
+        },
+        {
+          "case": "supply_chest--inspection",
+          "family": "supply_chest",
+          "profile": "inspection",
+          "scored": true,
+          "generator_sha256": "559102c3f4e9a390fa9666ea2c94038bfd6083e6246121fb28d5356b91f7e812",
+          "status": "evaluated",
+          "evaluation": {
+            "status": "evaluated",
+            "score": 1.0,
+            "guards_passed": true,
+            "counts": {
+              "triangles": 1694,
+              "hulls": 53,
+              "proxy_vertices": 1720
+            },
+            "parts": [
+              {
+                "part": "base",
+                "visual_max_error_m": 6.717766776011334e-15,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 464,
+                "free_count": 1613,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "lid",
+                "visual_max_error_m": 0.0011059665876352698,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 288,
+                "free_count": 1702,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "tray",
+                "visual_max_error_m": 1.5765264680274356e-14,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 444,
+                "free_count": 1650,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              }
+            ],
+            "motion": {
+              "passed": true,
+              "frames": 166,
+              "verified": 166,
+              "nonadjacent_pairs": 2
+            },
+            "wall_seconds": 0.275
+          }
+        },
+        {
+          "case": "supply_chest--standard",
+          "family": "supply_chest",
+          "profile": "standard",
+          "scored": true,
+          "generator_sha256": "559102c3f4e9a390fa9666ea2c94038bfd6083e6246121fb28d5356b91f7e812",
+          "status": "evaluated",
+          "evaluation": {
+            "status": "evaluated",
+            "score": 1.0,
+            "guards_passed": true,
+            "counts": {
+              "triangles": 902,
+              "hulls": 53,
+              "proxy_vertices": 1720
+            },
+            "parts": [
+              {
+                "part": "base",
+                "visual_max_error_m": 6.717766776011334e-15,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 464,
+                "free_count": 1613,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "lid",
+                "visual_max_error_m": 0.0018310829549834803,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 288,
+                "free_count": 1702,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "tray",
+                "visual_max_error_m": 1.5765264680274356e-14,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 444,
+                "free_count": 1650,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              }
+            ],
+            "motion": {
+              "passed": true,
+              "frames": 166,
+              "verified": 166,
+              "nonadjacent_pairs": 2
+            },
+            "wall_seconds": 0.257
+          }
+        },
+        {
+          "case": "supply_chest--mobile",
+          "family": "supply_chest",
+          "profile": "mobile",
+          "scored": true,
+          "generator_sha256": "559102c3f4e9a390fa9666ea2c94038bfd6083e6246121fb28d5356b91f7e812",
+          "status": "evaluated",
+          "evaluation": {
+            "status": "evaluated",
+            "score": 1.0,
+            "guards_passed": true,
+            "counts": {
+              "triangles": 606,
+              "hulls": 53,
+              "proxy_vertices": 1720
+            },
+            "parts": [
+              {
+                "part": "base",
+                "visual_max_error_m": 6.717766776011334e-15,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 464,
+                "free_count": 1613,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "lid",
+                "visual_max_error_m": 0.002438632892468579,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 288,
+                "free_count": 1702,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "tray",
+                "visual_max_error_m": 1.5765264680274356e-14,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 444,
+                "free_count": 1650,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              }
+            ],
+            "motion": {
+              "passed": true,
+              "frames": 166,
+              "verified": 166,
+              "nonadjacent_pairs": 2
+            },
+            "wall_seconds": 0.265
+          }
+        }
+      ]
+    },
+    "final": {
+      "generator_sha256": "677673165e62ce62e76aafd98026bc06fbbb7fd7e460bfdc8bbceea362aaecdf",
+      "summary": {
+        "scorable": true,
+        "cases": 9,
+        "families": 3,
+        "family_scores": {
+          "inspection_lamp": 1.0,
+          "supply_chest": 1.0,
+          "telescoping_platform": 1.0
+        },
+        "mean_score": 1.0
+      },
+      "cases": [
+        {
+          "case": "telescoping_platform--inspection",
+          "family": "telescoping_platform",
+          "profile": "inspection",
+          "scored": true,
+          "generator_sha256": "677673165e62ce62e76aafd98026bc06fbbb7fd7e460bfdc8bbceea362aaecdf",
+          "status": "evaluated",
+          "evaluation": {
+            "status": "evaluated",
+            "score": 1.0,
+            "guards_passed": true,
+            "counts": {
+              "triangles": 2620,
+              "hulls": 188,
+              "proxy_vertices": 2927
+            },
+            "parts": [
+              {
+                "part": "base",
+                "visual_max_error_m": 0.001005883858171329,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 322,
+                "free_count": 1779,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "carriage",
+                "visual_max_error_m": 0.0010170706727620554,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 354,
+                "free_count": 1687,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "panel",
+                "visual_max_error_m": 0.000636798194666726,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 358,
+                "free_count": 1676,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              }
+            ],
+            "motion": {
+              "passed": true,
+              "frames": 200,
+              "verified": 200,
+              "nonadjacent_pairs": 2
+            },
+            "wall_seconds": 0.465
+          }
+        },
+        {
+          "case": "telescoping_platform--standard",
+          "family": "telescoping_platform",
+          "profile": "standard",
+          "scored": true,
+          "generator_sha256": "677673165e62ce62e76aafd98026bc06fbbb7fd7e460bfdc8bbceea362aaecdf",
+          "status": "evaluated",
+          "evaluation": {
+            "status": "evaluated",
+            "score": 1.0,
+            "guards_passed": true,
+            "counts": {
+              "triangles": 1296,
+              "hulls": 188,
+              "proxy_vertices": 2927
+            },
+            "parts": [
+              {
+                "part": "base",
+                "visual_max_error_m": 0.001469547280827998,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 322,
+                "free_count": 1779,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "carriage",
+                "visual_max_error_m": 0.0018655811837586726,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 354,
+                "free_count": 1687,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "panel",
+                "visual_max_error_m": 0.0018705615139909153,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 358,
+                "free_count": 1676,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              }
+            ],
+            "motion": {
+              "passed": true,
+              "frames": 200,
+              "verified": 200,
+              "nonadjacent_pairs": 2
+            },
+            "wall_seconds": 0.424
+          }
+        },
+        {
+          "case": "telescoping_platform--mobile",
+          "family": "telescoping_platform",
+          "profile": "mobile",
+          "scored": true,
+          "generator_sha256": "677673165e62ce62e76aafd98026bc06fbbb7fd7e460bfdc8bbceea362aaecdf",
+          "status": "evaluated",
+          "evaluation": {
+            "status": "evaluated",
+            "score": 1.0,
+            "guards_passed": true,
+            "counts": {
+              "triangles": 1008,
+              "hulls": 188,
+              "proxy_vertices": 2927
+            },
+            "parts": [
+              {
+                "part": "base",
+                "visual_max_error_m": 0.002425931973334811,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 322,
+                "free_count": 1779,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "carriage",
+                "visual_max_error_m": 0.0027994124415849798,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 354,
+                "free_count": 1687,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "panel",
+                "visual_max_error_m": 0.0018705615139909153,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 358,
+                "free_count": 1676,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              }
+            ],
+            "motion": {
+              "passed": true,
+              "frames": 200,
+              "verified": 200,
+              "nonadjacent_pairs": 2
+            },
+            "wall_seconds": 0.418
+          }
+        },
+        {
+          "case": "inspection_lamp--inspection",
+          "family": "inspection_lamp",
+          "profile": "inspection",
+          "scored": true,
+          "generator_sha256": "677673165e62ce62e76aafd98026bc06fbbb7fd7e460bfdc8bbceea362aaecdf",
+          "status": "evaluated",
+          "evaluation": {
+            "status": "evaluated",
+            "score": 1.0,
+            "guards_passed": true,
+            "counts": {
+              "triangles": 3980,
+              "hulls": 344,
+              "proxy_vertices": 4667
+            },
+            "parts": [
+              {
+                "part": "base",
+                "visual_max_error_m": 0.0005604991954371825,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 266,
+                "free_count": 1814,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "arm_a",
+                "visual_max_error_m": 0.0005854297179176029,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 296,
+                "free_count": 1784,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "arm_b",
+                "visual_max_error_m": 0.0005844051048794731,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 298,
+                "free_count": 1788,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "shade",
+                "visual_max_error_m": 0.0007624469046286151,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 354,
+                "free_count": 1768,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              }
+            ],
+            "motion": {
+              "passed": true,
+              "frames": 96,
+              "verified": 96,
+              "nonadjacent_pairs": 3
+            },
+            "wall_seconds": 0.515
+          }
+        },
+        {
+          "case": "inspection_lamp--standard",
+          "family": "inspection_lamp",
+          "profile": "standard",
+          "scored": true,
+          "generator_sha256": "677673165e62ce62e76aafd98026bc06fbbb7fd7e460bfdc8bbceea362aaecdf",
+          "status": "evaluated",
+          "evaluation": {
+            "status": "evaluated",
+            "score": 1.0,
+            "guards_passed": true,
+            "counts": {
+              "triangles": 2580,
+              "hulls": 344,
+              "proxy_vertices": 4667
+            },
+            "parts": [
+              {
+                "part": "base",
+                "visual_max_error_m": 0.0011966194311921728,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 266,
+                "free_count": 1814,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "arm_a",
+                "visual_max_error_m": 0.0012051854401520657,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 296,
+                "free_count": 1784,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "arm_b",
+                "visual_max_error_m": 0.001184653943524667,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 298,
+                "free_count": 1788,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "shade",
+                "visual_max_error_m": 0.0011142104572476885,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 354,
+                "free_count": 1768,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              }
+            ],
+            "motion": {
+              "passed": true,
+              "frames": 96,
+              "verified": 96,
+              "nonadjacent_pairs": 3
+            },
+            "wall_seconds": 0.482
+          }
+        },
+        {
+          "case": "inspection_lamp--mobile",
+          "family": "inspection_lamp",
+          "profile": "mobile",
+          "scored": true,
+          "generator_sha256": "677673165e62ce62e76aafd98026bc06fbbb7fd7e460bfdc8bbceea362aaecdf",
+          "status": "evaluated",
+          "evaluation": {
+            "status": "evaluated",
+            "score": 1.0,
+            "guards_passed": true,
+            "counts": {
+              "triangles": 1828,
+              "hulls": 344,
+              "proxy_vertices": 4667
+            },
+            "parts": [
+              {
+                "part": "base",
+                "visual_max_error_m": 0.002375712419359836,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 266,
+                "free_count": 1814,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "arm_a",
+                "visual_max_error_m": 0.0022299747588176012,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 296,
+                "free_count": 1784,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "arm_b",
+                "visual_max_error_m": 0.002402913879496632,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 298,
+                "free_count": 1788,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "shade",
+                "visual_max_error_m": 0.0023418874877820946,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 354,
+                "free_count": 1768,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              }
+            ],
+            "motion": {
+              "passed": true,
+              "frames": 96,
+              "verified": 96,
+              "nonadjacent_pairs": 3
+            },
+            "wall_seconds": 0.501
+          }
+        },
+        {
+          "case": "supply_chest--inspection",
+          "family": "supply_chest",
+          "profile": "inspection",
+          "scored": true,
+          "generator_sha256": "677673165e62ce62e76aafd98026bc06fbbb7fd7e460bfdc8bbceea362aaecdf",
+          "status": "evaluated",
+          "evaluation": {
+            "status": "evaluated",
+            "score": 1.0,
+            "guards_passed": true,
+            "counts": {
+              "triangles": 1842,
+              "hulls": 49,
+              "proxy_vertices": 1759
+            },
+            "parts": [
+              {
+                "part": "base",
+                "visual_max_error_m": 6.717766776011334e-15,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 464,
+                "free_count": 1613,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "lid",
+                "visual_max_error_m": 0.0007753884330568101,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 288,
+                "free_count": 1702,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "tray",
+                "visual_max_error_m": 1.5765264680274356e-14,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 444,
+                "free_count": 1650,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              }
+            ],
+            "motion": {
+              "passed": true,
+              "frames": 166,
+              "verified": 166,
+              "nonadjacent_pairs": 2
+            },
+            "wall_seconds": 0.29
+          }
+        },
+        {
+          "case": "supply_chest--standard",
+          "family": "supply_chest",
+          "profile": "standard",
+          "scored": true,
+          "generator_sha256": "677673165e62ce62e76aafd98026bc06fbbb7fd7e460bfdc8bbceea362aaecdf",
+          "status": "evaluated",
+          "evaluation": {
+            "status": "evaluated",
+            "score": 1.0,
+            "guards_passed": true,
+            "counts": {
+              "triangles": 982,
+              "hulls": 49,
+              "proxy_vertices": 1759
+            },
+            "parts": [
+              {
+                "part": "base",
+                "visual_max_error_m": 6.717766776011334e-15,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 464,
+                "free_count": 1613,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "lid",
+                "visual_max_error_m": 0.0013948413589732764,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 288,
+                "free_count": 1702,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "tray",
+                "visual_max_error_m": 1.5765264680274356e-14,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 444,
+                "free_count": 1650,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              }
+            ],
+            "motion": {
+              "passed": true,
+              "frames": 166,
+              "verified": 166,
+              "nonadjacent_pairs": 2
+            },
+            "wall_seconds": 0.255
+          }
+        },
+        {
+          "case": "supply_chest--mobile",
+          "family": "supply_chest",
+          "profile": "mobile",
+          "scored": true,
+          "generator_sha256": "677673165e62ce62e76aafd98026bc06fbbb7fd7e460bfdc8bbceea362aaecdf",
+          "status": "evaluated",
+          "evaluation": {
+            "status": "evaluated",
+            "score": 1.0,
+            "guards_passed": true,
+            "counts": {
+              "triangles": 508,
+              "hulls": 49,
+              "proxy_vertices": 1759
+            },
+            "parts": [
+              {
+                "part": "base",
+                "visual_max_error_m": 6.717766776011334e-15,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 464,
+                "free_count": 1613,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "lid",
+                "visual_max_error_m": 0.0027873823344867145,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 288,
+                "free_count": 1702,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              },
+              {
+                "part": "tray",
+                "visual_max_error_m": 1.5765264680274356e-14,
+                "visual_quality": 1.0,
+                "proxy_quality": 1.0,
+                "contact_count": 444,
+                "free_count": 1650,
+                "false_free": 0,
+                "false_blocked": 0,
+                "quality": 1.0
+              }
+            ],
+            "motion": {
+              "passed": true,
+              "frames": 166,
+              "verified": 166,
+              "nonadjacent_pairs": 2
+            },
+            "wall_seconds": 0.243
+          }
+        }
+      ]
+    }
+  },
+  "retention": {
+    "reused_exact_code_submission": 6,
+    "summary": {
+      "scorable": true,
+      "cases": 3,
+      "families": 3,
+      "family_scores": {
+        "folding_bridge": 1.0,
+        "folding_workbench": 1.0,
+        "service_cart": 1.0
+      },
+      "mean_score": 1.0
+    },
+    "cases": [
+      {
+        "case": "folding_bridge--standard",
+        "family": "folding_bridge",
+        "profile": "standard",
+        "scored": true,
+        "generator_sha256": "677673165e62ce62e76aafd98026bc06fbbb7fd7e460bfdc8bbceea362aaecdf",
+        "status": "evaluated",
+        "evaluation": {
+          "status": "evaluated",
+          "score": 1.0,
+          "guards_passed": true,
+          "counts": {
+            "triangles": 1760,
+            "hulls": 264,
+            "proxy_vertices": 3694
+          },
+          "parts": [
+            {
+              "part": "base",
+              "visual_max_error_m": 0.0013257039841672576,
+              "visual_quality": 1.0,
+              "proxy_quality": 1.0,
+              "contact_count": 368,
+              "free_count": 1746,
+              "false_free": 0,
+              "false_blocked": 0,
+              "quality": 1.0
+            },
+            {
+              "part": "deck_a",
+              "visual_max_error_m": 0.0010916693880007869,
+              "visual_quality": 1.0,
+              "proxy_quality": 1.0,
+              "contact_count": 352,
+              "free_count": 1788,
+              "false_free": 0,
+              "false_blocked": 0,
+              "quality": 1.0
+            },
+            {
+              "part": "deck_b",
+              "visual_max_error_m": 0.0010916693880007869,
+              "visual_quality": 1.0,
+              "proxy_quality": 1.0,
+              "contact_count": 352,
+              "free_count": 1788,
+              "false_free": 0,
+              "false_blocked": 0,
+              "quality": 1.0
+            },
+            {
+              "part": "ring_handle",
+              "visual_max_error_m": 0.0009314386230891171,
+              "visual_quality": 1.0,
+              "proxy_quality": 1.0,
+              "contact_count": 338,
+              "free_count": 1640,
+              "false_free": 0,
+              "false_blocked": 0,
+              "quality": 1.0
+            }
+          ],
+          "motion": {
+            "passed": true,
+            "frames": 186,
+            "verified": 186,
+            "nonadjacent_pairs": 3
+          },
+          "wall_seconds": 0.495
+        }
+      },
+      {
+        "case": "folding_workbench--standard",
+        "family": "folding_workbench",
+        "profile": "standard",
+        "scored": true,
+        "generator_sha256": "677673165e62ce62e76aafd98026bc06fbbb7fd7e460bfdc8bbceea362aaecdf",
+        "status": "evaluated",
+        "evaluation": {
+          "status": "evaluated",
+          "score": 1.0,
+          "guards_passed": true,
+          "counts": {
+            "triangles": 2360,
+            "hulls": 244,
+            "proxy_vertices": 4664
+          },
+          "parts": [
+            {
+              "part": "base",
+              "visual_max_error_m": 0.0015426373633946487,
+              "visual_quality": 1.0,
+              "proxy_quality": 1.0,
+              "contact_count": 368,
+              "free_count": 1656,
+              "false_free": 0,
+              "false_blocked": 0,
+              "quality": 1.0
+            },
+            {
+              "part": "leg_a",
+              "visual_max_error_m": 0.001578681492742043,
+              "visual_quality": 1.0,
+              "proxy_quality": 1.0,
+              "contact_count": 246,
+              "free_count": 1812,
+              "false_free": 0,
+              "false_blocked": 0,
+              "quality": 1.0
+            },
+            {
+              "part": "leg_b",
+              "visual_max_error_m": 0.001576587872606843,
+              "visual_quality": 1.0,
+              "proxy_quality": 1.0,
+              "contact_count": 246,
+              "free_count": 1812,
+              "false_free": 0,
+              "false_blocked": 0,
+              "quality": 1.0
+            },
+            {
+              "part": "tray",
+              "visual_max_error_m": 2.2232198742534223e-15,
+              "visual_quality": 1.0,
+              "proxy_quality": 1.0,
+              "contact_count": 452,
+              "free_count": 1554,
+              "false_free": 0,
+              "false_blocked": 0,
+              "quality": 1.0
+            }
+          ],
+          "motion": {
+            "passed": true,
+            "frames": 192,
+            "verified": 192,
+            "nonadjacent_pairs": 4
+          },
+          "wall_seconds": 0.545
+        }
+      },
+      {
+        "case": "service_cart--standard",
+        "family": "service_cart",
+        "profile": "standard",
+        "scored": true,
+        "generator_sha256": "677673165e62ce62e76aafd98026bc06fbbb7fd7e460bfdc8bbceea362aaecdf",
+        "status": "evaluated",
+        "evaluation": {
+          "status": "evaluated",
+          "score": 1.0,
+          "guards_passed": true,
+          "counts": {
+            "triangles": 3464,
+            "hulls": 463,
+            "proxy_vertices": 7002
+          },
+          "parts": [
+            {
+              "part": "base",
+              "visual_max_error_m": 0.0010916693880006806,
+              "visual_quality": 1.0,
+              "proxy_quality": 1.0,
+              "contact_count": 342,
+              "free_count": 1655,
+              "false_free": 0,
+              "false_blocked": 0,
+              "quality": 1.0
+            },
+            {
+              "part": "drawer_0",
+              "visual_max_error_m": 0.000786743615624695,
+              "visual_quality": 1.0,
+              "proxy_quality": 1.0,
+              "contact_count": 408,
+              "free_count": 1623,
+              "false_free": 0,
+              "false_blocked": 0,
+              "quality": 1.0
+            },
+            {
+              "part": "drawer_1",
+              "visual_max_error_m": 0.0007867436156284841,
+              "visual_quality": 1.0,
+              "proxy_quality": 1.0,
+              "contact_count": 408,
+              "free_count": 1623,
+              "false_free": 0,
+              "false_blocked": 0,
+              "quality": 1.0
+            },
+            {
+              "part": "caster_0",
+              "visual_max_error_m": 5.551115123125783e-17,
+              "visual_quality": 1.0,
+              "proxy_quality": 1.0,
+              "contact_count": 388,
+              "free_count": 1470,
+              "false_free": 0,
+              "false_blocked": 0,
+              "quality": 1.0
+            },
+            {
+              "part": "wheel_0",
+              "visual_max_error_m": 0.0012331398757400905,
+              "visual_quality": 1.0,
+              "proxy_quality": 1.0,
+              "contact_count": 430,
+              "free_count": 1671,
+              "false_free": 0,
+              "false_blocked": 0,
+              "quality": 1.0
+            },
+            {
+              "part": "caster_1",
+              "visual_max_error_m": 5.551115123125783e-17,
+              "visual_quality": 1.0,
+              "proxy_quality": 1.0,
+              "contact_count": 388,
+              "free_count": 1470,
+              "false_free": 0,
+              "false_blocked": 0,
+              "quality": 1.0
+            },
+            {
+              "part": "wheel_1",
+              "visual_max_error_m": 0.0012331398757400905,
+              "visual_quality": 1.0,
+              "proxy_quality": 1.0,
+              "contact_count": 430,
+              "free_count": 1671,
+              "false_free": 0,
+              "false_blocked": 0,
+              "quality": 1.0
+            },
+            {
+              "part": "caster_2",
+              "visual_max_error_m": 5.551115123125783e-17,
+              "visual_quality": 1.0,
+              "proxy_quality": 1.0,
+              "contact_count": 388,
+              "free_count": 1470,
+              "false_free": 0,
+              "false_blocked": 0,
+              "quality": 1.0
+            },
+            {
+              "part": "wheel_2",
+              "visual_max_error_m": 0.0012331398757400905,
+              "visual_quality": 1.0,
+              "proxy_quality": 1.0,
+              "contact_count": 430,
+              "free_count": 1671,
+              "false_free": 0,
+              "false_blocked": 0,
+              "quality": 1.0
+            },
+            {
+              "part": "caster_3",
+              "visual_max_error_m": 5.551115123125783e-17,
+              "visual_quality": 1.0,
+              "proxy_quality": 1.0,
+              "contact_count": 388,
+              "free_count": 1470,
+              "false_free": 0,
+              "false_blocked": 0,
+              "quality": 1.0
+            },
+            {
+              "part": "wheel_3",
+              "visual_max_error_m": 0.0012331398757400905,
+              "visual_quality": 1.0,
+              "proxy_quality": 1.0,
+              "contact_count": 430,
+              "free_count": 1671,
+              "false_free": 0,
+              "false_blocked": 0,
+              "quality": 1.0
+            },
+            {
+              "part": "holder",
+              "visual_max_error_m": 0.0012397079863165112,
+              "visual_quality": 1.0,
+              "proxy_quality": 1.0,
+              "contact_count": 276,
+              "free_count": 1786,
+              "false_free": 0,
+              "false_blocked": 0,
+              "quality": 1.0
+            }
+          ],
+          "motion": {
+            "passed": true,
+            "frames": 1692,
+            "verified": 1692,
+            "nonadjacent_pairs": 57
+          },
+          "wall_seconds": 14.627
+        }
+      }
+    ]
+  },
+  "native_integrity": {
+    "files": 562,
+    "inventory_sha256": "bf9df39506d37311f1e9f0dfaeb2caf7ac4a8a5b896fde9a6c6c9b1ccc77db1b",
+    "native_sha256": "c1eeb5edd1e181d538b52e9bfd7229d10820a0d4ab8c91ae755e9fba5db6a8b9",
+    "verified": true,
+    "native_public": false,
+    "official_runner": false
+  },
+  "evaluations": [
+    {
+      "id": "first/telescoping_platform--inspection",
+      "source": "study-v7/frozen/inputs/telescoping_platform",
+      "probes": "study-v7/frozen/probes/telescoping_platform",
+      "artifact": "study-v7/frozen/first/telescoping_platform--inspection",
+      "case": {
+        "id": "telescoping_platform--inspection",
+        "family": "telescoping_platform",
+        "profile": "inspection",
+        "split": "heldout",
+        "max_triangles": 2621,
+        "max_hulls": 188,
+        "max_proxy_vertices": 2969,
+        "max_vertices_per_hull": 64,
+        "visual_tolerance_m": 0.0017106674642655576,
+        "generation_seconds": 90
+      },
+      "expected": {
+        "status": "evaluated",
+        "score": 0.0,
+        "guards_passed": false,
+        "issues": [
+          "max_triangles"
+        ],
+        "counts": {
+          "triangles": 2940,
+          "hulls": 123,
+          "proxy_vertices": 2869
+        },
+        "wall_seconds": 0.022
+      }
+    },
+    {
+      "id": "first/telescoping_platform--standard",
+      "source": "study-v7/frozen/inputs/telescoping_platform",
+      "probes": "study-v7/frozen/probes/telescoping_platform",
+      "artifact": "study-v7/frozen/first/telescoping_platform--standard",
+      "case": {
+        "id": "telescoping_platform--standard",
+        "family": "telescoping_platform",
+        "profile": "standard",
+        "split": "heldout",
+        "max_triangles": 1474,
+        "max_hulls": 188,
+        "max_proxy_vertices": 2969,
+        "max_vertices_per_hull": 64,
+        "visual_tolerance_m": 0.00320750149549792,
+        "generation_seconds": 90
+      },
+      "expected": {
+        "status": "evaluated",
+        "score": 0.0,
+        "guards_passed": false,
+        "issues": [
+          "max_triangles"
+        ],
+        "counts": {
+          "triangles": 1992,
+          "hulls": 123,
+          "proxy_vertices": 2869
+        },
+        "wall_seconds": 0.022
+      }
+    },
+    {
+      "id": "first/telescoping_platform--mobile",
+      "source": "study-v7/frozen/inputs/telescoping_platform",
+      "probes": "study-v7/frozen/probes/telescoping_platform",
+      "artifact": "study-v7/frozen/first/telescoping_platform--mobile",
+      "case": {
+        "id": "telescoping_platform--mobile",
+        "family": "telescoping_platform",
+        "profile": "mobile",
+        "split": "heldout",
+        "max_triangles": 1009,
+        "max_hulls": 188,
+        "max_proxy_vertices": 2969,
+        "max_vertices_per_hull": 64,
+        "visual_tolerance_m": 0.00641500299099584,
+        "generation_seconds": 90
+      },
+      "expected": {
+        "status": "evaluated",
+        "score": 0.0,
+        "guards_passed": false,
+        "issues": [
+          "max_triangles"
+        ],
+        "counts": {
+          "triangles": 1604,
+          "hulls": 123,
+          "proxy_vertices": 2869
+        },
+        "wall_seconds": 0.022
+      }
+    },
+    {
+      "id": "first/inspection_lamp--inspection",
+      "source": "study-v7/frozen/inputs/inspection_lamp",
+      "probes": "study-v7/frozen/probes/inspection_lamp",
+      "artifact": "study-v7/frozen/first/inspection_lamp--inspection",
+      "case": {
+        "id": "inspection_lamp--inspection",
+        "family": "inspection_lamp",
+        "profile": "inspection",
+        "split": "heldout",
+        "max_triangles": 4301,
+        "max_hulls": 422,
+        "max_proxy_vertices": 5273,
+        "max_vertices_per_hull": 64,
+        "visual_tolerance_m": 0.0017106674642655576,
+        "generation_seconds": 90
+      },
+      "expected": {
+        "status": "evaluated",
+        "score": 0.0,
+        "guards_passed": false,
+        "issues": [
+          "max_triangles"
+        ],
+        "counts": {
+          "triangles": 4680,
+          "hulls": 295,
+          "proxy_vertices": 5091
+        },
+        "wall_seconds": 0.042
+      }
+    },
+    {
+      "id": "first/inspection_lamp--standard",
+      "source": "study-v7/frozen/inputs/inspection_lamp",
+      "probes": "study-v7/frozen/probes/inspection_lamp",
+      "artifact": "study-v7/frozen/first/inspection_lamp--standard",
+      "case": {
+        "id": "inspection_lamp--standard",
+        "family": "inspection_lamp",
+        "profile": "standard",
+        "split": "heldout",
+        "max_triangles": 2581,
+        "max_hulls": 422,
+        "max_proxy_vertices": 5273,
+        "max_vertices_per_hull": 64,
+        "visual_tolerance_m": 0.00320750149549792,
+        "generation_seconds": 90
+      },
+      "expected": {
+        "status": "evaluated",
+        "score": 0.0,
+        "guards_passed": false,
+        "issues": [
+          "max_triangles"
+        ],
+        "counts": {
+          "triangles": 3264,
+          "hulls": 295,
+          "proxy_vertices": 5091
+        },
+        "wall_seconds": 0.06
+      }
+    },
+    {
+      "id": "first/inspection_lamp--mobile",
+      "source": "study-v7/frozen/inputs/inspection_lamp",
+      "probes": "study-v7/frozen/probes/inspection_lamp",
+      "artifact": "study-v7/frozen/first/inspection_lamp--mobile",
+      "case": {
+        "id": "inspection_lamp--mobile",
+        "family": "inspection_lamp",
+        "profile": "mobile",
+        "split": "heldout",
+        "max_triangles": 1828,
+        "max_hulls": 422,
+        "max_proxy_vertices": 5273,
+        "max_vertices_per_hull": 64,
+        "visual_tolerance_m": 0.00641500299099584,
+        "generation_seconds": 90
+      },
+      "expected": {
+        "status": "evaluated",
+        "score": 0.0,
+        "guards_passed": false,
+        "issues": [
+          "max_triangles"
+        ],
+        "counts": {
+          "triangles": 2652,
+          "hulls": 295,
+          "proxy_vertices": 5091
+        },
+        "wall_seconds": 0.041
+      }
+    },
+    {
+      "id": "first/supply_chest--inspection",
+      "source": "study-v7/frozen/inputs/supply_chest",
+      "probes": "study-v7/frozen/probes/supply_chest",
+      "artifact": "study-v7/frozen/first/supply_chest--inspection",
+      "case": {
+        "id": "supply_chest--inspection",
+        "family": "supply_chest",
+        "profile": "inspection",
+        "split": "heldout",
+        "max_triangles": 1842,
+        "max_hulls": 64,
+        "max_proxy_vertices": 1759,
+        "max_vertices_per_hull": 64,
+        "visual_tolerance_m": 0.0017106674642655576,
+        "generation_seconds": 90
+      },
+      "expected": {
+        "status": "evaluated",
+        "score": 1.0,
+        "guards_passed": true,
+        "counts": {
+          "triangles": 1694,
+          "hulls": 53,
+          "proxy_vertices": 1720
+        },
+        "parts": [
+          {
+            "part": "base",
+            "visual_max_error_m": 6.717766776011334e-15,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 464,
+            "free_count": 1613,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "lid",
+            "visual_max_error_m": 0.0011059665876352698,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 288,
+            "free_count": 1702,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "tray",
+            "visual_max_error_m": 1.5765264680274356e-14,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 444,
+            "free_count": 1650,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          }
+        ],
+        "motion": {
+          "passed": true,
+          "frames": 166,
+          "verified": 166,
+          "nonadjacent_pairs": 2
+        },
+        "wall_seconds": 0.275
+      }
+    },
+    {
+      "id": "first/supply_chest--standard",
+      "source": "study-v7/frozen/inputs/supply_chest",
+      "probes": "study-v7/frozen/probes/supply_chest",
+      "artifact": "study-v7/frozen/first/supply_chest--standard",
+      "case": {
+        "id": "supply_chest--standard",
+        "family": "supply_chest",
+        "profile": "standard",
+        "split": "heldout",
+        "max_triangles": 982,
+        "max_hulls": 64,
+        "max_proxy_vertices": 1759,
+        "max_vertices_per_hull": 64,
+        "visual_tolerance_m": 0.00320750149549792,
+        "generation_seconds": 90
+      },
+      "expected": {
+        "status": "evaluated",
+        "score": 1.0,
+        "guards_passed": true,
+        "counts": {
+          "triangles": 902,
+          "hulls": 53,
+          "proxy_vertices": 1720
+        },
+        "parts": [
+          {
+            "part": "base",
+            "visual_max_error_m": 6.717766776011334e-15,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 464,
+            "free_count": 1613,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "lid",
+            "visual_max_error_m": 0.0018310829549834803,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 288,
+            "free_count": 1702,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "tray",
+            "visual_max_error_m": 1.5765264680274356e-14,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 444,
+            "free_count": 1650,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          }
+        ],
+        "motion": {
+          "passed": true,
+          "frames": 166,
+          "verified": 166,
+          "nonadjacent_pairs": 2
+        },
+        "wall_seconds": 0.257
+      }
+    },
+    {
+      "id": "first/supply_chest--mobile",
+      "source": "study-v7/frozen/inputs/supply_chest",
+      "probes": "study-v7/frozen/probes/supply_chest",
+      "artifact": "study-v7/frozen/first/supply_chest--mobile",
+      "case": {
+        "id": "supply_chest--mobile",
+        "family": "supply_chest",
+        "profile": "mobile",
+        "split": "heldout",
+        "max_triangles": 659,
+        "max_hulls": 64,
+        "max_proxy_vertices": 1759,
+        "max_vertices_per_hull": 64,
+        "visual_tolerance_m": 0.00641500299099584,
+        "generation_seconds": 90
+      },
+      "expected": {
+        "status": "evaluated",
+        "score": 1.0,
+        "guards_passed": true,
+        "counts": {
+          "triangles": 606,
+          "hulls": 53,
+          "proxy_vertices": 1720
+        },
+        "parts": [
+          {
+            "part": "base",
+            "visual_max_error_m": 6.717766776011334e-15,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 464,
+            "free_count": 1613,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "lid",
+            "visual_max_error_m": 0.002438632892468579,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 288,
+            "free_count": 1702,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "tray",
+            "visual_max_error_m": 1.5765264680274356e-14,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 444,
+            "free_count": 1650,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          }
+        ],
+        "motion": {
+          "passed": true,
+          "frames": 166,
+          "verified": 166,
+          "nonadjacent_pairs": 2
+        },
+        "wall_seconds": 0.265
+      }
+    },
+    {
+      "id": "final/telescoping_platform--inspection",
+      "source": "study-v7/frozen/inputs/telescoping_platform",
+      "probes": "study-v7/frozen/probes/telescoping_platform",
+      "artifact": "study-v7/frozen/final/telescoping_platform--inspection",
+      "case": {
+        "id": "telescoping_platform--inspection",
+        "family": "telescoping_platform",
+        "profile": "inspection",
+        "split": "heldout",
+        "max_triangles": 2621,
+        "max_hulls": 188,
+        "max_proxy_vertices": 2969,
+        "max_vertices_per_hull": 64,
+        "visual_tolerance_m": 0.0017106674642655576,
+        "generation_seconds": 90
+      },
+      "expected": {
+        "status": "evaluated",
+        "score": 1.0,
+        "guards_passed": true,
+        "counts": {
+          "triangles": 2620,
+          "hulls": 188,
+          "proxy_vertices": 2927
+        },
+        "parts": [
+          {
+            "part": "base",
+            "visual_max_error_m": 0.001005883858171329,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 322,
+            "free_count": 1779,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "carriage",
+            "visual_max_error_m": 0.0010170706727620554,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 354,
+            "free_count": 1687,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "panel",
+            "visual_max_error_m": 0.000636798194666726,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 358,
+            "free_count": 1676,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          }
+        ],
+        "motion": {
+          "passed": true,
+          "frames": 200,
+          "verified": 200,
+          "nonadjacent_pairs": 2
+        },
+        "wall_seconds": 0.465
+      }
+    },
+    {
+      "id": "final/telescoping_platform--standard",
+      "source": "study-v7/frozen/inputs/telescoping_platform",
+      "probes": "study-v7/frozen/probes/telescoping_platform",
+      "artifact": "study-v7/frozen/final/telescoping_platform--standard",
+      "case": {
+        "id": "telescoping_platform--standard",
+        "family": "telescoping_platform",
+        "profile": "standard",
+        "split": "heldout",
+        "max_triangles": 1474,
+        "max_hulls": 188,
+        "max_proxy_vertices": 2969,
+        "max_vertices_per_hull": 64,
+        "visual_tolerance_m": 0.00320750149549792,
+        "generation_seconds": 90
+      },
+      "expected": {
+        "status": "evaluated",
+        "score": 1.0,
+        "guards_passed": true,
+        "counts": {
+          "triangles": 1296,
+          "hulls": 188,
+          "proxy_vertices": 2927
+        },
+        "parts": [
+          {
+            "part": "base",
+            "visual_max_error_m": 0.001469547280827998,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 322,
+            "free_count": 1779,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "carriage",
+            "visual_max_error_m": 0.0018655811837586726,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 354,
+            "free_count": 1687,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "panel",
+            "visual_max_error_m": 0.0018705615139909153,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 358,
+            "free_count": 1676,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          }
+        ],
+        "motion": {
+          "passed": true,
+          "frames": 200,
+          "verified": 200,
+          "nonadjacent_pairs": 2
+        },
+        "wall_seconds": 0.424
+      }
+    },
+    {
+      "id": "final/telescoping_platform--mobile",
+      "source": "study-v7/frozen/inputs/telescoping_platform",
+      "probes": "study-v7/frozen/probes/telescoping_platform",
+      "artifact": "study-v7/frozen/final/telescoping_platform--mobile",
+      "case": {
+        "id": "telescoping_platform--mobile",
+        "family": "telescoping_platform",
+        "profile": "mobile",
+        "split": "heldout",
+        "max_triangles": 1009,
+        "max_hulls": 188,
+        "max_proxy_vertices": 2969,
+        "max_vertices_per_hull": 64,
+        "visual_tolerance_m": 0.00641500299099584,
+        "generation_seconds": 90
+      },
+      "expected": {
+        "status": "evaluated",
+        "score": 1.0,
+        "guards_passed": true,
+        "counts": {
+          "triangles": 1008,
+          "hulls": 188,
+          "proxy_vertices": 2927
+        },
+        "parts": [
+          {
+            "part": "base",
+            "visual_max_error_m": 0.002425931973334811,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 322,
+            "free_count": 1779,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "carriage",
+            "visual_max_error_m": 0.0027994124415849798,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 354,
+            "free_count": 1687,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "panel",
+            "visual_max_error_m": 0.0018705615139909153,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 358,
+            "free_count": 1676,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          }
+        ],
+        "motion": {
+          "passed": true,
+          "frames": 200,
+          "verified": 200,
+          "nonadjacent_pairs": 2
+        },
+        "wall_seconds": 0.418
+      }
+    },
+    {
+      "id": "final/inspection_lamp--inspection",
+      "source": "study-v7/frozen/inputs/inspection_lamp",
+      "probes": "study-v7/frozen/probes/inspection_lamp",
+      "artifact": "study-v7/frozen/final/inspection_lamp--inspection",
+      "case": {
+        "id": "inspection_lamp--inspection",
+        "family": "inspection_lamp",
+        "profile": "inspection",
+        "split": "heldout",
+        "max_triangles": 4301,
+        "max_hulls": 422,
+        "max_proxy_vertices": 5273,
+        "max_vertices_per_hull": 64,
+        "visual_tolerance_m": 0.0017106674642655576,
+        "generation_seconds": 90
+      },
+      "expected": {
+        "status": "evaluated",
+        "score": 1.0,
+        "guards_passed": true,
+        "counts": {
+          "triangles": 3980,
+          "hulls": 344,
+          "proxy_vertices": 4667
+        },
+        "parts": [
+          {
+            "part": "base",
+            "visual_max_error_m": 0.0005604991954371825,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 266,
+            "free_count": 1814,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "arm_a",
+            "visual_max_error_m": 0.0005854297179176029,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 296,
+            "free_count": 1784,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "arm_b",
+            "visual_max_error_m": 0.0005844051048794731,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 298,
+            "free_count": 1788,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "shade",
+            "visual_max_error_m": 0.0007624469046286151,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 354,
+            "free_count": 1768,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          }
+        ],
+        "motion": {
+          "passed": true,
+          "frames": 96,
+          "verified": 96,
+          "nonadjacent_pairs": 3
+        },
+        "wall_seconds": 0.515
+      }
+    },
+    {
+      "id": "final/inspection_lamp--standard",
+      "source": "study-v7/frozen/inputs/inspection_lamp",
+      "probes": "study-v7/frozen/probes/inspection_lamp",
+      "artifact": "study-v7/frozen/final/inspection_lamp--standard",
+      "case": {
+        "id": "inspection_lamp--standard",
+        "family": "inspection_lamp",
+        "profile": "standard",
+        "split": "heldout",
+        "max_triangles": 2581,
+        "max_hulls": 422,
+        "max_proxy_vertices": 5273,
+        "max_vertices_per_hull": 64,
+        "visual_tolerance_m": 0.00320750149549792,
+        "generation_seconds": 90
+      },
+      "expected": {
+        "status": "evaluated",
+        "score": 1.0,
+        "guards_passed": true,
+        "counts": {
+          "triangles": 2580,
+          "hulls": 344,
+          "proxy_vertices": 4667
+        },
+        "parts": [
+          {
+            "part": "base",
+            "visual_max_error_m": 0.0011966194311921728,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 266,
+            "free_count": 1814,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "arm_a",
+            "visual_max_error_m": 0.0012051854401520657,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 296,
+            "free_count": 1784,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "arm_b",
+            "visual_max_error_m": 0.001184653943524667,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 298,
+            "free_count": 1788,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "shade",
+            "visual_max_error_m": 0.0011142104572476885,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 354,
+            "free_count": 1768,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          }
+        ],
+        "motion": {
+          "passed": true,
+          "frames": 96,
+          "verified": 96,
+          "nonadjacent_pairs": 3
+        },
+        "wall_seconds": 0.482
+      }
+    },
+    {
+      "id": "final/inspection_lamp--mobile",
+      "source": "study-v7/frozen/inputs/inspection_lamp",
+      "probes": "study-v7/frozen/probes/inspection_lamp",
+      "artifact": "study-v7/frozen/final/inspection_lamp--mobile",
+      "case": {
+        "id": "inspection_lamp--mobile",
+        "family": "inspection_lamp",
+        "profile": "mobile",
+        "split": "heldout",
+        "max_triangles": 1828,
+        "max_hulls": 422,
+        "max_proxy_vertices": 5273,
+        "max_vertices_per_hull": 64,
+        "visual_tolerance_m": 0.00641500299099584,
+        "generation_seconds": 90
+      },
+      "expected": {
+        "status": "evaluated",
+        "score": 1.0,
+        "guards_passed": true,
+        "counts": {
+          "triangles": 1828,
+          "hulls": 344,
+          "proxy_vertices": 4667
+        },
+        "parts": [
+          {
+            "part": "base",
+            "visual_max_error_m": 0.002375712419359836,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 266,
+            "free_count": 1814,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "arm_a",
+            "visual_max_error_m": 0.0022299747588176012,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 296,
+            "free_count": 1784,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "arm_b",
+            "visual_max_error_m": 0.002402913879496632,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 298,
+            "free_count": 1788,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "shade",
+            "visual_max_error_m": 0.0023418874877820946,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 354,
+            "free_count": 1768,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          }
+        ],
+        "motion": {
+          "passed": true,
+          "frames": 96,
+          "verified": 96,
+          "nonadjacent_pairs": 3
+        },
+        "wall_seconds": 0.501
+      }
+    },
+    {
+      "id": "final/supply_chest--inspection",
+      "source": "study-v7/frozen/inputs/supply_chest",
+      "probes": "study-v7/frozen/probes/supply_chest",
+      "artifact": "study-v7/frozen/final/supply_chest--inspection",
+      "case": {
+        "id": "supply_chest--inspection",
+        "family": "supply_chest",
+        "profile": "inspection",
+        "split": "heldout",
+        "max_triangles": 1842,
+        "max_hulls": 64,
+        "max_proxy_vertices": 1759,
+        "max_vertices_per_hull": 64,
+        "visual_tolerance_m": 0.0017106674642655576,
+        "generation_seconds": 90
+      },
+      "expected": {
+        "status": "evaluated",
+        "score": 1.0,
+        "guards_passed": true,
+        "counts": {
+          "triangles": 1842,
+          "hulls": 49,
+          "proxy_vertices": 1759
+        },
+        "parts": [
+          {
+            "part": "base",
+            "visual_max_error_m": 6.717766776011334e-15,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 464,
+            "free_count": 1613,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "lid",
+            "visual_max_error_m": 0.0007753884330568101,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 288,
+            "free_count": 1702,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "tray",
+            "visual_max_error_m": 1.5765264680274356e-14,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 444,
+            "free_count": 1650,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          }
+        ],
+        "motion": {
+          "passed": true,
+          "frames": 166,
+          "verified": 166,
+          "nonadjacent_pairs": 2
+        },
+        "wall_seconds": 0.29
+      }
+    },
+    {
+      "id": "final/supply_chest--standard",
+      "source": "study-v7/frozen/inputs/supply_chest",
+      "probes": "study-v7/frozen/probes/supply_chest",
+      "artifact": "study-v7/frozen/final/supply_chest--standard",
+      "case": {
+        "id": "supply_chest--standard",
+        "family": "supply_chest",
+        "profile": "standard",
+        "split": "heldout",
+        "max_triangles": 982,
+        "max_hulls": 64,
+        "max_proxy_vertices": 1759,
+        "max_vertices_per_hull": 64,
+        "visual_tolerance_m": 0.00320750149549792,
+        "generation_seconds": 90
+      },
+      "expected": {
+        "status": "evaluated",
+        "score": 1.0,
+        "guards_passed": true,
+        "counts": {
+          "triangles": 982,
+          "hulls": 49,
+          "proxy_vertices": 1759
+        },
+        "parts": [
+          {
+            "part": "base",
+            "visual_max_error_m": 6.717766776011334e-15,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 464,
+            "free_count": 1613,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "lid",
+            "visual_max_error_m": 0.0013948413589732764,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 288,
+            "free_count": 1702,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "tray",
+            "visual_max_error_m": 1.5765264680274356e-14,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 444,
+            "free_count": 1650,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          }
+        ],
+        "motion": {
+          "passed": true,
+          "frames": 166,
+          "verified": 166,
+          "nonadjacent_pairs": 2
+        },
+        "wall_seconds": 0.255
+      }
+    },
+    {
+      "id": "final/supply_chest--mobile",
+      "source": "study-v7/frozen/inputs/supply_chest",
+      "probes": "study-v7/frozen/probes/supply_chest",
+      "artifact": "study-v7/frozen/final/supply_chest--mobile",
+      "case": {
+        "id": "supply_chest--mobile",
+        "family": "supply_chest",
+        "profile": "mobile",
+        "split": "heldout",
+        "max_triangles": 659,
+        "max_hulls": 64,
+        "max_proxy_vertices": 1759,
+        "max_vertices_per_hull": 64,
+        "visual_tolerance_m": 0.00641500299099584,
+        "generation_seconds": 90
+      },
+      "expected": {
+        "status": "evaluated",
+        "score": 1.0,
+        "guards_passed": true,
+        "counts": {
+          "triangles": 508,
+          "hulls": 49,
+          "proxy_vertices": 1759
+        },
+        "parts": [
+          {
+            "part": "base",
+            "visual_max_error_m": 6.717766776011334e-15,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 464,
+            "free_count": 1613,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "lid",
+            "visual_max_error_m": 0.0027873823344867145,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 288,
+            "free_count": 1702,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "tray",
+            "visual_max_error_m": 1.5765264680274356e-14,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 444,
+            "free_count": 1650,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          }
+        ],
+        "motion": {
+          "passed": true,
+          "frames": 166,
+          "verified": 166,
+          "nonadjacent_pairs": 2
+        },
+        "wall_seconds": 0.243
+      }
+    },
+    {
+      "id": "retention/folding_bridge--standard",
+      "source": "study-v7/frozen/inputs/folding_bridge",
+      "probes": "study-v7/frozen/probes/folding_bridge",
+      "artifact": "study-v7/frozen/retention/folding_bridge--standard",
+      "case": {
+        "id": "folding_bridge--standard",
+        "family": "folding_bridge",
+        "profile": "standard",
+        "split": "dev",
+        "max_triangles": 1761,
+        "max_hulls": 264,
+        "max_proxy_vertices": 3694,
+        "max_vertices_per_hull": 64,
+        "visual_tolerance_m": 0.00320750149549792,
+        "generation_seconds": 90
+      },
+      "expected": {
+        "status": "evaluated",
+        "score": 1.0,
+        "guards_passed": true,
+        "counts": {
+          "triangles": 1760,
+          "hulls": 264,
+          "proxy_vertices": 3694
+        },
+        "parts": [
+          {
+            "part": "base",
+            "visual_max_error_m": 0.0013257039841672576,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 368,
+            "free_count": 1746,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "deck_a",
+            "visual_max_error_m": 0.0010916693880007869,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 352,
+            "free_count": 1788,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "deck_b",
+            "visual_max_error_m": 0.0010916693880007869,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 352,
+            "free_count": 1788,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "ring_handle",
+            "visual_max_error_m": 0.0009314386230891171,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 338,
+            "free_count": 1640,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          }
+        ],
+        "motion": {
+          "passed": true,
+          "frames": 186,
+          "verified": 186,
+          "nonadjacent_pairs": 3
+        },
+        "wall_seconds": 0.495
+      }
+    },
+    {
+      "id": "retention/folding_workbench--standard",
+      "source": "study-v7/frozen/inputs/folding_workbench",
+      "probes": "study-v7/frozen/probes/folding_workbench",
+      "artifact": "study-v7/frozen/retention/folding_workbench--standard",
+      "case": {
+        "id": "folding_workbench--standard",
+        "family": "folding_workbench",
+        "profile": "standard",
+        "split": "dev",
+        "max_triangles": 2361,
+        "max_hulls": 244,
+        "max_proxy_vertices": 4664,
+        "max_vertices_per_hull": 64,
+        "visual_tolerance_m": 0.00320750149549792,
+        "generation_seconds": 90
+      },
+      "expected": {
+        "status": "evaluated",
+        "score": 1.0,
+        "guards_passed": true,
+        "counts": {
+          "triangles": 2360,
+          "hulls": 244,
+          "proxy_vertices": 4664
+        },
+        "parts": [
+          {
+            "part": "base",
+            "visual_max_error_m": 0.0015426373633946487,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 368,
+            "free_count": 1656,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "leg_a",
+            "visual_max_error_m": 0.001578681492742043,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 246,
+            "free_count": 1812,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "leg_b",
+            "visual_max_error_m": 0.001576587872606843,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 246,
+            "free_count": 1812,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "tray",
+            "visual_max_error_m": 2.2232198742534223e-15,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 452,
+            "free_count": 1554,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          }
+        ],
+        "motion": {
+          "passed": true,
+          "frames": 192,
+          "verified": 192,
+          "nonadjacent_pairs": 4
+        },
+        "wall_seconds": 0.545
+      }
+    },
+    {
+      "id": "retention/service_cart--standard",
+      "source": "study-v7/frozen/inputs/service_cart",
+      "probes": "study-v7/frozen/probes/service_cart",
+      "artifact": "study-v7/frozen/retention/service_cart--standard",
+      "case": {
+        "id": "service_cart--standard",
+        "family": "service_cart",
+        "profile": "standard",
+        "split": "dev",
+        "max_triangles": 3464,
+        "max_hulls": 492,
+        "max_proxy_vertices": 7003,
+        "max_vertices_per_hull": 64,
+        "visual_tolerance_m": 0.00320750149549792,
+        "generation_seconds": 90
+      },
+      "expected": {
+        "status": "evaluated",
+        "score": 1.0,
+        "guards_passed": true,
+        "counts": {
+          "triangles": 3464,
+          "hulls": 463,
+          "proxy_vertices": 7002
+        },
+        "parts": [
+          {
+            "part": "base",
+            "visual_max_error_m": 0.0010916693880006806,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 342,
+            "free_count": 1655,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "drawer_0",
+            "visual_max_error_m": 0.000786743615624695,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 408,
+            "free_count": 1623,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "drawer_1",
+            "visual_max_error_m": 0.0007867436156284841,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 408,
+            "free_count": 1623,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "caster_0",
+            "visual_max_error_m": 5.551115123125783e-17,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 388,
+            "free_count": 1470,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "wheel_0",
+            "visual_max_error_m": 0.0012331398757400905,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 430,
+            "free_count": 1671,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "caster_1",
+            "visual_max_error_m": 5.551115123125783e-17,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 388,
+            "free_count": 1470,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "wheel_1",
+            "visual_max_error_m": 0.0012331398757400905,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 430,
+            "free_count": 1671,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "caster_2",
+            "visual_max_error_m": 5.551115123125783e-17,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 388,
+            "free_count": 1470,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "wheel_2",
+            "visual_max_error_m": 0.0012331398757400905,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 430,
+            "free_count": 1671,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "caster_3",
+            "visual_max_error_m": 5.551115123125783e-17,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 388,
+            "free_count": 1470,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "wheel_3",
+            "visual_max_error_m": 0.0012331398757400905,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 430,
+            "free_count": 1671,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          },
+          {
+            "part": "holder",
+            "visual_max_error_m": 0.0012397079863165112,
+            "visual_quality": 1.0,
+            "proxy_quality": 1.0,
+            "contact_count": 276,
+            "free_count": 1786,
+            "false_free": 0,
+            "false_blocked": 0,
+            "quality": 1.0
+          }
+        ],
+        "motion": {
+          "passed": true,
+          "frames": 1692,
+          "verified": 1692,
+          "nonadjacent_pairs": 57
+        },
+        "wall_seconds": 14.627
+      }
+    }
+  ],
+  "hashes": {
+    "study-v6/generators/final.py": "be88441b19cf3d1219c96bc36ccf9f059bb932198b709c9438c31cc36836d8ab",
+    "study-v6/proxy_sdk.py": "8ed883e02244203fc794771ab0b4b91d602977ef7fb7cec25cdfaf24cdfec32d",
+    "study-v7/asset_sdk.py": "31b8775655e67c4742d393acc4be4700f3254a3a0bd1b4f9d80cd3a0ea3b907e",
+    "study-v7/blender_lod.py": "11291158339986c5ddcf15687d495787c51cfc2b6db94e6d6ba5379ebbc04983",
+    "study-v7/evaluator.py": "bdbad6679559858e803f4eb203b826b4f72e00f6c6eb6d1e915eb5a37ca8ed55",
+    "study-v7/frozen/final/inspection_lamp--inspection/proxies.json": "7d2f26879c151f25f07ce1132e21767d5c6bbded665e413796273646ef1c98a8",
+    "study-v7/frozen/final/inspection_lamp--inspection/rig.json": "92670b2cfc42b6c2ef6ac2be2b8d6dfa48ef0e1906a3b79f913bd30e8879cf6a",
+    "study-v7/frozen/final/inspection_lamp--inspection/visual.npz": "d666f0aadec456f8d2fe4dc8b93d7b33d953f32c75ededc106ee240ceb92bbff",
+    "study-v7/frozen/final/inspection_lamp--mobile/proxies.json": "7d2f26879c151f25f07ce1132e21767d5c6bbded665e413796273646ef1c98a8",
+    "study-v7/frozen/final/inspection_lamp--mobile/rig.json": "92670b2cfc42b6c2ef6ac2be2b8d6dfa48ef0e1906a3b79f913bd30e8879cf6a",
+    "study-v7/frozen/final/inspection_lamp--mobile/visual.npz": "493fe8a8241c538a05d85b2f89634e13f797d20aebea7bfbfe6c18ac826829e8",
+    "study-v7/frozen/final/inspection_lamp--standard/proxies.json": "7d2f26879c151f25f07ce1132e21767d5c6bbded665e413796273646ef1c98a8",
+    "study-v7/frozen/final/inspection_lamp--standard/rig.json": "92670b2cfc42b6c2ef6ac2be2b8d6dfa48ef0e1906a3b79f913bd30e8879cf6a",
+    "study-v7/frozen/final/inspection_lamp--standard/visual.npz": "f7f3525d26d2583245f235d823aff0377111f41eeb91594a15ddd0b2b92fa955",
+    "study-v7/frozen/final/supply_chest--inspection/proxies.json": "dbf049fe0de5b9803028f49b7ca4d5c469b5a0152f92ccb1e1007104134104fd",
+    "study-v7/frozen/final/supply_chest--inspection/rig.json": "befe3b2fd84ed39b7b5f9759326a63de5cc185ec8b4cc4d0a2213fc700da6762",
+    "study-v7/frozen/final/supply_chest--inspection/visual.npz": "8e29bb449efe8596044c47bd8d451aa7fdd2f7b286c3ceff155ed12312365b9d",
+    "study-v7/frozen/final/supply_chest--mobile/proxies.json": "dbf049fe0de5b9803028f49b7ca4d5c469b5a0152f92ccb1e1007104134104fd",
+    "study-v7/frozen/final/supply_chest--mobile/rig.json": "befe3b2fd84ed39b7b5f9759326a63de5cc185ec8b4cc4d0a2213fc700da6762",
+    "study-v7/frozen/final/supply_chest--mobile/visual.npz": "1fbdcd99ac2493a5aae52be1a47dae6e50f04dce2b53828d69c952b4274769e8",
+    "study-v7/frozen/final/supply_chest--standard/proxies.json": "dbf049fe0de5b9803028f49b7ca4d5c469b5a0152f92ccb1e1007104134104fd",
+    "study-v7/frozen/final/supply_chest--standard/rig.json": "befe3b2fd84ed39b7b5f9759326a63de5cc185ec8b4cc4d0a2213fc700da6762",
+    "study-v7/frozen/final/supply_chest--standard/visual.npz": "bf5f1e52f8ec189be517eed97aefba8e821b12f28bb69e70bd47badf84c10e89",
+    "study-v7/frozen/final/telescoping_platform--inspection/proxies.json": "a9b17f00a76a1796ac83a8f7bb1087650507f92b26653d821c9eb9716903a72b",
+    "study-v7/frozen/final/telescoping_platform--inspection/rig.json": "7ffaa1df667898045f2177e0dda20310cd48fadb429fb36649685335a8ba2630",
+    "study-v7/frozen/final/telescoping_platform--inspection/visual.npz": "71b4f7335440b16f77cdd2b2d965a915c011bd1204e1d63d0acf752df27cdf65",
+    "study-v7/frozen/final/telescoping_platform--mobile/proxies.json": "a9b17f00a76a1796ac83a8f7bb1087650507f92b26653d821c9eb9716903a72b",
+    "study-v7/frozen/final/telescoping_platform--mobile/rig.json": "7ffaa1df667898045f2177e0dda20310cd48fadb429fb36649685335a8ba2630",
+    "study-v7/frozen/final/telescoping_platform--mobile/visual.npz": "4dc5a630c1500e9ce1c8f08ab75ebe11f99b3d60ad6051cb99837aec2770b46b",
+    "study-v7/frozen/final/telescoping_platform--standard/proxies.json": "a9b17f00a76a1796ac83a8f7bb1087650507f92b26653d821c9eb9716903a72b",
+    "study-v7/frozen/final/telescoping_platform--standard/rig.json": "7ffaa1df667898045f2177e0dda20310cd48fadb429fb36649685335a8ba2630",
+    "study-v7/frozen/final/telescoping_platform--standard/visual.npz": "5e7769aadf0b47a21c8a20a81360b9fdacdfacc7b43353a92bcedaa0926327f0",
+    "study-v7/frozen/first/inspection_lamp--inspection/proxies.json": "c1c8827aef276edf22402ad484302ba659fdb91c7ccf78651065b9f7d0d76aa2",
+    "study-v7/frozen/first/inspection_lamp--inspection/rig.json": "92670b2cfc42b6c2ef6ac2be2b8d6dfa48ef0e1906a3b79f913bd30e8879cf6a",
+    "study-v7/frozen/first/inspection_lamp--inspection/visual.npz": "5bfecdee4702a0ae94d5584e29eed980422442a0e2f6c28c1daf9b0d6c8bca3c",
+    "study-v7/frozen/first/inspection_lamp--mobile/proxies.json": "c1c8827aef276edf22402ad484302ba659fdb91c7ccf78651065b9f7d0d76aa2",
+    "study-v7/frozen/first/inspection_lamp--mobile/rig.json": "92670b2cfc42b6c2ef6ac2be2b8d6dfa48ef0e1906a3b79f913bd30e8879cf6a",
+    "study-v7/frozen/first/inspection_lamp--mobile/visual.npz": "3a0b337be99c64dd38b68690e04162d17ae759a97862af129699250829f39203",
+    "study-v7/frozen/first/inspection_lamp--standard/proxies.json": "c1c8827aef276edf22402ad484302ba659fdb91c7ccf78651065b9f7d0d76aa2",
+    "study-v7/frozen/first/inspection_lamp--standard/rig.json": "92670b2cfc42b6c2ef6ac2be2b8d6dfa48ef0e1906a3b79f913bd30e8879cf6a",
+    "study-v7/frozen/first/inspection_lamp--standard/visual.npz": "0a3f26e102c470df1b1f5f1c5084a5a284f92c04f870835937ed17b185d6129d",
+    "study-v7/frozen/first/supply_chest--inspection/proxies.json": "460dd85db7517e749b46665e6dba3f2f318397bfa2b82bef239d380d778ae062",
+    "study-v7/frozen/first/supply_chest--inspection/rig.json": "befe3b2fd84ed39b7b5f9759326a63de5cc185ec8b4cc4d0a2213fc700da6762",
+    "study-v7/frozen/first/supply_chest--inspection/visual.npz": "19686993f06912767d27f92f15557f564f6d3883b9e22d6913ba68c5786a39dd",
+    "study-v7/frozen/first/supply_chest--mobile/proxies.json": "460dd85db7517e749b46665e6dba3f2f318397bfa2b82bef239d380d778ae062",
+    "study-v7/frozen/first/supply_chest--mobile/rig.json": "befe3b2fd84ed39b7b5f9759326a63de5cc185ec8b4cc4d0a2213fc700da6762",
+    "study-v7/frozen/first/supply_chest--mobile/visual.npz": "0455e6069bcc476b04230ea23a1407dc889bea20079738cc3b90742bf6459ee9",
+    "study-v7/frozen/first/supply_chest--standard/proxies.json": "460dd85db7517e749b46665e6dba3f2f318397bfa2b82bef239d380d778ae062",
+    "study-v7/frozen/first/supply_chest--standard/rig.json": "befe3b2fd84ed39b7b5f9759326a63de5cc185ec8b4cc4d0a2213fc700da6762",
+    "study-v7/frozen/first/supply_chest--standard/visual.npz": "741d42c5ff39647b9fa621ef9555a332d8d20a50dba7055c39921a594b6e54f9",
+    "study-v7/frozen/first/telescoping_platform--inspection/proxies.json": "a81ccbdc1b7d6fa51185c435b90d28cdd12ab51d744dd6fff85417e8b0e4e75b",
+    "study-v7/frozen/first/telescoping_platform--inspection/rig.json": "7ffaa1df667898045f2177e0dda20310cd48fadb429fb36649685335a8ba2630",
+    "study-v7/frozen/first/telescoping_platform--inspection/visual.npz": "0075c23620abd7eb2a0351bfc9dfa4be3813f713254efec13d8b1f950b9fa34d",
+    "study-v7/frozen/first/telescoping_platform--mobile/proxies.json": "a81ccbdc1b7d6fa51185c435b90d28cdd12ab51d744dd6fff85417e8b0e4e75b",
+    "study-v7/frozen/first/telescoping_platform--mobile/rig.json": "7ffaa1df667898045f2177e0dda20310cd48fadb429fb36649685335a8ba2630",
+    "study-v7/frozen/first/telescoping_platform--mobile/visual.npz": "1ef45fbb93c6a4c6052f3734c92a0411c36d84dd382cf01aa1d545fdf589a05a",
+    "study-v7/frozen/first/telescoping_platform--standard/proxies.json": "a81ccbdc1b7d6fa51185c435b90d28cdd12ab51d744dd6fff85417e8b0e4e75b",
+    "study-v7/frozen/first/telescoping_platform--standard/rig.json": "7ffaa1df667898045f2177e0dda20310cd48fadb429fb36649685335a8ba2630",
+    "study-v7/frozen/first/telescoping_platform--standard/visual.npz": "1b2d52c4d75ce095f8d1a408aa00cc3288f9fa923cbc3d0cc36d964c18bde2e3",
+    "study-v7/frozen/inputs/folding_bridge/metadata.json": "97227310ebf069cff6bcf7214ac4565ed73f5593947e071ccfda2734ffb046bc",
+    "study-v7/frozen/inputs/folding_bridge/source.npz": "b19b5b8839e3837c9f8eee40e4703d6fd4fdfb2bbddabcb46e81290856e31b06",
+    "study-v7/frozen/inputs/folding_workbench/metadata.json": "2fc8739650e0d8951924cdb44275583d01adcbfb336726b5fd2082e549e10a68",
+    "study-v7/frozen/inputs/folding_workbench/source.npz": "fca7f0b6fda3fac82d9245e8bcf6477838414f4dc5fdfa8811c0fae2c968be4b",
+    "study-v7/frozen/inputs/inspection_lamp/metadata.json": "b7a8abb602761e69e791c40bfd474e218ce0154ebb2f343085de7f5f3bf6228a",
+    "study-v7/frozen/inputs/inspection_lamp/source.npz": "bd39a4167196679c3fa7355f3dedb017ce820cf70c48b63cc1136196e402a398",
+    "study-v7/frozen/inputs/service_cart/metadata.json": "c9a3fc841cf36fae51bbe30fab867527680b3d927bac3cc161c68b5a9685d064",
+    "study-v7/frozen/inputs/service_cart/source.npz": "5c7bae538cb82084d57d904a65280392ec0886fbe73fced84644e8a6c81f6577",
+    "study-v7/frozen/inputs/supply_chest/metadata.json": "9dda1fca94ba1a7ef5735cb63c51a48ffcea5214947f2c62c3ced040f39eeda1",
+    "study-v7/frozen/inputs/supply_chest/source.npz": "66b409535f5aefa69f41ee4f9629672ddb7a2420e564f388fd989b3fe71997d5",
+    "study-v7/frozen/inputs/telescoping_platform/metadata.json": "1b3f11c863f79fc11e21f78f508fc8b767951d0686f72626d418a3be4c62d630",
+    "study-v7/frozen/inputs/telescoping_platform/source.npz": "6fe31791f489185ecb326094edf5e146f4ed26981a634ae9b5d1ca80daf6c31f",
+    "study-v7/frozen/probes/folding_bridge/base.npz": "af2f4ee38825ed7e47312198e18f798c3a4765a8d68a764dcd89da7ae784c8d1",
+    "study-v7/frozen/probes/folding_bridge/deck_a.npz": "6d1de1b2b61f92d0f2c649349165d4994462f53f4df4feb1d8ae65279cbacd48",
+    "study-v7/frozen/probes/folding_bridge/deck_b.npz": "170b95fead72a08b2117f5d685f61b34111d05ef7b649410ca7be8efd06b1f08",
+    "study-v7/frozen/probes/folding_bridge/ring_handle.npz": "68e4817f62d3240c26f745b7886c2b7c3d3d6d6c49eca8853c331dcec760d205",
+    "study-v7/frozen/probes/folding_workbench/base.npz": "635c23b4c16429f04b06d8516b93982192b71a830f9467f8f481f381d2e63667",
+    "study-v7/frozen/probes/folding_workbench/leg_a.npz": "6cb2459a5dbb3c78cf81939e7b732885244c83bb0972c3c84af0ce690c28ac89",
+    "study-v7/frozen/probes/folding_workbench/leg_b.npz": "31c4da642fa658382b52fcf1adf07e44c2f177cc6f5974b335e4e7b55bfb03f4",
+    "study-v7/frozen/probes/folding_workbench/tray.npz": "832d42111bd32cadf8fc0bcf08b9aca64b76d93a9c69dada2732b17d76134a8e",
+    "study-v7/frozen/probes/inspection_lamp/arm_a.npz": "16b71fd8c6853e63fb1a2284810e731fd206f6704c88121410efa38b6998d5f7",
+    "study-v7/frozen/probes/inspection_lamp/arm_b.npz": "289173a71e0413b5c40b05a18388901c6199975fbe752e63bd44e3ec9d408ef1",
+    "study-v7/frozen/probes/inspection_lamp/base.npz": "d0d3aa9057c33cb7000254f9ddcc06d54b91eacfb424123cd5cab9377eefa4c4",
+    "study-v7/frozen/probes/inspection_lamp/shade.npz": "fed4f578da2b8b29a486d20dc652cebd7ebbb7d740b8af7f19ac1b061214f019",
+    "study-v7/frozen/probes/service_cart/base.npz": "bed0b2d7f5d26f666c66934ddde4bcba1fcd691fc39e68143ab1c19fa0e3d3ee",
+    "study-v7/frozen/probes/service_cart/caster_0.npz": "610c5dd805e676e715602978676d4d5249817939a0b60c152e9809840c1883c1",
+    "study-v7/frozen/probes/service_cart/caster_1.npz": "8002e804f98a476ff056b5a78cb2dac81b2ccbf7e86c73529088be527f278e64",
+    "study-v7/frozen/probes/service_cart/caster_2.npz": "c0b565260363588f318c2a719fb99f5cbb7abab5b36f4e3f33fa54d18887ebc3",
+    "study-v7/frozen/probes/service_cart/caster_3.npz": "cff0508eb294e6eb280f9a3c86376c990d61c3793e06d190639022bb19826819",
+    "study-v7/frozen/probes/service_cart/drawer_0.npz": "c7f088ea0281cb20b212b487669aa47a8ceac64ae6166fea6d3e3cddea9d3285",
+    "study-v7/frozen/probes/service_cart/drawer_1.npz": "adc20befb280d94ad030918adc6bdcc39775c1e6fa43c45387674dfd220c07ea",
+    "study-v7/frozen/probes/service_cart/holder.npz": "bc67fcf6932bf679abe70486117dbcbd9f2f1ae55a44c69a500c4e4fecc04934",
+    "study-v7/frozen/probes/service_cart/wheel_0.npz": "48014b0936c5cf8a1f6a9f0ae818361988b8d079f2a0b19d310da41769839579",
+    "study-v7/frozen/probes/service_cart/wheel_1.npz": "11d135595d93ce27e5aebcb4021780ed09e870ade7553251711af7b2a6e34724",
+    "study-v7/frozen/probes/service_cart/wheel_2.npz": "d46afc2ca22f0b2b8146a85ab7a793ea1a60271ab270b2a5d5becce2af42fd9a",
+    "study-v7/frozen/probes/service_cart/wheel_3.npz": "bd259216a53a0618efaf92f52ec427598f5d5a0098268de4e2814d2595e8c0c4",
+    "study-v7/frozen/probes/supply_chest/base.npz": "d0830d3f81617c2cab570c81f6c7dad0d3597829e0b083b5cee06eac19ab0e7a",
+    "study-v7/frozen/probes/supply_chest/lid.npz": "f492fbfbacb6e2b598a1684b2cdd84e521595bf1829878062c2c8ed8b958f591",
+    "study-v7/frozen/probes/supply_chest/tray.npz": "0577164a061ea95ec5498a813a32a80b5ae6a3cb5fbede7bf431eba13f56c03f",
+    "study-v7/frozen/probes/telescoping_platform/base.npz": "fef6c90613a964c11fd221bc6aae880946a02db1200622feb1183445904e026d",
+    "study-v7/frozen/probes/telescoping_platform/carriage.npz": "6772dc78aa954c2da16ef8a2eeeae039427f0c6d4c4c45415b287dcbb6d65170",
+    "study-v7/frozen/probes/telescoping_platform/panel.npz": "d7cbd884d0163b2c404cb5cbc9bae4fec51a4f3873192ccd8994c2c839eab05d",
+    "study-v7/frozen/retention/folding_bridge--standard/proxies.json": "a18731012e2dc704025660672655fbaf6badeb6e44ef91da5316394c5545f741",
+    "study-v7/frozen/retention/folding_bridge--standard/rig.json": "609d0046ce24528dc588d331a2668f8658af58d375ae8f5707cb7f21b2eea34f",
+    "study-v7/frozen/retention/folding_bridge--standard/visual.npz": "8610af3833482fb25f5547bd0e4b3647b47f1788a86c2e88b51f7023bde2e517",
+    "study-v7/frozen/retention/folding_workbench--standard/proxies.json": "18a74b96499bb04d125299eb4b40abe3494983115a99765bca25444ac87bf03d",
+    "study-v7/frozen/retention/folding_workbench--standard/rig.json": "647f8c1717fa87118941822d2a2f568fa60c643da0d94d269c76858d14612f49",
+    "study-v7/frozen/retention/folding_workbench--standard/visual.npz": "e60e93dc47d669881ecf74f12f1d72f314e1df9f888de8410c77ee4229374f99",
+    "study-v7/frozen/retention/service_cart--standard/proxies.json": "a10b40fb2a597b6926e9ea601f6f8550b95e9c32a807db5aa775e2cf649cf500",
+    "study-v7/frozen/retention/service_cart--standard/rig.json": "69ed4c28e5307633b902a464855f7af06c9ed1687ff28efbc7fd3c7377bf8c7e",
+    "study-v7/frozen/retention/service_cart--standard/visual.npz": "93394a694966ab94c5683fa559911e2795c0904ef09944420199c923823cc469",
+    "study-v7/generators/final.py": "677673165e62ce62e76aafd98026bc06fbbb7fd7e460bfdc8bbceea362aaecdf",
+    "study-v7/generators/first.py": "559102c3f4e9a390fa9666ea2c94038bfd6083e6246121fb28d5356b91f7e812",
+    "study-v7/generators/submission-02.py": "4e62b300f8e703515a8180de6d0d6068b2bae712a3f7b7e26205af933eb7c009",
+    "study-v7/generators/submission-03.py": "6535cc3eba3af0707e4ec4d3a9ea852207bd967f52a34982963fa529756b6d57",
+    "study-v7/generators/submission-04.py": "d08cf5cec96e41025589e8ec6e3d787527f7b2b90971d37a6b93ccd27a6926f5",
+    "study-v7/generators/submission-05.py": "7c9e83c889935981be0d746d798e9b3d2cc97fe2316816a2cd122d6a9344d5c1",
+    "study-v7/primitive_fit.py": "c55bf3948e937dd931c5b9bcf0e23cb12a7f5f5cc5436f642c52e06cde03d252",
+    "study-v7/standard_pipeline.py": "559102c3f4e9a390fa9666ea2c94038bfd6083e6246121fb28d5356b91f7e812"
+  }
+}

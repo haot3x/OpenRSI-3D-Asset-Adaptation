@@ -20,8 +20,14 @@ jobs:
         run: python study-v7/assets.py .tools/v7-ci
       - name: Verify all coupled feasible references and failure controls
         run: python study-v7/controls.py .tools/v7-ci runs/coupled-v7-controls-ci
+      - name: Rescore exact frozen model outputs without executing candidate code
+        run: python tools/replay_compiled_v7.py study-v7/recorded.json --out runs/coupled-v7-replay-ci
       - name: Export full detailed mechanism and motion
         run: python tools/export_compiled_v7.py --source .tools/v7-ci/service_cart --artifact .tools/v7-ci/service_cart/reference-standard --out runs/coupled-v7-export-ci
+      - name: Prepare actual model geometry and posed collision queries
+        run: |
+          python tools/export_compiled_v7.py --source study-v7/frozen/inputs/service_cart --artifact study-v7/frozen/retention/service_cart--standard --out runs/coupled-v7-model-export-ci
+          python tools/engine_compiled_v7.py --source study-v7/frozen/inputs/service_cart --artifact study-v7/frozen/retention/service_cart--standard --probes study-v7/frozen/probes/service_cart --out runs/coupled-v7-model-engine-ci
       - name: Download pinned Godot
         shell: bash
         run: |
@@ -33,6 +39,12 @@ jobs:
       - name: Verify detailed GLB hierarchy and sampled motion in Godot
         shell: bash
         run: /tmp/godot-v7/Godot_v4.7.2-stable_linux.x86_64 --headless --path runtime --script res://inspect_geometry_v5.gd -- "$PWD/runs/coupled-v7-export-ci/roundtrip-job.json" > runs/coupled-v7-export-ci/godot.log 2>&1
+      - name: Verify actual model GLB and convex shapes in Godot
+        shell: bash
+        run: |
+          set -euo pipefail
+          /tmp/godot-v7/Godot_v4.7.2-stable_linux.x86_64 --headless --path runtime --script res://inspect_geometry_v5.gd -- "$PWD/runs/coupled-v7-model-export-ci/roundtrip-job.json" > runs/coupled-v7-model-export-ci/godot.log 2>&1
+          /tmp/godot-v7/Godot_v4.7.2-stable_linux.x86_64 --headless --path runtime --script res://inspect_proxies_v6.gd -- "$PWD/runs/coupled-v7-model-engine-ci/job.json" "$PWD/runs/coupled-v7-model-engine-ci/result.json" > runs/coupled-v7-model-engine-ci/godot.log 2>&1
       - name: Upload derived measurements only
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
@@ -44,6 +56,11 @@ jobs:
             runs/coupled-v7-controls-ci/intermediate_collision.json
             runs/coupled-v7-export-ci/export.json
             runs/coupled-v7-export-ci/godot.log
+            runs/coupled-v7-replay-ci/replayed.json
+            runs/coupled-v7-model-export-ci/export.json
+            runs/coupled-v7-model-export-ci/godot.log
+            runs/coupled-v7-model-engine-ci/result.json
+            runs/coupled-v7-model-engine-ci/godot.log
           if-no-files-found: warn
   cross-scene-regression:
     runs-on: ubuntu-24.04

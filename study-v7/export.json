@@ -1,0 +1,10 @@
+{
+  "family": "service_cart",
+  "parts": 12,
+  "triangles": 3464,
+  "frames": 1692,
+  "hierarchy_edges": 11,
+  "sampled_transforms": 60,
+  "glb_bytes": 654224,
+  "proxy_hulls": 463
+}

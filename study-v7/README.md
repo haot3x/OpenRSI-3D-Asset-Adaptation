@@ -1,5 +1,10 @@
 # Coupled complete-asset compiler: v7 development pilot
 
+**Completed calibration:** a 28.1-minute Codex/Astra-max episode reached full
+development score on submission two and full score on all nine final transfer
+configurations. The subset still saturates; no two-hour or 12-hour run is
+justified. [Results and limits](RESULTS.md) · [Frozen measurements](recorded.json).
+
 This is the first implementation stage of a broader game-asset generation
 task. A single reusable program compiles full articulated assets into visual
 LODs and compound convex collision proxies under joint budgets, preserving
@@ -51,7 +56,7 @@ godot --headless --path runtime --script res://inspect_geometry_v5.gd -- \
   "$PWD/runs/v7-export/roundtrip-job.json"
 ```
 
-## Prospective model calibration
+## Model calibration setup
 
 The subject is Codex gpt-6-astra at max reasoning, with the best preserved v6
 proxy method and a component-aware QEM/Blender starter available. It may edit

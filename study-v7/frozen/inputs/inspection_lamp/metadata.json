@@ -1,0 +1,106 @@
+{
+  "family": "inspection_lamp",
+  "root_id": "base",
+  "joints": [
+    {
+      "child": "arm_a",
+      "parent": "base",
+      "type": "revolute",
+      "pivot": [
+        0,
+        0,
+        0.45
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "lower": 0.0,
+      "upper": 0.45
+    },
+    {
+      "child": "arm_b",
+      "parent": "arm_a",
+      "type": "revolute",
+      "pivot": [
+        0.36,
+        0,
+        0.45
+      ],
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "lower": -0.9,
+      "upper": 0.0
+    },
+    {
+      "child": "shade",
+      "parent": "arm_b",
+      "type": "fixed",
+      "pivot": [
+        0.7,
+        0,
+        0.45
+      ],
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "lower": 0.0,
+      "upper": 0.0
+    }
+  ],
+  "knots": [
+    {
+      "arm_a": 0.0,
+      "arm_b": 0.0,
+      "shade": 0.0
+    },
+    {
+      "arm_a": 0.45,
+      "arm_b": 0.0,
+      "shade": 0.0
+    },
+    {
+      "arm_a": 0.0,
+      "arm_b": 0.0,
+      "shade": 0.0
+    },
+    {
+      "arm_a": 0.0,
+      "arm_b": -0.9,
+      "shade": 0.0
+    },
+    {
+      "arm_a": 0.0,
+      "arm_b": 0.0,
+      "shade": 0.0
+    },
+    {
+      "arm_a": 0.45,
+      "arm_b": -0.9,
+      "shade": 0.0
+    },
+    {
+      "arm_a": 0.0,
+      "arm_b": 0.0,
+      "shade": 0.0
+    }
+  ],
+  "roles": {
+    "base": "anchor",
+    "arm_a": "link",
+    "arm_b": "link",
+    "shade": "aperture"
+  },
+  "part_ids": [
+    "base",
+    "arm_a",
+    "arm_b",
+    "shade"
+  ]
+}

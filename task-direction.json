@@ -6,7 +6,7 @@
   "discussion": "https://github.com/OpenRSI-Foundation/OpenRSI-Index/discussions/324",
   "research_question": "Can a fixed-model research agent improve a reusable asset-adaptation method across a sequence of game scenes, transferring to new scene constraints while preserving asset identity and previously supported functionality?",
   "candidate_deliverable": "Reusable generation/adaptation code producing visual mesh variants, registered articulation, interaction behavior and collision proxies from an input asset and fixed scene requirements.",
-  "scope": "Existing interactive 3D assets adapted to fixed scenes; the scene and evaluator are not candidate-editable.",
+  "scope": "Generate and adapt complete interactive 3D game props under fixed functional, scene and resource requirements; the scene and evaluator remain immutable.",
   "planned_comparison": "Continually improved reusable adaptation versus matched-budget independent per-scene adaptation, with regression checks on prior scenes.",
   "planned_outcomes": [
     "new-scene functional success",
@@ -38,16 +38,28 @@
     "Final baseline, primary metric, inference budget, broad workload and official execution contract still require calibration and confirmation."
   ],
   "latest_study": {
-    "version": "v6",
-    "kind": "Bounded convex-proxy short calibration; only one component of the broader direction",
-    "report": "study-v6/RESULTS.md",
-    "development_first": 0.8796040636458438,
-    "development_final": 0.9965432098765432,
-    "transfer_first": 0.9554452776879327,
-    "transfer_final": 0.9765541621234705,
-    "status": "Completed; near-ceiling transfer, not ready for a long run",
+    "version": "v7",
+    "kind": "Coupled complete-asset compiler short calibration",
+    "report": "study-v7/RESULTS.md",
+    "wall_seconds": 1686.401,
+    "development_first": 0.0,
+    "development_final": 1.0,
+    "transfer_first": 0.3333333333333333,
+    "transfer_final": 1.0,
+    "status": "Completed; final transfer saturated, not ready for a long run",
     "official_reward": false,
     "long_run_started": false,
-    "pending": "Nonplanar assets, coupled LOD fidelity and full joint-motion interaction constraints, feasible references and strong-model calibration"
+    "pending": "Module selection, new assembly/joint graphs and operation schedules under conflicting scene requirements; feasible references and new strong-model calibration"
+  },
+  "next_stage": {
+    "status": "Planned; not implemented or difficulty-validated",
+    "scope": [
+      "module instance selection",
+      "assembly and joint-graph generation",
+      "operation scheduling",
+      "shared transport/deployment/storage/work-surface constraints"
+    ],
+    "reuse": "Preserve the v7 compiler and all previous studies as reusable components and evidence.",
+    "readiness": "Feasible controls, strong-model short preflight, then two-hour stress calibration before an official long run."
   }
 }
